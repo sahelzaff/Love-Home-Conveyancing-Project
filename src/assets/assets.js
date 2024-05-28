@@ -5,7 +5,9 @@ import logoMobile from './logoMobile.webp';
 import logo_white from './logo_white.webp';
 import logoBlackRed from './logoBlackRed.webp';
 import phone_call from './phone_call.svg';
+import phone_call_black from './phone_call_black.svg';
 import email from './email.svg';
+import mail_black from './mail_black.svg';
 import magnifier from './magnifier.png';
 import background from './background.jpg';
 import insta from './insta.png';
@@ -31,5 +33,7 @@ export const assets = {
     linkedin,
     wave,
     logoBlackRed,
+    phone_call_black,
+    mail_black,
 
 };

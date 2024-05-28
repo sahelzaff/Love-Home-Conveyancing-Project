@@ -4,15 +4,15 @@ import './TopBar.css';
 
 const TopBar = () => {
   return (
-    <div className="bg-[#f0532d] text-[#bebebe] py-2">
+    <div className="bg-[#ffffff] text-[#0d0d0d] py-2">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4">
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-2">
-            <img src={assets.phone_call} alt="Phone Call" className="h-4 w-4 sm:h-6 sm:w-6" />
+            <img src={assets.phone_call_black} alt="Phone Call" className="h-4 w-4 sm:h-6 sm:w-6" />
             <span className="text-xs sm:text-sm font-bold">+61 468 908 807</span>
           </div>
           <div className="flex items-center space-x-2">
-            <img src={assets.email} alt="Mail" className="h-4 w-4 sm:h-6 sm:w-6" />
+            <img src={assets.mail_black} alt="Mail" className="h-4 w-4 sm:h-6 sm:w-6" />
             <span className="text-xs sm:text-sm font-bold">hello@love-homes.com.au</span>
           </div>
         </div>
