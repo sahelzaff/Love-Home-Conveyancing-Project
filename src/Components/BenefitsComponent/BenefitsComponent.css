@@ -1,0 +1,41 @@
+#shadow_box{
+    box-shadow: 42px 38px 21px -32px rgba(0, 0, 0, 0.5);
+}
+
+.card1 {
+    transition: height 0.3s;
+    height: 17rem; /* Collapsed height */
+    cursor: pointer;
+  }
+.card2 {
+    transition: height 0.3s;
+    height: 17rem; /* Collapsed height */
+    cursor: pointer;
+  }
+.card3 {
+    transition: height 0.3s;
+    height: 17rem; /* Collapsed height */
+    cursor: pointer;
+  }
+  
+  .card1:hover {
+    height: 29rem; /* Expanded height */
+  }
+  
+  .card2:hover {
+    height: 32rem; /* Expanded height */
+  }
+  
+  .card3:hover {
+    height: 29rem; /* Expanded height */
+  }
+  
+  #box-shadow {
+    -webkit-box-shadow: -0.5px 6.5px 20px -10px #000000;
+    -moz-box-shadow: -0.5px 6.5px 20px -10px #000000;
+    box-shadow: -0.5px 6.5px 20px -10px #000000;
+  }
+
+  .transition-height {
+    transition: max-height 0.3s ease-in-out;
+  }

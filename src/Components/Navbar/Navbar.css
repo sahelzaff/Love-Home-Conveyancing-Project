@@ -1,0 +1,61 @@
+#logo{
+    animation: logo 2s ease 0s 1 normal forwards;
+}
+
+@keyframes logo {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+#border{
+	border: 2px solid #f0532d;
+}
+
+#border:hover{
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 1600px) {
+    .navbar {
+        justify-content: space-around; /* Spread out items evenly */
+    }
+    .navbar ul {
+        flex: 1; /* Allow ul to take up available space */
+        justify-content: space-around; /* Spread out list items evenly */
+        margin: 0;
+    }
+}
+
+/* Navbar.css */
+#sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* or use transparent if required */
+    transition: background-color 0.3s ease;
+}
+
+/* Add styles for scrolling effect if needed */
+nav.scroll-active {
+    background-color: #333; /* or any color for sticky state */
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar.css */
+.navbar {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .navbar-show {
+    opacity: 1;
+  }
+  
