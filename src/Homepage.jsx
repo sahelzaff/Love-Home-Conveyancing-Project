@@ -14,12 +14,16 @@ import ServiceHome from './Components/ServiceHome/ServiceHome'
 import Faq from './Components/Faq/Faq'
 import Hero2 from './Components/Hero2/Hero2'
 import Section3New from './Components/Section3New/Section3New'
+import SliderClients from './Components/SliderClients/SliderClients'
+import Cards from './Components/Cards/Cards'
 
 const Homepage = () => {
     return (
         <div>
             <Navbar className="fixed w-full z-50" />
+            <div className='px-[4rem] bg-[#0d0d0d]'>
             <Hero2/>
+            </div>
             {/* <Cards/> */}
             {/* <div className="pl-14">
                 <Section2 />
@@ -28,6 +32,11 @@ const Homepage = () => {
                 <BenefitsComponent />
             </div>
             <Hero />
+            <div className="px-[5.6rem]">
+
+            <SliderClients/>
+            </div>
+            {/* <Cards/> */}
             {/* <Section3New/> */}
             <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
                 highlight="peace of mind"

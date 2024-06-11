@@ -1,0 +1,24 @@
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .slider {
+    animation: slide 40s linear infinite;
+    display: flex;
+    width: calc(200%); /* Double the width for seamless looping */
+  }
+  
+  .logo {
+    flex-shrink: 0;
+    width: 12rem; /* Adjust width to match the actual size of logos */
+  }
+  
+  .slider:hover {
+    animation-play-state: paused;
+  }
+  

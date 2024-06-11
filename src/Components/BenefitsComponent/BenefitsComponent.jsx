@@ -20,9 +20,9 @@ const BenefitsComponent = () => {
 
   return (
     <div className="bg-[#F4F4F4] p-8 h-auto pb-36">
-      <div className="max-w-screen-4xl mx-auto text-black flex flex-col justify-center items-center">
-        <h1 className="text-center text-4xl 2xl:text-7xl md:text-[3.2rem] font-outfit font-bold mb-3 whitespace-nowrap">
-          Experience The Benefits Simplified With Our Service
+      <div className="max-w-screen-4xl mx-auto text-black flex flex-col justify-center items-start">
+        <h1 className="text-start text-4xl 2xl:text-7xl md:text-[3.2rem] font-outfit font-bold mb-3 leading-none">
+          Experience The Benefits<br /><span className="text-[#f0532d]">Simplified With Our Service</span>
         </h1>
         <p className="text-[#1B1817] text-center mb-24 text-xl font-poppins 2xl:text-2xl xl:text-xl">
           At love home, we redefine conveyancing by prioritizing simplicity and convenience.
@@ -57,7 +57,7 @@ const BenefitsComponent = () => {
         {/* card-1 */}
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-height w-1/2" id='box-shadow'>
       <a href="#">
-        <img className="rounded-t-lg mx-auto rounded-xl" src={assets.Benefit1} alt="" />
+        <img className="rounded-t-lg ml-5 rounded-xl w-2/6" src={assets.Benefit1} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
@@ -85,7 +85,7 @@ const BenefitsComponent = () => {
         {/* Card-2 */}
          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" id='box-shadow'>
       <a href="#">
-        <img className="rounded-t-lg mx-auto rounded-xl" src={assets.Benefit2} alt="" />
+        <img className="rounded-t-lg ml-5 rounded-xl w-2/6" src={assets.Benefit2} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
@@ -113,7 +113,7 @@ const BenefitsComponent = () => {
         {/* Card-3 */}
          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" id='box-shadow'>
       <a href="#">
-        <img className="rounded-t-lg mx-auto rounded-xl" src={assets.Benefit3} alt="" />
+        <img className="rounded-t-lg ml-5 rounded-xl w-2/6" src={assets.Benefit3} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
