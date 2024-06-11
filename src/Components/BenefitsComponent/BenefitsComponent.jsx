@@ -20,7 +20,7 @@ const BenefitsComponent = () => {
 
   return (
     <div className="bg-[#F4F4F4] p-8 h-auto pb-36">
-      <div className="max-w-screen-4xl mx-auto text-black flex flex-col justify-center items-start">
+      <div className="max-w-screen-4xl mx-auto 2xl:pl-20 text-black flex flex-col justify-center items-start">
         <h1 className="text-start text-4xl 2xl:text-7xl md:text-[3.2rem] font-outfit font-bold mb-3 leading-none">
           Experience The Benefits<br /><span className="text-[#f0532d]">Simplified With Our Service</span>
         </h1>
@@ -53,7 +53,7 @@ const BenefitsComponent = () => {
       </div>
 
 
-      <div className='flex flex-row justify-center items-center gap-6'> 
+      <div className='flex flex-row justify-center items-center gap-6 '> 
         {/* card-1 */}
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-height w-1/2" id='box-shadow'>
       <a href="#">

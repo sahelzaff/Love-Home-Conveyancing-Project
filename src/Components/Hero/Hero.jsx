@@ -69,7 +69,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-auto bg-fixed bg-cover bg-center overflow-hidden pb-14" style={{ backgroundImage: `url(${assets.Background_new})` }}>
+    <div className="relative w-full h-[110vh] bg-fixed bg-cover bg-center overflow-hidden pb-24" style={{ backgroundImage: `url(${assets.Background_new})` }}>
       <Cards/>
       </div>
      

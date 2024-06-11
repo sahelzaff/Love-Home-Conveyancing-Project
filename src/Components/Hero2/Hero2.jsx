@@ -27,15 +27,15 @@ const Hero2 = () => {
                     </div>
                 </div>
             </section>
-            <div className="absolute h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[30vh] top-[96%] sm:top-[90%] md:top-[90%] left-1/2 transform -translate-x-1/2 w-full sm:w-5/6 md:w-4/6 lg:w-4/6 bg-[#f4f4f4] p-4 sm:p-6 md:p-8 rounded-2xl box-shadow">
+            <div className="absolute h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[30vh] max-h-[30vh] top-[96%] sm:top-[90%] md:top-[90%] left-1/2 transform -translate-x-1/2 w-full sm:w-5/6 md:w-4/6 lg:w-4/6 bg-[#f4f4f4] p-4 sm:p-6 md:p-8 rounded-2xl box-shadow">
                 <div className="flex flex-col justify-center items-center gap-2 sm:gap-1 md:gap-0">
-                    <h2 className="font-outfit font-medium text-base sm:text-lg md:text-xl lg:text-lg">Online & In-person Consultations Available</h2>
-                    <div className="flex flex-row justify-center items-center -mt-3 sm:-mt-4 md:-mt-5 gap-4 sm:gap-6 md:gap-10">
-                        <img src={assets.whatsapp} className="w-16 sm:w-24 md:w-32" alt="" />
-                        <img src={assets.zoom} className="w-16 sm:w-24 md:w-32" alt="" />
-                        <img src={assets.we} className="w-16 sm:w-24 md:w-32" alt="" />
-                        <img src={assets.skype} className="w-16 sm:w-24 md:w-32" alt="" />
-                        <img src={assets.teams} className="w-14 sm:w-20 md:w-28" alt="" />
+                    <h2 className="font-outfit font-medium text-base sm:text-lg md:text-xl lg:text-lg xl:text-2xl">Online & In-person Consultations Available</h2>
+                    <div className="flex flex-row justify-center items-center -mt-3 sm:-mt-4 md:-mt-5 gap-4 sm:gap-6 md:gap-7">
+                        <img src={assets.whatsapp} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" />
+                        <img src={assets.zoom} className="w-16 sm:w-24 md:w-32 xl:w-40" alt="" />
+                        <img src={assets.we} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" />
+                        <img src={assets.skype} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" />
+                        <img src={assets.teams} className="w-14 sm:w-20 md:w-28 2xl:w-40" alt="" />
                     </div>
                 </div>
             </div>

@@ -72,7 +72,7 @@ const Cards = () => {
               </div>
             </div>
             <div>
-              <p className='text-xs text-[#1B1817] text md:text-2xl tracking-[0.28rem]
+              <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem]
 font-poppins font-bold'>Get a Tailored Conveyancing Quote in Minutes!</p>
             </div>
           </div>
