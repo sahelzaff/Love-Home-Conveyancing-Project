@@ -5,18 +5,21 @@ import '../../Responsive.css'
 
 const Hero2 = () => {
     return (
-        <div className='relative h-auto mb-56 '>
+        <div className='relative h-auto mb-44 '>
             <section className="relative h-[100vh] bg-center bg-fixed bg-cover bg-no-repeat brightness-110" id='mainrc' style={{ backgroundImage: `url(${assets.banner_rc})` }}>
-                <div className="absolute inset-0 bg-white bg-opacity-0 flex flex-col items-start justify-center"id='banner_rc'>
-                    <h1 className="text-[#f0532d] font-outfit text-2xl sm:text-3xl font-bold leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
+                <div className="absolute inset-0 bg-white bg-opacity-0 flex flex-col items-start justify-center" id='banner_rc'>
+                    <h1 className="text-[#f0532d] font-outfit text-2xl sm:text-3xl font-medium leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
 
-                    <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-outfit py-2 text-[#f0532d]'id='text2'>Purchasing Property.</h2>
-                    <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-outfit font-bold leading-tight tracking-[0.38rem] text-[#f0532d]'id='text3'>Expert Advice for Peace of Mind</p>
+                    <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-outfit py-2 text-[#f0532d]' id='text2'>Purchasing Property.</h2>
+                    <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-outfit font-bold leading-tight tracking-[0.38rem] text-[#f0532d]' id='text3'>Expert Advice for Peace of Mind</p>
                     <div className='w-24 sm:w-32 md:w-40 lg:w-44 h-[0.3rem] bg-[#f0532d] my-3 sm:my-4 md:my-5 rounded-e-md'></div>
-                    <p className='font-poppins font-medium text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-4/6 md:w-3/6 pr-0 sm:pr-10 md:pr-20 text-white'id='text4'>Leave the hassle to me, and focus on what really matters to you. so you can chat directly with the qualified property lawyer.
+                    <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-4/6  pr-0 sm:pr-10  text-white' id='text4'>Leave the hassle to me, and focus on what really matters to you. so you can chat directly with the qualified property lawyer.
                     </p>
 
-                    <p className='font-poppins font-medium text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-4/6 md:w-3/6 pt-4 sm:pt-5 md:pt-7 pr-0 sm:pr-10 md:pr-20 text-white'id='text5'><span className='text-[#f0532d] font-outfit ' id='text7' >Mr Robin Carter</span><br />Your Designation & Year of exp ( Principal Solicitor at Love Homes Conveyancing | 25 years of combined experience in accounting, law, and business)
+                    <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-4/6  pt-4 sm:pt-5  pr-0 sm:pr-10 md:pr-20 text-white' id='text5'><span className='text-[#f0532d] font-outfit ' id='text7' >Mr Robin Carter</span><br />Principal Solicitor at Love Homes Conveyancing
+                      <br />
+                      <span className=''>25 years of combined experience in accounting, law, and business</span>
+
                     </p>
 
                     <div className='pt-3 sm:pt-5'>

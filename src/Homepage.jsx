@@ -33,6 +33,7 @@ const Homepage = () => {
                 <div className='flex flex-col items-center justify-center'>
                     <BenefitsComponent />
                 </div>
+                </div>
                 <Hero />
                 <div className="px-[5.6rem]">
 
@@ -53,7 +54,6 @@ const Homepage = () => {
                 <WhySection />
                 <div className="px-[3rem]">
                     <ServiceHome />
-                </div>
                 <Faq />
 
             </div>

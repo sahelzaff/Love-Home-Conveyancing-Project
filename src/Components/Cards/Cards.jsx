@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../../Responsive.css'
 
 
 const CustomSelect = ({ options, placeholder }) => {
@@ -55,12 +56,12 @@ const Cards = () => {
 
   return (
     <div>
-      <div className='h-screen w-full px-24 py-5'>
-        <div className='flex flex-col items-start justify-between h-screen'>
-          <div className='flex flex-col items-center justify-center'>
+      <div className='h-screen w-full py-5'>
+        <div className='flex flex-col items-start justify-center h-screen gap-[20rem]' id='mainDiv'>
+          <div className='flex flex-col items-start justify-center'>
             <div className="flex flex-col space-y-4">
-              <div class="wrapper font-outfit 2xl:text-[7rem] " id='rotating_Text'>
-                <p className=''>Simpliy Your</p>
+              <div class="wrapper font-outfit " id='rotating_Text'>
+                <p className=''>Simplify Your</p>
                 <div class="words">
                   <span id='rotate'></span>
                   <span id='rotate'>Move</span>
@@ -73,7 +74,7 @@ const Cards = () => {
             </div>
             <div>
               <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem]
-font-poppins font-bold'>Get a Tailored Conveyancing Quote in Minutes!</p>
+font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minutes!</p>
             </div>
           </div>
           <div className='flex flex-col items-start justify-center w-full'>
