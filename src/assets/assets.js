@@ -51,11 +51,13 @@ import skype from './skype.png';
 import zoom from './zoom.png';
 import teams from './teams.png';
 import Background_new from './Background_new.png';
+import Background_new2 from './Background_new2.png';
 
 
 
 export const assets = {
     clock_contact,
+    Background_new2,
     Background_new,
     whatsapp,
     we,

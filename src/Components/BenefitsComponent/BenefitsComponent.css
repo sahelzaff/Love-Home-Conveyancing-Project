@@ -2,32 +2,33 @@
     box-shadow: 42px 38px 21px -32px rgba(0, 0, 0, 0.5);
 }
 
-.card1 {
+
+/* .card1 {
     transition: height 0.3s;
-    height: 17rem; /* Collapsed height */
+    height: 17rem; 
     cursor: pointer;
   }
 .card2 {
     transition: height 0.3s;
-    height: 17rem; /* Collapsed height */
+    height: 17rem;
     cursor: pointer;
   }
 .card3 {
     transition: height 0.3s;
-    height: 17rem; /* Collapsed height */
+    height: 17rem; 
     cursor: pointer;
   }
   
   .card1:hover {
-    height: 29rem; /* Expanded height */
+    height: 29rem; 
   }
   
   .card2:hover {
-    height: 32rem; /* Expanded height */
+    height: 32rem; 
   }
   
   .card3:hover {
-    height: 29rem; /* Expanded height */
+    height: 29rem; 
   }
   
   #box-shadow {
@@ -38,4 +39,40 @@
 
   .transition-height {
     transition: max-height 0.3s ease-in-out;
+  } */
+
+
+
+
+  #benefitDiv h1 {
+    font-size: 2.5rem;
+  }
+  
+  
+  
+  .card-hover {
+    position: relative;
+    transition: transform 0.3s ease, max-height 0.5s ease-in-out;
+    max-height: 251px; /* Adjust height as necessary */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content stays at the top */
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.05);
+    max-height: 700px; /* Adjust height as necessary */
+  }
+  
+  .card-content {
+    overflow: hidden;
+  }
+  
+  .icons {
+    transition: transform 0.5s ease;
+  }
+  
+  .icons:hover {
+    transform: scale(1.1);
   }

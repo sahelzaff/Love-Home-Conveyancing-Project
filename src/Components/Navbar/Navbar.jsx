@@ -49,9 +49,9 @@ const Navbar = () => {
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                         <button
                             type="button"
-                            className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg  text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F]  font-roboto ml-3" id='border'
+                            className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg  text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F]  font-montserrat ml-3" id='border'
                         >
-                            Call Now +02 9381 9118
+                            +02 9381 9118
                             <span><img src={assets.call_svgrepo_com}  className='w-10' alt="" srcset="" /></span>
                         </button>
                         <button

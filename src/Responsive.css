@@ -1,3 +1,17 @@
+/* Sizes are
+
+1920x1200
+1920x1080
+1680x1050
+1600x900
+1440x900
+1366x768
+1024x800 */
+
+
+
+
+
 /* For 1920x1200 */
 @media only screen and (max-width: 1920px) and (max-height: 1200px) {
     #text1{
@@ -87,9 +101,7 @@
     }
 
     #mainDiv{
-      padding-left: 8rem;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+     
     }
     #tailored{
       letter-spacing:0.5px ;
@@ -203,6 +215,22 @@
       font-size: 1.7rem;
       margin-top: 2rem;
     }
+    .wrapper p{
+      font-size: 4rem;
+    }
+    .words{
+      font-size: 8rem;
+      margin-top: -20px;
+  overflow: hidden;
+  letter-spacing: 5px;
+    }
+    .wrapper{
+      height: 240px;
+    }
+    #tailored{
+      font-size: 1.7rem;
+    }
+  
    }
    
    /* For 1600x900 */
@@ -262,6 +290,21 @@
     }
     #button1{
       font-size: 1rem;
+    }
+    .wrapper p{
+      font-size: 4rem;
+    }
+    .words{
+      font-size: 8rem;
+      margin-top: -20px;
+  overflow: hidden;
+  letter-spacing: 5px;
+    }
+    .wrapper{
+      height: 240px;
+    }
+    #tailored{
+      font-size: 1.7rem;
     }
 
      }
@@ -337,6 +380,9 @@
     }
     #benefitText{
       font-size: 1.1rem;
+    }
+    #tailored{
+      font-size: 1.5rem;
     }
    }
    

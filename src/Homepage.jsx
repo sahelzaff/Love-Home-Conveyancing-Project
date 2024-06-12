@@ -33,27 +33,30 @@ const Homepage = () => {
                 <div className='flex flex-col items-center justify-center'>
                     <BenefitsComponent />
                 </div>
-                </div>
+            </div>
+            <div className='Homepage1'>
                 <Hero />
-                <div className="px-[5.6rem]">
+            </div>
+            <div className='Homepage'>
+                <SliderClients />
+            </div>
 
-                    <SliderClients />
-                </div>
-                {/* <Cards/> */}
-                {/* <Section3New/> */}
-                <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
-                    highlight="peace of mind"
-                    highlightClass="text-[#f0532d] font-bold font-outfit"
-                    className="" />
-                <div className='pl-12'>
-                    <CustomerReviews />
-                </div>
-                <div className='px-14'>
-                    <WorkSection />
-                </div>
-                <WhySection />
-                <div className="px-[3rem]">
-                    <ServiceHome />
+
+            {/* <Cards/> */}
+            {/* <Section3New/> */}
+            <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
+                highlight="peace of mind"
+                highlightClass="text-[#f0532d] font-bold font-outfit"
+                className="" />
+            <div className='pl-12'>
+                <CustomerReviews />
+            </div>
+            <div className='px-14'>
+                <WorkSection />
+            </div>
+            <WhySection />
+            <div className="px-[3rem]">
+                <ServiceHome />
                 <Faq />
 
             </div>

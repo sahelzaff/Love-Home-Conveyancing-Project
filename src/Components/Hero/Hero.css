@@ -255,17 +255,32 @@ i {
 .wrapper{
   box-sizing: content-box;
   /* background-color: #ffffff; */
-  height: 130px;
+  height:280px;
+  
   font-weight: 700;
   /* font-family: sourceSans; */
   display: flex;
+  flex-direction: column;
   border-radius: 8px;
-  font-size: 5.0rem;
+  font-size: 5rem;
   /* box-shadow: 0 20px 25px rgba(0,0,0,0.2); */
 }
+.wrapper p{
+  position: relative;
+  z-index: 2;
+  font-size: 4rem;
+  /* background-color: #f4f4f4; */
+  width: 81%;
+
+  
+  
+}
 .words{
+  margin-top: -42px;
   overflow: hidden;
-  padding-left: 1.5rem;
+  letter-spacing: 5px;
+  font-size: 11rem;
+  /* padding-left: 1.5rem; */
 }
 #rotate{
   display: block;
@@ -310,111 +325,16 @@ i {
 }
 
 
-/* For 1920x1200 */
-@media only screen and (max-width: 1920px) and (max-height: 1200px) {
- #top_1{
-  /* top: 3rem; */
- }
+.transition-opacity {
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* For 1920x1080 */
-@media only screen and (max-width: 1920px) and (max-height: 1080px) {
-  /* #top_1{
-  top: 3rem; */
- /* } */
+/* Utility classes */
+.opacity-0 {
+  opacity: 0;
 }
 
-/* For 1680x1050 */
-@media only screen and (max-width: 1680px) and (max-height: 1050px) {
-  /* #top_1{
-    top: 3rem;
-    left: 2rem;
-   } */
+.opacity-100 {
+  opacity: 1;
 }
 
-/* For 1600x900 */
-@media only screen and (max-width: 1600px) and (max-height: 900px) {
-  /* #top_1{
-    top: 3rem;
-    left: 2rem;
-   }
-   #rotating_Text{
-    font-size: 6rem;
-   }
-
-   #top_2{
-    padding-top: 0;
-   }  */
-  }
-
-/* For 1440x900 */
-@media only screen and (max-width: 1440px) and (max-height: 900px) {
-  /* #magnifierTransform{
-    transform: scale(2.7) translate(13px, -102px) rotate(37deg) ;
-  }
-  #hero_main{
-    right:10rem 
-  }
-
-  #top_1{
-    top: 7rem;
-    left: 2rem;
-   }
-
-   #top_2{
-    padding-top: 1rem;
-    padding-left: 2rem;   } */
-}
-
-/* For 1366x768 */
-@media only screen and (max-width: 1366px) and (max-height: 768px) {
-
-  
-  /* #hero_main{
-    #top_2{
-      top: 10em;
-    }
-  } */
-}
-
-/* For 1024x800 */
-@media only screen and (max-width: 1024px) and (max-height: 800px) {
-
-  /* #magnifierTransform{
-   transform:scale(3.0) translate(11px, -66px) rotate(37deg) ; 
-  }
-  #rotating_Text{
-    font-size: 4.5em;
-   }
-   
-   #top_2{
-    padding-top: 0;
-    font-size: 1.3rem;
-    line-height: 0;
-   }
-   #hero_main{
-    top: 5rem;
-   }
-
-   #top_1{
-    top: 7.5rem;
-   }
-   #wave{
-    transform: translate(23px, 31px) rotate(-8deg) scale(1.3) scaleX(-1)  !important;
-   } */
-}
-
-/* For 1024x600 */
-@media only screen and (max-width: 1024px) and (max-height: 600px) {
-  /* #top_1{
-    top: 1.5rem;
-   }
-   
-   #rotating_Text{
-    z-index: 2;
-   }
-   #magnifierTransform{
-    transform:scale(3.0) translate(11px, -66px) rotate(37deg) ; 
-    z-index: 1;
-   } */
-}

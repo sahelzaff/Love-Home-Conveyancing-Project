@@ -12,6 +12,10 @@
 margin-left: var(--large-margin);
 margin-right: var(--large-margin);
 }
+.Homepage1{
+margin-left: 8rem;
+/* margin-right: var(--large-margin); */
+}
 }
 /* For 1920x1080 */
 @media only screen and (max-width: 1920px) and (max-height: 1080px) {
@@ -29,6 +33,10 @@ margin-right: var(--large-margin);
   margin-left: 5rem;
   margin-right: 5rem;
 }
+.Homepage1{
+  margin-left: 5rem;
+  /* margin-right: 5rem; */
+}
  }
 
 /* For 1440x900 */
@@ -36,6 +44,10 @@ margin-right: var(--large-margin);
 .Homepage{
   margin-left: 4rem;
   margin-right: 4rem;
+}
+.Homepage1{
+  margin-left: 4rem;
+  /* margin-right: 4rem; */
 }
 }
 
@@ -45,6 +57,10 @@ margin-right: var(--large-margin);
   margin-left: 2rem;
   margin-right: 2rem;
 }
+.Homepage1{
+  margin-left: 2rem;
+  /* margin-right: 2rem; */
+}
 }
 
 /* For 1024x800 */
@@ -52,6 +68,10 @@ margin-right: var(--large-margin);
 .Homepage{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.Homepage1{
+  margin-left: 0.5rem;
+  /* margin-right: 0.5rem; */
 }
 }
 

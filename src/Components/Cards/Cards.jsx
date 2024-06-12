@@ -56,11 +56,11 @@ const Cards = () => {
 
   return (
     <div>
-      <div className='h-screen w-full py-5'>
-        <div className='flex flex-col items-start justify-center h-screen gap-[20rem]' id='mainDiv'>
+      <div className='h-screen w-full py-5 relative z-10'>
+        <div className='flex flex-col items-start justify-center h-[80vh] gap-[10rem]' id='mainDiv'>
           <div className='flex flex-col items-start justify-center'>
             <div className="flex flex-col space-y-4">
-              <div class="wrapper font-outfit " id='rotating_Text'>
+              <div class="wrapper font-poppins " id='rotating_Text'>
                 <p className=''>Simplify Your</p>
                 <div class="words">
                   <span id='rotate'></span>
