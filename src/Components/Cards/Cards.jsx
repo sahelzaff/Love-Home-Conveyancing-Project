@@ -60,7 +60,7 @@ const Cards = () => {
           <div className='flex flex-col items-center justify-center'>
             <div className="flex flex-col space-y-4">
               <div class="wrapper font-outfit 2xl:text-[7rem] " id='rotating_Text'>
-                <p className=''>Simply Your</p>
+                <p className=''>Simpliy Your</p>
                 <div class="words">
                   <span id='rotate'></span>
                   <span id='rotate'>Move</span>

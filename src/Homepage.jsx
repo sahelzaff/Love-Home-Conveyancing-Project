@@ -21,7 +21,7 @@ const Homepage = () => {
     return (
         <div>
             <Navbar className="fixed w-full z-50" />
-            <div className='pl-[4rem] 2xl:pl-[10rem] bg-[#0d0d0d]'>
+            <div className='bg-[#0d0d0d]'>
             <Hero2/>
             </div>
             {/* <Cards/> */}
