@@ -16,45 +16,48 @@ import Hero2 from './Components/Hero2/Hero2'
 import Section3New from './Components/Section3New/Section3New'
 import SliderClients from './Components/SliderClients/SliderClients'
 import Cards from './Components/Cards/Cards'
+import './Homepage.css'
 
 const Homepage = () => {
     return (
         <div>
-            <Navbar className="fixed w-full z-50" />
-            <div className='bg-[#0d0d0d]'>
-            <Hero2/>
-            </div>
-            {/* <Cards/> */}
-            {/* <div className="pl-14">
-                <Section2 />
-            </div> */}
-            <div className='px-14'>
-                <BenefitsComponent />
-            </div>
-            <Hero />
-            <div className="px-[5.6rem]">
+            <Navbar className="sticky top-0 w-full z-50" />
+            <div className='Homepage'>
+                <div className='bg-[#0d0d0d]'>
+                    <Hero2 />
+                </div>
+                {/* <Cards/> */}
+                {/* <div className="pl-14">
+                    <Section2 />
+                </div> */}
+                <div className='flex flex-col items-center justify-center'>
+                    <BenefitsComponent />
+                </div>
+                <Hero />
+                <div className="px-[5.6rem]">
 
-            <SliderClients/>
+                    <SliderClients />
+                </div>
+                {/* <Cards/> */}
+                {/* <Section3New/> */}
+                <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
+                    highlight="peace of mind"
+                    highlightClass="text-[#f0532d] font-bold font-outfit"
+                    className="" />
+                <div className='pl-12'>
+                    <CustomerReviews />
+                </div>
+                <div className='px-14'>
+                    <WorkSection />
+                </div>
+                <WhySection />
+                <div className="px-[3rem]">
+                    <ServiceHome />
+                </div>
+                <Faq />
+
             </div>
-            {/* <Cards/> */}
-            {/* <Section3New/> */}
-            <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
-                highlight="peace of mind"
-                highlightClass="text-[#f0532d] font-bold font-outfit"
-                className="" />
-            <div className='pl-12'>
-                <CustomerReviews />
-            </div>
-            <div className='px-14'>
-                <WorkSection />
-            </div>
-            <WhySection />
-            <div className="px-[3rem]">
-                <ServiceHome />
-            </div>
-            <Faq />
             <Footer />
-
         </div>
     )
 }
