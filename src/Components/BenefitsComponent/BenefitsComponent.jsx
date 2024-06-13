@@ -17,7 +17,7 @@ const BenefitsComponent = () => {
 
       <div className='flex flex-row justify-evenly items-center gap-6' id="cardDiv"> 
         {/* card-1 */}
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition-height w-2/3 height card-hover cursor-pointer" id='box-shadow'>
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition-height w-2/3 height card-hover cursor-pointer" id='box-shadow' data-aos='fade-out' data-aos-duration="1000">
           
             <img className="rounded-t-lg ml-5 rounded-xl w-2/6 pt-10 icons" src={assets.Benefit1} alt="" />
         
@@ -37,7 +37,7 @@ const BenefitsComponent = () => {
         </div>
 
         {/* card-2 */}
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition-height w-2/3 height card-hover cursor-pointer" id='box-shadow'>
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition-height w-2/3 height card-hover cursor-pointer" id='box-shadow' data-aos='fade-out' data-aos-duration="1000">
          
             <img className="rounded-t-lg ml-5 rounded-xl w-2/6 pt-10 icons" src={assets.Benefit2} alt="" />
          
@@ -57,7 +57,7 @@ const BenefitsComponent = () => {
         </div>
 
         {/* card-3 */}
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition-height w-2/3 height card-hover cursor-pointer" id='box-shadow'>
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition-height w-2/3 height card-hover cursor-pointer" id='box-shadow' data-aos='fade-out' data-aos-duration="1000">
           
             <img className="rounded-t-lg ml-5 rounded-xl w-2/6 pt-10 icons" src={assets.Benefit3} alt="" />
           

@@ -15,8 +15,10 @@ import Faq from './Components/Faq/Faq'
 import Hero2 from './Components/Hero2/Hero2'
 import Section3New from './Components/Section3New/Section3New'
 import SliderClients from './Components/SliderClients/SliderClients'
+import Video from './Components/video/video'
 import Cards from './Components/Cards/Cards'
 import './Homepage.css'
+
 
 const Homepage = () => {
     return (
@@ -44,10 +46,11 @@ const Homepage = () => {
 
             {/* <Cards/> */}
             {/* <Section3New/> */}
-            <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
+            {/* <TextReveal text="Experience seamless property transactions with peace of mind, every step of the way."
                 highlight="peace of mind"
                 highlightClass="text-[#f0532d] font-bold font-outfit"
-                className="" />
+                className="" /> */}
+                <Video/>
             <div className='pl-12'>
                 <CustomerReviews />
             </div>

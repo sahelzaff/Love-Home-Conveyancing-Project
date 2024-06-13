@@ -14,448 +14,543 @@
 
 /* For 1920x1200 */
 @media only screen and (max-width: 1920px) and (max-height: 1200px) {
-    #text1{
-      font-size: 2.5rem;
-    }
-    #text2{
-      font-size: 4.2rem;
-    }
-    #text3{
-      font-size: 2.2rem;
-      line-height:3rem;
-      padding-bottom: 1rem;
+  #text1 {
+    font-size: 2.5rem;
+  }
 
-    }
-    #text4{
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      font-weight:200;
-      padding-bottom: 2rem;
-      line-height: 35px;
-      
-    }
-    #text5{
-      font-size: 1.8rem;
-      letter-spacing: 0px;
-      font-weight:200;
-      padding-bottom: 2rem;
-      line-height: 2.5rem;
-    }
-    #text6{
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      font-weight:300;
-      padding-bottom: 2rem;
-    }
-    #text7{
-      font-size:3rem;
-      line-height: 70px;
-      letter-spacing: 3px;
-      font-weight:700 ;
-    }
+  #text2 {
+    font-size: 4.2rem;
+  }
 
-    #button1{
-      font-size: 2rem;
-    }
+  #text3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
 
-    #banner_rc{
-      padding-left: 10rem;
-      margin-left: 6rem;
-    }
+  }
 
-    #consultBox{
-      height: 15vh;
-      top: 95.5%;
-    }
-    
-    #benefitMain{
-      padding-top: 8rem;
-    }
+  #text4 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    line-height: 35px;
 
-    #benefitTitle{
-      font-size:4rem;
-    }
-    #benefitTitleSpan{
-      font-size: 5rem;
-    }
-    #benefitText{
-      font-size: 1.4rem;
-    }
-    #cardTitle{
-      font-size: 2rem;
-    }
-    #cardTitle1{
-      font-size: 2rem;
-    }
-    #cardTitle3{
-      font-size: 2rem;
-      margin-top: 2rem;
-    }
-    
-    #cardText{
-      font-size: 1.1rem;
-    }
+  }
 
-    .height{
-      height: auto;
-    }
+  #text5 {
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+  }
 
-    #mainDiv{
-     
-    }
-    #tailored{
-      letter-spacing:0.5px ;
-      font-size: 2rem;
-    }
+  #text6 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+
+  #text7 {
+    font-size: 3rem;
+    line-height: 70px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  #button1 {
+    font-size: 2rem;
+  }
+
+  #banner_rc {
+    padding-left: 10rem;
+    margin-left: 6rem;
+  }
+
+  #consultBox {
+    height: 15vh;
+    top: 95.5%;
+  }
+
+  #benefitMain {
+    padding-top: 8rem;
+  }
+
+  #benefitTitle {
+    font-size: 4rem;
+  }
+
+  #benefitTitleSpan {
+    font-size: 5rem;
+  }
+
+  #benefitText {
+    font-size: 1.4rem;
+  }
+
+  #cardTitle {
+    font-size: 2rem;
+  }
+
+  #cardTitle1 {
+    font-size: 2rem;
+  }
+
+  #cardTitle3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  #cardText {
+    font-size: 1.1rem;
+  }
+
+  .height {
+    height: auto;
+  }
+
+  #mainDiv {}
+
+  #tailored {
+    letter-spacing: 0.5px;
+    font-size: 2rem;
+  }
 
 
 }
-   /* For 1920x1080 */
-   @media only screen and (max-width: 1920px) and (max-height: 1080px) {
-    #consultBox{
-      height: 18vh;
-      top: 94%;
-    }
-    #text4{
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      font-weight:200;
-      padding-bottom: 2rem;
-      line-height: 35px;
-      padding-right: 20px;
-    }
-    #text5{
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      font-weight:200;
-      padding-bottom: 2rem;
-      line-height: 35px;
-      /* padding-right: 20px; */
 
-    }
-    #banner_rc{
-      width: 50%;
-      margin-top: 3rem;
-    }
-    #text2{
-      font-size: 4rem;
-    }
-    #text3{
-      font-size: 1.95rem;
-    }
-    
-   }
-   
-   /* For 1680x1050 */
-   @media only screen and (max-width: 1680px) and (max-height: 1050px) {
-    #text1{
-      font-size: 1.8rem;
-    }
-    #text2{
-      font-size: 3.5rem;
-    }
-    #text3{
-      font-size: 1.6rem;
-      padding-bottom: 1rem;
-    }
-    #text4{
-      font-size: 1.4rem;
-      letter-spacing: 2px;
-      font-weight:200;
-      padding-bottom: 2rem;
-      line-height: 35px;
-      padding-right: 20px;
-     
-    }
-    #text5{
-      font-size: 1.4rem;
-      letter-spacing: 1px;
-      font-weight:200;
-      padding-bottom: 2rem;
-      line-height: 35px;
-      
-    }
-    #text6{
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      font-weight:300;
-      padding-bottom: 2rem;
-    }
-    #text7{
-      font-size:rem;
-      line-height: 70px;
-      letter-spacing: 3px;
-      font-weight:700 ;
-    }
-    #banner_rc{
-      padding-left: 8rem;
-    }
+/* For 1920x1080 */
+@media only screen and (max-width: 1920px) and (max-height: 1080px) {
+  #consultBox {
+    height: 18vh;
+    top: 94%;
+  }
 
-    #consultBox{
-      height: 18vh;
-      top: 93.8%;
-    }
-    
-    #benefitTitle{
-      font-size:3rem;
-    }
-    #benefitTitleSpan{
-      font-size: 4rem;
-    }
-    #benefitText{
-      font-size: 1.2rem;
-    }
-    #cardTitle{
-      font-size: 1.7rem;
-    }
-    #cardTitle1{
-      font-size: 1.7rem;
-    }
-    #cardTitle3{
-      font-size: 1.7rem;
-      margin-top: 2rem;
-    }
-    .wrapper p{
-      font-size: 4rem;
-    }
-    .words{
-      font-size: 8rem;
-      margin-top: -20px;
-  overflow: hidden;
-  letter-spacing: 5px;
-    }
-    .wrapper{
-      height: 240px;
-    }
-    #tailored{
-      font-size: 1.7rem;
-    }
-  
-   }
-   
-   /* For 1600x900 */
-   @media only screen and (max-width: 1600px) and (max-height: 900px) {
-    #consultBox{
-      height: 21vh;
-      top: 96%;
-    }
-    #cardTitle3{
-      font-size: 1.7rem;
-      margin-top: 2rem;
-    }
-    #mainrc{
-      height:85vh ;
-      margin-left: 8rem;
-    }
-    #banner_rc{
-      padding-top: 0%;
-      height: 80vh;
-      margin-left: -1rem;
-    }
-    #text1{
-      font-size: 1.3rem;
-      line-height: 1px;
-    }
-    #text2{
-      font-size: 3rem;
-    }
-    #text3{
-      font-size: 1.3rem;
-      line-height: 20px;
-      padding-bottom: 0;
-    }
-    #text4{
-      font-size: 1.1rem;
-      line-height: 25px;
-      letter-spacing: 2px;
-      font-weight:200;
-      padding-bottom: 1rem;
-    }
-    #text7{
-      font-size: 3rem;
-    }
-    #text5{
-      font-size: 1.1rem;
-      line-height: 25px;
-      letter-spacing: 2px;
-      font-weight:200;
-      padding-bottom: 1rem;
-    }
-    #text6{
-      font-size: 1.5rem;
-      line-height: 25px;
-      letter-spacing: 2px;
-      font-weight:400;
-      padding-bottom: 1rem;
-    }
-    #button1{
-      font-size: 1rem;
-    }
-    .wrapper p{
-      font-size: 4rem;
-    }
-    .words{
-      font-size: 8rem;
-      margin-top: -20px;
-  overflow: hidden;
-  letter-spacing: 5px;
-    }
-    .wrapper{
-      height: 240px;
-    }
-    #tailored{
-      font-size: 1.7rem;
-    }
+  #text4 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    line-height: 35px;
+    padding-right: 20px;
+  }
 
-     }
-   
-   /* For 1440x900 */
-   @media only screen and (max-width: 1440px) and (max-height: 900px) {
-    #text1{
-      font-size: 1.7rem;
-    }
-    #text2{
-      font-size: 2.75rem;
-    }
-    #text3{
-      font-size: 1.7rem;
-      padding-bottom: 1rem;
-      letter-spacing: 1.5px;
-    }
-    #text4{
-      font-size: 1.1rem;
-      line-height: 25px;
-      letter-spacing: 1px;
-      font-weight:200;
-      padding-bottom: 1rem;
-        }
-    #text5{
-      font-size: 1.1rem;
-      line-height: 25px;
-      letter-spacing: 1px;
-      font-weight:200;
-      padding-bottom: 1rem;
-    }
-    #text6{
-      font-size: 1.6rem;
-      letter-spacing: 2px;
-      font-weight:300;
-      padding-bottom: 2rem;
-    }
-    #text7{
-      font-size:2.75rem;
-      line-height: 70px;
-      letter-spacing: 2px;
-      font-weight:700 ;
-    }
-    #button1{
-      font-size: 1.1rem;
-    }
+  #text5 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    line-height: 35px;
+    /* padding-right: 20px; */
 
-    #banner_rc{
+  }
+
+  #banner_rc {
+    width: 50%;
+    margin-top: 3rem;
+  }
+
+  #text2 {
+    font-size: 4rem;
+  }
+
+  #text3 {
+    font-size: 1.95rem;
+  }
+
+}
+
+/* For 1680x1050 */
+@media only screen and (max-width: 1680px) and (max-height: 1050px) {
+  #text1 {
+    font-size: 1.8rem;
+  }
+
+  #text2 {
+    font-size: 3.5rem;
+  }
+
+  #text3 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+
+  #text4 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    line-height: 35px;
+    padding-right: 20px;
+
+  }
+
+  #text5 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    line-height: 35px;
+
+  }
+
+  #text6 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+
+  #text7 {
+    font-size: rem;
+    line-height: 70px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  #banner_rc {
+    padding-left: 8rem;
+  }
+
+  #consultBox {
+    height: 18vh;
+    top: 93.8%;
+  }
+
+  #benefitTitle {
+    font-size: 3rem;
+  }
+
+  #benefitTitleSpan {
+    font-size: 4rem;
+  }
+
+  #benefitText {
+    font-size: 1.2rem;
+  }
+
+  #cardTitle {
+    font-size: 1.7rem;
+  }
+
+  #cardTitle1 {
+    font-size: 1.7rem;
+  }
+
+  #cardTitle3 {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .wrapper p {
+    font-size: 4rem;
+  }
+
+  .words {
+    font-size: 8rem;
+    margin-top: -20px;
+    overflow: hidden;
+    letter-spacing: 5px;
+  }
+
+  .wrapper {
+    height: 240px;
+  }
+
+  #tailored {
+    font-size: 1.7rem;
+  }
+
+  #videoText1 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+  #videoText2 {
+    font-size: 8rem;
+    line-height: 1;
+  }
+  #videoTextDiv{
+    width: 70%;
+  }
+
+}
+
+/* For 1600x900 */
+@media only screen and (max-width: 1600px) and (max-height: 900px) {
+  #consultBox {
+    height: 21vh;
+    top: 96%;
+  }
+
+  #cardTitle3 {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  #mainrc {
+    height: 85vh;
+    margin-left: 8rem;
+  }
+
+  #banner_rc {
+    padding-top: 0%;
+    height: 80vh;
+    margin-left: -1rem;
+  }
+
+  #text1 {
+    font-size: 1.3rem;
+    line-height: 1px;
+  }
+
+  #text2 {
+    font-size: 3rem;
+  }
+
+  #text3 {
+    font-size: 1.3rem;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
+
+  #text4 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 1rem;
+  }
+
+  #text7 {
+    font-size: 3rem;
+  }
+
+  #text5 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 1rem;
+  }
+
+  #text6 {
+    font-size: 1.5rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+
+  #button1 {
+    font-size: 1rem;
+  }
+
+  .wrapper p {
+    font-size: 4rem;
+  }
+
+  .words {
+    font-size: 8rem;
+    margin-top: -20px;
+    overflow: hidden;
+    letter-spacing: 5px;
+  }
+
+  .wrapper {
+    height: 240px;
+  }
+
+  #tailored {
+    font-size: 1.7rem;
+  }
+
+}
+
+/* For 1440x900 */
+@media only screen and (max-width: 1440px) and (max-height: 900px) {
+  #text1 {
+    font-size: 1.7rem;
+  }
+
+  #text2 {
+    font-size: 2.75rem;
+  }
+
+  #text3 {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  #text4 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding-bottom: 1rem;
+  }
+
+  #text5 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding-bottom: 1rem;
+  }
+
+  #text6 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+
+  #text7 {
+    font-size: 2.75rem;
+    line-height: 70px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  #button1 {
+    font-size: 1.1rem;
+  }
+
+  #banner_rc {
     padding-top: 5rem;
-     height: fit-content;
-     padding-bottom: 4rem;
-     margin-left: 5rem;
-    }
+    height: fit-content;
+    padding-bottom: 4rem;
+    margin-left: 5rem;
+  }
 
-    #mainrc{
-      margin-left:1rem;
-    }
-    
-    #consultBox{
-      height: 18vh;
-      top: 96%;
-    }
-    #cardTitle3{
-      font-size: 1.7rem;
-      margin-top: 0;
-    }
+  #mainrc {
+    margin-left: 1rem;
+  }
 
-    #benefitTitle{
-      font-size:2.5rem;
-    }
-    #benefitTitleSpan{
-      font-size: 3.5rem;
-    }
-    #benefitText{
-      font-size: 1.1rem;
-    }
-    #tailored{
-      font-size: 1.5rem;
-    }
-   }
-   
-   /* For 1366x768 */
-   @media only screen and (max-width: 1366px) and (max-height: 768px) {
-    #text1{
-      font-size: 1.7rem;
-    }
-    #text2{
-      font-size: 2.75rem;
-    }
-    #text3{
-      font-size: 1.7rem;
-      
-      letter-spacing: 1.5px;
-    }
-    #text4{
-      font-size: 1.1rem;
-      line-height: 25px;
-      letter-spacing: 1px;
-      font-weight:200;
-      padding-bottom: 1rem;
-        }
-    #text5{
-      font-size: 1.1rem;
-      line-height: 25px;
-      letter-spacing: 1px;
-      font-weight:200;
-      
-    }
-    #text6{
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      font-weight:300;
-     
-    }
-    #text7{
-      font-size:2.75rem;
-      line-height: 70px;
-      letter-spacing: 2px;
-      font-weight:700 ;
-    }
-    #button1{
-      font-size: 1.1rem;
-    }
+  #consultBox {
+    height: 18vh;
+    top: 96%;
+  }
 
-    #banner_rc{
-     padding-top: 1rem;
-     height: fit-content;
-     padding-bottom: 4rem;
-     margin-left: 3rem;
-    }
+  #cardTitle3 {
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
 
-    #mainrc{
-      margin-left:3rem;
-    }
-    
-    #consultBox{
-      height: 18vh;
-      top: 92%;
-    }
-     
-     
-   }
-   
-   /* For 1024x800 */
-   @media only screen and (max-width: 1024px) and (max-height: 800px) {
-   
-     
-   }
-   
-   /* For 1024x600 */
-   @media only screen and (max-width: 1024px) and (max-height: 600px) {
-     
-   }
-   
+  #benefitTitle {
+    font-size: 2.5rem;
+  }
+
+  #benefitTitleSpan {
+    font-size: 3.5rem;
+  }
+
+  #benefitText {
+    font-size: 1.1rem;
+  }
+
+  #tailored {
+    font-size: 1.5rem;
+  }
+  #videoText1 {
+    font-size: 3.3rem;
+    line-height: 1;
+  }
+
+  #videoText2 {
+    font-size: 7rem;
+    line-height: 1;
+  }
+  #videoTextDiv{
+    width: 70%;
+  }
+}
+
+/* For 1366x768 */
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
+  #text1 {
+    font-size: 1.7rem;
+  }
+
+  #text2 {
+    font-size: 2.75rem;
+  }
+
+  #text3 {
+    font-size: 1.7rem;
+
+    letter-spacing: 1.5px;
+  }
+
+  #text4 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding-bottom: 1rem;
+  }
+
+  #text5 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 200;
+
+  }
+
+  #text6 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+  }
+
+  #text7 {
+    font-size: 2.75rem;
+    line-height: 70px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  #button1 {
+    font-size: 1.1rem;
+  }
+
+  #banner_rc {
+    padding-top: 1rem;
+    height: fit-content;
+    padding-bottom: 4rem;
+    margin-left: 3rem;
+  }
+
+  #mainrc {
+    margin-left: 3rem;
+  }
+
+  #consultBox {
+    height: 18vh;
+    top: 92%;
+  }
+  #videoText1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  #videoText2 {
+    font-size: 7rem;
+    line-height: 1;
+  }
+  #videoTextDiv{
+    width: 70%;
+  }
+
+}
+
+/* For 1024x800 */
+@media only screen and (max-width: 1024px) and (max-height: 800px) {}
+
+/* For 1024x600 */
+@media only screen and (max-width: 1024px) and (max-height: 600px) {}

@@ -7,7 +7,7 @@ const Hero2 = () => {
     return (
         <div className='relative h-auto mb-44 '>
             <section className="relative h-[90vh] bg-center bg-cover bg-no-repeat brightness-110" id='mainrc' style={{ backgroundImage: `url(${assets.banner_rc})` }}>
-                <div className="absolute inset-0 w-[45vw] bg-white bg-opacity-0 flex flex-col items-start justify-center" id='banner_rc'>
+                <div className="absolute inset-0 w-[45vw] bg-white bg-opacity-0 flex flex-col items-start justify-center" id='banner_rc' data-aos='fade-right' data-aos-duration="1000">
                     <h1 className="text-[#f0532d] font-sans text-2xl sm:text-3xl font-medium leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
 
                     <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-sans py-2 text-[#f0532d]' id='text2'>Purchasing Property.</h2>
