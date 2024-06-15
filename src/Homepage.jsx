@@ -15,19 +15,21 @@ import Faq from './Components/Faq/Faq'
 import Hero2 from './Components/Hero2/Hero2'
 import Section3New from './Components/Section3New/Section3New'
 import SliderClients from './Components/SliderClients/SliderClients'
+import Why2 from './Components/Why2/Why2'
 import Video from './Components/video/video'
 import Cards from './Components/Cards/Cards'
 import './Homepage.css'
+import TheProcess from './Components/TheProcess/TheProcess'
 
 
 const Homepage = () => {
     return (
-        <div>
-            <Navbar className="sticky top-0 w-full z-50" />
-            <div className='Homepage'>
+        <div className='overflow-x-hidden'>
+            <Navbar className="sticky w-full z-50" />
                 <div className='bg-[#0d0d0d]'>
                     <Hero2 />
                 </div>
+            <div className='Homepage'>
                 {/* <Cards/> */}
                 {/* <div className="pl-14">
                     <Section2 />
@@ -57,9 +59,16 @@ const Homepage = () => {
             <div className='px-14'>
                 <WorkSection />
             </div>
+            <div className='Homepage'>
+                <Why2/>
+            </div>
             <WhySection />
+            <div className="Homepage">
+
+            <TheProcess/>    
+            </div>
             <div className="px-[3rem]">
-                <ServiceHome />
+                {/* <ServiceHome /> */}
                 <Faq />
 
             </div>

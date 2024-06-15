@@ -15,23 +15,25 @@
 /* For 1920x1200 */
 @media only screen and (max-width: 1920px) and (max-height: 1200px) {
   #text1 {
-    font-size: 2.5rem;
+    font-size: 1.95rem;
+    line-height: 2rem;
   }
 
   #text2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
   }
 
   #text3 {
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 1.95rem;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
     padding-bottom: 1rem;
 
   }
 
   #text4 {
-    font-size: 1.8rem;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 35px;
@@ -39,15 +41,15 @@
   }
 
   #text5 {
-    font-size: 1.8rem;
-    letter-spacing: 0px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 2.5rem;
   }
 
   #text6 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
     font-weight: 300;
     padding-bottom: 2rem;
@@ -57,11 +59,11 @@
     font-size: 3rem;
     line-height: 70px;
     letter-spacing: 3px;
-    font-weight: 700;
+    font-weight: 800;
   }
 
   #button1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   #banner_rc {
@@ -70,24 +72,31 @@
   }
 
   #consultBox {
-    height: 15vh;
-    top: 95.5%;
+    height: 16.5vh;
+    top: 91.5%;
+  }
+  #boxPhoto{
+    gap: 3rem;
   }
 
   #benefitMain {
     padding-top: 8rem;
+    width: 86%;
   }
 
   #benefitTitle {
-    font-size: 4rem;
+    font-size:4rem;
+    letter-spacing: 0.4rem;
   }
 
   #benefitTitleSpan {
-    font-size: 5rem;
+    font-size: 6.8rem;
+    letter-spacing: 0rem;
   }
 
   #benefitText {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
   }
 
   #cardTitle {
@@ -111,12 +120,23 @@
     height: auto;
   }
 
-  #mainDiv {}
+  #mainDiv {
+    gap: 18rem;
+    margin-top: 8rem;
+  }
 
   #tailored {
     letter-spacing: 0.5px;
     font-size: 2rem;
   }
+  #verticalLine{
+    margin-left: 20rem;
+    margin-right: -15rem;
+  }
+  .globe{
+    top: 50rem1050;
+  }
+
 
 
 }
@@ -124,21 +144,27 @@
 /* For 1920x1080 */
 @media only screen and (max-width: 1920px) and (max-height: 1080px) {
   #consultBox {
-    height: 18vh;
+    height: 19vh;
     top: 94%;
   }
 
   #text4 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 35px;
     padding-right: 20px;
   }
+  #text3{
+    letter-spacing: 5.7px;
+  }
+  #text2{
+      font-size: 2rem;
+  }
 
   #text5 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 2rem;
@@ -148,8 +174,8 @@
   }
 
   #banner_rc {
-    width: 50%;
-    margin-top: 3rem;
+    width: 44%;
+    /* margin-top: 3rem; */
   }
 
   #text2 {
@@ -159,26 +185,49 @@
   #text3 {
     font-size: 1.95rem;
   }
+  #mainrc{
+    /* margin-left: rem; */
+  }
+  #mainDiv {
+    gap: 22rem;
+    margin-top: 12rem;
+  }
+  #buttonProcess{
+    font-size: 1.5rem;
+  }
+  #processW{
+    width: 75%;
+  }
+  #processH{
+    font-size: 5rem;
+  }
 
 }
 
 /* For 1680x1050 */
 @media only screen and (max-width: 1680px) and (max-height: 1050px) {
   #text1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+  #verticalLine{
+    margin-left: 15rem;
+    margin-right: -6rem;
   }
 
   #text2 {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
   }
 
   #text3 {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    /* padding-bottom: 1rem; */
+    letter-spacing: 2.3px;
+    line-height:1rem;
   }
 
   #text4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 2rem;
@@ -188,8 +237,8 @@
   }
 
   #text5 {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 35px;
@@ -197,21 +246,22 @@
   }
 
   #text6 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight: 300;
     padding-bottom: 2rem;
   }
 
   #text7 {
-    font-size: rem;
+    font-size: 3rem;
     line-height: 70px;
     letter-spacing: 3px;
-    font-weight: 700;
+    font-weight: 800;
   }
 
   #banner_rc {
     padding-left: 8rem;
+    width: 41%;
   }
 
   #consultBox {
@@ -220,15 +270,18 @@
   }
 
   #benefitTitle {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
 
   #benefitTitleSpan {
-    font-size: 4rem;
+    font-size: 6rem;
+  }
+  #benefitMain{
+    width: 89%;
   }
 
   #benefitText {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   #cardTitle {
@@ -245,18 +298,18 @@
   }
 
   .wrapper p {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .words {
-    font-size: 8rem;
+    font-size: 3rem;
     margin-top: -20px;
     overflow: hidden;
     letter-spacing: 5px;
   }
 
   .wrapper {
-    height: 240px;
+    height: 120px;
   }
 
   #tailored {
@@ -291,28 +344,31 @@
   }
 
   #mainrc {
-    height: 85vh;
+    height: 100vh;
     margin-left: 8rem;
   }
 
   #banner_rc {
     padding-top: 0%;
-    height: 80vh;
-    margin-left: -1rem;
+    height: 100vh;
+    margin-left: -3.5rem;
+    width: 45%;
+    
   }
 
   #text1 {
-    font-size: 1.3rem;
-    line-height: 1px;
+    font-size: 1.5rem;
+    line-height: 10px;
   }
 
   #text2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   #text3 {
-    font-size: 1.3rem;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 10px;
+    letter-spacing: 1.3px;
     padding-bottom: 0;
   }
 
@@ -326,6 +382,7 @@
 
   #text7 {
     font-size: 3rem;
+    font-weight: 900;
   }
 
   #text5 {
@@ -337,7 +394,7 @@
   }
 
   #text6 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 25px;
     letter-spacing: 2px;
     font-weight: 400;
@@ -353,10 +410,13 @@
   }
 
   .words {
-    font-size: 8rem;
+    font-size: 5rem ;
     margin-top: -20px;
     overflow: hidden;
     letter-spacing: 5px;
+  }
+  #mainDiv{
+    gap: 18rem;
   }
 
   .wrapper {
@@ -374,6 +434,10 @@
   #text1 {
     font-size: 1.7rem;
   }
+  #verticalLine{
+    margin-left: 12rem;
+    margin-right: 0rem;
+  }
 
   #text2 {
     font-size: 2.75rem;
@@ -388,7 +452,7 @@
   #text4 {
     font-size: 1.1rem;
     line-height: 25px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 1rem;
   }
@@ -420,14 +484,15 @@
   }
 
   #banner_rc {
-    padding-top: 5rem;
+    padding-top: 8rem;
+    width: 45%;
     height: fit-content;
-    padding-bottom: 4rem;
-    margin-left: 5rem;
+    padding-bottom: rem;
+    margin-left: 3.5rem;
   }
 
   #mainrc {
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
 
   #consultBox {
@@ -441,15 +506,18 @@
   }
 
   #benefitTitle {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+  }
+  #benefitMain{
+    width: 83%;
   }
 
   #benefitTitleSpan {
-    font-size: 3.5rem;
+    font-size: 5.2rem;
   }
 
   #benefitText {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   #tailored {
@@ -472,21 +540,22 @@
 /* For 1366x768 */
 @media only screen and (max-width: 1366px) and (max-height: 768px) {
   #text1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   #text2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 
   #text3 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 
-    letter-spacing: 1.5px;
+
+    letter-spacing: 2.3px;
   }
 
   #text4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 25px;
     letter-spacing: 1px;
     font-weight: 200;
@@ -502,37 +571,53 @@
   }
 
   #text6 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 300;
 
   }
 
   #text7 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     line-height: 70px;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   #button1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   #banner_rc {
-    padding-top: 1rem;
+    padding-top: 8rem;
     height: fit-content;
+    width: 42%;
     padding-bottom: 4rem;
     margin-left: 3rem;
   }
 
   #mainrc {
-    margin-left: 3rem;
+    margin-left: 0rem;
   }
 
   #consultBox {
-    height: 18vh;
+    height: 22vh;
     top: 92%;
+  }
+
+  #benefitTitle {
+    font-size: 2.5rem;
+  }
+  #benefitMain{
+    width: 79%;
+  }
+
+  #benefitTitleSpan {
+    font-size: 4.8rem;
+  }
+
+  #benefitText {
+    font-size: 1.3rem;
   }
   #videoText1 {
     font-size: 3rem;
@@ -545,6 +630,9 @@
   }
   #videoTextDiv{
     width: 70%;
+  }
+  #processH{
+    font-size: 4.2rem;
   }
 
 }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { assets } from '../../assets/assets';
 // import './Counter.css';
+import '../../Homepage.css'
+
 
 const WhySection = () => {
     const [count1, setCount1] = useState(0);
@@ -72,17 +74,18 @@ const WhySection = () => {
 
     return (
         <div className='bg-[#f4f4f4] w-full max-w-screen-4xl h-auto py-20'>
-            <div className='flex flex-col items-stretch justify-center gap-12 h-auto'>
-                <div className='flex flex-row items-center justify-center px-[5rem]'>
-                    <div className='flex flex-col items-start justify-center w-full max-w-screen-2xl h-auto'>
-                        <h2 className='font-outfit text-4xl font-medium'>Why Love Home Conveyancing?</h2>
-                        <div className='w-1/5 h-[0.3rem] bg-[#f0532d] mt-2'></div>
-                        <p className='font-poppins tracking-tighter w-2/3 text-[1rem] pr-24 py-3 text-[#494747]'>At Love Home Conveyancing, we simplify property transactions with expert guidance and personalized service, ensuring a seamless and stress-free experience for you.</p>
+            {/* <div className='flex flex-col items-stretch justify-center gap-12 h-auto'>
+                <div className='h-[120vh] bg-black bg-center bg-cover bg-no-repeat Homepage' style={{ backgroundImage: `url(${assets.sydney})` }}>
+                    <div className='flex flex-col items-center justify-center h-auto absoulute w-full left-[10rem]'>
+                        <div className='flex flex-col items-start justify-center h-auto w-full '>
+
+                        <h2 className='text-black font-inter font-[900] text-[5rem] ' id='whyT1'>Why</h2>
+                        <h2 className='text-[#f0532d] font-inter font-[900] text-[9rem] ' id='whyT2'>Choose Us</h2>
+                        </div>
+
                     </div>
-                    <div>
-                        <img src={assets.why} className='' alt="" srcset="" />
-                    </div>
-                </div>
+
+                </div> */}
                 <div ref={counterRef} className='flex flex-row justify-center items-center bg-[#19345E] py-20'>
                     <div className="flex flex-row items-center justify-center w-full max-w-screen-2xl h-auto ">
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
@@ -102,7 +105,7 @@ const WhySection = () => {
                     </div>
                 </div>
 
-            </div>
+            
         </div>
     );
 }

@@ -51,7 +51,10 @@ import skype from './skype.png';
 import zoom from './zoom.png';
 import teams from './teams.png';
 import Background_new from './Background_new.png';
+import sydney from './sydney.png';
 import Background_new2 from './Background_new2.png';
+import process from './process.png';
+import serviceshead from './serviceshead.png';
 import video from './video.mp4';
 
 
@@ -60,6 +63,9 @@ export const assets = {
     clock_contact,
     Background_new2,
     Background_new,
+    serviceshead,
+    process,
+    sydney,
     video,
     whatsapp,
     we,

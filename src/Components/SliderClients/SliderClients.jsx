@@ -15,7 +15,7 @@ const logos = [
 
 const SliderClients = () => {
   return (
-    <div className="flex flex-col items-center my-10">
+    <div className="flex flex-col items-center my-48">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 font-outfit text-center">
         Trusted By these <span className='text-[#f0532d]'>Satisfied Clients</span>
       </h2>

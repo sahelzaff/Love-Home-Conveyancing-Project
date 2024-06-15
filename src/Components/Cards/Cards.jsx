@@ -66,7 +66,7 @@ const Cards = () => {
                   <span id='rotate'></span>
                   <span id='rotate'>Move</span>
                   <span id='rotate'>Search</span>
-                  <span id='rotate'>Lifestyle</span>
+                  {/* <span id='rotate'>Lifestyle</span> */}
                   <span id='rotate'>Stress</span>
 
                 </div>

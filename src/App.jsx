@@ -4,6 +4,7 @@ import './App.css';
 import Homepage from './Homepage';
 import LoadingPage from './loadingPage';
 import Contact from './Contact';
+import Service from './Service';
 
 
 const App = () => {
@@ -24,7 +25,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/contact" element={<Contact />} />
-              {/* Add more routes as needed */}
+              <Route path="/service" element={<Service />} />
             </Routes>
           </>
         )}

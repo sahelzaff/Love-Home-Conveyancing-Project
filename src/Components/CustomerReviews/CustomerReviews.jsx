@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { assets } from '../../assets/assets';
 import Globe from '../Globe/Globe';
 import reviews from './Review';
+import '../../Responsive.css'
+
 
 const CustomerReviews = () => {
   const settings = {
@@ -52,10 +54,11 @@ const CustomerReviews = () => {
             </Slider>
           </div>
         </div>
-        <div className='w-1/2 relative z-10 bg-cover bg-center overflow-hidden' style={{ backgroundImage: `url(${assets.reviewBackground})` }}>
+        <div className='w-1/2 relative z-10 bg-cover bg-center ' style={{ backgroundImage: `url(${assets.reviewBackground})` }}>
                 <div className='flex justify-end items-end'>
           {/* <Globe
           className={'absolute -right-36'}
+          
           /> */}
           </div>
                 

@@ -1,11 +1,13 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
-import './TopBar.css'; 
+import './TopBar.css';
+import '../../Homepage.css'
+
 
 const TopBar = () => {
   return (
     <div className="bg-[#f0532d] text-[#fff] py-2">
-      <div className="max-w-screen-3xl mx-auto flex items-center justify-between px-4">
+      <div className="max-w-screen-3xl flex items-center justify-between Homepage">
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-2">
             <img src={assets.phone_call} alt="Phone Call" className="h-4 w-4 sm:h-6 sm:w-6" />

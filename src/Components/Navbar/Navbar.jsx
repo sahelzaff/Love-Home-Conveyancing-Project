@@ -3,6 +3,9 @@ import { assets } from '../../assets/assets';
 import TopBar from '../TopBar/TopBar';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import '../../Homepage.css'
+import '../../Responsive.css'
+
 
 
 
@@ -31,10 +34,10 @@ const Navbar = () => {
     };
 
     return (
-        <div className="sticky w-full z-50 ">
+        <div className="sticky  w-full z-50 ">
             <TopBar />
             <nav className="bg-white dark:bg-gray-900 w-full z-20 top-9 left-0 sticky " id='sticky'>
-                <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="max-w-screen-3xl flex flex-wrap items-center justify-between Homepage py-4">
                     <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img
                             src={isMobile ? assets.logoMobile : assets.logoBlackRed}
@@ -49,7 +52,7 @@ const Navbar = () => {
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                         <button
                             type="button"
-                            className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg  text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F]  font-montserrat ml-3" id='border'
+                            className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg  text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F]  font-montserrat " id='border'
                         >
                             +02 9381 9118
                             <span><img src={assets.call_svgrepo_com}  className='w-10' alt="" srcset="" /></span>
@@ -73,6 +76,7 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
+                    
                     <div className={`items-center justify-between ${menuOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
                         <ul className="flex flex-col pl-24 md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
@@ -85,21 +89,15 @@ const Navbar = () => {
                                     Home
                                 </Link>
                             </li>
+                            
                             <li>
                                 <Link
                                     href="#"
-                                    className="block py-2 px-3 text-[#0d0d0d] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f0532d] md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-bold font-montserrat cursor-pointer "
-                                >
-                                    Process
-                                </Link>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
                                     className="block py-2 px-3 text-[#0d0d0d] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f0532d] md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-bold font-montserrat cursor-pointer"
+                                    to="/service"
                                 >
                                     Service
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a
@@ -114,7 +112,7 @@ const Navbar = () => {
                                     href="#"
                                     className="block py-2 px-3 text-[#0d0d0d] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f0532d] md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-bold font-montserrat cursor-pointer"
                                 >
-                                    Free Resource
+                                    Blogs
                                 </a>
                             </li>
                             <li>
@@ -127,6 +125,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         </ul>
+                    <div className='w-[0.25rem] h-[4rem] bg-[#f0532d] ml-40 -mr-10' id='verticalLine'></div>
                     </div>
                 </div>
             </nav>

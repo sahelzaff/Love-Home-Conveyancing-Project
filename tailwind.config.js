@@ -17,6 +17,7 @@ export default {
         lora: ['Lora', 'sans-serif'],
         outfit: ['Outfit', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        inter: ['Inter', 'Outfit'],
         sourceSans: ['Source Sans Pro', 'sans-serif'],
         openSans: ['Open Sans', 'sans-serif'],
         foundersGrotesk: ['FoundersGrotesk', 'sans-serif'],

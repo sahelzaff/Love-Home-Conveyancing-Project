@@ -255,17 +255,17 @@ i {
 .wrapper{
   box-sizing: content-box;
   /* background-color: #ffffff; */
-  height:280px;
+  height:100px;
   
   font-weight: 700;
   /* font-family: sourceSans; */
   display: flex;
-  flex-direction: column;
   border-radius: 8px;
-  font-size: 5rem;
+  font-size: 3rem;
   /* box-shadow: 0 20px 25px rgba(0,0,0,0.2); */
 }
 .wrapper p{
+  font-weight: 800;
   position: relative;
   z-index: 2;
   font-size: 4rem;
@@ -276,10 +276,12 @@ i {
   
 }
 .words{
-  margin-top: -42px;
+  margin-top: -18px;
   overflow: hidden;
   letter-spacing: 5px;
-  font-size: 11rem;
+  margin-left: 1.5rem;
+  font-size: 5rem;
+  width: 58%;
   /* padding-left: 1.5rem; */
 }
 #rotate{

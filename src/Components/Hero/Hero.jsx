@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { assets } from '../../assets/assets';
 import './Hero.css';
 import Cards from '../Cards/Cards';
+import '../../Responsive.css'
+
 
 const Hero = () => {
   const backgroundImages = [
@@ -25,9 +27,9 @@ const Hero = () => {
   }, [backgroundImages.length]);
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden pb-24">
+    <div className="relative w-full h-screen overflow-hidden pb-24">
       <div
-        className={`absolute top-0 left-0 w-full h-screen bg-fixed bg-cover bg-center transition-opacity duration-1000 ease-in-out ${fade ? 'opacity-0' : 'opacity-100'}`}
+        className={`absolute top-0 left-0 w-full h-screen bg-fixed scale-[100%] bg-cover bg-center transition-opacity duration-1000 ease-in-out ${fade ? 'opacity-0' : 'opacity-100'}`}
         style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}
       />
       <Cards />
