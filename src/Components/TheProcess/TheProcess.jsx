@@ -1,12 +1,14 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
 import '../../Responsive.css'
+import '../../Homepage.css'
+
 
 
 const TheProcess = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between h-full w-full py-8 bg-white font-inter">
-      <div className="lg:w-1/2 w-full py-8 h-full">
+    <div className="flex flex-col lg:flex-row items-center justify-between h-full w-full py-8 bg-[#f4f4f4] font-inter">
+      <div className="lg:w-1/2 w-full py-8 h-full ">
         <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900]" id='processH'>
           The <span className="text-[#f0532d]">Process</span>
         </h1>

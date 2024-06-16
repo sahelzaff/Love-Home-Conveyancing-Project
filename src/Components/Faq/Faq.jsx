@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
+import '../../Responsive.css'
 
 const Faq = () => {
     const [openItemLeft, setOpenItemLeft] = useState(null);
@@ -15,18 +16,18 @@ const Faq = () => {
 
     return (
         <div className='max-w-screen-4xl w-full h-auto pb-10'>
-            <div className='px-[5rem] flex flex-col items-center justify-center h-auto'>
+            <div className=' flex flex-col items-center justify-center h-auto'>
                 <div className='flex flex-row items-center justify-center h-auto'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
                         <h2 className='font-outfit font-semibold text-5xl'>FAQ's</h2>
                         <div className='w-20 h-[0.3rem] bg-[#f0532d] mt-1'></div>
-                        <p className='font-poppins font-medium text-[1rem] pr-36 pt-2'>Get the answers you need in our FAQ section. We address the most frequently asked questions to ensure you have all the information required for a smooth conveyancing experience.</p>
+                        <p className='font-poppins font-medium text-[1rem] pt-2'>Get the answers you need in our FAQ section. We address the most frequently asked questions to ensure you have all the information required for a smooth conveyancing experience.</p>
                     </div>
                     <div>
                         <img src={assets.faq} className='' alt="" />
                     </div>
                 </div>
-                <div className='grid grid-cols-2 gap-14 px-6'>
+                <div className='grid grid-cols-2 gap-14 ' id='faq'>
                     <div id="accordion-flush" data-accordion="collapse">
                         {accordionItemsLeft.map((item, index) => (
                             <div key={index} className='w-full'>

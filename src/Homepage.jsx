@@ -53,21 +53,21 @@ const Homepage = () => {
                 highlightClass="text-[#f0532d] font-bold font-outfit"
                 className="" /> */}
                 <Video/>
-            <div className='pl-12'>
+            <div className='Homepage1'>
                 <CustomerReviews />
             </div>
-            <div className='px-14'>
+            <div className='Homepage'>
                 <WorkSection />
             </div>
-            <div className='Homepage'>
                 <Why2/>
+            <div className='Homepage'>
             </div>
             <WhySection />
             <div className="Homepage">
 
             <TheProcess/>    
             </div>
-            <div className="px-[3rem]">
+            <div className="Homepage">
                 {/* <ServiceHome /> */}
                 <Faq />
 

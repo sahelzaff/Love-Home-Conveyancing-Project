@@ -85,22 +85,22 @@
   }
 
   #benefitTitle {
-    font-size:4rem;
-    letter-spacing: 0.4rem;
+    font-size:3.7rem;
+    letter-spacing: 0.3rem;
   }
 
   #benefitTitleSpan {
-    font-size: 6.8rem;
+    font-size: 6.2rem;
     letter-spacing: 0rem;
   }
 
   #benefitText {
-    font-size: 1.8rem;
-    letter-spacing: 1.5px;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
   }
 
   #cardTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #cardTitle1 {
@@ -121,7 +121,7 @@
   }
 
   #mainDiv {
-    gap: 18rem;
+    gap: 8rem;
     margin-top: 8rem;
   }
 
@@ -129,13 +129,53 @@
     letter-spacing: 0.5px;
     font-size: 2rem;
   }
-  #verticalLine{
+  /* #verticalLine{
     margin-left: 20rem;
     margin-right: -15rem;
-  }
+  } */
   .globe{
     top: 50rem1050;
   }
+
+  #navText{
+    font-size: 1.5rem;
+  }
+
+  #ReviewTitle{
+    font-size: 4.2rem;
+  }
+
+  #ReviewPhoto{
+    width: 6rem;
+  }
+  #ReviewName{
+    font-size: 3rem;
+  }
+  #ReviewPara{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  #NameDiv{
+    gap: 2rem;
+  }
+
+  #workGrid{
+    width: 86%;
+  }
+  #WhyText{
+    width: 74%;
+  }
+  #faq{
+    width: 86%;
+  }
+  #serviceHead{
+    font-size: 3.5rem;
+  }
+  #servicePara{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
 
 
 
@@ -189,7 +229,7 @@
     /* margin-left: rem; */
   }
   #mainDiv {
-    gap: 22rem;
+    gap: 8rem;
     margin-top: 12rem;
   }
   #buttonProcess{
@@ -210,10 +250,10 @@
     font-size: 1.5rem;
     line-height: 1rem;
   }
-  #verticalLine{
+  /* #verticalLine{
     margin-left: 15rem;
     margin-right: -6rem;
-  }
+  } */
 
   #text2 {
     font-size: 2.7rem;
@@ -265,7 +305,7 @@
   }
 
   #consultBox {
-    height: 18vh;
+    height: 19vh;
     top: 93.8%;
   }
 
@@ -274,10 +314,10 @@
   }
 
   #benefitTitleSpan {
-    font-size: 6rem;
+    font-size: 5.8rem;
   }
   #benefitMain{
-    width: 89%;
+    width: 90%;
   }
 
   #benefitText {
@@ -327,6 +367,37 @@
   }
   #videoTextDiv{
     width: 70%;
+  }
+
+  #mainDiv{
+    margin-top: 8rem;
+    gap: 5rem;
+  }
+  #ReviewTitle{
+    font-size: 3.5rem;
+  }
+
+  #ReviewPhoto{
+    width: 5.3rem;
+  }
+  #ReviewName{
+    font-size: 2.5rem;
+  }
+  #ReviewPara{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  #NameDiv{
+    gap: 2rem;
+  }
+  #workGrid{
+    width: 90%;
+  }
+  #WhyText{
+    width: 76%;
+  }
+  #faq{
+    width: 90%;
   }
 
 }
@@ -416,7 +487,8 @@
     letter-spacing: 5px;
   }
   #mainDiv{
-    gap: 18rem;
+    gap: 8rem;
+    margin-top: 8rem;
   }
 
   .wrapper {
@@ -426,6 +498,35 @@
   #tailored {
     font-size: 1.7rem;
   }
+  #navText{
+    font-size: 1.2rem;
+  }
+
+  #benefitTitle {
+    font-size: 3.4rem;
+  }
+
+  #benefitTitleSpan {
+    font-size: 5.7rem;
+  }
+  #benefitMain{
+    width: 84%;
+  }
+
+  #benefitText {
+    font-size: 1.6rem;
+  }
+
+  #workGrid{
+    width: 84%;
+  }
+  #WhyText{
+    width: 75%;
+  }
+  #faq{
+    width: 84%;
+  }
+
 
 }
 
@@ -434,10 +535,10 @@
   #text1 {
     font-size: 1.7rem;
   }
-  #verticalLine{
+  /* #verticalLine{
     margin-left: 12rem;
     margin-right: 0rem;
-  }
+  } */
 
   #text2 {
     font-size: 2.75rem;
@@ -535,6 +636,34 @@
   #videoTextDiv{
     width: 70%;
   }
+  
+  #ReviewTitle{
+    font-size: 3rem;
+  }
+
+  #ReviewPhoto{
+    width: 5.3rem;
+  }
+  #ReviewName{
+    font-size: 2.2rem;
+  }
+  #ReviewStar{
+    width: 1.7rem;
+  }
+  #ReviewPara{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+  #NameDiv{
+    gap: 2rem;
+  }
+  #workGrid{
+    width: 83%;
+  }
+  #faq{
+    width: 83%;
+  }
+
 }
 
 /* For 1366x768 */
@@ -633,6 +762,12 @@
   }
   #processH{
     font-size: 4.2rem;
+  }
+  #workGrid{
+    width: 79%;
+  }
+  #faq{
+    width: 79%;
   }
 
 }

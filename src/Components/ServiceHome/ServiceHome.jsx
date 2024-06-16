@@ -1,5 +1,7 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
+import '../../Responsive.css'
+import './ServiceHome.css'
 
 const services = [
     {
@@ -26,7 +28,7 @@ const services = [
 
 const ServiceCard = ({ title, image, description }) => (
     <div className="relative group w-full sm:w-1/2 md:w-[25%] p-4 bg-[#f4f4f4] pb-20 ">
-         <div className="h-[60vh] bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col justify-center items-center transition-transform transform hover:scale-105 cursor-pointer shadow-2xl hover:shadow-3xl border border-transparent hover:border-gray-400 pb-10">
+        <div className="h-[60vh] bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col justify-center items-center transition-transform transform hover:scale-105 cursor-pointer shadow-2xl hover:shadow-3xl border border-transparent hover:border-gray-400 pb-10">
 
             <img
                 src={image}
@@ -45,19 +47,51 @@ const ServiceCard = ({ title, image, description }) => (
 
 const ServiceHome = () => {
     return (
-        <div className='h-auto'>
+        <div className='h-auto mt-20'>
             <div>
                 <div className='flex flex-row items-center justify-center h-auto'>
-                    <div className='flex flex-col items-start justify-center h-auto w-3/4 px-8'>
-                        <h2 className='font-outfit font-semibold text-5xl'>Services</h2>
+                    <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
+                        <h2 className='font-outfit font-semibold text-5xl' id='serviceHead'>Services</h2>
                         <div className='w-24 h-[0.3rem] bg-[#f0532d] mt-1'></div>
-                        <p className='font-poppins font-medium text-[1rem] pr-36 pt-2'>At LoveHome Conveyancing, we offer expert home inspections, property evaluations, and personalized legal advice. Our comprehensive services ensure a seamless and stress-free property transaction, with meticulous document handling and continuous support.</p>
+                        <p className='font-poppins font-medium text-[1rem] pr-36 pt-2' id='servicePara'>At LoveHome Conveyancing, we offer expert home inspections, property evaluations, and personalized legal advice. Our comprehensive services ensure a seamless and stress-free property transaction, with meticulous document handling and continuous support.</p>
                     </div>
                     <div>
                         <img src={assets.services} alt="" />
                     </div>
                 </div>
-                <div className="flex flex-wrap justify-between">
+                <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10'>
+                    <div class="card">
+                        <img src={assets.buying} className='mt-10' alt="" />
+                        <div class="card-hover-content">
+                            <h2 class="card-heading text-black font-bold font-outfit">Buying</h2>
+                            <p class="card-paragraph font-poppins text-lg font-[400]">Navigate the purchasing journey with ease. From initial considerations to final settlement, trust us to expertly guide you through every stage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card ">
+                        <img src={assets.selling} alt="" />
+                        <div class="card-hover-content">
+                            <h2 class="card-heading text-black font-bold font-outfit">Selling</h2>
+                            <p class="card-paragraph font-poppins text-lg font-[400]">Accelerate your sales process with our meticulous contract preparation. We handle all documentation, empowering you to sell swiftly and confidently.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src={assets.transfer} alt="" />
+                        <div class="card-hover-content">
+                            <h2 class="card-heading text-black font-bold font-outfit">Property Transfer</h2>
+                            <p class="card-paragraph font-poppins text-lg font-[400]">From novice buyers to seasoned investors, receive tailored contract guidance. Our expert advice ensures clarity and peace of mind throughout the transaction.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src={assets.investor} alt="" />
+                        <div class="card-hover-content">
+                            <h2 class="card-heading text-black font-bold font-outfit">Contract Advice</h2>
+                            <p class="card-paragraph font-poppins text-lg font-[400]">Maximize your returns with our strategic investment advice.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                {/* <div className="flex flex-wrap justify-between">
                     {services.map((service) => (
                         <ServiceCard
                             key={service.title}
@@ -66,7 +100,7 @@ const ServiceHome = () => {
                             description={service.description}
                         />
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     )

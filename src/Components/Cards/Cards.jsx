@@ -57,7 +57,7 @@ const Cards = () => {
   return (
     <div>
       <div className='h-screen w-full py-5 relative z-10'>
-        <div className='flex flex-col items-start justify-center h-[80vh] gap-[10rem]' id='mainDiv'>
+        <div className='flex flex-col items-start justify-end h-[80vh] gap-[0rem]' id='mainDiv'>
           <div className='flex flex-col items-start justify-center'>
             <div className="flex flex-col space-y-4">
               <div class="wrapper font-poppins " id='rotating_Text'>
@@ -84,7 +84,7 @@ font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minut
 
             <div className="flex flex-col md:flex-row items-center pt-4 space-y-4 md:space-y-0 md:space-x-4 w-full">
               <CustomSelect
-                options={['Buying', 'Selling', 'Transferring']}
+                options={['Buying', 'Selling', 'Transferring', 'Contract Advice']}
                 placeholder="Buying or Selling?"
                 className="w-full md:w-1/3"
               />
