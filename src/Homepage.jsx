@@ -52,12 +52,16 @@ const Homepage = () => {
                 highlight="peace of mind"
                 highlightClass="text-[#f0532d] font-bold font-outfit"
                 className="" /> */}
+                <div className='relative z-10'>
+
                 <Video/>
+                </div>
             <div className='Homepage1'>
                 <CustomerReviews />
             </div>
             <div className='Homepage'>
-                <WorkSection />
+                {/* <WorkSection /> */}
+            <TheProcess/>    
             </div>
                 <Why2/>
             <div className='Homepage'>
@@ -65,7 +69,6 @@ const Homepage = () => {
             <WhySection />
             <div className="Homepage">
 
-            <TheProcess/>    
             </div>
             <div className="Homepage">
                 {/* <ServiceHome /> */}

@@ -17,11 +17,11 @@ const Faq = () => {
     return (
         <div className='max-w-screen-4xl w-full h-auto pb-10'>
             <div className=' flex flex-col items-center justify-center h-auto'>
-                <div className='flex flex-row items-center justify-center h-auto'>
+                <div className='flex flex-row items-center justify-center h-auto mx-28'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
-                        <h2 className='font-outfit font-semibold text-5xl'>FAQ's</h2>
+                        <h2 className='font-inter font-[800] text-6xl'>FAQ's</h2>
                         <div className='w-20 h-[0.3rem] bg-[#f0532d] mt-1'></div>
-                        <p className='font-poppins font-medium text-[1rem] pt-2'>Get the answers you need in our FAQ section. We address the most frequently asked questions to ensure you have all the information required for a smooth conveyancing experience.</p>
+                        <p className='font-poppins font-medium text-[1.5rem] pt-2'>Get the answers you need in our FAQ section. We address the most frequently asked questions to ensure you have all the information required for a smooth conveyancing experience.</p>
                     </div>
                     <div>
                         <img src={assets.faq} className='' alt="" />
@@ -34,7 +34,7 @@ const Faq = () => {
                                 <h2 id={`accordion-flush-heading-left-${index}`}>
                                     <button
                                         type="button"
-                                        className="flex items-center justify-between w-full py-5 font-outfit font-bold text-[#1B1817] border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                        className="flex items-center justify-between w-full py-5 font-inter font-bold text-[#1B1817] border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                                         onClick={() => toggleItemLeft(index)}
                                         aria-expanded={openItemLeft === index}
                                         aria-controls={`accordion-flush-body-left-${index}`}
@@ -79,7 +79,7 @@ const Faq = () => {
                                 <h2 id={`accordion-flush-heading-right-${index}`}>
                                     <button
                                         type="button"
-                                        className="flex items-center justify-between w-full py-5 font-outfit font-bold text-[#1B1817] border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                                        className="flex items-center justify-between w-full py-5 font-inter font-bold text-[#1B1817] border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                                         onClick={() => toggleItemRight(index)}
                                         aria-expanded={openItemRight === index}
                                         aria-controls={`accordion-flush-body-right-${index}`}

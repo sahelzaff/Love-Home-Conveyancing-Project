@@ -26,13 +26,15 @@ export default {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('@tailwindcss/aspect-ratio'),
   ],
   corePlugins: {
     scrollbar: false,  
   },
   plugins: [
     require('flowbite/plugin'),
+    require('@tailwindcss/aspect-ratio'),
     function({ addUtilities }) {
       addUtilities({
         '.no-scrollbar': {

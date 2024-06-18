@@ -7,7 +7,7 @@ const BenefitsComponent = () => {
   return (
     <div className="bg-[#f4f4f4]  h-auto pb-36 w-[75%]" id="benefitMain" >
       <div className="max-w-screen-4xl mx-auto  text-black flex flex-col justify-center items-start" id="benefitDiv">
-        <h1 className="text-start text-2xl font-outfit font-bold mb-3 leading-none" id="benefitTitle">
+        <h1 className="text-start text-2xl font-inter font-bold mb-3 leading-none" id="benefitTitle">
           Experience The Benefits<br /><span className="text-[#f0532d]" id="benefitTitleSpan">Simplified With Our Service.</span>
         </h1>
         <p className="text-[#1B1817] text-center mb-24 text-xl font-poppins" id="benefitText">

@@ -11,11 +11,11 @@ const TopBar = () => {
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-2">
             <img src={assets.phone_call} alt="Phone Call" className="h-4 w-4 sm:h-6 sm:w-6" />
-            <span className="text-xs sm:text-[1rem] font-normal font-poppins">+61 468 908 807</span>
+            <span className="text-xs sm:text-[1rem] font-normal font-inter">+61 468 908 807</span>
           </div>
           <div className="flex items-center space-x-2">
             <img src={assets.email} alt="Mail" className="h-4 w-4 sm:h-6 sm:w-6" />
-            <span className="text-xs sm:text-[1rem] font-normal font-poppins">hello@love-homes.com.au</span>
+            <span className="text-xs sm:text-[1rem] font-normal font-inter">hello@love-homes.com.au</span>
           </div>
         </div>
         <div className="sm:flex sm:items-center sm:space-x-2 hidden">

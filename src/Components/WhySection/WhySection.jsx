@@ -73,7 +73,7 @@ const WhySection = () => {
     };
 
     return (
-        <div className='bg-[#f4f4f4] w-full max-w-screen-4xl h-auto py-20'>
+        <div className='bg-[#f4f4f4] w-full max-w-screen-4xl h-auto  pb-20'>
             {/* <div className='flex flex-col items-stretch justify-center gap-12 h-auto'>
                 <div className='h-[120vh] bg-black bg-center bg-cover bg-no-repeat Homepage' style={{ backgroundImage: `url(${assets.sydney})` }}>
                     <div className='flex flex-col items-center justify-center h-auto absoulute w-full left-[10rem]'>
@@ -89,17 +89,17 @@ const WhySection = () => {
                 <div ref={counterRef} className='flex flex-row justify-center items-center bg-[#19345E] py-20'>
                     <div className="flex flex-row items-center justify-center w-full max-w-screen-2xl h-auto ">
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
-                            <div className='font-outfit text-5xl font-bold text-white'>{count1}<span className='text-[#f0532d]'>+</span></div>
+                            <div className='font-outfit text-7xl font-bold text-white'>{count1}<span className='text-[#f0532d]'>+</span></div>
                             <h3 className='font-poppins font-medium text-[#fff] text-2xl'>Satisfied customers</h3>
                         </div>
                         <div className='h-24 w-[0.19rem] bg-[#f0532d]'></div>
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
-                            <div className='font-outfit text-5xl font-bold text-white'>{count2}<span className='text-[#f0532d]'>+</span></div>
+                            <div className='font-outfit text-7xl font-bold text-white'>{count2}<span className='text-[#f0532d]'>+</span></div>
                             <h3 className='font-poppins font-medium text-[#fff] text-2xl'>5-Star reviews</h3>
                         </div>
                         <div className='h-24 w-[0.19rem] bg-[#f0532d]'></div>
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
-                            <div className='font-outfit text-5xl font-bold text-white'>{count3}<span className='text-[#f0532d]'>+</span></div>
+                            <div className='font-outfit text-7xl font-bold text-white'>{count3}<span className='text-[#f0532d]'>+</span></div>
                             <h3 className='font-poppins font-medium text-[#fff] text-2xl'>Years of experience</h3>
                         </div>
                     </div>

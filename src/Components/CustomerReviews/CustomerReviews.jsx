@@ -16,13 +16,13 @@ const CustomerReviews = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 10000000,
+    autoplaySpeed: 6000,
   };
 
   return (
-    <div className='h-screen mb-36 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundSize: '68% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
+    <div className='h-screen mb-36 -mt-20 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundSize: '60% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
       <div className='flex flex-row h-full'>
-        <div className='w-1/2  flex flex-col justify-center'>
+        <div className='w-1/2  flex flex-col justify-center ml-28'>
           <div className='flex flex-col justify-center items-start'>
             <div className="flex w-3/4 justify-start items-start flex-col pt-36">
               <div>
@@ -36,7 +36,7 @@ const CustomerReviews = () => {
                   <div className='flex flex-row gap-4 items-center mb-5 px-12 justify-start' id='NameDiv'>
                     <img src={review.photo} className='w-16' id='ReviewPhoto' alt={`Profile ${index + 1}`} />
                     <div className='flex flex-col items-start'>
-                      <p className='font-outfit text-3xl font-bold whitespace-nowrap mb-2' id='ReviewName'>{review.name}</p>
+                      <p className='font-inter text-3xl font-bold whitespace-nowrap mb-2' id='ReviewName'>{review.name}</p>
                       <div className='flex flex-row gap-1 items-center mb-2'>
                         {[...Array(review.stars)].map((star, i) => (
                           <img key={i} src={assets.star} className='w-8' id='ReviewStar' alt={`Star ${i + 1}`} />

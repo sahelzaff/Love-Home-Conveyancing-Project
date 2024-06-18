@@ -90,13 +90,13 @@ const Contactform = () => {
     <div className="h-auto w-full max-w-screen-4xl bg-[#f4f4f4] flex flex-col justify-center items-center py-20 px-2">
       <div className="flex flex-col justify-center items-center mb-10">
         <h1 className="font-poppins font-medium text-xl">Let's Discuss</h1>
-        <h2 className="font-outfit font-bold text-5xl">Whatever Question You Have,</h2>
-        <h3 className="font-outfit font-bold text-5xl text-[#f0532d]">Please Feel Free To Ask.</h3>
+        <h2 className="font-inter font-bold text-5xl">Whatever Question You Have,</h2>
+        <h3 className="font-inter font-bold text-5xl text-[#f0532d]">Please Feel Free To Ask.</h3>
       </div>
 
       <div className="flex-grow container mx-auto p-4 flex h-auto">
         <div className="w-3/4 overflow-y-auto h-auto bg-[#f4f4f4] p-4 no-scrollbar" ref={leftDivRef}>
-          <form className="w-full mx-auto px-10 pl-32 no-scrollbar h-auto bg-[#f4f4f4]" onSubmit={handleSubmit}>
+          <form className="w-full mx-auto pr-32  no-scrollbar h-auto bg-[#f4f4f4]" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 md:gap-6">
               <div className="relative z-0 w-full mb-10 group">
                 <input
@@ -191,14 +191,14 @@ const Contactform = () => {
             <button onClick={() => setIsModalOpen(false)}>Close</button>
           </Modal>
         </div>
-        <div className="w-2/6 h-screen bg-[#f4f4f4] p-4 sticky top-0 overflow-x-hidden" ref={rightDivRef}>
+        <div className="w-2/6 h-auto bg-[#f4f4f4] p-4 sticky top-0 overflow-x-hidden border-l-2" ref={rightDivRef}>
           <div className="flex flex-col items-start">
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
               <div>
                 <img src={assets.clock_contact} className="w-12" alt="Clock" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-outfit font-bold text-2xl">Working Hours</h2>
+                <h2 className="font-inter font-bold text-2xl">Working Hours</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between">
                     <p>Mon-Fri</p>
@@ -216,7 +216,7 @@ const Contactform = () => {
                 <img src={assets.location} className="w-12" alt="Location" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-outfit font-bold text-2xl">Address</h2>
+                <h2 className="font-inter font-bold text-2xl">Address</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between">
                     <p>Suite 17, Minton House,</p>
@@ -232,7 +232,7 @@ const Contactform = () => {
                 <img src={assets.telephone} className="w-12" alt="Telephone" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-outfit font-bold text-2xl">Phone</h2>
+                <h2 className="font-inter font-bold text-2xl">Phone</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between">
                     <p>+02 9381 9118</p>
@@ -245,7 +245,7 @@ const Contactform = () => {
                 <img src={assets.mail} className="w-12" alt="Mail" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-outfit font-bold text-2xl">Email</h2>
+                <h2 className="font-inter font-bold text-2xl">Email</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between">
                     <p>hello@love-homes.com.au</p>

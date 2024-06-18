@@ -54,13 +54,43 @@ import Background_new from './Background_new.png';
 import sydney from './sydney.png';
 import Background_new2 from './Background_new2.png';
 import process from './process.png';
+import review1 from './review1.png';
+import review2 from './review2.png';
+import review3 from './review3.png';
+import review4 from './review4.png';
+import review5 from './review5.png';
+import review6 from './review6.png';
+import review7 from './review7.png';
+import processbg from './processbg.png';
 import serviceshead from './serviceshead.png';
+import Blog1 from './Blog1.png';
+import Blogs2 from './Blogs2.webp';
+import Blogs3 from './Blogs3.png';
+import Blogs4 from './Blogs4.jpg';
+import Blogs5 from './Blogs5.jpg';
+import Blogs6 from './Blogs6.jpg';
+import Blogs7 from './Blogs7.jpg';
 import video from './video.mp4';
 
 
 
 export const assets = {
     clock_contact,
+    processbg,
+    review1,
+    review2,
+    review3,
+    review4,
+    review5,
+    review6,
+    review7,
+    Blog1,
+    Blogs2,
+    Blogs3,
+    Blogs4,
+    Blogs5,
+    Blogs6,
+    Blogs7,
     Background_new2,
     Background_new,
     serviceshead,

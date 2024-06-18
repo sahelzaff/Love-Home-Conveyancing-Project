@@ -5,7 +5,7 @@ import '../../Responsive.css'
 
 const Why2 = () => {
   return (
-    <div className="relative w-full h-auto overflow-hidden flex flex-col items-center justify-center p-20 mt-48 mb-44">
+    <div className="relative w-full h-auto overflow-hidden flex flex-col items-center justify-center p-20 mt-48 ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${assets.sydney})`, filter: 'brightness(1)' }}
@@ -16,24 +16,24 @@ const Why2 = () => {
         </h1>
         <div className='grid grid-cols-2 grid-rows-2 gap-28 pt-44 text-left bg-transparent'>
 
-          <div className="mb-8  font-outfit">
+          <div className="mb-8  font-inter">
             <h2 className="text-2xl md:text-3xl lg:text-4xl mb-8 text-[#f0532d] font-bold ">We offer in-office and online consultations</h2>
             <p className="text-lg md:text-xl lg:text-2xl">You can tell us about your matter at the comfort of our office or your home. Whatever you choose, we'll deliver the same quality services and results.</p>
           </div>
-          <div className="mb-8  font-outfit">
+          <div className="mb-8  font-inter">
             <h2 className="text-2xl md:text-3xl lg:text-4xl mb-8 text-[#f0532d] font-bold ">We are PEXA Certified</h2>
             <p className="text-lg md:text-xl lg:text-2xl">We use PEXA to ensure fast and smooth service property settlements. This allows us to make our processes more efficient and convenient for our busy clients like you.</p>
           </div>
-          <div className="mb-8  font-outfit">
+          <div className="mb-8  font-inter">
             <h2 className="text-2xl md:text-3xl lg:text-4xl mb-8 text-[#f0532d] font-bold ">Exceptional customer service</h2>
             <p className="text-lg md:text-xl lg:text-2xl">Most of our clients are either repeat clients or referral from past clients. This is a testament to our outstanding service, personalised services and client-focused approach.</p>
           </div>
-          <div className="mb-8  font-outfit">
+          <div className="mb-8  font-inter">
             <h2 className="text-2xl md:text-3xl lg:text-4xl mb-8 text-[#f0532d] font-bold ">Exceptional customer service</h2>
             <p className="text-lg md:text-xl lg:text-2xl">Most of our clients are either repeat clients or referral from past clients. This is a testament to our outstanding service, personalised services and client-focused approach.</p>
           </div>
         </div>
-        <button className="bg-[#f0532d] hover:bg-orange-600 font-inter text-[1rem] mt-10 text-white py-5 px-6 rounded-lg text-lg md:text-xl lg:text-2xl">Speak With A Solicitor</button>
+        <button className="bg-[#f0532d]  hover:bg-orange-600 font-inter text-[1rem] mt-10 text-white py-5 px-6 rounded-lg text-lg md:text-xl lg:text-2xl">Speak With A Solicitor</button>
       </div>
     </div>
   );

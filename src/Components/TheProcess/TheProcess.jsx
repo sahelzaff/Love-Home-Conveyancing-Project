@@ -7,40 +7,51 @@ import '../../Homepage.css'
 
 const TheProcess = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between h-full w-full py-8 bg-[#f4f4f4] font-inter">
-      <div className="lg:w-1/2 w-full py-8 h-full ">
-        <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900]" id='processH'>
+    <div className="flex flex-col lg:flex-row items-center justify-between h-full w-full py-8 bg-[#f4f4f4] font-inter" style={{ backgroundImage: `url(${assets.processbg})`, backgroundSize: '60% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
+      <div className="lg:w-1/2 w-full py-8 h-full ml-28">
+        <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900] font-inter" id='processH'>
           The <span className="text-[#f0532d]">Process</span>
         </h1>
         <div className="mt-14 w-[60%]" id='processW'>
           <div className="flex items-start mb-14">
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">1</div>
             <div className="ml-10">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter">Initial Consultation</h2>
-              <p className="text-lg md:text-xl lg:text-2xl">Contact us and we’ll schedule a consultation to discuss your legal needs and objectives, <br /><span className="font-bold">in-office or online</span>.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d]">Engagement</h2>
+              <p className="text-lg md:text-xl lg:text-2xl font-poppins">Customer engages a licensed conveyancer or solicitor specializing in <span className="font-bold">online conveyancing</span>.</p>
             </div>
           </div>
           <div className="flex items-start mb-14">
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">2</div>
             <div className="ml-10">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Strategy Development</h2>
-              <p className="text-lg md:text-xl lg:text-2xl">We’ll formalise our engagement and collaboratively develop a tailored strategy for your legal matter.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] whitespace-nowrap">Consultation & Documentation</h2>
+              <p className="text-lg md:text-xl lg:text-2xl font-poppins ">Conducts an initial consultation with the customer to gather information and details by document collection, and contract review.</p>
             </div>
           </div>
           <div className="flex items-start mb-14">
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">3</div>
             <div className="ml-10">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Execution</h2>
-              <p className="text-lg md:text-xl lg:text-2xl">We’ll handle all necessary steps, from documentation to negotiations, to successfully manage your case and achieve the best outcome.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Property Checks</h2>
+              <p className="text-lg md:text-xl lg:text-2xl font-poppins">As a Conveyancer we conduct property searches and due diligence.</p>
             </div>
           </div>
           <div className="flex items-start mb-14">
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">4</div>
             <div className="ml-10">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Resolution</h2>
-              <p className="text-lg md:text-xl lg:text-2xl">Once we achieve the resolution of your matter, we’ll finalise all details, and provide post-resolution support as needed.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Financial Arrangements</h2>
+              <p className="text-lg md:text-xl lg:text-2xl font-poppins">Coordination of financial aspects and settlement preparation.</p>
             </div>
           </div>
+          <div className="flex items-start ">
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">5</div>
+            <div className="ml-10">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Settlement</h2>
+              <p className="text-lg md:text-xl lg:text-2xl font-poppins">Facilitation of ownership transfer and post-purchase support.</p>
+            </div>
+          </div>
+          <div className='mt-2  mb-14 sm:pt-5'>
+                        <a href="" className='text-sm sm:text-base md:text-lg font-inter text-black font-medium hover:text-[#f0532d] cursor-pointer ml-20' id='text6'>Read More</a>
+                    </div>
+          
           <button className="bg-[#f0532d] hover:bg-orange-600 text-white py-3 px-6 ml-20 rounded-lg text-lg md:text-xl lg:text-3xl font-semibold" id='buttonProcess'>Speak With A Solicitor</button>
         </div>
       </div>

@@ -41,7 +41,7 @@
   }
 
   #text5 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 200;
     padding-bottom: 2rem;
@@ -49,21 +49,22 @@
   }
 
   #text6 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: 300;
     padding-bottom: 2rem;
   }
 
   #text7 {
-    font-size: 3rem;
-    line-height: 70px;
+    font-size: 2.5rem;
+    line-height: 60px;
     letter-spacing: 3px;
     font-weight: 800;
   }
 
   #button1 {
     font-size: 1.2rem;
+  
   }
 
   #banner_rc {
@@ -92,10 +93,11 @@
   #benefitTitleSpan {
     font-size: 6.2rem;
     letter-spacing: 0rem;
+    margin-left: -8px;
   }
 
   #benefitText {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
 
@@ -138,7 +140,7 @@
   }
 
   #navText{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #ReviewTitle{
@@ -149,7 +151,7 @@
     width: 6rem;
   }
   #ReviewName{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   #ReviewPara{
     font-size: 1.5rem;
