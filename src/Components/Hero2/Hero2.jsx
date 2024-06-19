@@ -13,7 +13,7 @@ const Hero2 = () => {
                     <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[900] font-inter py-2 text-[#f0532d]' id='text2'>Purchasing Property.</h2>
                     <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter font-medium leading-tight text-[#f0532d]' id='text3'>Expert Advice for Peace of Mind</p>
                     <div className='w-24 sm:w-32 md:w-40 lg:w-44 h-[0.3rem] bg-[#f0532d] my-3 sm:my-4 md:my-5 rounded-e-md'></div>
-                    <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full  text-white' id='text4'>Leave the hassle to me, and focus on what really matters to you. so you can chat directly with <br /> the qualified property lawyer.
+                    <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full  text-white' id='text4'>Leave the hassle to me, and focus on what really matters to you.so you can chat directly with  the qualified property lawyer.
                     </p>
 
                     <p className='font-poppins font-normal w-full text-white' id='text5'><span className='text-[#f0532d] font-inter ' id='text7' >Mr Robin Carter</span><br />Principal Solicitor at Love Homes Conveyancing

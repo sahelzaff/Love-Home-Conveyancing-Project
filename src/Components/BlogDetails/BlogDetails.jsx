@@ -240,7 +240,7 @@ const BlogDetails = () => {
   return (
     <div className="p-4 h-auto w-full font-inter pt-20">
       <div>
-        <div className="flex flex-row justify-between gap-[1rem] items-start content px-10 ">
+        <div className="flex flex-row justify-between gap-[1rem] items-start content ">
           <div className="flex flex-row items-center w-[68%] h-auto">
             <div className="max-w-4xl w-full">
               <h2 className="text-sm font-bold text-[#19345E]">ARTICLES</h2>

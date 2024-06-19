@@ -60,36 +60,49 @@ const ServiceHome = () => {
                     </div>
                 </div>
                 <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10'>
-                    <div class="card">
-                        <img src={assets.buying} className='mt-10' alt="" />
-                        <div class="card-hover-content">
-                            <h2 class="card-heading text-black font-bold font-outfit">Buying</h2>
-                            <p class="card-paragraph font-poppins text-lg font-[400]">Navigate the purchasing journey with ease. From initial considerations to final settlement, trust us to expertly guide you through every stage.</p>
+                    {/* Card 1 */}
+                    <div className='custom-card'>
+                        <img src={assets.buying} className='mt-10' alt="Buying" />
+                        <div className='custom-card-hover-content'>
+                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Buying</h2>
+                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                                Navigate the purchasing journey with ease. From initial considerations to final settlement, trust us to expertly guide you through every stage.
+                            </p>
                         </div>
                     </div>
-                    
-                    <div class="card ">
-                        <img src={assets.selling} alt="" />
-                        <div class="card-hover-content">
-                            <h2 class="card-heading text-black font-bold font-outfit">Selling</h2>
-                            <p class="card-paragraph font-poppins text-lg font-[400]">Accelerate your sales process with our meticulous contract preparation. We handle all documentation, empowering you to sell swiftly and confidently.</p>
+
+                    {/* Card 2 */}
+                    <div className='custom-card'>
+                        <img src={assets.selling} alt="Selling" />
+                        <div className='custom-card-hover-content'>
+                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Selling</h2>
+                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                                Accelerate your sales process with our meticulous contract preparation. We handle all documentation, empowering you to sell swiftly and confidently.
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src={assets.transfer} alt="" />
-                        <div class="card-hover-content">
-                            <h2 class="card-heading text-black font-bold font-outfit">Property Transfer</h2>
-                            <p class="card-paragraph font-poppins text-lg font-[400]">From novice buyers to seasoned investors, receive tailored contract guidance. Our expert advice ensures clarity and peace of mind throughout the transaction.</p>
+
+                    {/* Card 3 */}
+                    <div className='custom-card'>
+                        <img src={assets.transfer} alt="Property Transfer" />
+                        <div className='custom-card-hover-content'>
+                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Property Transfer</h2>
+                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                                From novice buyers to seasoned investors, receive tailored contract guidance. Our expert advice ensures clarity and peace of mind throughout the transaction.
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src={assets.investor} alt="" />
-                        <div class="card-hover-content">
-                            <h2 class="card-heading text-black font-bold font-outfit">Contract Advice</h2>
-                            <p class="card-paragraph font-poppins text-lg font-[400]">Maximize your returns with our strategic investment advice.</p>
+
+                    {/* Card 4 */}
+                    <div className='custom-card'>
+                        <img src={assets.investor} alt="Contract Advice" />
+                        <div className='custom-card-hover-content'>
+                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Contract Advice</h2>
+                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                                Maximize your returns with our strategic investment advice.
+                            </p>
                         </div>
                     </div>
-                    
                 </div>
                 {/* <div className="flex flex-wrap justify-between">
                     {services.map((service) => (

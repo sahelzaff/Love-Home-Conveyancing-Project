@@ -50,7 +50,7 @@ const posts = [
 
 const BlogPostCard = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-[86%] mx-auto py-32 bg-[#f4f4f4]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[86%] mx-auto py-32 bg-[#f4f4f4]"data-aos='fade-in' data-aos-duration="1000" data-aos-delay="200">
       {posts.slice(0, 7).map((post, index) => (
         <div
           key={post.id}
@@ -66,11 +66,11 @@ const BlogPostCard = () => {
               alt={post.text}
               className="w-full h-full object-cover cursor-pointer"
             />
-            <div className="absolute top-0 left-0 bg-white text-red-500 px-4 py-2 rounded text-center text-xl font-bold">
+            <div className="absolute top-0 left-0 bg-white text-red-500 px-4 py-6 rounded text-center text-xl font-[800] font-inter">
               {post.date}
             </div>
-            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-black px-4 py-2 rounded text-center">
-              <span className="text-2xl font-bold cursor-pointer hover:text-[#f0532d] ">
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white text-black px-10 py-2 rounded text-center">
+              <span className="text-[1.125rem] font-bold cursor-pointer hover:text-[#f0532d] ">
                 {post.text}
               </span>
             </div>

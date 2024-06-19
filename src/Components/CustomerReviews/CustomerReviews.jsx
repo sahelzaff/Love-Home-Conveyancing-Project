@@ -3,10 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { assets } from '../../assets/assets';
-import Globe from '../Globe/Globe';
+import Globe from '../Globe/Globe'; // Check if this import path is correct
 import reviews from './Review';
-import '../../Responsive.css'
-
+import '../../Responsive.css';
 
 const CustomerReviews = () => {
   const settings = {
@@ -20,9 +19,9 @@ const CustomerReviews = () => {
   };
 
   return (
-    <div className='h-screen mb-36 -mt-20 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundSize: '60% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
+    <div className='h-screen mb-36 -mt-28 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundSize: '55% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
       <div className='flex flex-row h-full'>
-        <div className='w-1/2  flex flex-col justify-center ml-28'>
+        <div className='w-1/2 flex flex-col justify-center ml-28'>
           <div className='flex flex-col justify-center items-start'>
             <div className="flex w-3/4 justify-start items-start flex-col pt-36">
               <div>
@@ -39,7 +38,7 @@ const CustomerReviews = () => {
                       <p className='font-inter text-3xl font-bold whitespace-nowrap mb-2' id='ReviewName'>{review.name}</p>
                       <div className='flex flex-row gap-1 items-center mb-2'>
                         {[...Array(review.stars)].map((star, i) => (
-                          <img key={i} src={assets.star} className='w-8' id='ReviewStar' alt={`Star ${i + 1}`} />
+                          <img key={i} src={assets.star} className='w-5' id='ReviewStar' alt={`Star ${i + 1}`} />
                         ))}
                       </div>
                     </div>
@@ -54,7 +53,9 @@ const CustomerReviews = () => {
             </Slider>
           </div>
         </div>
-        <div className='w-1/2'></div>
+        <div className='w-1/2 flex justify-center items-center absolute top-0 left-0 h-full' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500">
+          <Globe />
+        </div>
       </div>
     </div>  
   );

@@ -32,24 +32,27 @@
   }
 
   #text4 {
-    font-size: 1.5rem;
+    font-size: 18px;
     letter-spacing: 1px;
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 35px;
+    padding-right: 5rem;
 
   }
 
   #text5 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 2.5rem;
+    padding-right: 7rem;
+
   }
 
   #text6 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     font-weight: 300;
     padding-bottom: 2rem;
@@ -63,7 +66,7 @@
   }
 
   #button1 {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   
   }
 
@@ -86,23 +89,23 @@
   }
 
   #benefitTitle {
-    font-size:3.7rem;
-    letter-spacing: 0.3rem;
+    font-size:3rem;
+    letter-spacing: 0.5rem;
   }
 
   #benefitTitleSpan {
-    font-size: 6.2rem;
-    letter-spacing: 0rem;
+    font-size: 6rem;
+    letter-spacing: 4px;
     margin-left: -8px;
   }
 
   #benefitText {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
 
   #cardTitle {
-    font-size: 1.5rem;
+    font-size: 10rem;
   }
 
   #cardTitle1 {
@@ -124,7 +127,7 @@
 
   #mainDiv {
     gap: 8rem;
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   #tailored {
@@ -136,25 +139,25 @@
     margin-right: -15rem;
   } */
   .globe{
-    top: 50rem1050;
+    top: 50rem;
   }
 
   #navText{
-    font-size: 1.3rem;
+    font-size: 1.125rem;
   }
 
   #ReviewTitle{
-    font-size: 4.2rem;
+    font-size: 3.5rem;
   }
 
   #ReviewPhoto{
     width: 6rem;
   }
   #ReviewName{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   #ReviewPara{
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
   #NameDiv{
@@ -174,11 +177,51 @@
     font-size: 3.5rem;
   }
   #servicePara{
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
-  
+  #videoText2{
+    font-size: 11rem;
+    letter-spacing: 7px;
+  }
+  #whyHead{
+    font-size: 1.5rem;
+    line-height: 0;
+  }
+  #whyPara{
+    font-size: 1.125rem;
 
+  }
+  #faqHead{
+    font-size: 3.5rem;
+  }
+  #faqPara{
+    font-size: 1.125rem;
+    padding-right: 12rem;
+  }
+  #globe{
+    left: 60rem;
+    top: 25rem;
+    scale: 1.4;
+  }
+  #workHead{
+    font-size: 2rem;
+  }
+  #workPara{
+    font-size: 1.125rem;
+  }
+  #BloginfoHead{
+    font-size: 3.5rem;
+  }
+  #BloginfoPara{
+    font-size: 1.125rem;
+  }
+  #ContactPara{
+    font-size: 1.125rem;
+  }
+  #ContactHead{
+    font-size: 3.5rem;
+  }
 
 
 }
@@ -191,7 +234,7 @@
   }
 
   #text4 {
-    font-size: 1.65rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 2rem;
@@ -206,8 +249,9 @@
   }
 
   #text5 {
-    font-size: 1.65rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
+    
     font-weight: 200;
     padding-bottom: 2rem;
     line-height: 35px;
@@ -232,7 +276,7 @@
   }
   #mainDiv {
     gap: 8rem;
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
   #buttonProcess{
     font-size: 1.5rem;
@@ -242,6 +286,11 @@
   }
   #processH{
     font-size: 5rem;
+  }
+  #globe{
+    left: 60rem;
+    top: 20rem;
+    scale: 1.4;
   }
 
 }
@@ -269,7 +318,7 @@
   }
 
   #text4 {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     font-weight: 200;
     padding-bottom: 2rem;
@@ -279,16 +328,17 @@
   }
 
   #text5 {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    font-size: 1.125rem;
+    letter-spacing:2px;
     font-weight: 200;
     padding-bottom: 2rem;
+    padding-right: 0rem;
     line-height: 35px;
 
   }
 
   #text6 {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     font-weight: 300;
     padding-bottom: 2rem;
@@ -312,18 +362,18 @@
   }
 
   #benefitTitle {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 
   #benefitTitleSpan {
-    font-size: 5.8rem;
+    font-size: 5rem;
   }
   #benefitMain{
     width: 90%;
   }
 
   #benefitText {
-    font-size: 1.6rem;
+    font-size: 1.125rem;
   }
 
   #cardTitle {
@@ -364,15 +414,16 @@
   }
 
   #videoText2 {
-    font-size: 8rem;
+    font-size: 10rem;
     line-height: 1;
+    letter-spacing: 8px;
   }
   #videoTextDiv{
-    width: 70%;
+    width: 75%;
   }
 
   #mainDiv{
-    margin-top: 8rem;
+    margin-top: 4rem;
     gap: 5rem;
   }
   #ReviewTitle{
@@ -383,10 +434,10 @@
     width: 5.3rem;
   }
   #ReviewName{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   #ReviewPara{
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
   #NameDiv{
@@ -400,6 +451,11 @@
   }
   #faq{
     width: 90%;
+  }
+  #globe{
+    left: 52rem;
+    top: 15rem;
+    scale: 1.2;
   }
 
 }
@@ -446,7 +502,7 @@
   }
 
   #text4 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 25px;
     letter-spacing: 2px;
     font-weight: 200;
@@ -459,7 +515,7 @@
   }
 
   #text5 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 25px;
     letter-spacing: 2px;
     font-weight: 200;
@@ -488,6 +544,11 @@
     overflow: hidden;
     letter-spacing: 5px;
   }
+  #whyHead{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
   #mainDiv{
     gap: 8rem;
     margin-top: 8rem;
@@ -501,7 +562,7 @@
     font-size: 1.7rem;
   }
   #navText{
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   }
 
   #benefitTitle {
@@ -528,6 +589,20 @@
   #faq{
     width: 84%;
   }
+  #videoText1 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  #videoText2 {
+    font-size: 9.5rem;
+    line-height: 1;
+    letter-spacing: 8px;
+  }
+  #globe{
+    left: 50rem;
+    top: 12rem;
+    scale: 1.2;
+  }
 
 
 }
@@ -553,7 +628,7 @@
   }
 
   #text4 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 25px;
     letter-spacing: 2px;
     font-weight: 200;
@@ -561,7 +636,7 @@
   }
 
   #text5 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 25px;
     letter-spacing: 1px;
     font-weight: 200;
@@ -569,7 +644,7 @@
   }
 
   #text6 {
-    font-size: 1.6rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     font-weight: 300;
     padding-bottom: 2rem;
@@ -607,20 +682,24 @@
     font-size: 1.7rem;
     margin-top: 0;
   }
+  #mainDiv{
+    gap: 5rem;
+    margin-top: 4rem;
+  }
 
   #benefitTitle {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   #benefitMain{
     width: 83%;
   }
 
   #benefitTitleSpan {
-    font-size: 5.2rem;
+    font-size: 4.2rem;
   }
 
   #benefitText {
-    font-size: 1.4rem;
+    font-size: 1.125rem;
   }
 
   #tailored {
@@ -632,28 +711,29 @@
   }
 
   #videoText2 {
-    font-size: 7rem;
+    font-size: 9rem;
     line-height: 1;
+    letter-spacing: 9px;
   }
   #videoTextDiv{
-    width: 70%;
+    width: 80%;
   }
   
   #ReviewTitle{
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   #ReviewPhoto{
     width: 5.3rem;
   }
   #ReviewName{
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   #ReviewStar{
-    width: 1.7rem;
+    width: 1.2rem;
   }
   #ReviewPara{
-    font-size: 1.3rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
   #NameDiv{
@@ -664,6 +744,15 @@
   }
   #faq{
     width: 83%;
+  }
+  #faqPara{
+    font-size: 1.125rem;
+    padding-right: 5rem;
+  }
+  #globe{
+    left: 45rem;
+    top: 10rem;
+    scale: 1.1;
   }
 
 }
@@ -686,23 +775,23 @@
   }
 
   #text4 {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 25px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 200;
     padding-bottom: 1rem;
   }
 
   #text5 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 25px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 200;
 
   }
 
   #text6 {
-    font-size: 1rem;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     font-weight: 300;
 
@@ -737,18 +826,18 @@
   }
 
   #benefitTitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #benefitMain{
     width: 79%;
   }
 
   #benefitTitleSpan {
-    font-size: 4.8rem;
+    font-size: 3.8rem;
   }
 
   #benefitText {
-    font-size: 1.3rem;
+    font-size: 1.125rem;
   }
   #videoText1 {
     font-size: 3rem;
@@ -756,11 +845,12 @@
   }
 
   #videoText2 {
-    font-size: 7rem;
+    font-size: 8rem;
     line-height: 1;
+    letter-spacing: 9px;
   }
   #videoTextDiv{
-    width: 70%;
+    width: 80%;
   }
   #processH{
     font-size: 4.2rem;
@@ -771,6 +861,31 @@
   #faq{
     width: 79%;
   }
+  #ReviewTitle{
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+
+  #ReviewPhoto{
+    width: 5.3rem;
+  }
+  #ReviewName{
+    font-size: 1.5rem;
+  }
+  #ReviewStar{
+    width: 1.2rem;
+  }
+  #ReviewPara{
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+  }
+
+  #globe{
+    left: 45rem;
+    top: 8rem;
+    scale: 1.05;
+  }
+
 
 }
 
