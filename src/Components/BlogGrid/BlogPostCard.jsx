@@ -13,7 +13,7 @@ const BlogPostCard = () => {
   // Function to fetch all posts from backend
   const fetchPosts = async () => {
     try {
-      const response = await fetch('/api/blogs'); // Fetch from backend endpoint
+      const response = await fetch('http://localhost:4000/api/blogs'); // Fetch from backend endpoint
       if (!response.ok) {
         throw new Error('Failed to fetch posts');
       }
@@ -24,10 +24,10 @@ const BlogPostCard = () => {
     }
   };
 
-  // Function to add a new post
+  // Function to add a new post (if needed, not used in this component)
   const addNewPost = async (newPost) => {
     try {
-      const response = await fetch('/api/blogs', {
+      const response = await fetch('http://localhost:4000/api/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -55,12 +55,12 @@ const BlogPostCard = () => {
         >
           <Link to={`/post/${post._id}`}>
             <img
-              src={post.blogCoverPhoto} // Assuming blogCoverPhoto is the URL from backend
+              src={`http://localhost:4000/${post.blogCoverPhoto}`} // Construct full URL for the image
               alt={post.blogTitle}
               className="w-full h-full object-cover cursor-pointer"
             />
             <div className="absolute top-0 left-0 bg-white text-red-500 px-4 py-6 rounded text-center text-xl font-[800] font-inter">
-              {post.blogDate}
+              {new Date(post.blogDate).toLocaleDateString()} {/* Format the date */}
             </div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white text-black px-10 py-2 rounded text-center">
               <span className="text-[1.125rem] font-bold cursor-pointer hover:text-[#f0532d] ">
