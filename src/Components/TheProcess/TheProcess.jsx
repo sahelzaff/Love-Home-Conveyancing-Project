@@ -1,5 +1,6 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
+import { Link } from 'react-router-dom';
 import '../../Responsive.css'
 import '../../Homepage.css'
 
@@ -49,9 +50,9 @@ const TheProcess = () => {
             </div>
           </div>
           <div className='mt-2  mb-14 sm:pt-5'>
-          <a href="">
+          <Link to="/service#work">
             <p className='cursor-pointer ml-20 font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]'>Read More</p>
-          </a>
+          </Link>
                     </div>
           
           <button className="bg-[#f0532d] hover:bg-orange-600 text-white py-3 px-6 ml-20 rounded-lg text-lg md:text-xl lg:text-3xl font-semibold" id='buttonProcess'>Speak With A Solicitor</button>

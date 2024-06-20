@@ -7,7 +7,7 @@ const ServiceInfo = () => {
     return (
         <div>
             <div>
-                <section className="relative h-screen bg-fixed bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${assets.serviceshead})` }}>
+                <section className="relative h-screen  bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${assets.serviceshead})` }}>
                     <div className="absolute inset-0 bg-[#bebebe] bg-opacity-0 flex flex-col items-start justify-center px-8">
                         <h1 className="text-black font-inter text-6xl font-[800]"id='serviceHead'>Services</h1>
                         <div className='w-32 h-[0.3rem] bg-[#f0532d] mt-1 rounded-e-3xl'></div>

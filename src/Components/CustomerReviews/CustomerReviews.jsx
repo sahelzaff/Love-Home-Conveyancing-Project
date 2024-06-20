@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { assets } from '../../assets/assets';
-import Globe from '../Globe/Globe'; // Check if this import path is correct
+import Globe from '../Globe/Globe'; // Assuming this is the correct import path
 import reviews from './Review';
 import '../../Responsive.css';
 
@@ -30,6 +31,17 @@ const CustomerReviews = () => {
               <div className='w-1/4 h-[0.3rem] bg-[#f0532d] mt-2'></div>
             </div>
             <Slider {...settings} className='mt-20 w-2/3'>
+              {/* First slide with specific content */}
+              <div className='flex flex-col gap-5 items-center justify-center'>
+                 <div className='flex flex-col gap-5 items-center justify-center'>
+                  <img src={assets.google} alt="" />
+                 </div>
+                 <div>
+                  <p className='font-outfit text-5xl font-extrabold mt-5' id='googleText'>100<span className='text-[#f0532d]'>+ 5 Star</span> Rated Reviews</p>
+                 </div>
+              </div>
+              
+              {/* Dynamic slides for reviews */}
               {reviews.map((review, index) => (
                 <div key={index} className='flex flex-col gap-5 items-center justify-center'>
                   <div className='flex flex-row gap-4 items-center mb-5 px-12 justify-start' id='NameDiv'>
@@ -52,15 +64,15 @@ const CustomerReviews = () => {
               ))}
             </Slider>
           </div>
-          <a href="">
+          <Link to="/service#reviews" >
             <p className='cursor-pointer pt-[3rem] ml-[3.5rem] font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]'>Read More</p>
-          </a>
+          </Link>
         </div>
-        <div className='w-1/2 flex justify-center items-center absolute top-0 left-0 h-full' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500">
-          <Globe />
+        <div className='w-1/2 flex justify-center items-center absolute top-0 left-0 h-full' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+          {/* <Globe /> */}
         </div>
       </div>
-    </div>  
+    </div>
   );
 }
 

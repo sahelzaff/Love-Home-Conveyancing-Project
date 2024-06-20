@@ -17,7 +17,7 @@ const VideoBackground = () => {
         muted 
       />
       
-      <div className="absolute inset-0 flex items-center justify-start w-4/5 mb-10 Homepage1" id='videoTextDiv' data-aos='fade-up' data-aos-duration="1000">
+      <div className="absolute inset-0 flex items-center justify-start w-4/5 mb-10 Homepage1" id='videoTextDiv' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
         <h1 className="text-white text-5xl font-meduim font-outfit " id='videoText1'  >Experience seamless property transactions with <span className='text-[#f0532d] text-9xl font-extrabold font-outfit' id='videoText2'><br />Peace Of Mind,</span>
         <br />every step of the way.</h1>
       </div>

@@ -62,7 +62,10 @@ import review5 from './review5.png';
 import review6 from './review6.png';
 import review7 from './review7.png';
 import processbg from './processbg.png';
+import google from './google.png';
 import serviceshead from './serviceshead.png';
+import bloghead from './bloghead.png';
+import pagedivider from './pagedivider.png';
 import Blog1 from './Blog1.png';
 import Blogs2 from './Blogs2.webp';
 import Blogs3 from './Blogs3.png';
@@ -76,7 +79,10 @@ import video from './video.mp4';
 
 export const assets = {
     clock_contact,
+    pagedivider,
     processbg,
+    bloghead,
+    google,
     review1,
     review2,
     review3,

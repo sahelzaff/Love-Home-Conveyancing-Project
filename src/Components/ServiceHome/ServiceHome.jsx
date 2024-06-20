@@ -49,7 +49,7 @@ const ServiceHome = () => {
     return (
         <div className='h-auto mt-20'>
             <div>
-                <div className='flex flex-row items-center justify-center h-auto'>
+                <div className='flex flex-row items-center justify-center h-auto content'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
                         <h2 className='font-outfit font-semibold text-5xl' id='serviceHead'>Services</h2>
                         <div className='w-24 h-[0.3rem] bg-[#f0532d] mt-1'></div>
@@ -59,13 +59,14 @@ const ServiceHome = () => {
                         <img src={assets.services} alt="" />
                     </div>
                 </div>
-                <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10'>
+                <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10 bg-[#19345E] py-20 '>
+                    <div className="content flex flex-row justify center items-center gap-20">
                     {/* Card 1 */}
                     <div className='custom-card'>
                         <img src={assets.buying} className='mt-10' alt="Buying" />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Buying</h2>
-                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                            <p className='custom-card-paragraph font-poppins text-[1.125rem] font-[400]'>
                                 Navigate the purchasing journey with ease. From initial considerations to final settlement, trust us to expertly guide you through every stage.
                             </p>
                         </div>
@@ -76,7 +77,7 @@ const ServiceHome = () => {
                         <img src={assets.selling} alt="Selling" />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Selling</h2>
-                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                            <p className='custom-card-paragraph font-poppins text-[1.125rem] font-[400]'>
                                 Accelerate your sales process with our meticulous contract preparation. We handle all documentation, empowering you to sell swiftly and confidently.
                             </p>
                         </div>
@@ -86,8 +87,8 @@ const ServiceHome = () => {
                     <div className='custom-card'>
                         <img src={assets.transfer} alt="Property Transfer" />
                         <div className='custom-card-hover-content'>
-                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Property Transfer</h2>
-                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                            <h2 className='custom-card-heading text-black font-bold font-outfit '>Property Transfer</h2>
+                            <p className='custom-card-paragraph font-poppins text-[1.125rem] font-[400]'>
                                 From novice buyers to seasoned investors, receive tailored contract guidance. Our expert advice ensures clarity and peace of mind throughout the transaction.
                             </p>
                         </div>
@@ -98,10 +99,11 @@ const ServiceHome = () => {
                         <img src={assets.investor} alt="Contract Advice" />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Contract Advice</h2>
-                            <p className='custom-card-paragraph font-poppins text-lg font-[400]'>
+                            <p className='custom-card-paragraph font-poppins text-[1.125rem] font-[400]'>
                                 Maximize your returns with our strategic investment advice.
                             </p>
                         </div>
+                    </div>
                     </div>
                 </div>
                 {/* <div className="flex flex-wrap justify-between">

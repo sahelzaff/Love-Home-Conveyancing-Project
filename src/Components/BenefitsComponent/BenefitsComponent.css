@@ -45,73 +45,101 @@
 
   
   
-  .card {
-    width: 100%;
-    max-width: 450px;
-    background: #fff;
-    transition: all 0.4s;
-    border-radius: 10px;
-    box-shadow: 10px 8px 15px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    padding: 1rem; /* Add padding for better spacing */
-  }
+  #cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: stretch; /* Ensure all items stretch to match height */
+}
+
+.card {
+  width: 100%;
+  padding: 5px 15px;
+  max-width: 350px; /* Adjust as needed */
+  background: #fff;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 10px 8px 15px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  flex: 1; /* Allow cards to expand vertically */
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 10px 8px 15px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f0532d;
+}
+
+.first-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+}
+
+.icons {
+  width: 30%;
+  height: auto;
+}
+
+/* Show second content by default */
+.second-content {
+  height: auto;
+  opacity: 1;
+}
+
+/* Hide first content by default */
+.first-content {
+  height: 0;
+  opacity: 0;
+}
+
+/* Adjust hover effect */
+.card:hover .first-content {
+  height: 0;
+  opacity: 0;
+}
+
+.card:hover .second-content {
+  height: auto;
+  opacity: 1;
+}
+
+/* Change text color to white on hover */
+.card:hover .card-title,
+.card:hover .card-text {
+  color: white;
+}
+
   
-  .card:hover {
-    border-radius: 15px;
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 10px 8px 15px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .first-content, .second-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    padding: 1rem; /* Adjust padding for better spacing */
-  }
-  
-  .card-title {
-    margin-bottom: 0.5rem;
-    text-align: center;
-    font-size: 1.25rem; /* Adjust font size */
-    font-weight: bold;
-    color: #333;
-    font-family: 'Outfit', sans-serif;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 100%;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    text-align: center;
-    color: #555;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .icons {
-    width: 30%;
-    height: auto;
-  }
-  
-  .second-content {
-    height: 0;
-    opacity: 0;
-  }
-  
-  .card:hover .first-content {
-    height: 0;
-    opacity: 0;
-  }
-  
-  .card:hover .second-content {
-    height: auto;
-    opacity: 1;
-  }

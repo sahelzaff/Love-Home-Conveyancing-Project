@@ -4,19 +4,19 @@ import '../../Homepage.css'
 
 const Footer = () => {
     return (
-        <div className='pt-10 h-[60vh] w-full'>
+        <div className='pt-10 h-auto w-full '>
             <div className='bg-[#19345ef1] text-[#fff] p-14 px-28'>
                 <p className='font-poppins font-medium text-[1.125rem] Homepage'>Financial Disclaimer: Please remember that past performance may not be indicative of future results. Different types of investments involve varying degrees of risk. Due to various factors, including changing market conditions, the content may no longer be reflective of current opinions or positions. Moreover, you should not assume that any discussion or information contained in this website serves as the receipt of, or as a substitute for, personalized investment advice from Borrower First. Please consult our financial experts for more information.</p>
 
             </div>
-            <div className='h-[60vh] bg-[#f0532d] text-[#fff] py-2'>
+            <div className='h-auto bg-[#f0532d] text-[#fff] pt-[70px] pb-[100px]'>
                 <div className='px-28 py-10 Homepage'> 
-                    <div className='grid grid-cols-3 gap-20 justify-center items-center'>
+                    <div className='grid grid-cols-3 gap-20 justify-center items-center '>
                         <div className=''>
                             <div>
-                                <img src={assets.logoWhite} alt="" srcset="" />
+                                <img src={assets.logoWhite} className='min-w-32 max-w-80' alt="" srcset="" />
                             </div>
-                            <div className='font-outfit text-2xl font-bold flex flex-row items-start pl-6 pb-3 pt-1 tracking-widest'>
+                            <div className='font-inter text-[20px] font-bold flex flex-row items-start pl-6 pb-3 pt-1 tracking-widest'>
                                 <p>Simply Your Move</p>
                             </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Other Resources</p>
                                 <div className='w-3/4 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col gap-6 ">
                                     <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Privacy Policy</p>
                                     <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Terms and Conditions</p>
                                     <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Disclaimer</p>
@@ -75,6 +75,8 @@ const Footer = () => {
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Contact Us</p>
                                 <div className='w-5/6 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
+                                <div className='flex flex-col gap-8'>
+
                                 <div>
                                     <p className='font-poppins text-[1rem] font-medium pr-8'>Suite 17, Minton House,2-14 Bayswater Road, Potts Point 2011</p>
                                 </div>
@@ -90,6 +92,7 @@ const Footer = () => {
                                         <img src={assets.email} className='w-6' alt="" srcset="" />
                                         <p className='font-poppins text-[1rem] font-medium'>hello@love-homes.com.au</p>
                                     </div>
+                                </div>
                                 </div>
 
                             </div>
