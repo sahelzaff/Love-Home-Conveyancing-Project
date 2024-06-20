@@ -25,7 +25,7 @@ const CustomerReviews = () => {
           <div className='flex flex-col justify-center items-start'>
             <div className="flex w-3/4 justify-start items-start flex-col pt-36">
               <div>
-                <p className='font-outfit text-5xl font-bold text-[#1B1817]' id='ReviewTitle'>Customer Reviews</p>
+                <p className='font-outfit text-5xl font-bold text-[#1B1817]' id='ReviewTitle'>Customer <span className='text-[#f0532d]'>Reviews</span></p>
               </div>
               <div className='w-1/4 h-[0.3rem] bg-[#f0532d] mt-2'></div>
             </div>
@@ -35,7 +35,7 @@ const CustomerReviews = () => {
                   <div className='flex flex-row gap-4 items-center mb-5 px-12 justify-start' id='NameDiv'>
                     <img src={review.photo} className='w-16' id='ReviewPhoto' alt={`Profile ${index + 1}`} />
                     <div className='flex flex-col items-start'>
-                      <p className='font-inter text-3xl font-bold whitespace-nowrap mb-2' id='ReviewName'>{review.name}</p>
+                      <p className='font-inter text-3xl font-bold whitespace-nowrap mb-2 text-[#f0532d]' id='ReviewName'>{review.name}</p>
                       <div className='flex flex-row gap-1 items-center mb-2'>
                         {[...Array(review.stars)].map((star, i) => (
                           <img key={i} src={assets.star} className='w-5' id='ReviewStar' alt={`Star ${i + 1}`} />
@@ -52,6 +52,9 @@ const CustomerReviews = () => {
               ))}
             </Slider>
           </div>
+          <a href="">
+            <p className='cursor-pointer pt-[3rem] ml-[3.5rem] font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]'>Read More</p>
+          </a>
         </div>
         <div className='w-1/2 flex justify-center items-center absolute top-0 left-0 h-full' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500">
           <Globe />

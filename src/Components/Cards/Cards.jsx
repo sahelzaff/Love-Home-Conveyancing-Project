@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../Responsive.css'
 
 
+
 const CustomSelect = ({ options, placeholder }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -64,10 +65,10 @@ const Cards = () => {
                 <p className=''>Simplify Your</p>
                 <div class="words">
                   <span id='rotate'></span>
-                  <span id='rotate'>Move</span>
+                  {/* <span id='rotate'>Move</span> */}
                   <span id='rotate'>Search</span>
-                  {/* <span id='rotate'>Lifestyle</span> */}
                   <span id='rotate'>Stress</span>
+                  <span id='rotate'>Move</span>
 
                 </div>
               </div>
@@ -100,7 +101,7 @@ font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minut
               />
             </div>
 
-            <button className="mt-8 bg-[#ffffff] text-[#0d0d0d] font-normal font-poppins pl-4 text-[1.6rem] flex items-center space-x-2 =z-30 text-center hover:translate-x-2 -tracking-wider transition-transform duration-300 cursor-pointer" id='borderHero' >
+            <button className="mt-8 bg-[#ffffff] text-[#0d0d0d] font-bold font-poppins pl-4 text-[1.6rem] flex items-center space-x-2 =z-30 text-center hover:translate-x-2 -tracking-wider transition-transform duration-300 cursor-pointer" id='borderHero' >
           <span>GET A QUOTE</span>
           <svg className="transform transition-transform duration-300 group-hover:translate-x-2" fill="#ffffff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-33 -33 396.00 396.00" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-33" y="-33" width="396.00" height="396.00" rx="0" fill="#f0532d" stroke-width="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
         </button>

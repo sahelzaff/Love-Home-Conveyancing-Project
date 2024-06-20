@@ -6,19 +6,22 @@ const WorkSection = () => {
         <div className='h-auto flex flex-col pt-48 '>
             <div className=' flex flex-row justify-between items-center '>
                 <div>
-                    <p className='font-outfit text-2xl text-[#1B1817] mb-1'>How does it work?</p>
-                    <p className='font-outfit text-2xl italic font-medium tracking-wider'>At LoveHome Conveyancing,</p>
-                    <p className='font-outfit text-3xl italic font-medium tracking-wider'>We do exactly what we promise.</p>
-                    <p className='font-outfit text-3xl italic font-medium tracking-wider'>We handle every detail with care.</p>
+                    <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900] font-inter" id='processH'>The <span className="text-[#f0532d]">Process</span>
+                    </h1>
+                    <div className='w-44 h-[0.3rem] bg-[#f0532d] mt-2'></div>
+                    <p className='font-outfit text-2xl font-medium tracking-wider pt-5'>At LoveHome Conveyancing,</p>
+                    
+                    <p className='font-outfit text-3xl  font-medium tracking-wider'>We do exactly what we promise.</p>
+                    <p className='font-outfit text-3xl  font-medium tracking-wider'>We handle every detail with care.</p>
                 </div>
                 <div>
                     <img src={assets.house_Work1} alt="" srcset="" />
                 </div>
             </div>
             <div className='grid grid-cols-2 grid-rows-3 gap-10 w-full mx-auto ' id='workGrid'>
-                <div className='flex flex-row gap-2 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
+                <div className='flex flex-row gap-5 items-start justify-start ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
                     <div>
-                        <img src={assets.Engagement} className='w-[54rem]' alt="" srcset="" />
+                    <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-8xl font-[900]">1</div>
                     </div>
                     <div className='flex flex-col items-start'  >
                         <h2 className='font-outfit text-3xl pt-6  text-[#f0532d] font-bold ' id='workHead'>Engagement</h2>
@@ -26,9 +29,9 @@ const WorkSection = () => {
                         <p className='font-poppins text-lg' id='workPara'> This initial step involves selecting and appointing a professional who is proficient in handling property transactions through digital platforms. The conveyancer or solicitor will explain the process, answer any initial questions, and begin gathering essential information. They will also provide a clear outline of the services they will offer, ensuring that the customer understands what to expect throughout the transaction. This engagement sets the foundation for a smooth and efficient conveyancing </p>
                     </div>
                 </div>
-                <div className='flex flex-row gap-2 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
+                <div className='flex flex-row gap-5 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
                     <div>
-                        <img src={assets.Documentation} className='w-[44rem]' alt="" srcset="" />
+                    <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-8xl font-[900]">2</div>
                     </div>
                     <div>
                         <h2 className='font-outfit text-3xl pt-6  text-[#f0532d] font-bold' id='workHead'>Consultation & Documentation</h2>
@@ -36,9 +39,9 @@ const WorkSection = () => {
                         <p className='font-poppins text-lg' id='workPara'> During this stage, the conveyancer or solicitor will discuss the customer’s needs and collect essential documents like identification and property details. They will meticulously review all contracts and documents to identify any potential issues. This ensures that all necessary information is gathered and analyzed, paving the way for a smooth conveyancing process.</p>
                     </div>
                 </div>
-                <div className='flex flex-row gap-2 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
+                <div className='flex flex-row gap-5 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
                     <div>
-                        <img src={assets.PropertyCheck} className='w-[44rem]' alt="" srcset="" />
+                    <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-8xl font-[900]">3</div>
                     </div>
                     <div>
                         <h2 className='font-outfit text-3xl pt-6  text-[#f0532d] font-bold' id='workHead'>Property Checks</h2>
@@ -46,9 +49,9 @@ const WorkSection = () => {
                         <p className='font-poppins text-lg' id='workPara'> This step involves performing comprehensive searches to uncover any issues that could affect the property. We check for legal restrictions, planning permissions, environmental risks, and other factors. The conveyancer also verifies the property's title to ensure there are no hidden encumbrances or disputes. This thorough due diligence ensures the customer can proceed with confidence. </p>
                     </div>
                 </div>
-                <div className='flex flex-row gap-2 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
+                <div className='flex flex-row gap-5 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
                     <div>
-                        <img src={assets.Financial} className='w-[44rem]' alt="" srcset="" />
+                    <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-8xl font-[900]">4</div>
                     </div>
                     <div>
                         <h2 className='font-outfit text-3xl pt-6  text-[#f0532d] font-bold' id='workHead'>Financial Arrangements</h2>
@@ -56,9 +59,9 @@ const WorkSection = () => {
                         <p className='font-poppins text-lg' id='workPara'>This stage involves managing all financial details related to the property transaction. The conveyancer will coordinate with lenders, ensure funds are in place, and prepare for the final settlement. They will also calculate adjustments for rates and taxes and ensure all financial obligations are met. This meticulous preparation ensures a smooth and timely settlement process.</p>
                     </div>
                 </div>
-                <div className='flex flex-row gap-2 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
+                <div className='flex flex-row gap-5 ' data-aos='fade-up' data-aos-duration="1000" data-aos-delay="500">
                     <div>
-                        <img src={assets.Settlement} className='w-[44rem]' alt="" srcset="" />
+                    <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-8xl font-[900]">5</div>
                     </div>
                     <div>
                         <h2 className='font-outfit text-3xl pt-6  text-[#f0532d] font-bold' id='workHead'>Settlement</h2>

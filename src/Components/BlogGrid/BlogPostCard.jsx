@@ -1,77 +1,70 @@
-import React from 'react';
-import { assets } from '../../assets/assets';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
-// Sample data structure
-const posts = [
-  {
-    id: 1,
-    date: '15 Mar',
-    imageUrl: assets.Blog1,
-    text: 'Apartment purchases: use this guide to obtain the essential reports',
-  },
-  {
-    id: 2,
-    date: '12 Mar',
-    imageUrl: assets.Blogs2,
-    text: 'How Much Does Conveyancing Cost?',
-  },
-  {
-    id: 3,
-    date: '01 Mar',
-    imageUrl: assets.Blogs3,
-    text: 'When Do You Pay Conveyancing Fees?',
-  },
-  {
-    id: 4,
-    date: '09 Feb',
-    imageUrl: assets.Blogs4,
-    text: 'Highly Recommended Sydney Conveyancing',
-  },
-  {
-    id: 5,
-    date: '02 Feb',
-    imageUrl: assets.Blogs5,
-    text: 'Leading Sydney Conveyancer',
-  },
-  {
-    id: 6,
-    date: '05 Jan',
-    imageUrl: assets.Blogs6,
-    text: 'Why Should You Hire an Expert Conveyancer in Sydney',
-  },
-  {
-    id: 7,
-    date: '02 Jan',
-    imageUrl: assets.Blogs7,
-    text: 'Property Conveyancing Sydney - How to choose a conveyancer',
-  },
-];
+import { assets } from '../../assets/assets';
 
 const BlogPostCard = () => {
+  const [posts, setPosts] = useState([]);
+
+  // Fetch initial posts when component mounts
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+
+  // Function to fetch all posts from backend
+  const fetchPosts = async () => {
+    try {
+      const response = await fetch('/api/blogs'); // Fetch from backend endpoint
+      if (!response.ok) {
+        throw new Error('Failed to fetch posts');
+      }
+      const data = await response.json();
+      setPosts(data); // Update state with fetched posts
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+    }
+  };
+
+  // Function to add a new post
+  const addNewPost = async (newPost) => {
+    try {
+      const response = await fetch('/api/blogs', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newPost),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to add new post');
+      }
+      const data = await response.json();
+      fetchPosts(); // Fetch updated posts after adding new post
+    } catch (error) {
+      console.error('Error adding new post:', error);
+    }
+  };
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[86%] mx-auto py-32 bg-[#f4f4f4]"data-aos='fade-in' data-aos-duration="1000" data-aos-delay="200">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[86%] mx-auto py-32 bg-[#f4f4f4]" data-aos='fade-in' data-aos-duration="1000" data-aos-delay="200">
       {posts.slice(0, 7).map((post, index) => (
         <div
-          key={post.id}
+          key={post._id} // Use MongoDB's _id as key
           className={`relative ${
-            index === 0
-              ? 'md:col-span-2 md:row-span-2'
-              : ''
+            index === 0 ? 'md:col-span-2 md:row-span-2' : ''
           } aspect-w-1 aspect-h-1`}
         >
-          <Link to={`/post/${post.id}`}>
+          <Link to={`/post/${post._id}`}>
             <img
-              src={post.imageUrl}
-              alt={post.text}
+              src={post.blogCoverPhoto} // Assuming blogCoverPhoto is the URL from backend
+              alt={post.blogTitle}
               className="w-full h-full object-cover cursor-pointer"
             />
             <div className="absolute top-0 left-0 bg-white text-red-500 px-4 py-6 rounded text-center text-xl font-[800] font-inter">
-              {post.date}
+              {post.blogDate}
             </div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white text-black px-10 py-2 rounded text-center">
               <span className="text-[1.125rem] font-bold cursor-pointer hover:text-[#f0532d] ">
-                {post.text}
+                {post.blogTitle}
               </span>
             </div>
           </Link>

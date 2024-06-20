@@ -49,7 +49,9 @@ const TheProcess = () => {
             </div>
           </div>
           <div className='mt-2  mb-14 sm:pt-5'>
-                        <a href="" className='text-sm sm:text-base md:text-lg font-inter text-black font-medium hover:text-[#f0532d] cursor-pointer ml-20' id='text6'>Read More</a>
+          <a href="">
+            <p className='cursor-pointer ml-20 font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]'>Read More</p>
+          </a>
                     </div>
           
           <button className="bg-[#f0532d] hover:bg-orange-600 text-white py-3 px-6 ml-20 rounded-lg text-lg md:text-xl lg:text-3xl font-semibold" id='buttonProcess'>Speak With A Solicitor</button>

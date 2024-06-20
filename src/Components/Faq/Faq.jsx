@@ -19,7 +19,7 @@ const Faq = () => {
             <div className=' flex flex-col items-center justify-center h-auto'>
                 <div className='flex flex-row items-center justify-center h-auto mx-28'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
-                        <h2 className='font-inter font-[800] text-6xl' id='faqHead'>FAQ's</h2>
+                        <h2 className='font-inter font-[800] text-6xl' id='faqHead'>FAQ<span className='text-[#f0532d]'>'s</span></h2>
                         <div className='w-20 h-[0.3rem] bg-[#f0532d] mt-1'></div>
                         <p className='font-poppins font-medium text-[1.5rem] pt-2' id='faqPara'>Get the answers you need in our FAQ section. We address the most frequently asked questions to ensure you have all the information required for a smooth conveyancing experience.</p>
                     </div>
