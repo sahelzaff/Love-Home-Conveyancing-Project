@@ -66,6 +66,37 @@ import google from './google.png';
 import serviceshead from './serviceshead.png';
 import bloghead from './bloghead.png';
 import pagedivider from './pagedivider.png';
+import calculatorhead from './calculatorhead.png';
+import buycal from './buycal.png';
+import sellcal from './sellcal.png';
+import buycalWhite from './buycalWhite.png';
+import sellcalWhite from './sellcalWhite.png';
+import house from './house.png';
+import houseWhite from './houseWhite.png';
+import apartment from './apartment.png';
+import apartmentWhite from './apartmentWhite.png';
+import land from './land.png';
+import landWhite from './landWhite.png';
+import otpWhite from './otpWhite.png';
+import otp from './otp.png';
+import nsw from './nsw.png';
+import nswWhite from './nswWhite.png';
+import qld from './qld.png';
+import qldWhite from './qldWhite.png';
+import vic from './vic.png';
+import vicWhite from './vicWhite.png';
+import sa from './sa.png';
+import saWhite from './saWhite.png';
+import wa from './wa.png';
+import waWhite from './waWhite.png';
+import act from './act.png';
+import actWhite from './actWhite.png';
+import transfercal from './transfercal.png';
+import transfercalWhite from './transfercalWhite.png';
+import contractcal from './contractcal.png';
+import contractcalWhite from './contractcalWhite.png';
+import buyinghead from './buyinghead.png';
+import bullet from './bullet.png';
 import Blog1 from './Blog1.png';
 import Blogs2 from './Blogs2.webp';
 import Blogs3 from './Blogs3.png';
@@ -73,12 +104,47 @@ import Blogs4 from './Blogs4.jpg';
 import Blogs5 from './Blogs5.jpg';
 import Blogs6 from './Blogs6.jpg';
 import Blogs7 from './Blogs7.jpg';
+import buying1 from './buying1.jpg';
+import buying2 from './buying2.jpg';
 import video from './video.mp4';
 
 
 
 export const assets = {
     clock_contact,
+    calculatorhead,
+    bullet,
+    buyinghead,
+    buying1,
+    buying2,
+    nsw,
+    nswWhite,
+    qld,
+    qldWhite,
+    transfercal,
+    transfercalWhite,
+    contractcal,
+    contractcalWhite,
+    vic,
+    vicWhite,
+    sa,
+    saWhite,
+    wa,
+    waWhite,
+    act,
+    actWhite,
+    otpWhite,
+    otp,
+    land,
+    landWhite,
+    apartment,
+    apartmentWhite,
+    house,
+    houseWhite,
+    sellcal,
+    sellcalWhite,
+    buycalWhite,
+    buycal,
     pagedivider,
     processbg,
     bloghead,

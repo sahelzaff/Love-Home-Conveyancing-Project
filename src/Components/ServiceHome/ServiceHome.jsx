@@ -2,6 +2,8 @@ import React from 'react'
 import { assets } from '../../assets/assets'
 import '../../Responsive.css'
 import './ServiceHome.css'
+import { Link } from 'react-router-dom';
+
 
 const services = [
     {
@@ -62,8 +64,9 @@ const ServiceHome = () => {
                 <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10 bg-[#19345E] py-20 '>
                     <div className="content flex flex-row justify center items-center gap-20">
                     {/* Card 1 */}
+                    <Link  to="/calculator">
                     <div className='custom-card'>
-                        <img src={assets.buying} className='mt-10' alt="Buying" />
+                        <img src={assets.buying} className='mt-'  alt="Buying" />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Buying</h2>
                             <p className='custom-card-paragraph font-poppins text-[1.125rem] font-[400]'>
@@ -71,8 +74,10 @@ const ServiceHome = () => {
                             </p>
                         </div>
                     </div>
+                    </Link>
 
                     {/* Card 2 */}
+                    <Link to="/calculator">
                     <div className='custom-card'>
                         <img src={assets.selling} alt="Selling" />
                         <div className='custom-card-hover-content'>
@@ -82,10 +87,12 @@ const ServiceHome = () => {
                             </p>
                         </div>
                     </div>
+                    </Link>
 
                     {/* Card 3 */}
+                    <Link to="/calculator">
                     <div className='custom-card'>
-                        <img src={assets.transfer} alt="Property Transfer" />
+                        <img src={assets.transfer} className='w-[45rem]' alt="Property Transfer" />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit '>Property Transfer</h2>
                             <p className='custom-card-paragraph font-poppins text-[1.125rem] font-[400]'>
@@ -93,8 +100,10 @@ const ServiceHome = () => {
                             </p>
                         </div>
                     </div>
+                    </Link>
 
                     {/* Card 4 */}
+                    <Link to="/calculator">
                     <div className='custom-card'>
                         <img src={assets.investor} alt="Contract Advice" />
                         <div className='custom-card-hover-content'>
@@ -104,6 +113,7 @@ const ServiceHome = () => {
                             </p>
                         </div>
                     </div>
+                    </Link>
                     </div>
                 </div>
                 {/* <div className="flex flex-wrap justify-between">

@@ -10,6 +10,13 @@ const BlogDetails = () => {
   const [commentText, setCommentText] = useState(''); // State for comment input
 
   useEffect(() => {
+    window.scrollTo({
+      top: 200,
+      behavior: 'smooth'
+    });
+  }, []);
+
+  useEffect(() => {
     // Function to fetch blog post by ID
     const fetchPost = async () => {
       try {
@@ -42,6 +49,11 @@ const BlogDetails = () => {
     return <div>Loading...</div>; // Placeholder for loading state
   }
 
+  const formatDate = (dateString) => {
+    const options = { day: '2-digit', month: '2-digit', year: '2-digit' };
+    return new Date(dateString).toLocaleDateString('en-GB', options).replace(/\//g, '-');
+  };
+  
   return (
     <div className="p-4 h-auto w-full font-inter pt-20">
       <div>
@@ -52,7 +64,7 @@ const BlogDetails = () => {
               <div>
                 <h1 className="text-4xl font-bold my-4 w-full">{post.blogTitle}</h1>
                 <div className="w-[5rem] h-[0.25rem] bg-[#19345E] mb-3 rounded-lg"></div>
-                <p className="text-black font-[900] text-xs">POSTED ON <span className='text-[#19345E]'>{new Date(post.blogDate).toLocaleDateString()}</span> BY <span className='text-[#19345E]'>ROBIN CARTER</span></p>
+                <p className="text-black font-[900] text-xs">POSTED ON <span className='text-[#19345E]'> {formatDate(post.blogDate)}</span> BY <span className='text-[#19345E]'>ROBIN CARTER</span></p>
               </div>
               <div className="w-full h-auto mt-6">
                 <img 
@@ -62,7 +74,7 @@ const BlogDetails = () => {
                   style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
                 />
                 {/* Debugging: Display image URL */}
-                <p>Image URL: http://localhost:4000/{post.blogCoverPhoto}</p>
+                {/* <p>Image URL: http://localhost:4000/{post.blogCoverPhoto}</p> */}
               </div>
               <div className="mt-6 text-lg leading-relaxed blog-content" dangerouslySetInnerHTML={{ __html: post.blogContent }} />
               {/* Comment Section */}

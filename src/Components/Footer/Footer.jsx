@@ -1,6 +1,8 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 import '../../Homepage.css'
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
     return (
@@ -52,7 +54,7 @@ const Footer = () => {
                             </div>
                             <div className='w-full h-[0.1rem] bg-white mb-2'></div>
                             <div className='font-poppins text-[1rem] font-medium'><p>ABN: 84 991 312 097</p></div>
-                            <div className='font-poppins text-[1rem] font-medium'><p>Australian Credit License: 5446944</p></div>
+                            <div className='font-poppins text-[1rem] font-medium'><p>Australian Credit License: </p></div>
 
 
                         </div>
@@ -63,9 +65,15 @@ const Footer = () => {
                                 <div className='w-3/4 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
                                 <div className="flex flex-col gap-6 ">
+                                <Link to="/privacy-policy">
                                     <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Privacy Policy</p>
+                                </Link>
+                                <Link to="/terms-&-conditions">
                                     <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Terms and Conditions</p>
+                                </Link>
+                                <Link to="/disclaimer">
                                     <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Disclaimer</p>
+                                </Link>
                                 </div>
                             </div>
                         </div>
@@ -92,12 +100,16 @@ const Footer = () => {
                                         <img src={assets.email} className='w-6' alt="" srcset="" />
                                         <p className='font-poppins text-[1rem] font-medium'>hello@love-homes.com.au</p>
                                     </div>
+                                    
                                 </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+                                <div className='text-center mt-14 font-poppins text-[16px]'>
+                                    <p>Copyright 2024 © Love Homes Conveyancing - All Rights Reserved </p>
+                                </div>
                 </div>
             </div>
         </div>

@@ -1,25 +1,31 @@
 /* ServiceReview.css */
+
 .line-clamp-3 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  
-  .transition-max-height {
-    transition: max-height 0.5s ease;
-  }
-  
-  .review-item {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .review-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.review-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expandable {
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Adjust transition timing as needed */
+  max-height: 6rem; /* Initial max-height, adjust based on your design */
+}
+
+.expanded {
+  max-height: none; /* Expanded state */
+}

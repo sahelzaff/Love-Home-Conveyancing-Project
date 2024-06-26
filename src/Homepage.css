@@ -21,6 +21,14 @@ margin-right: var(--large-margin);
 margin-left: 15rem;
 margin-right: 15rem;
 }
+.content1{
+margin-left: 15rem;
+/* margin-right: 15rem; */
+}
+.content2{
+/* margin-left: 15rem; */
+margin-right: 15rem;
+}
 .Homepage1{
 margin-left: 8rem;
 /* margin-right: var(--large-margin); */
@@ -50,6 +58,14 @@ margin-left: 8rem;
   margin-left: var(--large-margin);
   margin-right: var(--large-margin);
   }
+.content1{
+  margin-left: var(--large-margin);
+  /* margin-right: var(--large-margin); */
+  }
+.content2{
+  /* margin-left: var(--large-margin); */
+  margin-right: var(--large-margin);
+  }
  }
 
 /* For 1440x900 */
@@ -60,6 +76,14 @@ margin-left: 8rem;
 }
 .content{
   margin-left: 11rem;
+  margin-right: 11rem;
+}
+.content1{
+  margin-left: 11rem;
+  /* margin-right: 11rem; */
+}
+.content2{
+  /* margin-left: 11rem; */
   margin-right: 11rem;
 }
 .Homepage1{
@@ -78,6 +102,14 @@ margin-left: 8rem;
   margin-left: 9rem;
   margin-right: 9rem;
 }
+.content1{
+  margin-left: 9rem;
+  /* margin-right: 9rem; */
+}
+.content2{
+  /* margin-left: 9rem; */
+  margin-right: 9rem;
+}
 .Homepage1{
   margin-left: 2rem;
   /* margin-right: 2rem; */
@@ -92,6 +124,14 @@ margin-left: 8rem;
 }
 .content{
   margin-left: 1rem;
+  margin-right: 1rem;
+  }
+.content1{
+  margin-left: 1rem;
+  /* margin-right: 1rem; */
+  }
+.content2{
+  /* margin-left: 1rem; */
   margin-right: 1rem;
   }
 
@@ -153,4 +193,8 @@ margin-left: 8rem;
   margin-bottom: 0.5rem;
   font-size: 1.125rem; /* equivalent to text-lg */
   color: #333333;
+}
+
+.list-circle {
+  list-style-type: disc; /* Ensure list items use disc bullets */
 }

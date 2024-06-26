@@ -6,8 +6,15 @@ import LoadingPage from './loadingPage';
 import Contact from './Contact';
 import Service from './Service';
 import Blogs from './Blogs';
-// import BlogDetails from './Components/BlogDetails/BlogDetails';
 import BlogDetailsPage from './BlogDetailsPage';
+import Calculator from './Calculator';
+import Buying from './Buying';
+import Selling from './Selling';
+import Transferring from './Transferring';
+import Contract_Advice from './Contract_Advice';
+import PrivacyPage from './PrivacyPage';
+import Disclaimer from './Disclaimer';
+import TermsPage from './TermsPage';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,9 +33,17 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/service" element={<Service />} />
+            <Route path="/service/*" element={<Service />} />
             <Route path="/blogs/*" element={<Blogs />} />
             <Route path="/post/:id" element={<BlogDetailsPage />} />
+            <Route path="/calculator/*" element={<Calculator />} />
+            <Route path="/buying" element={<Buying />} />
+            <Route path="/selling" element={<Selling />} />
+            <Route path="/property-transfer" element={<Transferring />} />
+            <Route path="/contract-advice" element={<Contract_Advice />} />
+            <Route path="/privacy-policy" element={<PrivacyPage />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/terms-&-conditions" element={<TermsPage />} />
           </Routes>
         )}
       </>
@@ -37,3 +52,5 @@ const App = () => {
 };
 
 export default App;
+
+

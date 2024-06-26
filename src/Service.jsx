@@ -22,17 +22,17 @@ const Service = () => {
 
   return (
     <div>
-      <Navbar/>
-      <ServiceInfo/>
-      <ServiceHome/>
+      <Navbar />
+      <ServiceInfo />
+      <ServiceHome />
       <div className='content' ref={workRef}>
-        <WorkSection/>
+        <WorkSection />
       </div>
       <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
       <div className='content' ref={reviewRef}>
         <ServiceReview />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
