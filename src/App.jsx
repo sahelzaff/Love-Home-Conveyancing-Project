@@ -15,6 +15,7 @@ import Contract_Advice from './Contract_Advice';
 import PrivacyPage from './PrivacyPage';
 import Disclaimer from './Disclaimer';
 import TermsPage from './TermsPage';
+import AboutUs from './AboutUs';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,7 @@ const App = () => {
             <Route path="/privacy-policy" element={<PrivacyPage />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/terms-&-conditions" element={<TermsPage />} />
+            <Route path="/about-us" element={<AboutUs />} />
           </Routes>
         )}
       </>

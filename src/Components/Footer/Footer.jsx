@@ -53,8 +53,8 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className='w-full h-[0.1rem] bg-white mb-2'></div>
-                            <div className='font-poppins text-[1rem] font-medium'><p>ABN: 84 991 312 097</p></div>
-                            <div className='font-poppins text-[1rem] font-medium'><p>Australian Credit License: </p></div>
+                            <div className='font-poppins text-[1rem] font-medium pb-6'><p>ABN: 84 991 312 097</p></div>
+                            {/* <div className='font-poppins text-[1rem] font-medium'><p>Australian Credit License: </p></div> */}
 
 
                         </div>

@@ -87,18 +87,18 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        to="/service"
-                                        className={`block py-2 px-3 rounded md:bg-transparent md:p-0 cursor-pointer md:dark:text-[#F57B1F] font-bold font-montserrat ${getLinkClass('/service')}`}
+                                        to="/about-us"
+                                        className={`block py-2 px-3 rounded md:bg-transparent md:p-0 cursor-pointer md:dark:text-[#F57B1F] font-bold font-montserrat ${getLinkClass('/about')}`}
                                     >
-                                        Service
+                                        About Us
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/about"
-                                        className={`block py-2 px-3 rounded md:bg-transparent md:p-0 cursor-pointer md:dark:text-[#F57B1F] font-bold font-montserrat ${getLinkClass('/about')}`}
+                                        to="/service"
+                                        className={`block py-2 px-3 rounded md:bg-transparent md:p-0 cursor-pointer md:dark:text-[#F57B1F] font-bold font-montserrat ${getLinkClass('/service')}`}
                                     >
-                                        About Us
+                                        Service
                                     </Link>
                                 </li>
                                 <li>

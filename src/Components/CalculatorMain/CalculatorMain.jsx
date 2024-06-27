@@ -1,24 +1,43 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { QuoteContext } from '../../QuoteContext';
 import { assets } from '../../assets/assets';
 import './CalculatorMain.css';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 
 const CalculatorMain = ({ setShowQuote }) => {
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
-        transactionType: '',
-        propertyType: '',
-        area: '',
-        name: '',
-        email: '',
-        phone: ''
+      transactionType: '',
+      propertyType: '',
+      area: '',
+      name: '',
+      email: '',
+      phone: ''
     });
+  
     const { setQuote } = useContext(QuoteContext);
     const navigate = useNavigate();
-
+    const location = useLocation();
+  
+    useEffect(() => {
+      const state = location.state;
+      if (state) {
+        const { transactionType, propertyType, area } = state;
+        setFormData({
+          ...formData,
+          transactionType,
+          propertyType,
+          area
+        });
+        setStep(4); // Assuming step 4 is where the quote is displayed or processed
+      }
+    }, [location.state]);
+  
+  
     const handleChange = input => e => {
-        setFormData({ ...formData, [input]: e.target.value });
+      setFormData({ ...formData, [input]: e.target.value });
     };
 
     const nextStep = () => setStep(step + 1);
@@ -42,19 +61,66 @@ const CalculatorMain = ({ setShowQuote }) => {
 
         const { transactionType, propertyType, area } = formData;
 
-        if (transactionType === 'buy' || transactionType === 'sell' || transactionType === 'transfer' || transactionType === 'contract') {
-            if ((propertyType === 'house' || propertyType === 'apartment' || propertyType === 'otp') &&
-                (area === 'nsw' || area === 'vic' || area === 'sa' || area === 'wa' || area === 'act' || area === 'qld')) {
-                quoteData.exchangeToSettlement = 1350.00;
-                quoteData.gst = 182.00;
-                quoteData.total = 1672.00;
-            } else if (propertyType === 'land' &&
-                (area === 'nsw' || area === 'sa' || area === 'wa' || area === 'act' || area === 'qld')) {
-                quoteData.exchangeToSettlement = 1250.00;
-                quoteData.gst = 142.00;
-                quoteData.total = 1562.00;
+        const transactionTypeMap = {
+            'buy': 'Buying',
+            'sell': 'Selling',
+            'transfer': 'Transferring',
+            'contract': 'Contract Advice'
+          };
+      
+          const propertyTypeMap = {
+            'house': 'House',
+            'apartment': 'Apartment',
+            'land': 'Land',
+            'otp': 'Otp'
+          };
+      
+          const stateMap = {
+            'nsw': 'New South Wales',
+            'qld': 'QueensLand',
+            'sa': 'South Australia',
+            'vic': 'Victoria',
+            'act': 'Australian Capital Territory',
+            'wa': 'Western Australia'
+          };
+      
+          // Mapping formData values to expected values for calculation
+          const mappedTransactionType = transactionTypeMap[transactionType];
+          const mappedPropertyType = propertyTypeMap[propertyType];
+          const mappedState = stateMap[area];
+      
+          if (mappedTransactionType && mappedPropertyType && mappedState) {
+            if (
+              (mappedTransactionType === 'Buying' ||
+                mappedTransactionType === 'Selling' ||
+                mappedTransactionType === 'Transferring' ||
+                mappedTransactionType === 'Contract Advice') &&
+              ((mappedPropertyType === 'House' ||
+                mappedPropertyType === 'Apartment' ||
+                mappedPropertyType === 'Otp') &&
+                (mappedState === 'New South Wales' ||
+                  mappedState === 'Victoria' ||
+                  mappedState === 'South Australia' ||
+                  mappedState === 'Western Australia' ||
+                  mappedState === 'Australian Capital Territory' ||
+                  mappedState === 'QueensLand'))
+            ) {
+              quoteData.exchangeToSettlement = 1350.0;
+              quoteData.gst = 182.0;
+              quoteData.total = 1672.0;
+            } else if (
+              mappedPropertyType === 'Land' &&
+              (mappedState === 'New South Wales' ||
+                mappedState === 'South Australia' ||
+                mappedState === 'Western Australia' ||
+                mappedState === 'Australian Capital Territory' ||
+                mappedState === 'QueensLand')
+            ) {
+              quoteData.exchangeToSettlement = 1250.0;
+              quoteData.gst = 142.0;
+              quoteData.total = 1562.0;
             }
-        }
+          }
 
         try {
             const response = await fetch('http://localhost:4000/api/lead-cal', {

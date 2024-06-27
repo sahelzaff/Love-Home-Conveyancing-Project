@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../Responsive.css';
+import { assets } from '../../assets/assets';
+import '../../Responsive.css'
 
-const CustomSelect = ({ options, placeholder, selectedOption, setSelectedOption }) => {
+const CustomSelect = ({ options, placeholder, setSelectedOption }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -19,7 +20,7 @@ const CustomSelect = ({ options, placeholder, selectedOption, setSelectedOption 
         onClick={toggleDropdown}
         style={{ width: '300px' }}
       >
-        {selectedOption || placeholder}
+        {placeholder}
         <div className="absolute right-0 top-0 h-full flex items-center" style={{ backgroundColor: '#f5320d', width: '2.5rem' }}>
           <svg
             className={`absolute right-0 mr-2 transform ${isOpen ? '' : 'rotate-180'}`}
@@ -57,11 +58,34 @@ const Cards = () => {
   const navigate = useNavigate();
 
   const handleGetQuote = () => {
+    const transactionTypeMap = {
+      'Buying': 'buy',
+      'Selling': 'sell',
+      'Transferring': 'transfer',
+      'Contract Advice': 'contract',
+    };
+
+    const propertyTypeMap = {
+      'House': 'house',
+      'Apartment': 'apartment',
+      'Land': 'land',
+      'Otp': 'otp',
+    };
+
+    const stateMap = {
+      'New South Wales': 'nsw',
+      'QueensLand': 'qld',
+      'South Australia': 'sa',
+      'Victoria': 'vic',
+      'Australian Capital Territory': 'act',
+      'Western Australia': 'wa',
+    };
+
     navigate('/calculator', {
       state: {
-        buyingSelling: selectedBuyingSelling,
-        propertyType: selectedPropertyType,
-        state: selectedState,
+        transactionType: transactionTypeMap[selectedBuyingSelling],
+        propertyType: propertyTypeMap[selectedPropertyType],
+        area: stateMap[selectedState],
       },
     });
   };
@@ -95,25 +119,21 @@ font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minut
               <CustomSelect
                 options={['Buying', 'Selling', 'Transferring', 'Contract Advice']}
                 placeholder="Buying or Selling?"
-                selectedOption={selectedBuyingSelling}
                 setSelectedOption={setSelectedBuyingSelling}
               />
               <CustomSelect
-                options={['House', 'Land', 'Apartment', 'TownHouse', 'Villa', 'Other']}
+                options={['House', 'Apartment', 'Land', 'Otp']}
                 placeholder="Property Type"
-                selectedOption={selectedPropertyType}
                 setSelectedOption={setSelectedPropertyType}
               />
               <CustomSelect
-                options={['New South Wales', 'QueensLand', 'South Australia', 'Victoria', 'Tasmania', 'Western Australia']}
+                options={['New South Wales', 'QueensLand', 'South Australia', 'Victoria', 'Australian Capital Territory', 'Western Australia']}
                 placeholder="State"
-                selectedOption={selectedState}
                 setSelectedOption={setSelectedState}
               />
             </div>
             <button
-              className="mt-8 bg-[#ffffff] text-[#0d0d0d] font-bold font-poppins pl-4 text-[1.6rem] flex items-center space-x-2 text-center hover:translate-x-2 -tracking-wider transition-transform duration-300 cursor-pointer"
-              id='borderHero'
+              className="mt-8 bg-[#ffffff] text-[#0d0d0d] font-bold font-poppins pl-4 text-[1.6rem] flex items-center space-x-2 text-center hover:translate-x-2 -tracking-wider transition-transform duration-300 cursor-pointer borderbtn "
               onClick={handleGetQuote}
             >
               <span>GET A QUOTE</span>

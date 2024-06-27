@@ -59,12 +59,12 @@ margin-left: 8rem;
   margin-right: var(--large-margin);
   }
 .content1{
-  margin-left: var(--large-margin);
+  margin-left: 10.5rem;
   /* margin-right: var(--large-margin); */
   }
 .content2{
   /* margin-left: var(--large-margin); */
-  margin-right: var(--large-margin);
+  margin-right: 10.5rem;
   }
  }
 

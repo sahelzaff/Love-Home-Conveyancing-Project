@@ -92,8 +92,19 @@ const ServiceReview = () => {
         <div className="h-auto pt-16 my-36">
             <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center gap-5">
-                    <img src={assets.google} alt="Google Logo" className="" />
-                    <h2 className="text-5xl font-bold font-inter">107+ <span className="text-[#f0532d]">5 Star Rated</span> Customer Reviews</h2>
+                    <img src={assets.google}  alt="Google Logo" className="w-[30rem]" />
+                    <div className='flex flex-row items-center justify-center gap-2'>
+                        <h2 className="text-4xl font-bold font-inter">5</h2>
+                        <div className='flex flex-row items-center'>
+                            <img src={assets.star} className='w-6' alt="" srcSet="" />
+                            <img src={assets.star} className='w-6' alt="" srcSet="" />
+                            <img src={assets.star} className='w-6' alt="" srcSet="" />
+                            <img src={assets.star} className='w-6' alt="" srcSet="" />
+                            <img src={assets.star} className='w-6' alt="" srcSet="" />
+                        </div>
+                        <h2 className="text-4xl font-bold font-inter">Rating</h2>
+                        <h2 className='mt-2 text-[#f0532d] font-inter font-medium'>107 Reviews</h2>
+                    </div>
                 </div>
                 <div className="w-full mt-10">
                     {googleReviews.length > 0 ? (

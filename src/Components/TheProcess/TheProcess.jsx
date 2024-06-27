@@ -42,11 +42,18 @@ const TheProcess = () => {
               <p className="text-[1.125rem] font-poppins">Coordination of financial aspects and settlement preparation.</p>
             </div>
           </div>
-          <div className="flex items-start ">
+          <div className="flex items-start mb-14">
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">5</div>
             <div className="ml-10">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Settlement</h2>
               <p className="text-[1.125rem] font-poppins">Facilitation of ownership transfer and post-purchase support.</p>
+            </div>
+          </div>
+          <div className="flex items-start ">
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">6</div>
+            <div className="ml-10">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Post-Purchase Support</h2>
+              <p className="text-[1.125rem] font-poppins">The conveyancer ensures ongoing customer support post-settlement, including property registrations and legal guidance, to protect their interests</p>
             </div>
           </div>
           <div className='mt-2  mb-14 sm:pt-5'>

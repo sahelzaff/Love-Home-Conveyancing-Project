@@ -20,6 +20,9 @@ import RCProfile from './RCProfile.png';
 import Benefit1 from './Benefit1.png';
 import Benefit2 from './Benefit2.png';
 import Benefit3 from './Benefit3.png';
+import Benefit1White from './Benefit1White.png';
+import Benefit2White from './Benefit2White.png';
+import Benefit3White from './Benefit3White.png';
 import Background_all from './Background_all.png';
 import call_svgrepo_com from './call_svgrepo_com.svg';
 import blob_rc from './blob_rc.png';
@@ -96,7 +99,12 @@ import transfercalWhite from './transfercalWhite.png';
 import contractcal from './contractcal.png';
 import contractcalWhite from './contractcalWhite.png';
 import buyinghead from './buyinghead.png';
+import abouthead from './abouthead.png';
+import aboutwork from './aboutwork.png';
+import abouthelp from './abouthelp.png';
 import bullet from './bullet.png';
+import bulletBlack from './bulletBlack.png';
+import bulletWhite from './bulletWhite.png';
 import Blog1 from './Blog1.png';
 import Blogs2 from './Blogs2.webp';
 import Blogs3 from './Blogs3.png';
@@ -107,13 +115,20 @@ import Blogs7 from './Blogs7.jpg';
 import buying1 from './buying1.jpg';
 import buying2 from './buying2.jpg';
 import video from './video.mp4';
+import Bondi from './Bondi.mp4';
 
 
 
 export const assets = {
     clock_contact,
     calculatorhead,
+    abouthead,
+    aboutwork,
+    abouthelp,
+    Bondi,
     bullet,
+    bulletBlack,
+    bulletWhite,
     buyinghead,
     buying1,
     buying2,
@@ -200,6 +215,9 @@ export const assets = {
     Benefit1,
     Benefit2,
     Benefit3,
+    Benefit1White,
+    Benefit2White,
+    Benefit3White,
     Background_all,
     call_svgrepo_com,
     blob_rc,

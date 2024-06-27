@@ -103,26 +103,26 @@ const Contactform = () => {
                   type="text"
                   name="firstName"
                   id="firstName"
-                  className="block py-2.5 w-full text-sm text-gray-900 bg-transparent border-1 rounded-lg border-[#f0532d]  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                  className="block py-2.5 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d]  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
                   placeholder=" "
                   value={formData.firstName}
                   onChange={handleChange}
                   required
                 />
-                <label htmlFor="firstName" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">First name</label>
+                <label htmlFor="firstName" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">First name</label>
               </div>
               <div className="relative z-0 w-full mb-10 group">
                 <input
                   type="text"
                   name="lastName"
                   id="lastName"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
                   placeholder=" "
                   value={formData.lastName}
                   onChange={handleChange}
                   required
                 />
-                <label htmlFor="lastName" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">Last name</label>
+                <label htmlFor="lastName" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">Last name</label>
               </div>
             </div>
             <div className="relative z-0 w-full mb-10 group">
@@ -131,13 +131,13 @@ const Contactform = () => {
                 pattern="[0-9]{10}"
                 name="phone"
                 id="phone"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
                 placeholder=" "
                 value={formData.phone}
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="phone" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">Phone number (123-456-7890)</label>
+              <label htmlFor="phone" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">Phone number (123-456-7890)</label>
             </div>
 
             <div className="relative z-0 w-full mb-10 group">
@@ -145,13 +145,13 @@ const Contactform = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-1 rounded-lg border-[#f0532d]  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d]  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
                 placeholder=" "
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">Email address</label>
+              <label htmlFor="email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#000] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8 px-1">Email address</label>
             </div>
 
             <div className="relative z-0 w-full mb-10 group">
