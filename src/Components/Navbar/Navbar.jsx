@@ -30,10 +30,29 @@ const Navbar = () => {
         return location.pathname === path ? 'text-[#f0532d]' : 'text-[#0d0d0d] hover:text-[#f0532d]';
     };
 
+    // Function to handle scroll event
+    const handleScroll = () => {
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            if (window.pageYOffset > 500) {
+                navbar.classList.add('fixed-navbar');
+            } else {
+                navbar.classList.remove('fixed-navbar');
+            }
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="sticky  w-full z-50">
-            <TopBar />
-            <nav className="bg-white dark:bg-gray-900 w-full z-20 top-9 left-0 sticky" id="sticky">
+        <div className=" w-full z-50">
+            
+            <nav id="navbar" className="bg-white dark:bg-gray-900 w-full z-20 left-0">
                 <div className="max-w-screen-3xl flex flex-wrap items-center justify-between Homepage py-4">
                     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img

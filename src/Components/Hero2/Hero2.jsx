@@ -8,9 +8,9 @@ const Hero2 = () => {
         <div className='relative h-auto mb-44 '>
             <section className="relative h-[100vh] bg-center bg-cover bg-no-repeat brightness-110" id='mainrc' style={{ backgroundImage: `url(${assets.banner_rc})` }}>
                 <div className="absolute inset-0 w-[43%] bg-white bg-opacity-0 flex flex-col items-start justify-center" id='banner_rc' data-aos='fade-right' data-aos-duration="1000">
-                    <h1 className="text-[#fff] font-inter text-2xl sm:text-3xl font-[700] leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
+                    <h1 className="text-[#f0532d] font-inter text-2xl sm:text-3xl font-[700] leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
 
-                    <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[900] font-inter py-2 text-[#f0532d]' id='text2'>Purchasing Property.</h2>
+                    <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[900] font-inter py-2 text-[#fff]' id='text2'>Purchasing Property.</h2>
                     <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter font-medium leading-tight text-[#f0532d]' id='text3'>Expert Advice for Peace of Mind</p>
                     <div className='w-24 sm:w-32 md:w-40 lg:w-44 h-[0.3rem] bg-[#f0532d] my-3 sm:my-4 md:my-5 rounded-e-md'></div>
                     <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full  text-white' id='text4'>Leave the hassle to me, and focus on what really matters to you.so you can chat directly with  the qualified property lawyer.

@@ -14,8 +14,8 @@ const Why2 = () => {
         <h1 className="text-[7rem] leading-none text-left font-inter font-[800] text-white mt-[30rem]" id='WhyText1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
           Why<br /><span className='text-[9rem] text-[#f0532d]' id='WhyText2'>Choose Us</span>
         </h1>
-        <h2 className='font-inter pt-5 font-medium text-xl'>At Love Home, our commitment to excellence sets us apart as the premier choice for all your conveyancing needs. Here's why clients continue to choose us with confidence</h2>
-        <div className='grid grid-cols-2 grid-rows-2 gap-28 pt-44 text-left bg-transparent'>
+        <h2 className='font-inter pt-5 font-medium text-xl ' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">At Love Home, our commitment to excellence sets us apart as the premier choice for all your conveyancing needs. Here's why clients continue to choose us with confidence</h2>
+        <div className='grid grid-cols-2 grid-rows-2 gap-x-28  pt-44 text-left bg-transparent'>
           <div className="mb-8  font-inter"  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
             <h2 className="text-2xl md:text-3xl lg:text-4xl mb-8 text-[#f0532d] font-bold " id='whyHead'>Expertise and Experience</h2>
             <p className="text-lg md:text-xl lg:text-2xl" id='whyPara'>Our legal team is comprised of seasoned property lawyers with a wealth of experience and deep understanding of conveyancing matters. Whether your case is straightforward or complex, rest assured that our experts will provide professional guidance and cost-effective solutions tailored to your specific needs.</p>

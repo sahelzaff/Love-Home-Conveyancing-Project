@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import './Homepage.css'
 import { assets } from './assets/assets'
+import TopBar from './Components/TopBar/TopBar';
 
 const TermsPage = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const TermsPage = () => {
   }, []);
   return (
     <div>
+      <TopBar/>
       <Navbar />
       <section className=''>
         <div className='flex flex-col h-auto items-start content py-28'>

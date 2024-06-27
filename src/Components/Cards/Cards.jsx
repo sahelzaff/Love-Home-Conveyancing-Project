@@ -3,10 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 import '../../Responsive.css'
 
-const CustomSelect = ({ options, placeholder, setSelectedOption }) => {
+const CustomSelect = ({ options, placeholder, selectedOption, setSelectedOption, closeDropdown }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => setIsOpen(!isOpen);
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+    if (!isOpen && closeDropdown) {
+      closeDropdown();
+    }
+  };
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -20,7 +25,9 @@ const CustomSelect = ({ options, placeholder, setSelectedOption }) => {
         onClick={toggleDropdown}
         style={{ width: '300px' }}
       >
-        {placeholder}
+        <div className='mr-10'>
+          {selectedOption || placeholder}
+        </div>
         <div className="absolute right-0 top-0 h-full flex items-center" style={{ backgroundColor: '#f5320d', width: '2.5rem' }}>
           <svg
             className={`absolute right-0 mr-2 transform ${isOpen ? '' : 'rotate-180'}`}
@@ -39,7 +46,7 @@ const CustomSelect = ({ options, placeholder, setSelectedOption }) => {
           {options.map((option) => (
             <li
               key={option}
-              className="py-2 px-4 cursor-pointer hover:bg-gray-700 menu-item"
+              className={`py-2 px-4 cursor-pointer hover:bg-[#f0532d] menu-item ${option === selectedOption ? 'bg-[#f0532d] text-white' : ''}`}
               onClick={() => handleOptionClick(option)}
             >
               {option}
@@ -51,11 +58,17 @@ const CustomSelect = ({ options, placeholder, setSelectedOption }) => {
   );
 };
 
+
 const Cards = () => {
   const [selectedBuyingSelling, setSelectedBuyingSelling] = useState(null);
   const [selectedPropertyType, setSelectedPropertyType] = useState(null);
   const [selectedState, setSelectedState] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
   const navigate = useNavigate();
+
+  const handleDropdownOpen = (dropdownName) => {
+    setOpenDropdown(dropdownName);
+  };
 
   const handleGetQuote = () => {
     const transactionTypeMap = {
@@ -96,19 +109,19 @@ const Cards = () => {
         <div className='flex flex-col items-start justify-end h-[80vh] gap-[0rem]' id='mainDiv'>
           <div className='flex flex-col items-start justify-center'>
             <div className="flex flex-col space-y-4">
-              <div class="wrapper font-poppins " id='rotating_Text'>
+              <div className="wrapper font-poppins " id='rotating_Text'>
                 <p className=''>Simplify Your</p>
-                <div class="words">
-                  <span id='rotate'></span>
-                  <span id='rotate'>Search</span>
-                  <span id='rotate'>Stress</span>
-                  <span id='rotate'>Move</span>
+                <div className="words">
+                  <span id="rotate">Search</span>
+                  <span id="rotate">Stress</span>
+                  <span id="rotate">Move</span>
+                  <span id="rotate">Stress</span>
+                  <span id="rotate">Search</span>
                 </div>
               </div>
             </div>
             <div>
-              <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem]
-font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minutes!</p>
+              <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem] font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minutes!</p>
             </div>
           </div>
           <div className='flex flex-col items-start justify-center w-full'>
@@ -119,17 +132,29 @@ font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minut
               <CustomSelect
                 options={['Buying', 'Selling', 'Transferring', 'Contract Advice']}
                 placeholder="Buying or Selling?"
+                selectedOption={selectedBuyingSelling}
                 setSelectedOption={setSelectedBuyingSelling}
+                closeDropdown={() => setOpenDropdown(null)}
+                isOpen={openDropdown === 'Buying'}
+                toggleDropdown={() => handleDropdownOpen('Buying')}
               />
               <CustomSelect
                 options={['House', 'Apartment', 'Land', 'Otp']}
                 placeholder="Property Type"
+                selectedOption={selectedPropertyType}
                 setSelectedOption={setSelectedPropertyType}
+                closeDropdown={() => setOpenDropdown(null)}
+                isOpen={openDropdown === 'PropertyType'}
+                toggleDropdown={() => handleDropdownOpen('PropertyType')}
               />
               <CustomSelect
                 options={['New South Wales', 'QueensLand', 'South Australia', 'Victoria', 'Australian Capital Territory', 'Western Australia']}
                 placeholder="State"
+                selectedOption={selectedState}
                 setSelectedOption={setSelectedState}
+                closeDropdown={() => setOpenDropdown(null)}
+                isOpen={openDropdown === 'State'}
+                toggleDropdown={() => handleDropdownOpen('State')}
               />
             </div>
             <button

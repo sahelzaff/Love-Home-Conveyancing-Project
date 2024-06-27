@@ -490,10 +490,13 @@ font-size: 70px;
 }
 
 #first{
-  height:90vh;
+  height:fit-content;
 }
 #robin{
   width: 42%;
+}
+#aboutcard2{
+  margin-top: 12.5rem;
 }
 
 /* For 1600x900 */
@@ -652,7 +655,9 @@ font-size: 70px;
   #first{
     height: 100vh;
   }
-
+  #aboutcard2{
+    margin-top: 11rem;
+  }
 
   
 
@@ -965,7 +970,7 @@ font-size: 70px;
 
   
   #first{
-    height: 130vh
+    height: fit-content
 
   }
   #robin{
@@ -980,6 +985,9 @@ font-size: 70px;
   }
   #namePara1{
     font-size: 14px;
+  }
+  #aboutcard2{
+    margin-top: 8.5rem;
   }
 
 

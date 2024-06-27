@@ -7,6 +7,7 @@ import './Homepage.css';
 import WorkSection from './Components/WorkSection/WorkSection';
 import ServiceReview from './Components/ServiceReview/ServiceReview';
 import { assets } from './assets/assets';
+import TopBar from './Components/TopBar/TopBar';
 
 const Service = () => {
   const reviewRef = useRef(null);
@@ -20,8 +21,18 @@ const Service = () => {
     }
   }, []);
 
+
+
+ useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
   return (
     <div>
+      <TopBar/>
       <Navbar />
       <ServiceInfo />
       <ServiceHome />

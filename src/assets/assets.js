@@ -102,7 +102,8 @@ import buyinghead from './buyinghead.png';
 import abouthead from './abouthead.png';
 import aboutwork from './aboutwork.png';
 import abouthelp from './abouthelp.png';
-import bullet from './bullet.png';
+import bullet from './bullet.png'; 
+import commitment from './commitment.png'; 
 import bulletBlack from './bulletBlack.png';
 import bulletWhite from './bulletWhite.png';
 import Blog1 from './Blog1.png';
@@ -122,6 +123,7 @@ import Bondi from './Bondi.mp4';
 export const assets = {
     clock_contact,
     calculatorhead,
+    commitment,
     abouthead,
     aboutwork,
     abouthelp,

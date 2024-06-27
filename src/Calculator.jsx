@@ -6,6 +6,7 @@ import CalculatorMain from './Components/CalculatorMain/CalculatorMain';
 import Quote from './Quote';
 // import { Route, Routes } from 'react-router-dom';
 import { QuoteProvider } from './QuoteContext';
+import TopBar from './Components/TopBar/TopBar';
 
 
 const Calculator = () => {
@@ -20,6 +21,7 @@ const Calculator = () => {
   return (
     <QuoteProvider>
       <div>
+        <TopBar/>
         <Navbar />
         <CalculatorInfo />
         {!showQuote ? (

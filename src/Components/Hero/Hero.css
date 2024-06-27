@@ -295,30 +295,24 @@ i {
   font-weight: 900;
   animation: spin_words 12s infinite;
 }
-@keyframes spin_words{
-  10%{
-      transform: translateY(-112%);
+@keyframes spin_words {
+  0%, 25% {
+    transform: translateY(0%);
   }
-  25%{
-      transform: translateY(-100%);
+  33.33% {
+    transform: translateY(-100%);
   }
-  35%{
-      transform: translateY(-212%);
+  58.33% {
+    transform: translateY(-100%);
   }
-  50%{
-      transform: translateY(-200%);
+  66.67% {
+    transform: translateY(-200%);
   }
-  60%{
-      transform: translateY(-312%);
+  91.67% {
+    transform: translateY(-200%);
   }
-  75%{
-      transform: translateY(-300%);
-  }
-  85%{
-      transform: translateY(-412%);
-  }
-  100%{
-      transform: translateY(-400%);
+  100% {
+    transform: translateY(0%);
   }
 }
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 // import Section2 from './Components/Section2/Section2'
@@ -20,15 +19,26 @@ import Video from './Components/video/video'
 import Cards from './Components/Cards/Cards'
 import './Homepage.css'
 import TheProcess from './Components/TheProcess/TheProcess'
+import TopBar from './Components/TopBar/TopBar'
+import React, { useEffect } from 'react';
 
 
 const Homepage = () => {
+
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     return (
         <div className='overflow-x-hidden'>
-            <Navbar className="sticky w-full z-50" />
-                <div className='bg-[#0d0d0d]'>
-                    <Hero2 />
-                </div>
+            <TopBar />
+            <Navbar className=" w-full z-50" />
+            <div className='bg-[#0d0d0d]'>
+                <Hero2 />
+            </div>
             <div className='Homepage'>
                 {/* <Cards/> */}
                 {/* <div className="pl-14">
@@ -52,18 +62,18 @@ const Homepage = () => {
                 highlight="peace of mind"
                 highlightClass="text-[#f0532d] font-bold font-outfit"
                 className="" /> */}
-                <div className='relative z-10'>
+            <div className='relative z-10'>
 
-                <Video/>
-                </div>
+                <Video />
+            </div>
             <div className='Homepage1'>
                 <CustomerReviews />
             </div>
             <div className='Homepage'>
                 {/* <WorkSection /> */}
-            <TheProcess/>    
+                <TheProcess />
             </div>
-                <Why2/>
+            <Why2 />
             <div className='Homepage'>
             </div>
             <WhySection />
