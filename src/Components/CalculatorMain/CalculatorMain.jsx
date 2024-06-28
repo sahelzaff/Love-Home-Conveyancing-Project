@@ -324,21 +324,21 @@ const CalculatorMain = ({ setShowQuote }) => {
                             type="text"
                             placeholder="Name"
                             onChange={handleChange('name')}
-                            className="text-xl font-inter p-2 border1 mb-2 bg-transparent focus-outline-none focus:border-[#f0532d]"
+                            className="text-xl font-inter p-2 border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus-outline-none focus:border-[#f0532d] "
                             required
                         />
                         <input
                             type="email"
                             placeholder="Email"
                             onChange={handleChange('email')}
-                            className="p-2 text-xl font-inter border1 mb-2 bg-transparent focus-outline-none focus:border-[#f0532d]"
+                            className="p-2 text-xl font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus-outline-none focus:border-[#f0532d]"
                             required
                         />
                         <input
                             type="text"
                             placeholder="Phone"
                             onChange={handleChange('phone')}
-                            className="p-2 text-xl font-inter border1 mb-2 bg-transparent focus-outline-none focus:border-[#f0532d]"
+                            className="p-2 text-xl font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus-outline-none focus:border-[#f0532d]"
                             required
                         />
                         <button

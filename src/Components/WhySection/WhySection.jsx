@@ -73,7 +73,7 @@ const WhySection = () => {
     };
 
     return (
-        <div className='bg-[#f4f4f4] w-full max-w-screen-4xl h-auto  pb-20'>
+        <div className='bg-[#f4f4f4] w-full max-w-screen-4xl h-auto -mb-10'>
             {/* <div className='flex flex-col items-stretch justify-center gap-12 h-auto'>
                 <div className='h-[120vh] bg-black bg-center bg-cover bg-no-repeat Homepage' style={{ backgroundImage: `url(${assets.sydney})` }}>
                     <div className='flex flex-col items-center justify-center h-auto absoulute w-full left-[10rem]'>
