@@ -17,43 +17,43 @@ const TheProcess = () => {
           <div className="flex items-start mb-14" id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">1</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d]">Engagement</h2>
-              <p className="text-[1.125rem] font-poppins">Customer engages a licensed conveyancer or solicitor specializing in online conveyancing.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] " id='process_main_head'>Engagement</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>Customer engages a licensed conveyancer or solicitor specializing in online conveyancing.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">2</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] whitespace-nowrap">Consultation & Documentation</h2>
-              <p className="text-[1.125rem]  font-poppins ">Conducts an initial consultation with the customer to gather information and details by document collection, and contract review.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head'>Consultation & Documentation</h2>
+              <p className="text-[1.125rem]  font-poppins "  id='process_main_para'>Conducts an initial consultation with the customer to gather information and details by document collection, and contract review.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">3</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Property Checks</h2>
-              <p className="text-[1.125rem]  font-poppins">As a Conveyancer we conduct property searches and due diligence.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]"  id='process_main_head'>Property Checks</h2>
+              <p className="text-[1.125rem]  font-poppins"  id='process_main_para'>As a Conveyancer we conduct property searches and due diligence.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">4</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap">Financial Arrangements</h2>
-              <p className="text-[1.125rem] font-poppins">Coordination of financial aspects and settlement preparation.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head'>Financial Arrangements</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>Coordination of financial aspects and settlement preparation.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">5</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]">Settlement</h2>
-              <p className="text-[1.125rem] font-poppins">Facilitation of ownership transfer and post-purchase support.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]"  id='process_main_head'>Settlement</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>Facilitation of ownership transfer and post-purchase support.</p>
             </div>
           </div>
           <div className="flex items-start " id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">6</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap">Post-Purchase Support</h2>
-              <p className="text-[1.125rem] font-poppins">The conveyancer ensures ongoing customer support post-settlement, including property registrations and legal guidance, to protect their interests</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head'>Post-Purchase Support</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>The conveyancer ensures ongoing customer support post-settlement, including property registrations and legal guidance, to protect their interests</p>
             </div>
           </div>
           <div className='mt-2  mb-14 sm:pt-5'>

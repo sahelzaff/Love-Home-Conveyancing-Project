@@ -17,7 +17,7 @@ const logos = [
 
 const SliderClients = () => {
   return (
-    <div className="flex flex-col items-center my-48 w-[86%] mx-auto">
+    <div className="flex flex-col items-center my-48 w-[86%] mx-auto" id='sliderclientmainmain'>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 font-outfit text-center" id='sliderclient_text'>
         Trusted By these <span className='text-[#f0532d]'>Satisfied Clients</span>
       </h2>

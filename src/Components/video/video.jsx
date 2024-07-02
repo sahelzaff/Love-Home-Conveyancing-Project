@@ -46,12 +46,13 @@ const VideoBackground = () => {
       >
         <h1 className="text-white text-5xl font-meduim font-outfit" id="videoText1">
           Experience seamless property transactions with{' '}
-          <span className="text-[#f0532d] text-9xl font-extrabold font-outfit" id='videoText2'>
+          <p className="text-[#f0532d] text-9xl font-extrabold font-outfit" id='videoText2'>
             <br />
             Peace Of Mind,
-          </span>
+          </p>
           <br />
-          every step of the way.
+        <p className="text-white text-5xl font-meduim font-outfit" id="videoText1" >every step of the way.</p>
+          
         </h1>
       </div>
     </div>
