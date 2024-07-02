@@ -1234,9 +1234,9 @@ font-weight: 900;
     /* padding-top: 1rem; */
   }
   #buttonProcess{
-    font-size: 17px;
-    padding: 15px 30px ;
-    margin-left: 25px;
+    font-size: 16px;
+    padding: 15px 25px ;
+    margin-left: 30px;
   }
 
   #process_row_div{
@@ -1364,7 +1364,7 @@ font-weight: 900;
     font-size: 45px;
   }
   #terms_heading{
-    font-size: 40px;
+    font-size: 35px;
   }
   #privacy_subline{
     font-size: 14px;
