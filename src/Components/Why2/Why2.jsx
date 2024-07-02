@@ -1,21 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { assets } from '../../assets/assets';
-import '../../Homepage.css'
-import '../../Responsive.css'
+import '../../Homepage.css';
+import '../../Responsive.css';
 
 const Why2 = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const backgroundImage = isMobile ? assets.sydney_mobile : assets.sydney;
+
   return (
-    <div className="relative w-full h-auto overflow-hidden flex flex-col items-center justify-center p-20 mt-48 ">
+    <div className="relative w-full h-auto overflow-hidden flex flex-col items-center justify-center p-20 mt-48" id='why2main'>
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${assets.sydney})`, filter: 'brightness(1)' }}
+        className="absolute inset-0 bg-cover bg-center" id='background_why2'
+        style={{ backgroundImage: `url(${backgroundImage})`, filter: 'brightness(1)' }}
       ></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center py-8" id='WhyText'>
         <h1 className="text-[7rem] leading-none text-left font-inter font-[800] text-white mt-[30rem]" id='WhyText1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
           Why<br /><span className='text-[9rem] text-[#f0532d]' id='WhyText2'>Choose Us</span>
         </h1>
-        <h2 className='font-inter pt-5 font-medium text-xl ' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">At Love Home, our commitment to excellence sets us apart as the premier choice for all your conveyancing needs. Here's why clients continue to choose us with confidence</h2>
-        <div className='grid grid-cols-2 grid-rows-2 gap-x-28  pt-44 text-left bg-transparent'>
+        <h2 className='font-inter pt-5 font-medium text-xl ' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" id='why2paramain'>At Love Home, our commitment to excellence sets us apart as the premier choice for all your conveyancing needs. Here's why clients continue to choose us with confidence</h2>
+        <div className='grid grid-cols-2 grid-rows-2 gap-x-28  pt-44 text-left bg-transparent' id='why2paralignment'>
           <div className="mb-8  font-inter"  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
             <h2 className="text-2xl md:text-3xl lg:text-4xl mb-8 text-[#f0532d] font-bold " id='whyHead'>Expertise and Experience</h2>
             <p className="text-lg md:text-xl lg:text-2xl" id='whyPara'>Our legal team is comprised of seasoned property lawyers with a wealth of experience and deep understanding of conveyancing matters. Whether your case is straightforward or complex, rest assured that our experts will provide professional guidance and cost-effective solutions tailored to your specific needs.</p>

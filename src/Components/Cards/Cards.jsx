@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 import '../../Responsive.css'
+import '../../Homepage.css'
 
 const CustomSelect = ({ options, placeholder, selectedOption, setSelectedOption, closeDropdown }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,10 +109,10 @@ const Cards = () => {
       <div className='h-screen w-full py-5 relative z-10'>
         <div className='flex flex-col items-start justify-end h-[80vh] gap-[0rem]' id='mainDiv'>
           <div className='flex flex-col items-start justify-center'>
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4 ">
               <div className="wrapper font-poppins " id='rotating_Text'>
-                <p className=''>Simplify Your</p>
-                <div className="words">
+                <p className='' id='simplify_text'>Simplify Your</p>
+                <div className="words" id='words_text'>
                   <span id="rotate">Search</span>
                   <span id="rotate">Stress</span>
                   <span id="rotate">Move</span>
@@ -126,9 +127,9 @@ const Cards = () => {
           </div>
           <div className='flex flex-col items-start justify-center w-full'>
             <div>
-              <p className="text-xl text-[#0d0d0d] 2xl:text-4xl md:text-2xl m font-poppins w-full  font-semibold md:text-[#0d0d0d]">Property <span className='text-[#f0532d]'>Conveyancing</span> </p>
+              <p className="text-xl text-[#0d0d0d] 2xl:text-4xl md:text-2xl m font-poppins w-full  font-semibold md:text-[#0d0d0d]" id='property_hero'>Property <span className='text-[#f0532d]'>Conveyancing</span> </p>
             </div>
-            <div className="flex flex-col md:flex-row items-center pt-4 space-y-4 md:space-y-0 md:space-x-4 w-full">
+            <div className="flex flex-col md:flex-row items-center pt-4 space-y-4 md:space-y-0 md:space-x-4 w-full" id='select'>
               <CustomSelect
                 options={['Buying', 'Selling', 'Transferring', 'Contract Advice']}
                 placeholder="Buying or Selling?"
@@ -158,7 +159,7 @@ const Cards = () => {
               />
             </div>
             <button
-              className="mt-8 bg-[#ffffff] text-[#0d0d0d] font-bold font-poppins pl-4 text-[1.6rem] flex items-center space-x-2 text-center hover:translate-x-2 -tracking-wider transition-transform duration-300 cursor-pointer borderbtn "
+              className="mt-8 bg-[#ffffff] text-[#0d0d0d] font-bold font-poppins pl-4 text-[1.6rem] flex items-center space-x-2 text-center hover:translate-x-2 -tracking-wider transition-transform duration-300 cursor-pointer borderbtn " id='btn_cards'
               onClick={handleGetQuote}
             >
               <span>GET A QUOTE</span>

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { assets } from '../../assets/assets';
 // import './Counter.css';
 import '../../Homepage.css'
+import '../../Responsive.css'
 
 
 const WhySection = () => {
@@ -86,21 +87,23 @@ const WhySection = () => {
                     </div>
 
                 </div> */}
-                <div ref={counterRef} className='flex flex-row justify-center items-center bg-[#19345E] py-20'>
-                    <div className="flex flex-row items-center justify-center w-full max-w-screen-2xl h-auto ">
+                <div ref={counterRef} className='flex flex-row justify-center items-center bg-[#19345E] py-20' id='whycountermain'>
+                    <div className="flex flex-row items-center justify-center w-full max-w-screen-2xl h-auto " id='whycounterdiv'>
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
                             <div className='font-outfit text-7xl font-bold text-white'>{count1}<span className='text-[#f0532d]'>+</span></div>
-                            <h3 className='font-poppins font-medium text-[#fff] text-2xl'>Satisfied customers</h3>
+                            <h3 className='font-poppins font-medium text-center text-[#fff] text-2xl'>Satisfied customers</h3>
                         </div>
-                        <div className='h-24 w-[0.19rem] bg-[#f0532d]'></div>
+                        <div className='h-24 w-[0.19rem] bg-[#f0532d]' id='vertical_line'></div>
+                        <div className='h-[0.25rem] rounded-lg w-60 my-10 bg-[#f0532d]' id='horizontal_line'></div>
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
                             <div className='font-outfit text-7xl font-bold text-white'>{count2}<span className='text-[#f0532d]'>+</span></div>
-                            <h3 className='font-poppins font-medium text-[#fff] text-2xl'>5-Star reviews</h3>
+                            <h3 className='font-poppins font-medium text-center text-[#fff] text-2xl'>5-Star reviews</h3>
                         </div>
-                        <div className='h-24 w-[0.19rem] bg-[#f0532d]'></div>
+                        <div className='h-24 w-[0.19rem] bg-[#f0532d]' id='vertical_line'></div>
+                        <div className='h-[0.25rem] rounded-lg w-60 my-10 bg-[#f0532d]' id='horizontal_line'></div>
                         <div className='flex flex-col items-center justify-center w-1/3 h-auto'>
                             <div className='font-outfit text-7xl font-bold text-white'>{count3}<span className='text-[#f0532d]'>+</span></div>
-                            <h3 className='font-poppins font-medium text-[#fff] text-2xl'>Years of experience</h3>
+                            <h3 className='font-poppins font-medium text-center text-[#fff] text-2xl'>Years of experience</h3>
                         </div>
                     </div>
                 </div>

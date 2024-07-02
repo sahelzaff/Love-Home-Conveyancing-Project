@@ -48,14 +48,19 @@ import telephone from './telephone.svg';
 import location from './location.svg';
 import contact from './contact.png';
 import banner_rc from './banner_rc.png';
+import banner_rc_mobile from './banner_rc_mobile.png';
+import banner_rc_mobile_overlay from './banner_rc_mobile_overlay.png';
 import whatsapp from './whatsapp.png';
 import we from './we.png';
 import skype from './skype.png';
 import zoom from './zoom.png';
 import teams from './teams.png';
 import Background_new from './Background_new.png';
-import sydney from './sydney.png';
 import Background_new2 from './Background_new2.png';
+import Background_new_mobile from './Background_new_mobile.png';
+import Background_new2_mobile from './Background_new2_mobile.png';
+import sydney from './sydney.png';
+import sydney_mobile from './sydney_mobile.png';
 import process from './process.png';
 import review1 from './review1.png';
 import review2 from './review2.png';
@@ -128,6 +133,8 @@ export const assets = {
     aboutwork,
     abouthelp,
     Bondi,
+    Background_new_mobile,
+    Background_new2_mobile,
     bullet,
     bulletBlack,
     bulletWhite,
@@ -156,6 +163,7 @@ export const assets = {
     landWhite,
     apartment,
     apartmentWhite,
+    banner_rc_mobile_overlay,
     house,
     houseWhite,
     sellcal,
@@ -184,7 +192,8 @@ export const assets = {
     Background_new,
     serviceshead,
     process,
-    sydney,
+    sydney, 
+    sydney_mobile,
     video,
     whatsapp,
     we,
@@ -192,6 +201,7 @@ export const assets = {
     teams,
     zoom,
     banner_rc,
+    banner_rc_mobile,
     contact,
     mail,
     telephone,

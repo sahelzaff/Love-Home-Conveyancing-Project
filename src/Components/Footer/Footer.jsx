@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='pt-10 h-auto w-full '>
-            <div className='bg-[#19345e] text-[#fff] p-14 px-28'>
+            <div className='bg-[#19345e] text-[#fff] p-14 px-28' id='footer_financial'>
                 <p className='font-poppins font-medium text-[1.125rem] Homepage'>Financial Disclaimer: Please remember that past performance may not be indicative of future results. Different types of investments involve varying degrees of risk. Due to various factors, including changing market conditions, the content may no longer be reflective of current opinions or positions. Moreover, you should not assume that any discussion or information contained in this website serves as the receipt of, or as a substitute for, personalized investment advice from Borrower First. Please consult our financial experts for more information.</p>
 
             </div>
             <div className='h-auto bg-[#f0532d] text-[#fff] pt-[70px] pb-[100px]'>
-                <div className='px-28 py-10 Homepage'> 
-                    <div className='grid grid-cols-3 gap-20 justify-center items-center '>
+                <div className='px-28 py-10 Homepage' id='main_footer_main_div'> 
+                    <div className='grid grid-cols-3 gap-20 justify-center items-center ' id='main_footer'>
                         <div className=''>
                             <div>
                                 <img src={assets.logoWhite} className='min-w-32 max-w-80' alt="" srcset="" />
@@ -25,7 +25,7 @@ const Footer = () => {
                             <div className='flex flex-row gap-3  pt-8 items-center mb-2'>
                                 <p className='font-poppins text-[1.125rem] font-semibold flex flex-row items-start'>Follow Us:</p>
 
-                                <div className="sm:flex sm:items-center sm:space-x-1 hidden">
+                                <div className="sm:flex sm:items-center sm:space-x-1 " id='icons_footer'>
                                     <img
                                         src={assets.facebook}
                                         alt="Facebook"

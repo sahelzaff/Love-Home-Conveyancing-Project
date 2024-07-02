@@ -1,6 +1,8 @@
 import React from 'react';
 import './SliderClients.css';
 import { assets } from '../../assets/assets';
+import '../../Responsive.css';
+
 
 const logos = [
   assets.logoBlackRed,
@@ -16,7 +18,7 @@ const logos = [
 const SliderClients = () => {
   return (
     <div className="flex flex-col items-center my-48 w-[86%] mx-auto">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 font-outfit text-center">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 font-outfit text-center" id='sliderclient_text'>
         Trusted By these <span className='text-[#f0532d]'>Satisfied Clients</span>
       </h2>
       <div className="relative h-24 w-full overflow-hidden">

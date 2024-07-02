@@ -21,8 +21,8 @@ const CustomerReviews = () => {
 
   return (
     <div className='h-screen mb-36 -mt-28 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundSize: '55% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
-      <div className='flex flex-row h-full'>
-        <div className='w-1/2 flex flex-col justify-center ml-28'>
+      <div className='flex flex-row h-full' id='review_main'>
+        <div className='w-1/2 flex flex-col justify-center ml-28' id='review_left'>
           <div className='flex flex-col justify-center items-start'>
             <div className="flex w-3/4 justify-start items-start flex-col pt-36">
               <div>

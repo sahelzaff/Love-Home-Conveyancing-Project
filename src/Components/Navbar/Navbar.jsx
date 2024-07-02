@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { assets } from '../../assets/assets';
-import TopBar from '../TopBar/TopBar';
-import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
+import './Navbar.css';
 import '../../Homepage.css';
 import '../../Responsive.css';
 
@@ -30,7 +29,6 @@ const Navbar = () => {
         return location.pathname === path ? 'text-[#f0532d]' : 'text-[#0d0d0d] hover:text-[#f0532d]';
     };
 
-    // Function to handle scroll event
     const handleScroll = () => {
         const navbar = document.getElementById('navbar');
         if (navbar) {
@@ -50,28 +48,27 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className=" w-full z-50">
-            
+        <div className="w-full z-50">
             <nav id="navbar" className="bg-white dark:bg-gray-900 w-full z-20 left-0">
                 <div className="max-w-screen-3xl flex flex-wrap items-center justify-between Homepage py-4">
-                    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse" id='nav_logo'>
                         <img
                             src={isMobile ? assets.logoMobile : assets.logoBlackRed}
-                            className="h-14 cursor-pointer"
+                           className={`h-14 cursor-pointer ${menuOpen ? 'mt-[-14.5rem]' : 'mt-0'}`}
                             id="logo"
                             alt="Love Home Logo"
                         />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
                     </a>
-                    <div className="flex flex-row items-center gap-4">
-                        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <div className="flex flex-row items-center gap-4" id='nav_menu'>
+                        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse" id="contact_section">
                             <button
                                 type="button"
                                 className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F] font-montserrat"
                                 id="border"
                             >
                                 +02 9381 9118
-                                <span><img src={assets.call_svgrepo_com} className="w-10" alt="" /></span>
+                                <span><img src={assets.call_svgrepo_com} className="w-10" alt="call icon" /></span>
                             </button>
                             <button
                                 onClick={toggleMenu}
@@ -79,6 +76,7 @@ const Navbar = () => {
                                 className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                                 aria-controls="navbar-sticky"
                                 aria-expanded={menuOpen}
+                                id="hamburger_menu"
                             >
                                 <span className="sr-only">Open main menu</span>
                                 <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -92,7 +90,6 @@ const Navbar = () => {
                                 </svg>
                             </button>
                         </div>
-
                         <div className={`items-center justify-between ${menuOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
                             <ul className="flex flex-col pl-24 md:flex-row md:space-x-8 md:mt-0 md:border-0" id="navText">
                                 <li>
@@ -107,7 +104,7 @@ const Navbar = () => {
                                 <li>
                                     <Link
                                         to="/about-us"
-                                        className={`block py-2 px-3 rounded md:bg-transparent md:p-0 cursor-pointer md:dark:text-[#F57B1F] font-bold font-montserrat ${getLinkClass('/about')}`}
+                                        className={`block py-2 px-3 rounded md:bg-transparent md:p-0 cursor-pointer md:dark:text-[#F57B1F] font-bold font-montserrat ${getLinkClass('/about-us')}`}
                                     >
                                         About Us
                                     </Link>

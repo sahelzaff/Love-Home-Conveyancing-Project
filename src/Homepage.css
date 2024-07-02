@@ -146,6 +146,19 @@ margin-left: 8rem;
  
 }
 
+/* for mobile devices */
+
+@media only screen and (max-width: 600px) {
+  .Homepage{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .Homepage1{
+    margin-left: 0rem;
+  }
+}
+
+
 .blog-content h1 {
   font-size: 2.25rem; /* equivalent to text-4xl */
   font-weight: bold;
