@@ -1437,8 +1437,9 @@ font-weight: 900;
     
   }
   .secondhelp{
-    width: 280%;
-    margin-top: -15rem;
+    width: 180%;
+    max-width: 180%;
+    margin-top: -10rem;
     
   }
   #about_icons_page{
@@ -1451,8 +1452,8 @@ font-weight: 900;
     font-size: 12px;
     white-space: wrap;
   }
-  #commitment3{
-   
+  #cards2aboutmain2{
+   width: 100%;
   }
   #why_about_padding{
    padding-top: 3rem;

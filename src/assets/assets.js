@@ -47,6 +47,7 @@ import mail from './mail.svg';
 import telephone from './telephone.svg';
 import location from './location.svg';
 import contact from './contact.png';
+import contact_w_600 from './contact_w_600.png';
 import banner_rc from './banner_rc.png';
 import banner_rc_mobile from './banner_rc_mobile.png';
 import banner_rc_mobile_overlay from './banner_rc_mobile_overlay.png';
@@ -205,6 +206,7 @@ export const assets = {
     banner_rc,
     banner_rc_mobile,
     contact,
+    contact_w_600,
     mail,
     telephone,
     location,

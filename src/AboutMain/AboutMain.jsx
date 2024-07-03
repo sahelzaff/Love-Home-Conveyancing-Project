@@ -32,7 +32,7 @@ const AboutMain = () => {
                     </div>
                     <div className='flex flex-col w-1/2 h-full'>
                         <div className='bg-transparent h-[165vh] py-32 secondhelp' id='first'>
-                            <div className='flex flex-col gap-4  content2 py-5 pl-5' >
+                            <div className='flex flex-col gap-4  content2 py-5 pl-5' id='cards2aboutmain2'>
                                 <div className='flex flex-row gap-3 items-center justify-start '>
                                     <img src={assets.abouthelp} className='w-20' id='about_icons_page' alt="" />
                                     <div>
@@ -65,7 +65,7 @@ const AboutMain = () => {
 
                                 </div>
                             </div>
-                            <div className='flex flex-col gap-4 items-start content2 py-5 pl-5'>
+                            <div className='flex flex-col gap-4 items-start content2 py-5 pl-5' id='cards2aboutmain2'>
                                 <div className='flex flex-row gap-3 items-center justify-start '>
                                     <img src={assets.aboutwork} className='w-20' id='about_icons_page' alt="" />
                                     <div>
@@ -97,7 +97,7 @@ const AboutMain = () => {
                                 </div>
                             </div>
 
-                            <div className='flex flex-col gap-2 items-start content2  py-5 pl-5' id='commitment3'>
+                            <div className='flex flex-col gap-2 items-start content2  py-5 pl-5' id='cards2aboutmain2'>
                             <div className='flex flex-row gap-3 items-center justify-start '>
                                     <img src={assets.commitment} className='w-20' id='about_icons_page' alt="" />
                                     <div>
