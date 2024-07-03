@@ -262,6 +262,9 @@ font-size: 70px;
   #why2_numbers{
     display: none;
   }
+  #mobile_banner_rc_overlay{
+    display: none;
+  }
 
 
 
@@ -1343,7 +1346,10 @@ font-weight: 900;
     gap: 8px;
   }
   #footer_financial{
-    padding: 80px 0px;
+    padding: 50px 0px;
+  }
+  #footerfinancialpara{
+    font-size: 14px;
   }
   #main_footer{
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1382,12 +1388,16 @@ font-weight: 900;
   #robin{
     width: 100%;
     margin-top: 30rem;
-    padding-left: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   #nameRobin{
     font-size: 30px;
     margin-bottom: 2px;
    
+  }
+  #robin2{
+    font-size: 15px;
   }
   #aboutpagehorizontal{
     display: block !important;
@@ -1433,7 +1443,7 @@ font-weight: 900;
     margin-top: 4rem;
   }
   #first{
-    height: 120vh;
+    height: fit-content;
     
   }
   .secondhelp{
@@ -1458,7 +1468,56 @@ font-weight: 900;
   #why_about_padding{
    padding-top: 3rem;
   }
-  
+  #mobile_banner_rc_overlay{
+    display: block;
+  }
+  #bg_contact{
+    width: 100%;
+    height: 40vh;
+    /* background-attachment: fixed; */
+    filter: brightness(1)
+  }
+  #contact_headaboveimage{
+    padding-left: 1rem ;
+    padding-right:1em ;
+  }
+  #ContactPara{
+    width: 100%;
+    font-size: 12px;
+  }
+  #contact_headaboveimageline{
+      border-radius: 5px;
+  }
+  #contactformheadind1{
+    font-size: 25px;
+    padding-top: 1rem;
+  }
+  #contactformheadind2{
+    font-size: 25px;
+    /* padding-top: 0.5rem; */
+  }
+  #contactformflexmain{
+    flex-direction: column;
+  }
+  #formmainmain{
+    width: fit-content;
+    padding-right: 0rem;
+  }
+  #contactform1{
+    width: 100%;
+    /* padding: 0rem; */
+  }
+  #contactforminfo2{
+    width: 100%;
+    padding-top: 5rem;
+  }
+  #timingdiv1{
+    width: 15rem;
+    font-size: 12px;
+  }
+  #rightsidehead{
+    font-size: 20px;
+  }
 
 
 

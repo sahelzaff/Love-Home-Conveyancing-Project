@@ -4,7 +4,10 @@ import './Hero2.css';
 import '../../Responsive.css';
 
 const Hero2 = () => {
-    const [bgImage, setBgImage] = useState(assets.banner_rc);
+    const [bgImage, setBgImage] = useState(() => {
+        // Set initial background image based on initial window width
+        return window.innerWidth <= 600 ? assets.banner_rc_mobile : assets.banner_rc;
+    });
 
     useEffect(() => {
         const updateBgImage = () => {
@@ -15,14 +18,12 @@ const Hero2 = () => {
             }
         };
 
-        updateBgImage(); // Set the initial background image
         window.addEventListener('resize', updateBgImage); // Update on window resize
 
         return () => {
             window.removeEventListener('resize', updateBgImage); // Clean up the event listener on component unmount
         };
     }, []);
-
     return (
         <div className='relative h-auto mb-44'>
             <section 
@@ -30,7 +31,7 @@ const Hero2 = () => {
                 id='mainrc' 
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <img src={assets.banner_rc_mobile_overlay} className='absolute bottom-0' alt="" />
+                <img src={assets.banner_rc_mobile_overlay} className='absolute bottom-0' id='mobile_banner_rc_overlay' alt="" />
                 <div className="absolute inset-0 w-[43%] bg-white bg-opacity-0 flex flex-col items-start justify-center" id='banner_rc' data-aos='fade-right' data-aos-duration="1000">
                     <h1 className="text-[#f0532d] font-inter text-2xl sm:text-3xl font-[700] leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
 
