@@ -1379,6 +1379,88 @@ font-weight: 900;
     font-size: 25px;
   }
 
+  #robin{
+    width: 100%;
+    margin-top: 30rem;
+    padding-left: 0rem;
+  }
+  #nameRobin{
+    font-size: 30px;
+    margin-bottom: 2px;
+   
+  }
+  #aboutpagehorizontal{
+    display: block !important;
+  }
+  #namePara1{
+    font-size: 12px;
+    padding-right: 30px !important;
+    padding-top: 20px;
+    letter-spacing: 0px;
+  }
+  #btn_aboutpagespeak{
+  margin: auto;
+  margin-right: 5.5rem;
+  }
+  #btnaboutspeakmain{
+    border: 3px solid #f0532d;
+    border-radius: 16px;
+  }
+  #about_content_main_row{
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom:2rem ;
+  }
+  #value1About{
+    max-width: 184%;
+    width: 184%;
+    margin-left: 1rem;
+    padding-left:2rem ;
+    padding-right:2rem;
+  }
+  #value_name{
+    font-size: 30px;
+  }
+  #about_content_para{
+    font-size: 12px;
+  }
+  #aboutcard2{
+    max-width: 184%;
+    width: 184%;
+    margin-left: 1rem;
+    padding-left:2rem ;
+    padding-right:2rem;
+    margin-top: 4rem;
+  }
+  #first{
+    height: 120vh;
+    
+  }
+  .secondhelp{
+    width: 280%;
+    margin-top: -15rem;
+    
+  }
+  #about_icons_page{
+    width: 3rem;
+  }
+  #about2heading_head{
+    font-size: 20px;
+  }
+  #paraabout2{
+    font-size: 12px;
+    white-space: wrap;
+  }
+  #commitment3{
+   
+  }
+  #why_about_padding{
+   padding-top: 3rem;
+  }
+  
+
+
+
 
 
 

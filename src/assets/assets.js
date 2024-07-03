@@ -105,6 +105,7 @@ import contractcal from './contractcal.png';
 import contractcalWhite from './contractcalWhite.png';
 import buyinghead from './buyinghead.png';
 import abouthead from './abouthead.png';
+import abouthead_mobile from './abouthead_mobile.png';
 import aboutwork from './aboutwork.png';
 import abouthelp from './abouthelp.png';
 import bullet from './bullet.png'; 
@@ -130,6 +131,7 @@ export const assets = {
     calculatorhead,
     commitment,
     abouthead,
+    abouthead_mobile,
     aboutwork,
     abouthelp,
     Bondi,

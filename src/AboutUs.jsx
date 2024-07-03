@@ -5,6 +5,7 @@ import AboutHome from './Components/AboutHome/AboutHome'
 import AboutMain from './AboutMain/AboutMain'
 import WhySection from './Components/WhySection/WhySection'
 import TopBar from './Components/TopBar/TopBar'
+import './Responsive.css'
 
 const AboutUs = () => {
   useEffect(() => {
@@ -19,7 +20,9 @@ const AboutUs = () => {
         <Navbar/>
         <AboutHome/>
         <AboutMain/>
+        <div id='why_about_padding'>
         <WhySection/>
+        </div >
         <Footer/>
     </div>
   )
