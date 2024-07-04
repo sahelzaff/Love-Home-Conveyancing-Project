@@ -27,12 +27,12 @@ const Quote = () => {
         };
     }, []);
 
-    useEffect(() => {
-        window.scrollTo({
-          top: 800,
-          behavior: 'smooth'
-        });
-      }, []);
+    // useEffect(() => {
+    //     window.scrollTo({
+    //       top: 800,
+    //       behavior: 'smooth'
+    //     });
+    //   }, []);
 
     const applyCoupon = () => {
         if (coupon.toLowerCase() === 'lovehomes') {
@@ -60,11 +60,12 @@ const Quote = () => {
                             background="transparent"
                             speed="1"
                             style={{ width: '300px', height: '300px' }}
+                            id="loaderQuote"
                             loop
                             autoplay
                         ></dotlottie-player>
                     </div>
-                    <div className='font-poppins text-4xl text-[#f0532d] font-semibold'>Your Quote is Getting Ready......</div>
+                    <div className='font-poppins text-4xl text-[#f0532d] font-semibold' id='quoteloadertext'>Your Quote is Getting Ready......</div>
                 </div>
             </div>
         );
@@ -73,33 +74,33 @@ const Quote = () => {
     return (
         <div className="max-w-4xl h-auto mx-auto p-4 flex flex-col mt-20">
             <div className='mx-auto'><img src={assets.logoBlackRed} className='w-[300px] max-w-[400px]' alt="" srcSet="" /></div>
-            <h2 className="text-6xl tracking-normal mb-10 font-poppins font-medium text-center pt-5 text-[#f0532d]">Your Instant Quote</h2>
+            <h2 className="text-6xl tracking-normal mb-10 font-poppins font-medium text-center pt-5 text-[#f0532d]" id='quotehead'>Your Instant Quote</h2>
             <p className="text-xl mb-4 font-poppins font-medium">Name : <span className='text-[#f0532d]'>{quote.name}</span> </p>
             <p className="text-xl mb-4 font-poppins font-medium">Email : <span className='text-[#f0532d]'>{quote.email}</span> </p>
-            <div className='flex flex-col justify-center items-end'>
-                <p className="text-2xl mb-4 font-medium font-poppins">Exchange to Settlement: ${quote.exchangeToSettlement}</p>
-                <p className="text-2xl mb-4 font-medium font-poppins">Verification of Identity: ${quote.verificationOfIdentity}</p>
-                <p className="text-2xl mb-4 font-medium font-poppins">Searches - Estimated Price: ${quote.searchesEstimatedPrice}</p>
-                <p className="text-2xl mb-6 font-medium font-poppins">GST: ${quote.gst}</p>
-                <p className="text-4xl mb-6 font-bold font-poppins">Your Quote Total inc GST: ${quote.total}</p>
-                <p className="text-xl font-semibold font-poppins">*additional verification required if multiple applicants</p>
-                <p className='text-xl mb-4 font-semibold font-poppins'>*You have received an email with this information.</p>
+            <div className='flex flex-col justify-center items-end' id='quotecalculationdiv'>
+                <p className="text-2xl mb-4 font-medium font-poppins" id='calculationstext'>Exchange to Settlement: ${quote.exchangeToSettlement}</p>
+                <p className="text-2xl mb-4 font-medium font-poppins" id='calculationstext'>Verification of Identity: ${quote.verificationOfIdentity}</p>
+                <p className="text-2xl mb-4 font-medium font-poppins" id='calculationstext'>Searches - Estimated Price: ${quote.searchesEstimatedPrice}</p>
+                <p className="text-2xl mb-6 font-medium font-poppins" id='calculationstext'>GST: ${quote.gst}</p>
+                <p className="text-4xl mb-6 font-bold font-poppins" id='totalquote'>Your Quote Total inc GST: ${quote.total}</p>
+                <p className="text-xl font-semibold font-poppins" id='asteriktext'>*additional verification required if multiple applicants</p>
+                <p className='text-xl mb-4 font-semibold font-poppins' id='asteriktext'>*You have received an email with this information.</p>
             </div>
             <div>
                 <div className='h-auto'>
-                    <div className='bg-[#19345E] my-14 py-3 rounded-xl'>
-                        <h2 className='font-poppins font-bold text-4xl p-5 text-center text-white'>Enter <span className='text-[#f0532d]'>LoveHomes</span> in the coupon field to get a <span className='text-[#f0532d]'>$100 discount</span> on your legal fees!</h2>
+                    <div className='bg-[#19345E] my-14 py-3 rounded-xl' id='offertextdiv'>
+                        <h2 className='font-poppins font-bold text-4xl p-5 text-center text-white' id='textofferline'>Enter <span className='text-[#f0532d]'>LoveHomes</span> in the coupon field to get a <span className='text-[#f0532d]'>$100 discount</span> on your legal fees!</h2>
                     </div>
-                    <p className='font-poppins font-medium text-xl'>Ready to get going on your conveyancing?</p>
-                    <p className='font-poppins font-medium text-xl'>We'd love you to choose us today with this exclusive online only offer</p>
-                    <p className='font-poppins font-medium text-xl'>Pay a deposit now and <span className='text-[#f0532d]'>SAVE $100</span> on your Legal fees!</p>
+                    <p className='font-poppins font-medium text-xl' id='textquotetextbelowofferline'>Ready to get going on your conveyancing?</p>
+                    <p className='font-poppins font-medium text-xl' id='textquotetextbelowofferline'>We'd love you to choose us today with this exclusive online only offer</p>
+                    <p className='font-poppins font-medium text-xl' id='textquotetextbelowofferline'>Pay a deposit now and <span className='text-[#f0532d]'>SAVE $100</span> on your Legal fees!</p>
                 </div>
             </div>
             <div className='h-auto pt-10 w-full'>
                 <div>
                     <h2 className='font-poppins font-bold text-3xl mb-10'>Deposit</h2>
-                    <div className='flex flex-row justify-between items-start gap-14'>
-                        <div className='flex flex-row justify-between items-center w-4/6 bg-[#f0532d] hover:bg-orange-600 cursor-pointer py-6 px-12 rounded-lg'>
+                    <div className='flex flex-row justify-between items-start gap-14' id='divdepositmobile'>
+                        <div className='flex flex-row justify-between items-center w-4/6 bg-[#f0532d] hover:bg-orange-600 cursor-pointer py-6 px-12 rounded-lg' id='deposit400mobile' >
                             <h2 className='font-poppins font-semibold text-xl text-white'>Deposit</h2>
                             <h2 className='font-poppins font-semibold text-xl text-white'>
                                 {couponApplied ? <><s>$400.00</s> $300.00</> : '$400.00'}
@@ -129,7 +130,7 @@ const Quote = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-20 pb-4 w-full flex justify-end">
+                <div className="pt-20 pb-4 w-full flex justify-end" id='buttondiv'>
                     <button
                         type="button"
                         className="bg-white text-center w-[320px] max-w-md rounded-2xl h-14 relative font-poppins text-black text-lg font-semibold group"

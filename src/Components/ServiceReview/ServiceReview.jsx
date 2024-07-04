@@ -89,7 +89,7 @@ const ServiceReview = () => {
     };
 
     return (
-        <div className="h-auto pt-16 my-36">
+        <div className="h-auto pt-16 my-36" id='googlereviewsmaindivservicepage'>
             <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center gap-5">
                     <img src={assets.google}  alt="Google Logo" className="w-[30rem]" />
@@ -102,7 +102,7 @@ const ServiceReview = () => {
                             <img src={assets.star} className='w-6' alt="" srcSet="" />
                             <img src={assets.star} className='w-6' alt="" srcSet="" />
                         </div>
-                        <h2 className="text-4xl font-bold font-inter">Rating</h2>
+                        <h2 className="text-4xl font-bold font-inter" id='ratingtext'>Rating</h2>
                         <h2 className='mt-2 text-[#f0532d] font-inter font-medium'>107 Reviews</h2>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const ServiceReview = () => {
                             ))}
                         </Slider>
                     ) : (
-                        <p>Loading Google reviews...</p>
+                        <p className='text-center'>Loading Google reviews...</p>
                     )}
                 </div>
             </div>

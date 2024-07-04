@@ -31,7 +31,7 @@ const Why2 = () => {
           Why<br /><span className='text-[9rem] text-[#f0532d]' id='WhyText2'>Choose Us</span>
         </h1>
         <h2 className=' pt-5 font-medium text-xl font-poppins ' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" id='why2paramain2'>At Love Home, our excellence in conveyancing makes us the top choice for clients.</h2>
-        <h2 className=' pt-5 font-medium text-xl font-poppins  ' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" id='why2paramain1'>At Love Home, our commitment to excellence sets us apart as the premier choice for all your conveyancing needs. Here's why clients continue to choose us with confidence</h2>
+        <h2 className=' pt-5 font-medium text-xl font-poppins  ' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" id='why2paramain1'>At Love Home, our commitment to excellence sets us apart as the qremier choice for all your conveyancing needs. Here's why clients continue to choose us with confidence</h2>
         <div className='grid grid-cols-2 grid-rows-2 gap-x-28  pt-44 text-left bg-transparent' id='why2paralignment'>
           <div className='flex items-start ' id='mainparasrowdivwhy2'>
           <div className="text-[#f0532d] text-4xl md:text-4xl lg:text-6xl font-[900]" id='why2_numbers'>1</div>

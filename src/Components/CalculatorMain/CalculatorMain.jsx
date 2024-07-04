@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { QuoteContext } from '../../QuoteContext';
 import { assets } from '../../assets/assets';
 import './CalculatorMain.css';
+import '../../Responsive.css';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
@@ -151,16 +152,16 @@ const CalculatorMain = ({ setShowQuote }) => {
         <div className="max-w-4xl mx-auto p-4 h-auto flex flex-col justify-center items-center">
             <div className='pt-36'>
                 <div className='flex flex-col justify-center items-center mb-10'>
-                    <h1 className="text-black font-inter text-5xl font-[800]">Conveyancing <span className='text-[#f0532d]'>Calculator</span></h1>
+                    <h1 className="text-black font-inter text-5xl font-[800]" id='calculatormainhead'>Conveyancing <span className='text-[#f0532d]'>Calculator</span></h1>
                     <div className='w-3/4 rounded-lg h-[0.3rem] bg-[#f0532d] mt-2'></div>
-                    <p className='font-poppins font-medium text-3xl pt-10'>Ready to take the next step in your property journey?</p>
-                    <p className='font-poppins font-medium text-3xl pt-3'>Fill in your details below to get an instant online quote</p>
+                    <p className='font-poppins font-medium text-3xl pt-10' id='calculator_main_sublinepara1'>Ready to take the next step in your property journey?</p>
+                    <p className='font-poppins font-medium text-3xl pt-3' id='calculator_main_sublinepara2'>Fill in your details below to get an instant online quote</p>
                 </div>
             </div>
             {step === 1 && (
-                <div className='pt-14'>
+                <div className='pt-14' id='calculator_grid_main'>
                     <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Buying or Selling?</h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4" id='gridcalculatormobile'>
                         <label
                             className="flex flex-col items-center p-4 w-[250px] max-w-[250px] border rounded-lg cursor-pointer hover:bg-[#f0532d] group"
                             onMouseEnter={e => e.currentTarget.querySelector('img').src = assets.buycalWhite}
@@ -207,7 +208,7 @@ const CalculatorMain = ({ setShowQuote }) => {
             {step === 2 && (
                 <div>
                     <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Select Property Type</h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4" id='gridcalculatormobile'>
                         <label
                             className="flex flex-col items-center p-2 border rounded-lg cursor-pointer hover:bg-[#f0532d] group w-[250px] max-w-[250px]"
                             onMouseEnter={e => e.currentTarget.querySelector('img').src = assets.houseWhite}
@@ -254,7 +255,7 @@ const CalculatorMain = ({ setShowQuote }) => {
             {step === 3 && (
                 <div>
                     <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Select Area</h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4" id='gridcalculatormobile'>
                         <label
                             className="flex flex-col items-center p-2 border rounded-lg mb-2 cursor-pointer hover:bg-[#f0532d] w-[250px] max-w-[250px] group"
                             onMouseEnter={e => e.currentTarget.querySelector('img').src = assets.nswWhite}
@@ -319,7 +320,7 @@ const CalculatorMain = ({ setShowQuote }) => {
             {step === 4 && (
                 <div>
                     <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Enter Your Details</h2>
-                    <div className="flex flex-col w-[400px] mx-auto gap-10">
+                    <div className="flex flex-col w-[400px] mx-auto gap-10" id='formcalculatormain'>
                         <input
                             type="text"
                             placeholder="Name"

@@ -156,6 +156,10 @@ margin-left: 8rem;
   .Homepage1{
     margin-left: 0rem;
   }
+  .content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 
@@ -210,4 +214,59 @@ margin-left: 8rem;
 
 .list-circle {
   list-style-type: disc; /* Ensure list items use disc bullets */
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-content h1 {
+    font-size: 25px; /* equivalent to text-4xl */
+    font-weight: bold;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
+  }
+  
+  .blog-content h2 {
+    font-size: 22px; /* equivalent to text-2xl */
+    font-weight: bold;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 0.75rem; */
+  }
+  .blog-content h3 {
+    font-size: 18px; /* equivalent to text-2xl */
+    font-weight: bold;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 0.75rem; */
+  }
+  .blog-content h4 {
+    font-size: 16px; /* equivalent to text-2xl */
+    font-weight: bold;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 0.75rem; */
+  }
+  
+  .blog-content p {
+    font-size: 14px; /* equivalent to text-lg */
+    line-height: 1.2; /* equivalent to leading-relaxed */
+    /* margin-top: 0.5rem; */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  .blog-content ul {
+    list-style: disc;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+  
+  /* Styling for list items within blog content */
+  .blog-content li {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem; /* equivalent to text-lg */
+    color: #333333;
+  }
+  
+  .list-circle {
+    list-style-type: disc; /* Ensure list items use disc bullets */
+  }
 }

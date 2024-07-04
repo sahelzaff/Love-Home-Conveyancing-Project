@@ -12,6 +12,16 @@
 .borderbtn{
   border: 4px solid #f0532d;
 }
+#contact_head_overlay{
+  display: none;
+}
+#contactforminfo2{
+  border-left: 4px solid rgba(128, 128, 128, 0.33);
+  border-radius: 5px;
+}
+#pagedivider{
+  display: block;
+}
 
 
 
@@ -1033,8 +1043,6 @@ font-size: 70px;
     
   }
   #nav_logo{
-    
-   
   }
   #verticalLine{
     display: none;
@@ -1136,8 +1144,9 @@ font-weight: 900;
     font-size:18px;
   }
   #card_text{
-    font-size: 14px;
+    font-size: 12px;
   }
+  
   #simplify_text{
     font-size: 40px;
     text-align: center;
@@ -1247,7 +1256,7 @@ font-weight: 900;
   }
 
   #process_main_para{
-  font-size: 14px;
+  font-size: 12px;
   }
   #process_main_head{
     font-size: 20px;
@@ -1293,14 +1302,17 @@ font-weight: 900;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 0px;
     padding-top: 5rem;
+    margin-left: -1rem;
   }
   #mainparasrowdivwhy2{
     display: block;
     display: flex;
-    gap: 10px;
+    gap: 15px;
   }
   #why2_numbers{
     display: block;
+    font-weight: 900;
+    font-size: 45px;
   }
   #whyPara{
     color: #0d0d0d;
@@ -1310,8 +1322,8 @@ font-weight: 900;
   }
   #whyHead{
     font-size: 22px;
-    margin-bottom: 0px;
-    font-weight: 800;
+    margin-bottom: 8px;
+    font-weight: 900;
   }
   #whycounterdiv{
     flex-direction: column;
@@ -1388,7 +1400,7 @@ font-weight: 900;
   #robin{
     width: 100%;
     margin-top: 30rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 1rem;
   }
   #nameRobin{
@@ -1407,10 +1419,11 @@ font-weight: 900;
     padding-right: 30px !important;
     padding-top: 20px;
     letter-spacing: 0px;
+    color: white;
   }
   #btn_aboutpagespeak{
   margin: auto;
-  margin-right: 5.5rem;
+  margin-right: 4rem;
   }
   #btnaboutspeakmain{
     border: 3px solid #f0532d;
@@ -1510,6 +1523,7 @@ font-weight: 900;
   #contactforminfo2{
     width: 100%;
     padding-top: 5rem;
+    border: none;
   }
   #timingdiv1{
     width: 15rem;
@@ -1518,12 +1532,224 @@ font-weight: 900;
   #rightsidehead{
     font-size: 20px;
   }
+  #contact_head_overlay{
+    display: block;
+  }
+  #servicePara{
+    font-size: 12px;
+    width: 100%;
+    line-height: 1.3;
+  }#servicehomeinfomaindiv{
+    flex-direction: column-reverse;
+    margin-left:1rem ;
+    margin-right:1rem ;
+    align-items: start;
+  }
+  #servicePara{
+    padding-right: 0rem;
+  }
+  #carddivservicehomemaindiv{
+    flex-direction: column;
+  }
+  #carddivservicehomemaindiv2{
+    flex-direction: column;
+    margin-left:1rem ;
+    margin-right:1rem ;
+  }
+  #worksectionprocessservicemaindiv{
+    flex-direction: column-reverse;
+  }
+  #sublineprocesswork1{
+    font-size: 18px;
+    line-height: 1;
+  }
+  #sublineprocesswork2{
+    font-size: 21px;
+    line-height: 1.2;
+    font-style: italic;
+  }
+  #workGrid{
+   grid-template-columns: repeat(1, minmax(0, 1fr)) ;   
+   padding-top: 2rem;
+   
+  }
+  #serviceprocessworknumbers{
+    padding-top: 1.5rem;
+  }
+  #workHead{
+    font-size: 22px !important; 
+    padding-top: 0rem;
+  }
+  #horizontalline_sublines{
+    border-radius: 5px;
+    margin-top: 0;
+  }
+  #horizontalline_sublines1{
+    border-radius: 5px;
+  }
+  #horizontalline_sublines2{
+    border-radius: 5px;
+    width: 5rem;
+    margin-top: 0;
+  }
+  #workPara{
+    font-size: 12px;
+    line-height: 1.5;
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    
+  }
+  #mainmainmainworkservicediv{
+    padding-top: 5rem;
+  }
+  #pagedivider{
+    display: none;
+  }
+  #ratingtext{
+    font-size: 25px;
+  }
+  #googlereviewsmaindivservicepage{
+    padding-top: 0rem;
+  }
+  #calculatordiv{
+    margin-top: 0rem;
+  }
+  #calculatorheadingpagemain{
+    font-size: 26px;
+  }
+  #ContactPara{
+    font-size: 12px;
+  }
+  #calculatormainhead{
+    font-size: 27px
+  }
+  #calculator_main_sublinepara1{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1;
+  }
+  #calculator_main_sublinepara2{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1;
+  }
+  #calculator_grid_main{
+    padding-top: 1rem;
+  }
+  #gridcalculatormobile{
+    grid-template-columns:  repeat(1, minmax(0, 1fr));
+  }
+  #formcalculatormain{
+    width: max-content;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  #loaderQuote{
+    width: 100px;
+    height: 100px;
+  }
+  #quoteloadertext{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  #quotehead{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #quotecalculationdiv{
+    align-items: start;
+    padding-top: 2rem;
+  }
+  #calculationstext{
+    font-size: 20px;
+  }
+  #totalquote{
+    font-size: 22px;
+    margin-top: -1rem;
+  }
+  #asteriktext{
+    font-size: 12px;
+  }
+  #textofferline{
+    font-size: 16px;
+    line-height: 1;
+    padding: 1rem;
+  }
+  #offertextdiv{
+    margin-top:2rem ;
+    margin-bottom: 2rem;
+  }
+  #textquotetextbelowofferline{
+    font-size: 16px;
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+  #divdepositmobile{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  #deposit400mobile{
+    width: 100%;
+    padding-left:1rem ;
+    padding-right:1rem ;
+  }
+  #buttondiv{
+    justify-content: center;
+    margin-left: -0.3rem;
+  }
+  #BloginfoPara{
+    width: 100%;
+    font-size: 12px;
+  }
+  #blogpostcardmain{
+    width: 100%;
+    /* gap: -2rem; */
 
-
-
-
-
-
-
-
+  }
+  #blogposttitlediv{
+    width: 90%;
+    bottom: 1rem;
+  }
+  #blogtitletext{
+    font-size: 14px;
+  }
+  #postheight{
+    height: 65%;
+    
+  }
+  #blogpostdate{
+    top: 0px;
+  }
+  #mainblogdetailspagediv{
+    flex-direction: column;
+  }
+  #mainblogdetailspagediv1{
+    width: 100%;
+  }
+  #paddingblogdetail{
+    padding: 0px;
+    padding-top: 5rem;
+  }
+  #blogdetailsarticle{
+    font-size: 12px;
+  }
+  #blogdetailspageheading{
+    font-size: 20px;
+    line-height: 1;
+    margin: 10px 0px;
+  }
+  #sidebarblogdetails{
+    width: 100%;
+    border: none;
+  }
+  #textsidebar{
+    font-size: 15px;
+    line-height: 0.2px;
+  }
+  
 }

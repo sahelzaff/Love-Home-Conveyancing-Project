@@ -73,9 +73,12 @@ import review7 from './review7.png';
 import processbg from './processbg.png';
 import google from './google.png';
 import serviceshead from './serviceshead.png';
+import serviceshead_mobile from './serviceshead_mobile.png';
 import bloghead from './bloghead.png';
+import bloghead_mobile from './bloghead_mobile.png';
 import pagedivider from './pagedivider.png';
 import calculatorhead from './calculatorhead.png';
+import calculatorhead_mobile from './calculatorhead_mobile.png';
 import buycal from './buycal.png';
 import sellcal from './sellcal.png';
 import buycalWhite from './buycalWhite.png';
@@ -130,6 +133,7 @@ import Bondi from './Bondi.mp4';
 export const assets = {
     clock_contact,
     calculatorhead,
+    calculatorhead_mobile,
     commitment,
     abouthead,
     abouthead_mobile,
@@ -194,6 +198,8 @@ export const assets = {
     Background_new2,
     Background_new,
     serviceshead,
+    serviceshead_mobile,
+    bloghead_mobile,
     process,
     sydney, 
     sydney_mobile,

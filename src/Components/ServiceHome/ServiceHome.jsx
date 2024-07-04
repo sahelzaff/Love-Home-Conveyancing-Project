@@ -51,7 +51,7 @@ const ServiceHome = () => {
     return (
         <div className='h-auto mt-20'>
             <div>
-                <div className='flex flex-row items-center justify-center h-auto content'>
+                <div className='flex flex-row items-center justify-center h-auto content' id='servicehomeinfomaindiv'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
                         <h2 className='font-outfit font-semibold text-5xl' id='serviceHead'>Services</h2>
                         <div className='w-24 h-[0.3rem] bg-[#f0532d] mt-1'></div>
@@ -61,8 +61,8 @@ const ServiceHome = () => {
                         <img src={assets.services} alt="" />
                     </div>
                 </div>
-                <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10 bg-[#19345E] py-20 '>
-                    <div className="content flex flex-row justify center items-center gap-20">
+                <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10 bg-[#19345E] py-20' id='carddivservicehomemaindiv'>
+                    <div className="content flex flex-row justify center items-center gap-20" id='carddivservicehomemaindiv2'>
                     {/* Card 1 */}
                     <Link  to="/calculator">
                     <div className='custom-card'>

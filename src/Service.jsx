@@ -36,10 +36,10 @@ const Service = () => {
       <Navbar />
       <ServiceInfo />
       <ServiceHome />
-      <div className='content' ref={workRef}>
+      <div className='content'  ref={workRef}>
         <WorkSection />
       </div>
-      <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
+      <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat'  id='pagedivider' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
       <div className='content' ref={reviewRef}>
         <ServiceReview />
       </div>
