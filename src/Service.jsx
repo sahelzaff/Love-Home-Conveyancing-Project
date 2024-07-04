@@ -18,16 +18,12 @@ const Service = () => {
       reviewRef.current.scrollIntoView({ behavior: 'smooth' });
     } else if (window.location.hash === '#work' && workRef.current) {
       workRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
-  }, []);
-
-
-
- useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
   }, []);
 
   return (
@@ -36,10 +32,10 @@ const Service = () => {
       <Navbar />
       <ServiceInfo />
       <ServiceHome />
-      <div className='content'  ref={workRef}>
+      <div className='content' ref={workRef}>
         <WorkSection />
       </div>
-      <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat'  id='pagedivider' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
+      <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat' id='pagedivider' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
       <div className='content' ref={reviewRef}>
         <ServiceReview />
       </div>

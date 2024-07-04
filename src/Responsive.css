@@ -1237,6 +1237,7 @@ font-weight: 900;
   }
   #processW{
     margin-left: 1rem;
+    width: 100%;
   }
   #processml{
     margin-left: 20px;
@@ -1246,9 +1247,8 @@ font-weight: 900;
     /* padding-top: 1rem; */
   }
   #buttonProcess{
-    font-size: 16px;
-    padding: 15px 25px ;
-    margin-left: 30px;
+    font-size: 1.125rem;
+    margin-left: 40px;
   }
 
   #process_row_div{
@@ -1399,7 +1399,7 @@ font-weight: 900;
 
   #robin{
     width: 100%;
-    margin-top: 30rem;
+    margin-top: 20rem;
     padding-left: 2rem;
     padding-right: 1rem;
   }
@@ -1416,14 +1416,15 @@ font-weight: 900;
   }
   #namePara1{
     font-size: 12px;
-    padding-right: 30px !important;
+    padding-right: 5px !important;
     padding-top: 20px;
     letter-spacing: 0px;
     color: white;
   }
   #btn_aboutpagespeak{
   margin: auto;
-  margin-right: 4rem;
+  margin-right: 2.5rem;
+  margin-top: -2rem;
   }
   #btnaboutspeakmain{
     border: 3px solid #f0532d;

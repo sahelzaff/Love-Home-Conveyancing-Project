@@ -32,7 +32,7 @@ const AboutHome = () => {
                 id='mainrc' 
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <div className="absolute inset-0 w-full bg-white bg-opacity-0 flex flex-col items-start justify-center" id='robin' data-aos='fade-right' data-aos-duration="1000">
+                <div className="absolute inset-0 w-full bg-white bg-opacity-0 flex flex-col items-start justify-center" id='robin' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                     <h1 className='font-inter text-[60px] font-[900] text-[#fff] tracking-[6px] ' id='nameRobin'>Robin Cater</h1>
                     <h2 className='font-poppins text-[20px] font-[500] leading-[0] mb-5 text-white' id='robin2'>Conveyancing Specialist (Property Lawyer)</h2>
                     <div className='w-3/12 h-[5px] bg-[#fff] rounded-lg ' id='aboutpagehorizontal'></div>

@@ -62,7 +62,7 @@ const TheProcess = () => {
           </Link>
                     </div>
           
-          <button className="bg-[#f0532d] hover:bg-orange-600 text-white py-3 px-6 ml-20 rounded-lg text-lg md:text-xl lg:text-3xl font-semibold" id='buttonProcess'>Speak With A Solicitor</button>
+                    <button className="bg-[#f0532d]  hover:bg-orange-600 font-inter font-bold text-[1rem] mt-10 text-white py-3 px-6 rounded-lg text-lg md:text-xl lg:text-2xl" id='buttonProcess'>Speak With A Solicitor</button>
         </div>
       </div>
       <div className="lg:w-1/2 w-full lg:p-8">

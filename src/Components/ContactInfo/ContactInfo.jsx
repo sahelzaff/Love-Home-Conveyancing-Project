@@ -27,7 +27,7 @@ const ContactInfo = () => {
     return (
         <div>
             <section className="relative h-screen bg-center bg-cover bg-no-repeat" id='bg_contact'  style={{ backgroundImage: `url(${bgImage})` }}>
-                <div className="absolute inset-0 bg-[#bebebe] h-[40vh] bg-opacity-90 flex flex-col items-start justify-center px-8" id='contact_head_overlay'></div>
+            <div className="absolute inset-0 bg-[#f4f4f4] h-[40vh] bg-opacity-80 flex flex-col items-start justify-center px-8" id='contact_head_overlay'></div>
                 <div className="absolute inset-0 bg-[#bebebe] bg-opacity-0 flex flex-col items-start justify-center px-8" id='contact_headaboveimage'>
                     <h1 className="text-black font-inter text-6xl font-[800]" id='ContactHead'>Contact Us</h1>
                     <div className='w-32 h-[0.3rem] bg-[#f0532d] mt-1 ml-2' id='contact_headaboveimageline'></div>
