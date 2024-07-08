@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from './Components/Navbar/Navbar';
+import { Helmet } from 'react-helmet';
 import Footer from './Components/Footer/Footer';
 import BlogsInfo from './Components/BlogsInfo/BlogsInfo';
 import BlogPostCard from './Components/BlogGrid/BlogPostCard';
@@ -18,6 +19,11 @@ const Blogs = () => {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Blogs | Love Home Conveyancing</title>
+        <meta name="description" content="Read the latest articles and insights on property conveyancing and real estate in Australia from Love Home Conveyancing." />
+        <meta name="keywords" content="Love Home Conveyancing blogs, property conveyancing articles, real estate insights" />
+      </Helmet>
       <TopBar />
       <Navbar />
       <BlogsInfo />

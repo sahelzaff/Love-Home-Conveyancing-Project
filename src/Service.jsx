@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import ServiceInfo from './Components/ServiceInfo/ServiceInfo';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
@@ -28,6 +29,11 @@ const Service = () => {
 
   return (
     <div>
+       <Helmet>
+        <title>Services | Love Home Conveyancing</title>
+        <meta name="description" content="Discover the range of property conveyancing services offered by Love Home Conveyancing in Australia." />
+        <meta name="keywords" content="Love Home Conveyancing services, property conveyancing Australia, conveyancing solutions" />
+      </Helmet>
       <TopBar/>
       <Navbar />
       <ServiceInfo />

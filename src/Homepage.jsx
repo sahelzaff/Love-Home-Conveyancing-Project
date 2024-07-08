@@ -1,5 +1,6 @@
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
+import { Helmet } from 'react-helmet';
 // import Section2 from './Components/Section2/Section2'
 import BenefitsComponent from './Components/BenefitsComponent/BenefitsComponent'
 // import { assets } from './assets/assets'
@@ -34,6 +35,12 @@ const Homepage = () => {
     }, []);
     return (
         <div className='overflow-x-hidden'>
+            <Helmet>
+                <title>Love Home Conveyancing | Property Conveyancing in Australia</title>
+                <meta name="description" content="Welcome to Love Home Conveyancing. We provide professional and efficient property conveyancing services across Australia. Our experienced team ensures a smooth property transfer process." />
+                <meta name="keywords" content="Love Home Conveyancing, property conveyancing, conveyancing services Australia, home conveyancing, real estate conveyancing" />
+                <meta name="author" content="Love Home Conveyancing" />
+            </Helmet>
             <TopBar />
             <Navbar className=" w-full z-50" />
             <div className='bg-[#0d0d0d]'>

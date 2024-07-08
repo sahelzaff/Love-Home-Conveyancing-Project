@@ -53,7 +53,7 @@ const ServiceHome = () => {
             <div>
                 <div className='flex flex-row items-center justify-center h-auto content' id='servicehomeinfomaindiv'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
-                        <h2 className='font-outfit font-semibold text-5xl' id='serviceHead'>Services</h2>
+                        <h2 className='font-outfit font-semibold text-5xl' id='serviceHead1'>Services</h2>
                         <div className='w-24 h-[0.3rem] bg-[#f0532d] mt-1'></div>
                         <p className='font-poppins font-medium text-[1rem] pr-36 pt-2' id='servicePara'>At LoveHome Conveyancing, we offer expert home inspections, property evaluations, and personalized legal advice. Our comprehensive services ensure a seamless and stress-free property transaction, with meticulous document handling and continuous support.</p>
                     </div>

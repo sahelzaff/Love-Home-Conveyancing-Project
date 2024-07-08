@@ -52,7 +52,7 @@ const TheProcess = () => {
           <div className="flex items-start " id='process_list_main'>
             <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">6</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head'>Post-Purchase Support</h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap" id='process_main_head'>Post-Purchase Support</h2>
               <p className="text-[1.125rem] font-poppins"  id='process_main_para'>The conveyancer ensures ongoing customer support post-settlement, including property registrations and legal guidance, to protect their interests</p>
             </div>
           </div>

@@ -69,7 +69,8 @@ const CustomerReviews = () => {
           </Link>
         </div>
         <div className='w-full md:w-1/2 flex justify-center items-center md:absolute md:top-0 md:left-0 md:h-full mt-8 md:mt-0' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-          <Globe />
+          {/* <Globe /> */}
+
         </div>
       </div>
     </div>

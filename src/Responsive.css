@@ -1026,6 +1026,9 @@ font-size: 70px;
   #aboutcard2{
     margin-top: 8.5rem;
   }
+  #backgroundReview{
+    margin-top: -2rem;
+  }
 
 
 }
@@ -1224,7 +1227,7 @@ font-weight: 900;
   }
   #backgroundReview{
     background-size:100% auto;
-    margin-top: -16.5rem;
+    margin-top: -16rem;
     margin-bottom: 20rem;
   }
   #review_main{
@@ -1234,7 +1237,7 @@ font-weight: 900;
   #review_left{
     margin-left: 1rem;
     position: absolute;
-    top: 35rem;
+    top:30rem;
     width: 135%;
   }
   #ReviewTitle{
@@ -1453,7 +1456,7 @@ font-weight: 900;
 
   #robin{
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 18rem;
     padding-left: 2rem;
     padding-right: 1rem;
   }
@@ -1671,7 +1674,7 @@ font-weight: 900;
     margin-top: 0rem;
   }
   #calculatorheadingpagemain{
-    font-size: 26px;
+    font-size: 25px;
   }
   #ContactPara{
     font-size: 12px;
@@ -1805,6 +1808,36 @@ font-weight: 900;
   #textsidebar{
     font-size: 15px;
     line-height: 0.2px;
+  }
+  #serviceHead{
+    font-size: 35px;
+  }
+  #servicePara{
+    font-size: 12px;
+  }
+  #serviceHead1{
+    font-size: 3.5rem;
+  }
+  #BloginfoHead{
+    font-size: 35px;
+  }
+  #horizontalline_sublines4{
+    border-radius: 5px;
+    /* margin-top: 0; */
+    width: 4rem;
+  }
+  #BloginfoPara{
+    font-size: 12px;
+  }
+  #ContactHead{
+    font-size: 35px;
+    
+  }
+  #contact_headaboveimageline{
+    margin-left: 0;
+  }
+  #ContactPara{
+    font-size: 12PX;
   }
   
 }

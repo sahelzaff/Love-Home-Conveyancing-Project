@@ -41,6 +41,8 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-left-1"
                                 >
                                     <span>What is Conveyancing?</span>
+                                    <div className="flex-shrink-0 w-3 h-3">
+                                    
                                     <svg
                                         data-accordion-icon
                                         className={`w-3 h-3 transform transition-transform ${openItemLeft === 1 ? 'rotate-180' : ''}`}
@@ -57,6 +59,7 @@ const Faq = () => {
                                             d="M9 5 5 1 1 5"
                                         />
                                     </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
@@ -83,6 +86,7 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-left-2"
                                 >
                                     <span>What is the process of conveyancing in Sydney?</span>
+                                    <div className="flex-shrink-0 w-3 h-3">
                                     <svg
                                         data-accordion-icon
                                         className={`w-3 h-3 transform transition-transform ${openItemLeft === 2 ? 'rotate-180' : ''}`}
@@ -99,6 +103,7 @@ const Faq = () => {
                                             d="M9 5 5 1 1 5"
                                         />
                                     </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
@@ -134,6 +139,7 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-left-3"
                                 >
                                     <span>Why do I need conveyancing?</span>
+                                    <div className="flex-shrink-0 w-3 h-3">
                                     <svg
                                         data-accordion-icon
                                         className={`w-3 h-3 transform transition-transform ${openItemLeft === 3 ? 'rotate-180' : ''}`}
@@ -150,6 +156,7 @@ const Faq = () => {
                                             d="M9 5 5 1 1 5"
                                         />
                                     </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
@@ -174,6 +181,7 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-left-4"
                                 >
                                     <span>How long shoild a conveyancer in sydney take to complete the entire process?</span>
+                                    <div className="flex-shrink-0 w-3 h-3">
                                     <svg
                                         data-accordion-icon
                                         className={`w-3 h-3 transform transition-transform ${openItemLeft === 4 ? 'rotate-180' : ''}`}
@@ -190,6 +198,7 @@ const Faq = () => {
                                             d="M9 5 5 1 1 5"
                                         />
                                     </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
@@ -219,22 +228,24 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-right-1"
                                 >
                                     <span>How much should I expect to pay for conveyancing services in Sydney?</span>
-                                    <svg
-                                        data-accordion-icon
-                                        className={`w-3 h-3 transform transition-transform ${openItemRight === 1 ? 'rotate-180' : ''}`}
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 10 6"
-                                    >
-                                        <path
-                                            stroke="#f0532d"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M9 5 5 1 1 5"
-                                        />
-                                    </svg>
+                                    <div className="flex-shrink-0 w-3 h-3">
+                                        <svg
+                                            data-accordion-icon
+                                            className={`transform transition-transform ${openItemRight === 1 ? 'rotate-180' : ''}`}
+                                            aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 10 6"
+                                        >
+                                            <path
+                                                stroke="#f0532d"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M9 5 5 1 1 5"
+                                            />
+                                        </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
@@ -243,12 +254,13 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-right-1"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Have you heard the expression “You get what you pay for!”?</p>
-                                <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">If you ask for a ballpark figure, Sydney conveyancing costs can vary between $900 – $6000. The final cost can vary depending on the type of property involved, searches, and other fees charged by different authorities, however by far the biggest variance is in the professional legal fee and disbursement costs charged by the firm.</p>
-                                <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Here at Love Homes Conveyancing, we offer a standard and transparent cost structure to keep you from paying unnecessary costs and so you also know upfront how much you will be paying.</p>
+                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Have you heard the expression “You get what you pay for!”?</p>
+                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">If you ask for a ballpark figure, Sydney conveyancing costs can vary between $900 – $6000. The final cost can vary depending on the type of property involved, searches, and other fees charged by different authorities, however by far the biggest variance is in the professional legal fee and disbursement costs charged by the firm.</p>
+                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Here at Love Homes Conveyancing, we offer a standard and transparent cost structure to keep you from paying unnecessary costs and so you also know upfront how much you will be paying.</p>
                                 </div>
                             </div>
                         </div>
+
 
                         {/* Accordion Item 2 */}
                         <div className='w-full'>
@@ -261,6 +273,8 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-right-2"
                                 >
                                     <span>What information does a Sydney conveyancer need?</span>
+                                    <div className="flex-shrink-0 w-3 h-3">
+
                                     <svg
                                         data-accordion-icon
                                         className={`w-3 h-3 transform transition-transform ${openItemRight === 2 ? 'rotate-180' : ''}`}
@@ -277,6 +291,7 @@ const Faq = () => {
                                             d="M9 5 5 1 1 5"
                                         />
                                     </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
@@ -307,6 +322,8 @@ const Faq = () => {
                                     aria-controls="accordion-flush-body-right-3"
                                 >
                                     <span>Who is a good conveyancer in Sydney?</span>
+                                    <div className="flex-shrink-0 w-3 h-3">
+
                                     <svg
                                         data-accordion-icon
                                         className={`w-3 h-3 transform transition-transform ${openItemRight === 3 ? 'rotate-180' : ''}`}
@@ -324,6 +341,7 @@ const Faq = () => {
                                             d="M9 5 5 1 1 5"
                                         />
                                     </svg>
+                                    </div>
                                 </button>
                             </h2>
                             <div
