@@ -197,6 +197,7 @@
   #videoText2{
     font-size: 8rem;
     letter-spacing: 10px;
+    line-height: 0.4;
   }
   #whyHead{
     font-size: 1.5rem;
@@ -274,6 +275,10 @@ font-size: 70px;
   }
   #mobile_banner_rc_overlay{
     display: none;
+  }
+  #backgroundReview{
+    background-size: 55% auto;
+    margin-bottom: 9rem;
   }
 
 
@@ -473,7 +478,7 @@ font-size: 70px;
 
   #videoText2 {
     font-size: 7rem;
-    line-height: 1;
+    line-height: 0.5;
     letter-spacing: 8px;
   }
   #videoTextDiv{
@@ -666,7 +671,7 @@ font-size: 70px;
   }
   #videoText2 {
     font-size: 6.5rem;
-    line-height: 1;
+    line-height: 0.5;
     letter-spacing: 8px;
   }
   #globe{
@@ -801,7 +806,7 @@ font-size: 70px;
 
   #videoText2 {
     font-size: 6rem;
-    line-height: 1;
+    line-height: 0.5;
     letter-spacing: 9px;
   }
   #videoTextDiv{
@@ -957,7 +962,7 @@ font-size: 70px;
 
   #videoText2 {
     font-size: 5.6rem;
-    line-height: 1;
+    line-height: 0.5;
     letter-spacing: 9px;
   }
   #videoTextDiv{
@@ -1218,13 +1223,62 @@ font-weight: 900;
     flex-direction:column ;
   }
   #backgroundReview{
-    
+    background-size:100% auto;
+    margin-top: -16.5rem;
+    margin-bottom: 20rem;
   }
   #review_main{
-    display: none;
+    /* display: none; */
+    
   }
   #review_left{
-    margin-left: 0rem;
+    margin-left: 1rem;
+    position: absolute;
+    top: 35rem;
+    width: 135%;
+  }
+  #ReviewTitle{
+    font-size: 40px;
+    
+  }
+  #google_image{
+    width: 50%;
+  }
+  #googleText{
+    font-size: 28px;
+    text-align: center;
+  }
+  #googlediv{
+    align-items: start;
+    justify-content: start;
+  }
+  #ReviewPhoto{
+    width: 3rem;
+  }
+  #ReviewName{
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  #NameDiv{
+    gap: 10px;
+  }
+  #ReviewStar{
+    width: 1rem;
+  }
+  #ReviewPara{
+    font-size: 12px;
+    line-height: 1.5;
+    padding-right: 2rem;
+  }
+  #readmorereviewshome{
+    font-size: 15px;
+  }
+  #globe{
+    width: 80%;
+    /* position: relative; */
+    /* top: 2rem; */
+    margin-top: 16rem;
+    margin-left: 5rem;
   }
   #process_left{
     margin-left: 0rem;

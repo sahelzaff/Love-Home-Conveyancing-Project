@@ -16,13 +16,13 @@ const CustomerReviews = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 4000,
   };
 
   return (
-    <div className='h-screen mb-36 -mt-28 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundSize: '55% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
-      <div className='flex flex-row h-full' id='review_main'>
-        <div className='w-1/2 flex flex-col justify-center ml-28' id='review_left'>
+    <div className='h-screen mb-36 -mt-28 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
+      <div className='flex flex-col md:flex-row h-full' id='review_main'>
+        <div className='w-full md:w-1/2 flex flex-col justify-center md:ml-28' id='review_left'>
           <div className='flex flex-col justify-center items-start'>
             <div className="flex w-3/4 justify-start items-start flex-col pt-36">
               <div>
@@ -32,13 +32,13 @@ const CustomerReviews = () => {
             </div>
             <Slider {...settings} className='mt-20 w-2/3'>
               {/* First slide with specific content */}
-              <div className='flex flex-col gap-5 items-center justify-center'>
-                 <div className='flex flex-col gap-5 items-center justify-center'>
-                  <img src={assets.google} alt="" />
-                 </div>
-                 <div>
+              <div className='flex flex-col gap-5 items-center justify-center' id='googlediv'>
+                <div className='flex flex-col gap-5 items-center justify-center' >
+                  <img src={assets.google} id='google_image' alt="" />
+                </div>
+                <div>
                   <p className='font-outfit text-5xl font-extrabold mt-5' id='googleText'>100<span className='text-[#f0532d]'>+ 5 Star</span> Rated Reviews</p>
-                 </div>
+                </div>
               </div>
               
               {/* Dynamic slides for reviews */}
@@ -65,11 +65,11 @@ const CustomerReviews = () => {
             </Slider>
           </div>
           <Link to="/service#reviews" >
-            <p className='cursor-pointer pt-[3rem] ml-[3.5rem] font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]'>Read More</p>
+            <p className='cursor-pointer pt-[3rem] ml-[3.5rem] font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]' id='readmorereviewshome'>Read More</p>
           </Link>
         </div>
-        <div className='w-1/2 flex justify-center items-center absolute top-0 left-0 h-full' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-          {/* <Globe /> */}
+        <div className='w-full md:w-1/2 flex justify-center items-center md:absolute md:top-0 md:left-0 md:h-full mt-8 md:mt-0' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+          <Globe />
         </div>
       </div>
     </div>

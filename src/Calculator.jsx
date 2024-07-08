@@ -17,12 +17,12 @@ const Calculator = () => {
       if (viewportWidth < 600) {
         window.scrollTo({
           top: 500, // Adjust this value as needed for mobile devices
-          behavior: 'smooth'
+          // behavior: 'smooth'
         });
       } else {
         window.scrollTo({
           top: 700, // Adjust this value as needed for larger devices
-          behavior: 'smooth'
+          // behavior: 'smooth'
         });
       }
     };

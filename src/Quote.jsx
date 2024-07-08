@@ -27,12 +27,12 @@ const Quote = () => {
         };
     }, []);
 
-    // useEffect(() => {
-    //     window.scrollTo({
-    //       top: 800,
-    //       behavior: 'smooth'
-    //     });
-    //   }, []);
+    useEffect(() => {
+        window.scrollTo({
+          top: 600,
+        //   behavior: 'smooth'
+        });
+      }, []);
 
     const applyCoupon = () => {
         if (coupon.toLowerCase() === 'lovehomes') {
