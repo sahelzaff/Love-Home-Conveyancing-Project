@@ -1,7 +1,10 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import { useSpring } from "react-spring";
 import createGlobe from "cobe";
+import LazyLoad from 'react-lazyload';  // Import LazyLoad from react-lazyload
 import { cn } from "../../lib/utils";
+import debounce from 'lodash/debounce';
+import throttle from 'lodash/throttle';
 
 const GLOBE_CONFIG = {
   width: 800,
@@ -41,8 +44,8 @@ export default function Globe({ className, config = GLOBE_CONFIG }) {
     r: 0,
     config: {
       mass: 1,
-      tension: 280,
-      friction: 40,
+      tension: 180,  // Lower tension for smoother movement
+      friction: 25,  // Lower friction for smoother movement
       precision: 0.001,
     },
   }));
@@ -52,21 +55,21 @@ export default function Globe({ className, config = GLOBE_CONFIG }) {
     canvasRef.current.style.cursor = value ? "grabbing" : "grab";
   };
 
-  const updateMovement = (clientX) => {
+  const updateMovement = debounce((clientX) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
       pointerInteractionMovement.current = delta;
       api.start({ r: delta / 200 });
     }
-  };
+  }, 10); // Adjust debounce delay as needed
 
   const onRender = useCallback(
-    (state) => {
+    throttle((state) => {
       if (!pointerInteracting.current) phi += 0.005;
       state.phi = phi + r.get();
       state.width = width * 2;
       state.height = width * 2;
-    },
+    }, 16), // 16ms for roughly 60fps
     [pointerInteracting, phi, r]
   );
 
@@ -95,29 +98,36 @@ export default function Globe({ className, config = GLOBE_CONFIG }) {
   }, [config, onRender]);
 
   return (
-    <div
-      className={cn(
-        "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]",
-        className
-      )}
+    <LazyLoad
+      height={800}  // Provide a height for the placeholder
+      offset={100}  // Start loading when 100px from the viewport
+      once={true}   // Load the component only once
+      placeholder={<div style={{ height: '800px' }} />}  // Placeholder content
     >
-      <canvas
+      <div
         className={cn(
-          "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
+          "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]",
+          className
         )}
-        ref={canvasRef}
-        onPointerDown={(e) =>
-          updatePointerInteraction(
-            e.clientX - pointerInteractionMovement.current
-          )
-        }
-        onPointerUp={() => updatePointerInteraction(null)}
-        onPointerOut={() => updatePointerInteraction(null)}
-        onMouseMove={(e) => updateMovement(e.clientX)}
-        onTouchMove={(e) =>
-          e.touches[0] && updateMovement(e.touches[0].clientX)
-        }
-      />
-    </div>
+      >
+        <canvas
+          className={cn(
+            "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
+          )}
+          ref={canvasRef}
+          onPointerDown={(e) =>
+            updatePointerInteraction(
+              e.clientX - pointerInteractionMovement.current
+            )
+          }
+          onPointerUp={() => updatePointerInteraction(null)}
+          onPointerOut={() => updatePointerInteraction(null)}
+          onMouseMove={(e) => updateMovement(e.clientX)}
+          onTouchMove={(e) =>
+            e.touches[0] && updateMovement(e.touches[0].clientX)
+          }
+        />
+      </div>
+    </LazyLoad>
   );
 }
