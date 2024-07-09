@@ -124,7 +124,7 @@ const CalculatorMain = ({ setShowQuote }) => {
           }
 
         try {
-            const response = await fetch('http://localhost:4000/api/lead-cal', {
+            const response = await fetch('https://lovehomeconvyancing-backend.onrender.com/api/lead-cal', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
