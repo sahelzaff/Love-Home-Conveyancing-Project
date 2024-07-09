@@ -12,7 +12,7 @@ const BlogPostCard = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/blogs');
+      const response = await fetch('https://lovehomeconvyancing-backend.onrender.com/api/blogs');
       if (!response.ok) {
         throw new Error('Failed to fetch posts');
       }
@@ -36,7 +36,7 @@ const BlogPostCard = () => {
 
       // Iterate over filtered posts and increment views
       filteredPosts.forEach(async (post) => {
-        await fetch(`http://localhost:4000/api/blogs/${post._id}/views`, {
+        await fetch(`https://lovehomeconvyancing-backend.onrender.com/api/blogs/${post._id}/views`, {
           method: 'PUT',
         });
         // Update incremented post IDs state
@@ -62,7 +62,7 @@ const BlogPostCard = () => {
         >
           <Link to={`/post/${post._id}`} id='postheight'>
             <img
-              src={`http://localhost:4000/${post.blogCoverPhoto}`}
+              src={`https://lovehomeconvyancing-backend.onrender.com/${post.blogCoverPhoto}`}
               alt={post.blogTitle}
               className="w-full h-full object-cover cursor-pointer group"
               id='blogpostcardcoverphoto'

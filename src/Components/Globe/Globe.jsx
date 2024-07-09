@@ -1,10 +1,7 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import { useSpring } from "react-spring";
 import createGlobe from "cobe";
-import LazyLoad from 'react-lazyload';  // Import LazyLoad from react-lazyload
 import { cn } from "../../lib/utils";
-import debounce from 'lodash/debounce';
-import throttle from 'lodash/throttle';
 
 const GLOBE_CONFIG = {
   width: 800,
@@ -35,50 +32,57 @@ const GLOBE_CONFIG = {
 };
 
 export default function Globe({ className, config = GLOBE_CONFIG }) {
-  let phi = 0;
-  let width = 0;
+  let phi = 0;  // Initial angle for globe rotation
+  let width = 0;  // Canvas width
   const canvasRef = useRef(null);
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
+
+  // Spring configuration for smooth movement
   const [{ r }, api] = useSpring(() => ({
     r: 0,
     config: {
       mass: 1,
-      tension: 180,  // Lower tension for smoother movement
-      friction: 25,  // Lower friction for smoother movement
+      tension: 280,
+      friction: 40,
       precision: 0.001,
     },
   }));
 
+  // Update the pointer interaction state and cursor style
   const updatePointerInteraction = (value) => {
     pointerInteracting.current = value;
     canvasRef.current.style.cursor = value ? "grabbing" : "grab";
   };
 
-  const updateMovement = debounce((clientX) => {
+  // Handle pointer movement to update the globe's rotation
+  const updateMovement = (clientX) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
       pointerInteractionMovement.current = delta;
       api.start({ r: delta / 200 });
     }
-  }, 10); // Adjust debounce delay as needed
+  };
 
+  // Handle the globe's render state
   const onRender = useCallback(
-    throttle((state) => {
-      if (!pointerInteracting.current) phi += 0.005;
+    (state) => {
+      if (!pointerInteracting.current) phi += 0.002;  // Slower rotation
       state.phi = phi + r.get();
       state.width = width * 2;
       state.height = width * 2;
-    }, 16), // 16ms for roughly 60fps
+    },
     [pointerInteracting, phi, r]
   );
 
+  // Handle window resize events
   const onResize = () => {
     if (canvasRef.current) {
       width = canvasRef.current.offsetWidth;
     }
   };
 
+  // Initialize the globe on component mount and handle cleanup
   useEffect(() => {
     window.addEventListener("resize", onResize);
     onResize();
@@ -90,7 +94,9 @@ export default function Globe({ className, config = GLOBE_CONFIG }) {
       onRender,
     });
 
+    // Ensure the canvas opacity changes smoothly after loading
     setTimeout(() => (canvasRef.current.style.opacity = "1"), 500);
+
     return () => {
       window.removeEventListener("resize", onResize);
       globe.destroy();
@@ -98,36 +104,29 @@ export default function Globe({ className, config = GLOBE_CONFIG }) {
   }, [config, onRender]);
 
   return (
-    <LazyLoad
-      height={800}  // Provide a height for the placeholder
-      offset={100}  // Start loading when 100px from the viewport
-      once={true}   // Load the component only once
-      placeholder={<div style={{ height: '800px' }} />}  // Placeholder content
+    <div
+      className={cn(
+        "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]",
+        className
+      )}
     >
-      <div
+      <canvas
         className={cn(
-          "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]",
-          className
+          "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
         )}
-      >
-        <canvas
-          className={cn(
-            "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
-          )}
-          ref={canvasRef}
-          onPointerDown={(e) =>
-            updatePointerInteraction(
-              e.clientX - pointerInteractionMovement.current
-            )
-          }
-          onPointerUp={() => updatePointerInteraction(null)}
-          onPointerOut={() => updatePointerInteraction(null)}
-          onMouseMove={(e) => updateMovement(e.clientX)}
-          onTouchMove={(e) =>
-            e.touches[0] && updateMovement(e.touches[0].clientX)
-          }
-        />
-      </div>
-    </LazyLoad>
+        ref={canvasRef}
+        onPointerDown={(e) =>
+          updatePointerInteraction(
+            e.clientX - pointerInteractionMovement.current
+          )
+        }
+        onPointerUp={() => updatePointerInteraction(null)}
+        onPointerOut={() => updatePointerInteraction(null)}
+        onMouseMove={(e) => updateMovement(e.clientX)}
+        onTouchMove={(e) =>
+          e.touches[0] && updateMovement(e.touches[0].clientX)
+        }
+      />
+    </div>
   );
 }

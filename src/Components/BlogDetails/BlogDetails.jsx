@@ -21,7 +21,7 @@ const BlogDetails = () => {
     // Function to fetch blog post by ID
     const fetchPost = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/api/blogs/${id}`); // Fetch from backend endpoint for specific post
+        const response = await fetch(`https://lovehomeconvyancing-backend.onrender.com/api/blogs/${id}`); // Fetch from backend endpoint for specific post
         if (!response.ok) {
           throw new Error('Failed to fetch blog post');
         }
@@ -69,13 +69,13 @@ const BlogDetails = () => {
               </div>
               <div className="w-full h-auto mt-6">
                 <img 
-                  src={`http://localhost:4000/${post.blogCoverPhoto}`} 
+                  src={`https://lovehomeconvyancing-backend.onrender.com/${post.blogCoverPhoto}`} 
                   alt={post.blogTitle} 
                   className="w-full h-auto object-cover" 
                   style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
                 />
                 {/* Debugging: Display image URL */}
-                {/* <p>Image URL: http://localhost:4000/{post.blogCoverPhoto}</p> */}
+                {/* <p>Image URL: https://lovehomeconvyancing-backend.onrender.com/{post.blogCoverPhoto}</p> */}
               </div>
               <div className="mt-6 text-lg leading-relaxed blog-content" dangerouslySetInnerHTML={{ __html: post.blogContent }} />
               {/* Comment Section */}
