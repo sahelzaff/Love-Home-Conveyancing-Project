@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { assets } from '../../assets/assets';
 import '../../Homepage.css';
 import '../../Responsive.css';
 
@@ -9,13 +8,6 @@ const BlogDetails = () => {
   const [post, setPost] = useState(null); // State to hold the fetched blog post
   const [comments, setComments] = useState([]); // State to hold comments
   const [commentText, setCommentText] = useState(''); // State for comment input
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 200,
-      behavior: 'smooth'
-    });
-  }, []);
 
   useEffect(() => {
     // Function to fetch blog post by ID
@@ -27,6 +19,12 @@ const BlogDetails = () => {
         }
         const data = await response.json();
         setPost(data); // Update state with fetched blog post
+
+        // Scroll to top after data is fetched
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
       } catch (error) {
         console.error('Error fetching blog post:', error);
       }
@@ -54,7 +52,7 @@ const BlogDetails = () => {
     const options = { day: '2-digit', month: '2-digit', year: '2-digit' };
     return new Date(dateString).toLocaleDateString('en-GB', options).replace(/\//g, '-');
   };
-  
+
   return (
     <div className="p-4 h-auto w-full font-inter pt-20" id='paddingblogdetail'>
       <div>
@@ -68,10 +66,10 @@ const BlogDetails = () => {
                 <p className="text-black font-[900] text-xs">POSTED ON <span className='text-[#19345E]'> {formatDate(post.blogDate)}</span> BY <span className='text-[#19345E]'>ROBIN CARTER</span></p>
               </div>
               <div className="w-full h-auto mt-6">
-                <img 
-                  src={`https://lovehomeconvyancing-backend.onrender.com/${post.blogCoverPhoto}`} 
-                  alt={post.blogTitle} 
-                  className="w-full h-auto object-cover" 
+                <img
+                  src={`https://lovehomeconvyancing-backend.onrender.com/${post.blogCoverPhoto}`}
+                  alt={post.blogTitle}
+                  className="w-full h-auto object-cover"
                   style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
                 />
                 {/* Debugging: Display image URL */}
@@ -102,6 +100,8 @@ const BlogDetails = () => {
               </div>
             </div>
           </div>
+
+
           <div className="w-[32%] h-auto border-l-2 border-gray-300" id='sidebarblogdetails'>
             {/* Sidebar content */}
             <div className="max-w-md mx-auto bg-[#f4f4f4] rounded-lg overflow-hidden px-6">
