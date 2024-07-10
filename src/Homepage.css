@@ -1,3 +1,5 @@
+
+
 .Homepage {
     
     --base-margin: 1rem;
@@ -9,6 +11,23 @@
   --large-margin: 11rem;
 }
 
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0532d;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
 
 /* For 1920x1200 */
 @media only screen and (max-width: 1920px) and (max-height: 1200px) {
