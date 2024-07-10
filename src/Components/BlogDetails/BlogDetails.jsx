@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import '../../Homepage.css';
 import '../../Responsive.css';
 
-const BlogDetails = () => {
+const BlogDetails = ({ onLoad }) => {
   const { id } = useParams(); // Fetching the 'id' parameter from the URL
   const [post, setPost] = useState(null); // State to hold the fetched blog post
   const [comments, setComments] = useState([]); // State to hold comments
@@ -20,18 +20,17 @@ const BlogDetails = () => {
         const data = await response.json();
         setPost(data); // Update state with fetched blog post
 
-        // Scroll to top after data is fetched
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
+        // Call the onLoad callback
+        if (onLoad) {
+          onLoad();
+        }
       } catch (error) {
         console.error('Error fetching blog post:', error);
       }
     };
 
     fetchPost(); // Call fetchPost function when component mounts
-  }, [id]); // Dependency array to ensure fetch happens when 'id' changes
+  }, [id, onLoad]); // Dependency array to ensure fetch happens when 'id' changes
 
   const handleCommentSubmit = (e) => {
     e.preventDefault();

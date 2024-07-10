@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import React, { useCallback } from 'react';'
+import React, { useCallback } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import BlogDetails from './Components/BlogDetails/BlogDetails';
 import Footer from './Components/Footer/Footer';
@@ -10,21 +9,6 @@ const BlogDetailsPage = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
-=======
-import React, { useState,useEffect } from 'react';
-import Navbar from './Components/Navbar/Navbar'
-import BlogDetails from './Components/BlogDetails/BlogDetails'
-import Footer from './Components/Footer/Footer'
-import TopBar from './Components/TopBar/TopBar'
-
-
-const BlogDetailsPage = () => {
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 100,
-      // behavior: 'smooth'
->>>>>>> 839b5aec36575cb46679d8e4160c5e9fda9da722
     });
   }, []);
 
@@ -38,8 +22,4 @@ const BlogDetailsPage = () => {
   );
 };
 
-<<<<<<< HEAD
 export default BlogDetailsPage;
-=======
-export default BlogDetailsPage
->>>>>>> 839b5aec36575cb46679d8e4160c5e9fda9da722
