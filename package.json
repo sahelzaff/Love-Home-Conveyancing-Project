@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@dotlottie/player-component": "^2.7.12",
+    "@react-three/drei": "^9.108.3",
+    "@react-three/fiber": "^8.16.8",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "aos": "^2.3.4",
     "axios": "^1.7.2",
@@ -38,7 +40,9 @@
     "react-slick": "^0.30.2",
     "recaptcha": "^1.2.1",
     "run": "^1.5.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "three": "^0.166.1",
+    "three-globe": "^2.31.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -51,10 +55,10 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "framer-motion": "^11.2.10",
+    "framer-motion": "^11.3.2",
     "postcss": "^8.4.38",
     "react-spring": "^9.7.3",
-    "tailwind-merge": "^2.3.0",
+    "tailwind-merge": "^2.4.0",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
   },

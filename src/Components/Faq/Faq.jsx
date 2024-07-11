@@ -31,7 +31,7 @@ const Faq = () => {
                     {/* Left Column */}
                     <div id="accordion-flush" data-accordion="collapse">
                         {/* Accordion Item 1 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-left-1">
                                 <button
                                     type="button"
@@ -68,15 +68,15 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-left-1"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p className="mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Conveyancing is the process of transferring the legal title to property between a buyer and seller. It includes tasks such as contract preparation or review, conducting property searches, facilitating the exchange of contracts, protecting the interests of the client from a legal point of view, and co-ordinating all parties to get to the final point of settlement.</p>
+                                    <p className="mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Conveyancing is the process of transferring the legal title to property between a buyer and seller. It includes tasks such as contract preparation or review, conducting property searches, facilitating the exchange of contracts, protecting the interests of the client from a legal point of view, and co-ordinating all parties to get to the final point of settlement.</p>
 
-                                    <p className="font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">In fact, with many regulations, government requirements and parties involved, there are a myriad of things that can possibly go wrong. So if you are looking to buy or sell a property in Sydney, you need professional Sydney conveyancing services to ensure your transaction runs smoothly.</p>
+                                    <p className="font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >In fact, with many regulations, government requirements and parties involved, there are a myriad of things that can possibly go wrong. So if you are looking to buy or sell a property in Sydney, you need professional Sydney conveyancing services to ensure your transaction runs smoothly.</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Accordion Item 2 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-left-2">
                                 <button
                                     type="button"
@@ -113,15 +113,15 @@ const Faq = () => {
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                                 
-                                        <p className=" mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px] pl-2">Pre-contract – the sellers’ conveyancer prepares a detailed contract for the property’s sale. It includes all of the required information and disclosures, including the title reference, plan of the land, and other information needed to transfer title to the property. Exchange in a property transaction, two identical copies of the contract are made which the buyer and seller each sign and then exchange (literally 'swap') the contracts. The buyer must also pay a deposit. The contract records the final terms of the agreement, after this no further amendments can be made.</p>
+                                        <p className=" mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px] pl-2"  data-aos='fade-up' data-aos-duration="1000" >Pre-contract – the sellers’ conveyancer prepares a detailed contract for the property’s sale. It includes all of the required information and disclosures, including the title reference, plan of the land, and other information needed to transfer title to the property. Exchange in a property transaction, two identical copies of the contract are made which the buyer and seller each sign and then exchange (literally 'swap') the contracts. The buyer must also pay a deposit. The contract records the final terms of the agreement, after this no further amendments can be made.</p>
                                 
                                 
-                                        <p className="text-[13px] mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold pl-2">Exchange – in a property transaction, two identical copies of the contract are made which the buyer and seller each sign and then exchange (literally ‘swap’) the contracts. The buyer must also pay a deposit. The contract records the final terms of the agreement, after this no further amendments can be made.</p>
+                                        <p className="text-[13px] mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold pl-2"  data-aos='fade-up' data-aos-duration="1000" >Exchange – in a property transaction, two identical copies of the contract are made which the buyer and seller each sign and then exchange (literally ‘swap’) the contracts. The buyer must also pay a deposit. The contract records the final terms of the agreement, after this no further amendments can be made.</p>
                                 
                                     
-                                        <p className="text-[13px] mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold pl-2">Pre-settlement inspection – The buyer has the right to inspect the property before settlement to ensure the property is exactly the same as when they first inspected it. Meantime, the buyer’s conveyancers prepare the final financial figures and share this to all parties, including the banks.</p>
+                                        <p className="text-[13px] mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold pl-2"  data-aos='fade-up' data-aos-duration="1000" >Pre-settlement inspection – The buyer has the right to inspect the property before settlement to ensure the property is exactly the same as when they first inspected it. Meantime, the buyer’s conveyancers prepare the final financial figures and share this to all parties, including the banks.</p>
                                 
-                                        <p className="text-[13px] mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold pl-2">Settlement – The final stage of conveyancing wherein your Sydney conveyancing solicitors ensures the correct amount of money is paid to the seller, and the buyer takes possession of the property.</p>
+                                        <p className="text-[13px] mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold pl-2"  data-aos='fade-up' data-aos-duration="1000" >Settlement – The final stage of conveyancing wherein your Sydney conveyancing solicitors ensures the correct amount of money is paid to the seller, and the buyer takes possession of the property.</p>
                                 
                                 </div>
 
@@ -129,7 +129,7 @@ const Faq = () => {
                         </div>
 
                         {/* Accordion Item 3 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-left-3">
                                 <button
                                     type="button"
@@ -165,13 +165,13 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-left-3"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p className="font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Property conveyancing in Sydney is not something you can DIY and undertake in your own hands. It involves legal processes, verification, searches, substantial co-ordination and possible risks that need professional support to complete the sale. Love Homes Conveyancing is a licensed law practice that simplifies buying and selling properties free of hassles and troubles.</p>
+                                    <p className="font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Property conveyancing in Sydney is not something you can DIY and undertake in your own hands. It involves legal processes, verification, searches, substantial co-ordination and possible risks that need professional support to complete the sale. Love Homes Conveyancing is a licensed law practice that simplifies buying and selling properties free of hassles and troubles.</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Accordion Item 4 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-left-4">
                                 <button
                                     type="button"
@@ -180,7 +180,7 @@ const Faq = () => {
                                     aria-expanded={openItemLeft === 4}
                                     aria-controls="accordion-flush-body-left-4"
                                 >
-                                    <span>How long shoild a conveyancer in sydney take to complete the entire process?</span>
+                                    <span>How long should a conveyancer in sydney take to complete the entire process?</span>
                                     <div className="flex-shrink-0 w-3 h-3">
                                     <svg
                                         data-accordion-icon
@@ -207,9 +207,9 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-left-4"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p className=" mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">The contract will ultimately dictate the length of time between signing the contract and contract completion (settlement). Typically, 6 weeks is the standard contractual period to complete the settlement. However, there are many steps involved in conveyancing, and banks can have considerable lead times, so it is important to ensure you choose a solicitor/conveyancer who operates in an efficient manner to ensure the transaction is not put at risk.</p>
+                                    <p className=" mb-2 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >The contract will ultimately dictate the length of time between signing the contract and contract completion (settlement). Typically, 6 weeks is the standard contractual period to complete the settlement. However, there are many steps involved in conveyancing, and banks can have considerable lead times, so it is important to ensure you choose a solicitor/conveyancer who operates in an efficient manner to ensure the transaction is not put at risk.</p>
 
-                                    <p className="font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">From reviewing and signing the contract to carrying out inspections, searches, settlement, and the final payment – Love Homes Conveyancing has implemented a streamlined digital service to ensure clients receive a timely and efficient service.</p>
+                                    <p className="font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >From reviewing and signing the contract to carrying out inspections, searches, settlement, and the final payment – Love Homes Conveyancing has implemented a streamlined digital service to ensure clients receive a timely and efficient service.</p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +218,7 @@ const Faq = () => {
                     {/* Right Column */}
                     <div id="accordion-flush" data-accordion="collapse">
                         {/* Accordion Item 1 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-right-1">
                                 <button
                                     type="button"
@@ -254,16 +254,16 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-right-1"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Have you heard the expression “You get what you pay for!”?</p>
-                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">If you ask for a ballpark figure, Sydney conveyancing costs can vary between $900 – $6000. The final cost can vary depending on the type of property involved, searches, and other fees charged by different authorities, however by far the biggest variance is in the professional legal fee and disbursement costs charged by the firm.</p>
-                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Here at Love Homes Conveyancing, we offer a standard and transparent cost structure to keep you from paying unnecessary costs and so you also know upfront how much you will be paying.</p>
+                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Have you heard the expression “You get what you pay for!”?</p>
+                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >If you ask for a ballpark figure, Sydney conveyancing costs can vary between $900 – $6000. The final cost can vary depending on the type of property involved, searches, and other fees charged by different authorities, however by far the biggest variance is in the professional legal fee and disbursement costs charged by the firm.</p>
+                                    <p className="mb-4 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Here at Love Homes Conveyancing, we offer a standard and transparent cost structure to keep you from paying unnecessary costs and so you also know upfront how much you will be paying.</p>
                                 </div>
                             </div>
                         </div>
 
 
                         {/* Accordion Item 2 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-right-2">
                                 <button
                                     type="button"
@@ -300,19 +300,19 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-right-2"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Some of the most important documents required for property conveyancing in Sydney include:</p>
-                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Contract of Sale</p>
-                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">If buying a house, a building and pest report can be an essential document and should ideally by purchased before signing a contract</p>
-                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">If buying an apartment, a strata report (also known as strata records inspection) is highly valuable document and should also be purchased before signing a contract</p>
-                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Verification of identity – government regulations demand that we verify who we are dealing with by requiring a copy of your passport and driving licence, or similar documents if these aren’t available.</p>
-                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">We may require other information based on the parties and the property concerned.</p>
+                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Some of the most important documents required for property conveyancing in Sydney include:</p>
+                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Contract of Sale</p>
+                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >If buying a house, a building and pest report can be an essential document and should ideally by purchased before signing a contract</p>
+                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >If buying an apartment, a strata report (also known as strata records inspection) is highly valuable document and should also be purchased before signing a contract</p>
+                                <p className=" mb-3 ml-6 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Verification of identity – government regulations demand that we verify who we are dealing with by requiring a copy of your passport and driving licence, or similar documents if these aren’t available.</p>
+                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >We may require other information based on the parties and the property concerned.</p>
                                 
                                 </div>
                             </div>
                         </div>
 
                         {/* Accordion Item 3 */}
-                        <div className='w-full'>
+                        <div className='w-full'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <h2 id="accordion-flush-heading-right-3">
                                 <button
                                     type="button"
@@ -350,8 +350,8 @@ const Faq = () => {
                                 aria-labelledby="accordion-flush-heading-right-3"
                             >
                                 <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">If you are looking for a Sydney conveyancing company that works together with you to find the best solution to your conveyancing needs, we think you have reached the right place. At Love Homes Conveyancing we are legal professional property specialists, who make the process simple and straight-forward for our clients without the legal jargon.</p>
-                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]">Our conveyancing services in Sydney are cost-effective with an emphasis on high value client service.</p>
+                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >If you are looking for a Sydney conveyancing company that works together with you to find the best solution to your conveyancing needs, we think you have reached the right place. At Love Homes Conveyancing we are legal professional property specialists, who make the process simple and straight-forward for our clients without the legal jargon.</p>
+                                <p className=" mb-5 font-poppins text-gray-500 dark:text-gray-400 font-bold text-[13px]"  data-aos='fade-up' data-aos-duration="1000" >Our conveyancing services in Sydney are cost-effective with an emphasis on high value client service.</p>
                                 </div>
                             </div>
                         </div>

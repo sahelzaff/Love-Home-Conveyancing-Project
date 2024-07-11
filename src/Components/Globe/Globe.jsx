@@ -1,38 +1,26 @@
+import { cn } from "../../lib/utils";
 import React, { useCallback, useEffect, useRef } from "react";
 import { useSpring } from "react-spring";
 import createGlobe from "cobe";
-import { cn } from "../../lib/utils";
 
 const GLOBE_CONFIG = {
-  width: 800,
-  height: 800,
-  onRender: () => {},
   devicePixelRatio: 2,
+  width: 500,
+  height: 500,
   phi: 0,
   theta: 0.3,
-  dark: 0,
-  diffuse: 0.4,
-  mapSamples: 16000,
-  mapBrightness: 1.2,
-  baseColor: [250 / 255, 105 / 255, 69 / 255],
-  markerColor: [1, 1, 1],
-  glowColor: [0.9, 0.9, 0.9],
-  markers: [
-    { location: [14.5995, 120.9842], size: 0.03 },
-    { location: [19.076, 72.8777], size: 0.1 },
-    { location: [23.8103, 90.4125], size: 0.05 },
-    { location: [30.0444, 31.2357], size: 0.07 },
-    { location: [39.9042, 116.4074], size: 0.08 },
-    { location: [-23.5505, -46.6333], size: 0.1 },
-    { location: [19.4326, -99.1332], size: 0.1 },
-    { location: [40.7128, -74.006], size: 0.1 },
-    { location: [34.6937, 135.5022], size: 0.05 },
-    { location: [41.0082, 28.9784], size: 0.06 },
-  ],
+  dark: 0, // Set to 0 to avoid darkening the background
+  diffuse: 0.3, // Adjust for light diffusion if necessary
+  mapSamples: 8000,
+  mapBrightness: 3, // Reduce brightness to make the background less intense
+  baseColor: [240 / 255, 83 / 255, 45 / 255], // Orange background color
+  markerColor: [1, 1, 1], // White color for markers
+  glowColor: [1, 1, 1], // White color for glow effect
+  markers: [],
 };
 
 export default function Globe({ className, config = GLOBE_CONFIG }) {
-  let phi = 0;  // Initial angle for globe rotation
+  let phi = 15;  // Initial angle for globe rotation
   let width = 0;  // Canvas width
   const canvasRef = useRef(null);
   const pointerInteracting = useRef(null);
@@ -71,16 +59,24 @@ export default function Globe({ className, config = GLOBE_CONFIG }) {
       state.phi = phi + r.get();
       state.width = width * 2;
       state.height = width * 2;
+  
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(() => globe.render());
+      } else {
+        // Fallback for browsers that don't support requestIdleCallback
+        setTimeout(() => globe.render(), 0);
+      }
     },
     [pointerInteracting, phi, r]
   );
-
+  
   // Handle window resize events
   const onResize = () => {
     if (canvasRef.current) {
-      width = canvasRef.current.offsetWidth;
+      width = Math.min(canvasRef.current.offsetWidth, 800); // Limit the max width
     }
   };
+  
 
   // Initialize the globe on component mount and handle cleanup
   useEffect(() => {
