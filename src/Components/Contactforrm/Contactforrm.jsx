@@ -91,14 +91,14 @@ const Contactform = () => {
   return (
     <div className="h-auto w-full max-w-screen-4xl bg-[#f4f4f4] flex flex-col justify-center items-center py-20 px-2">
       <div className="flex flex-col justify-center items-center mb-10">
-        <h1 className="font-poppins font-medium text-xl" >Let's Discuss</h1>
-        <h2 className="font-inter font-bold text-5xl" id='contactformheadind1' >Whatever Question You Have,</h2>
-        <h3 className="font-inter font-bold text-5xl text-[#f0532d]" id='contactformheadind2'>Please Feel Free To Ask.</h3>
+        <h1 className="font-poppins font-medium text-xl"  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Let's Discuss</h1>
+        <h2 className="font-inter font-bold text-5xl" id='contactformheadind1'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Whatever Question You Have,</h2>
+        <h3 className="font-inter font-bold text-5xl text-[#f0532d]" id='contactformheadind2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Please Feel Free To Ask.</h3>
       </div>
 
       <div className="flex-grow container mx-auto p-4 flex h-auto" id='contactformflexmain'>
         <div className="w-3/4 overflow-y-auto h-auto bg-[#f4f4f4] p-4 no-scrollbar" ref={leftDivRef} id='contactform1'>
-          <form className="w-full mx-auto pr-32  no-scrollbar h-auto bg-[#f4f4f4]" id='formmainmain' onSubmit={handleSubmit}>
+          <form className="w-full mx-auto pr-32  no-scrollbar h-auto bg-[#f4f4f4]" id='formmainmain' onSubmit={handleSubmit} data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
             <div className="grid md:grid-cols-2 md:gap-6">
               <div className="relative z-0 w-full mb-10 group">
                 <input
@@ -196,61 +196,61 @@ const Contactform = () => {
         <div className="w-2/6 h-auto bg-[#f4f4f4] p-4 sticky top-0 overflow-x-hidden border-l-2" id='contactforminfo2' ref={rightDivRef}>
           <div className="flex flex-col items-start">
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div>
+              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                 <img src={assets.clock_contact} className="w-12" alt="Clock" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" >Working Hours</h2>
+                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" >Working Hours</h2>
                 <div className="w-80 font-poppins font-medium" id='timingdiv1'>
                   <div className="flex flex-row items-start justify-between">
-                    <p>Mon-Fri</p>
-                    <p>9:00 AM - 6:00 PM</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Mon-Fri</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true"> 9:00 AM - 6:00 PM</p>
                   </div>
                   <div className="flex flex-row items-start justify-between">
-                    <p>Sat - Sun</p>
-                    <p>Only by Appointment</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Sat - Sun</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Only by Appointment</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div>
+              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                 <img src={assets.location} className="w-12" alt="Location" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl">Address</h2>
+                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Address</h2>
                 <div className="w-80 font-poppins font-medium" id='timingdiv1'>
                   <div className="flex flex-row items-start justify-between">
-                    <p>Suite 17, Minton House,</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Suite 17, Minton House,</p>
                   </div>
                   <div className="flex flex-row items-start justify-between">
-                    <p>2-14 Bayswater Road, Potts Point 2011</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">2-14 Bayswater Road, Potts Point 2011</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div>
+              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                 <img src={assets.telephone} className="w-12" alt="Telephone" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl">Phone</h2>
+                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Phone</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between" id='timingdiv1'>
-                    <p>+02 9381 9118</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">+02 9381 9118</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96">
-              <div>
+              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                 <img src={assets.mail} className="w-12" alt="Mail" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl">Email</h2>
+                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Email</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between" id='timingdiv1'>
-                    <p>hello@love-homes.com.au</p>
+                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">hello@love-homes.com.au</p>
                   </div>
                 </div>
               </div>

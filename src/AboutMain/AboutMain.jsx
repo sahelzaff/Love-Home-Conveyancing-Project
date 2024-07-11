@@ -9,7 +9,7 @@ const AboutMain = () => {
                 <div className='flex flex-row justify-start items-start w-full h-full py-36' id='about_content_main_row'>
                     <div className='flex flex-col  w-1/2 bg-transparent gap-20 h-full py-[7.8rem]' id='first' >
                         <div id='content'>
-                            <div className='w-2/3 bg-[#f0532d] mx-auto px-14 py-10 rounded-2xl shadow-2xl cursor-text hover:scale-105 transition-transform duration-300' id='value1About' >
+                            <div className='w-2/3 bg-[#f0532d] mx-auto px-14 py-10 rounded-2xl shadow-2xl cursor-text hover:scale-105 transition-transform duration-300'  id='value1About' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" >
                                 <div className='flex flex-col gap-2 items-start ' >
                                     <h1 className='font-inter text-[35px] text-white font-bold 'id='value_name'>Value Statement</h1>
                                     <div className='w-6/12 h-[5px] bg-gray-200 rounded-lg -mt-2 mb-1 '></div>
@@ -17,7 +17,7 @@ const AboutMain = () => {
                                 </div>
                             </div>
 
-                            <div className='w-2/3 bg-[#f0532d] mx-auto px-14 mt-60  py-10 rounded-2xl shadow-2xl cursor-text hover:scale-105 transition-transform duration-300' id='aboutcard2' >
+                            <div className='w-2/3 bg-[#f0532d] mx-auto px-14 mt-60  py-10 rounded-2xl shadow-2xl cursor-text hover:scale-105 transition-transform duration-300' id='aboutcard2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" >
                                 <div className='flex flex-col gap-2 items-start py-5'>
                                     <h1 className='font-inter text-[30px] text-white font-bold ' id='value_name'>Mission Statement</h1>
                                     <div className='w-5/12 h-[5px] bg-gray-200 rounded-lg -mt-2 mb-1 '></div>
@@ -32,7 +32,7 @@ const AboutMain = () => {
                     </div>
                     <div className='flex flex-col w-1/2 h-full'>
                         <div className='bg-transparent h-[165vh] py-32 secondhelp' id='first'>
-                            <div className='flex flex-col gap-4  content2 py-5 pl-5' id='cards2aboutmain2'>
+                            <div className='flex flex-col gap-4  content2 py-5 pl-5' id='cards2aboutmain2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                                 <div className='flex flex-row gap-3 items-center justify-start '>
                                     <img src={assets.abouthelp} className='w-20' id='about_icons_page' alt="" />
                                     <div>
@@ -65,7 +65,7 @@ const AboutMain = () => {
 
                                 </div>
                             </div>
-                            <div className='flex flex-col gap-4 items-start content2 py-5 pl-5' id='cards2aboutmain2'>
+                            <div className='flex flex-col gap-4 items-start content2 py-5 pl-5' id='cards2aboutmain2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                                 <div className='flex flex-row gap-3 items-center justify-start '>
                                     <img src={assets.aboutwork} className='w-20' id='about_icons_page' alt="" />
                                     <div>
@@ -97,7 +97,7 @@ const AboutMain = () => {
                                 </div>
                             </div>
 
-                            <div className='flex flex-col gap-2 items-start content2  py-5 pl-5' id='cards2aboutmain2'>
+                            <div className='flex flex-col gap-2 items-start content2  py-5 pl-5' id='cards2aboutmain2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
                             <div className='flex flex-row gap-3 items-center justify-start '>
                                     <img src={assets.commitment} className='w-20' id='about_icons_page' alt="" />
                                     <div>

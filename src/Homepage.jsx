@@ -80,9 +80,9 @@ const Homepage = () => {
             <div className='Homepage1'>
                 <Hero />
             </div>
-            <div className='Homepage'>
+            {/* <div className='Homepage'>
                 <SliderClients />
-            </div>
+            </div> */}
 
 
             {/* <Cards/> */}

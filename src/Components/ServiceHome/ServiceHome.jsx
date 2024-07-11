@@ -53,20 +53,20 @@ const ServiceHome = () => {
             <div>
                 <div className='flex flex-row items-center justify-center h-auto content' id='servicehomeinfomaindiv'>
                     <div className='flex flex-col items-start justify-center h-auto w-3/4 '>
-                        <h2 className='font-outfit font-semibold text-5xl' id='serviceHead1'>Services</h2>
-                        <div className='w-24 h-[0.3rem] bg-[#f0532d] mt-1'></div>
-                        <p className='font-poppins font-medium text-[1rem] pr-36 pt-2' id='servicePara'>At LoveHome Conveyancing, we offer expert home inspections, property evaluations, and personalized legal advice. Our comprehensive services ensure a seamless and stress-free property transaction, with meticulous document handling and continuous support.</p>
+                        <h2 className='font-outfit font-semibold text-5xl' id='serviceHead1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Services</h2>
+                        <div className='w-24 h-[0.3rem] bg-[#f0532d] mt-1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true"></div>
+                        <p className='font-poppins font-medium text-[1rem] pr-36 pt-2' id='servicePara' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">At LoveHome Conveyancing, we offer expert home inspections, property evaluations, and personalized legal advice. Our comprehensive services ensure a seamless and stress-free property transaction, with meticulous document handling and continuous support.</p>
                     </div>
-                    <div>
-                        <img src={assets.services} alt="" />
+                    <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
+                        <img src={assets.services} alt="" loading='lazy' />
                     </div>
                 </div>
                 <div className='flex flex-row items-center justify-center h-auto mt-10 gap-10 bg-[#19345E] py-20' id='carddivservicehomemaindiv'>
                     <div className="content flex flex-row justify center items-center gap-20" id='carddivservicehomemaindiv2'>
                     {/* Card 1 */}
                     <Link  to="/calculator">
-                    <div className='custom-card'>
-                        <img src={assets.buying} className='mt-'  alt="Buying" />
+                    <div className='custom-card' data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
+                        <img src={assets.buying} className='mt-'  alt="Buying" loading='lazy' />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Buying</h2>
                             <p className='custom-card-paragraph font-poppins text-[16px] font-[400]'>
@@ -78,8 +78,8 @@ const ServiceHome = () => {
 
                     {/* Card 2 */}
                     <Link to="/calculator">
-                    <div className='custom-card'>
-                        <img src={assets.selling} alt="Selling" />
+                    <div className='custom-card' data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
+                        <img src={assets.selling} alt="Selling" loading='lazy'  />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Selling</h2>
                             <p className='custom-card-paragraph font-poppins text-[16px] font-[400]'>
@@ -91,8 +91,8 @@ const ServiceHome = () => {
 
                     {/* Card 3 */}
                     <Link to="/calculator">
-                    <div className='custom-card'>
-                        <img src={assets.transfer} className='w-[45rem]' alt="Property Transfer" />
+                    <div className='custom-card' data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
+                        <img src={assets.transfer} className='w-[45rem]' alt="Property Transfer" loading='lazy' />
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit '>Property Transfer</h2>
                             <p className='custom-card-paragraph font-poppins text-[16px] font-[400]'>
@@ -104,8 +104,8 @@ const ServiceHome = () => {
 
                     {/* Card 4 */}
                     <Link to="/calculator">
-                    <div className='custom-card'>
-                        <img src={assets.investor} alt="Contract Advice" />
+                    <div className='custom-card' data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
+                        <img src={assets.investor} alt="Contract Advice"  loading='lazy'/>
                         <div className='custom-card-hover-content'>
                             <h2 className='custom-card-heading text-black font-bold font-outfit'>Contract Advice</h2>
                             <p className='custom-card-paragraph font-poppins text-[16px] font-[400]'>

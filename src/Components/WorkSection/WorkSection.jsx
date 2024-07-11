@@ -7,16 +7,16 @@ const WorkSection = () => {
         <div className='h-auto flex flex-col pt-48 ' id='mainmainmainworkservicediv'>
             <div className=' flex flex-row justify-between items-center ' id='worksectionprocessservicemaindiv'>
                 <div>
-                    <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900] font-inter" id='processH'>The <span className="text-[#f0532d]">Process</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900] font-inter" id='processH' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">The <span className="text-[#f0532d]" >Process</span>
                     </h1>
-                    <div className='w-44 h-[0.3rem] bg-[#f0532d] mt-2' id='horizontalline_sublines1'></div>
-                    <p className='font-outfit text-2xl font-medium tracking-wider pt-5' id='sublineprocesswork1'>At LoveHome Conveyancing,</p>
+                    <div className='w-44 h-[0.3rem] bg-[#f0532d] mt-2' id='horizontalline_sublines1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true"></div>
+                    <p className='font-outfit text-2xl font-medium tracking-wider pt-5' id='sublineprocesswork1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">At LoveHome Conveyancing,</p>
                     
-                    <p className='font-outfit text-3xl  font-medium tracking-wider' id='sublineprocesswork2'>We do exactly what we promise.</p>
-                    <p className='font-outfit text-3xl  font-medium tracking-wider' id='sublineprocesswork2'>We handle every detail with care.</p>
+                    <p className='font-outfit text-3xl  font-medium tracking-wider' id='sublineprocesswork2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">We do exactly what we promise.</p>
+                    <p className='font-outfit text-3xl  font-medium tracking-wider' id='sublineprocesswork2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">We handle every detail with care.</p>
                 </div>
-                <div>
-                    <img src={assets.house_Work1} alt="" srcset="" />
+                <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
+                    <img src={assets.house_Work1} alt="" loading='lazy' srcset=""  />
                 </div>
             </div>
             <div className='grid grid-cols-2 grid-rows-3 gap-10 w-full mx-auto ' id='workGrid'>

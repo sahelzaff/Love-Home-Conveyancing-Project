@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { assets } from '../../assets/assets';
 import './Hero.css';
 import Cards from '../Cards/Cards';
@@ -18,6 +18,8 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fade, setFade] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const imageRef = useRef();
 
   useEffect(() => {
     const handleResize = () => {
@@ -45,11 +47,36 @@ const Hero = () => {
 
   const backgroundImages = isMobile ? mobileBackgroundImages : desktopBackgroundImages;
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setImageLoaded(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '0px', threshold: 0.1 }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="relative w-full h-screen overflow-hidden pb-24">
       <div
+        ref={imageRef}
         className={`absolute top-0 left-0 w-full h-screen bg-fixed scale-[100%] bg-cover bg-center transition-opacity duration-1000 ease-in-out ${fade ? 'opacity-0' : 'opacity-100'}`}
-        style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}
+        style={{ backgroundImage: imageLoaded ? `url(${backgroundImages[currentImageIndex]})` : 'none' }}
       />
       <Cards />
     </div>

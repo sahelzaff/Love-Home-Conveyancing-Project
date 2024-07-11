@@ -106,7 +106,7 @@ const ServiceReview = () => {
                         <h2 className='mt-2 text-[#f0532d] font-inter font-medium'>107 Reviews</h2>
                     </div>
                 </div>
-                <div className="w-full mt-10">
+                <div className="w-full mt-10" data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
                     {googleReviews.length > 0 ? (
                         <Slider {...settings}>
                             {googleReviews.map((review, index) => (

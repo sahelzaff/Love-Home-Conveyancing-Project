@@ -61,10 +61,11 @@ const Hero2 = () => {
                     <h2 className="font-inter mt-2 font-medium text-base sm:text-lg md:text-xl lg:text-lg xl:text-2xl" id='online_text'>Online & In-person Consultations Available</h2>
                     <div className="flex flex-row justify-center items-center -mt-3 sm:-mt-4 md:-mt-5 gap-4 sm:gap-6 md:gap-7" id='boxPhoto'>
                         <img src={assets.whatsapp} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' />
-                        <img src={assets.zoom} className="w-16 sm:w-24 md:w-32 xl:w-40" alt="" id='box_image' />
-                        <img src={assets.we} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' />
-                        <img src={assets.skype} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt=""  id='box_image'/>
-                        <img src={assets.teams} className="w-14 sm:w-20 md:w-28 2xl:w-40" alt=""  id='box_image'/>
+                        <img src={assets.zoom} className="w-16 sm:w-24 md:w-32 xl:w-40" alt="" id='box_image' loading="lazy" />
+                        <img src={assets.we} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' loading="lazy" />
+                        <img src={assets.skype} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' loading="lazy" />
+                        <img src={assets.teams} className="w-14 sm:w-20 md:w-28 2xl:w-40" alt="" id='box_image' loading="lazy" />
+
                     </div>
                 </div>
             </div>

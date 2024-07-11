@@ -10,63 +10,63 @@ const TheProcess = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between h-full w-full py-8 bg-[#f4f4f4] font-inter" id='process_row_div' style={{ backgroundImage: `url()`, backgroundSize: '60% auto', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
       <div className="lg:w-1/2 w-full py-8 h-full ml-28" id='process_left'>
-        <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900] font-inter" id='processH'>
+        <h1 className="text-4xl md:text-5xl lg:text-8xl font-[900] font-inter" id='processH' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
           The <span className="text-[#f0532d]">Process</span>
         </h1>
         <div className="mt-14 w-[60%]" id='processW'>
           <div className="flex items-start mb-14" id='process_list_main'>
-            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">1</div>
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">1</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] " id='process_main_head'>Engagement</h2>
-              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>Customer engages a licensed conveyancer or solicitor specializing in online conveyancing.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] " id='process_main_head' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Engagement</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Customer engages a licensed conveyancer or solicitor specializing in online conveyancing.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
-            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">2</div>
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">2</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head'>Consultation & Documentation</h2>
-              <p className="text-[1.125rem]  font-poppins "  id='process_main_para'>Conducts an initial consultation with the customer to gather information and details by document collection, and contract review.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Consultation & Documentation</h2>
+              <p className="text-[1.125rem]  font-poppins "  id='process_main_para' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Conducts an initial consultation with the customer to gather information and details by document collection, and contract review.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
-            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">3</div>
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">3</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]"  id='process_main_head'>Property Checks</h2>
-              <p className="text-[1.125rem]  font-poppins"  id='process_main_para'>As a Conveyancer we conduct property searches and due diligence.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]"  id='process_main_head' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Property Checks</h2>
+              <p className="text-[1.125rem]  font-poppins"  id='process_main_para' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">As a Conveyancer we conduct property searches and due diligence.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
-            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">4</div>
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">4</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head'>Financial Arrangements</h2>
-              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>Coordination of financial aspects and settlement preparation.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap"  id='process_main_head' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Financial Arrangements</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Coordination of financial aspects and settlement preparation.</p>
             </div>
           </div>
           <div className="flex items-start mb-14" id='process_list_main'>
-            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">5</div>
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">5</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]"  id='process_main_head'>Settlement</h2>
-              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>Facilitation of ownership transfer and post-purchase support.</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d]"  id='process_main_head' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Settlement</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Facilitation of ownership transfer and post-purchase support.</p>
             </div>
           </div>
           <div className="flex items-start " id='process_list_main'>
-            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]">6</div>
+            <div className="text-[#f0532d] text-4xl md:text-5xl lg:text-6xl font-[900]" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">6</div>
             <div className="ml-10" id='processml'>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap" id='process_main_head'>Post-Purchase Support</h2>
-              <p className="text-[1.125rem] font-poppins"  id='process_main_para'>The conveyancer ensures ongoing customer support post-settlement, including property registrations and legal guidance, to protect their interests</p>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-inter text-[#f0532d] whitespace-nowrap" id='process_main_head' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Post-Purchase Support</h2>
+              <p className="text-[1.125rem] font-poppins"  id='process_main_para' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">The conveyancer ensures ongoing customer support post-settlement, including property registrations and legal guidance, to protect their interests</p>
             </div>
           </div>
           <div className='mt-2  mb-14 sm:pt-5'>
           <Link to="/service#work">
-            <p className='cursor-pointer ml-20 font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]' id='readmoreprocess'>Read More</p>
+            <p className='cursor-pointer ml-20 font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]' id='readmoreprocess' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Read More</p>
           </Link>
                     </div>
           
-                    <button className="bg-[#f0532d]  hover:bg-orange-600 font-inter font-bold text-[1rem] mt-10 text-white py-3 px-6 rounded-lg text-lg md:text-xl lg:text-2xl" id='buttonProcess'>Speak With A Solicitor</button>
+                    <button className="bg-[#f0532d]  hover:bg-orange-600 font-inter font-bold text-[1rem] mt-10 text-white py-3 px-6 rounded-lg text-lg md:text-xl lg:text-2xl" id='buttonProcess' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Speak With A Solicitor</button>
         </div>
       </div>
       <div className="lg:w-1/2 w-full lg:p-8">
-        <img src={assets.process} alt="Process Background" className="w-full h-full object-cover" />
+        <img src={assets.process} alt="Process Background" loading='lazy' className="w-full h-full object-cover" />
       </div>
     </div>
   );
