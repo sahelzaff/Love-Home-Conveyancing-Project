@@ -72,24 +72,27 @@ const BlogPostCard = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[86%] mx-auto py-32 bg-[#f4f4f4] group" id='blogpostcardmain'  >
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[86%] mx-auto py-32 bg-[#f4f4f4] group" id='blogpostcardmain'>
       {posts.slice(0, 7).map((post, index) => (
         <div
           key={post._id}
           className={`relative ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''} aspect-w-1 aspect-h-1`}
-           data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" 
+          data-aos='fade-up' data-aos-duration="1000" data-aos-once="true"
         >
           <Link to={`/post/${post._id}`} id='postheight'>
-            <img
-              src={`https://lovehomeconvyancingbackend-production.up.railway.app/${post.blogCoverPhoto}`}
-              alt={post.blogTitle}
-              className="w-full h-full object-cover cursor-pointer group"
-              id='blogpostcardcoverphoto'
-            />
+            <div className="overflow-hidden post-card">
+              <img
+                src={`https://lovehomeconvyancingbackend-production.up.railway.app/${post.blogCoverPhoto}`}
+                alt={post.blogTitle}
+                loading='lazy'
+                className="w-full h-full object-cover cursor-pointer transition-transform duration-500 post-card-image"
+                id='blogpostcardcoverphoto'
+              />
+            </div>
             <div className="absolute top-4 left-0 bg-white text-red-500 px-3 py-4 text-center text-[16px] font-[800] font-inter group-hover:text-black" id='blogpostdate'>
               {formatDate(post.blogDate)}
             </div>
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white text-black px-10 py-2 rounded text-center" id='blogposttitlediv'>
+            <div className={`absolute ${index === 0 ? 'bottom-4' : 'bottom-10'} left-1/2 transform -translate-x-1/2 bg-white text-black px-10 py-2 rounded text-center`} id='blogposttitlediv'>
               <span className="text-[1.125rem] font-bold cursor-pointer hover:text-[#f0532d]" id='blogtitletext'>
                 {post.blogTitle}
               </span>

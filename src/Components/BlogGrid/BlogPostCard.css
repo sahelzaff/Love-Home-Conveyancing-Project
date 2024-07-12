@@ -1,0 +1,31 @@
+/* Ensure the container div does not overflow */
+.overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /* Ensure the image scales up on hover */
+  .post-card:hover .post-card-image {
+    transform: scale(1.1);
+  }
+  
+  /* Transition for smooth scaling */
+  .transition-transform {
+    transition: transform 0.5s ease;
+  }
+  
+  /* Ensure consistent size for post cards */
+  .post-card {
+    height: 100%;
+  }
+  
+  /* Adjust the title positioning for the first post card */
+  #blogposttitlediv {
+    z-index: 1;
+    bottom: 10px;
+  }
+  
+  /* Specific styling for the first post card title */
+  .md\\:col-span-2 .md\\:row-span-2 #blogposttitlediv {
+    bottom: 4px;
+  }
+  
