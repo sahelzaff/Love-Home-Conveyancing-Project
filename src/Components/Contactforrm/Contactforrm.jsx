@@ -39,7 +39,7 @@ const Contactform = () => {
     }
 
     try {
-      const response = await fetch('https://lovehomeconvyancing-backend.onrender.com/api/form/submit', {
+      const response = await fetch('https://lovehomeconvyancingbackend-production.up.railway.app/api/form/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -118,7 +118,7 @@ const Contactform = () => {
                   type="text"
                   name="lastName"
                   id="lastName"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                  className="block py-2.5  w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer px-3"
                   placeholder=" "
                   value={formData.lastName}
                   onChange={handleChange}
@@ -133,7 +133,7 @@ const Contactform = () => {
                 pattern="[0-9]{10}"
                 name="phone"
                 id="phone"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer px-3"
                 placeholder=" "
                 value={formData.phone}
                 onChange={handleChange}
@@ -147,7 +147,7 @@ const Contactform = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d]  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-1 rounded-lg border-[#f0532d]  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#f0542dec] peer px-3"
                 placeholder=" "
                 value={formData.email}
                 onChange={handleChange}
@@ -162,17 +162,19 @@ const Contactform = () => {
                 type="text"
                 id="message"
                 name="message"
-                className="block w-full p-4 border- border-[#f0532d]  text-gray-900 rounded-lg bg-gray-50 text-base focus:ring-[#f0542dec] focus:border-[#f0542dec] pb-32 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="block w-full p-4 border- border-[#f0532d]  text-gray-900 rounded-lg bg-gray-50 text-base focus:ring-[#f0542dec] focus:border-[#f0542dec] pb-32 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 px-3"
                 value={formData.message}
                 onChange={handleChange}
               />
             </div>
+        <div className='cursor-pointer'>
 
             <ReCAPTCHA
               sitekey='6LfmmvQpAAAAAPe_6emsWyHkSZ_AYCIv4-HgfSJQ'
               onChange={onRecaptchaChange}
               className='mb-5 cursor-pointer'
-            />
+              />
+              </div>
 
             <button
               type="submit"
@@ -183,15 +185,20 @@ const Contactform = () => {
             </button>
             {error && <p className="text-red-500 mt-2">{error}</p>}
           </form>
+          <div className='mx-auto'>
+            <Modal
+              isOpen={isModalOpen}
+              onRequestClose={() => setIsModalOpen(false)}
+              contentLabel="Thank You Modal"
+              className={"w-96 h-40 mx-auto mt-52 bg-[#f0532d] px-10 rounded-xl relative shadow-2xl"} // added 'relative'
+            >
+              <h2 className='font-outfit text-2xl font-medium text-center pt-9 text-white'>Thank you.... <br />we'll get in touch soon</h2>
+              <div className='absolute bottom-4 right-4'> {/* added absolute positioning */}
+                <button onClick={() => setIsModalOpen(false)} className='font-poppins flex rounded-lg text-sm text-black bg-[#e4dbdb] px-5 py-2'>Close</button>
+              </div>
+            </Modal>
+          </div>
 
-          <Modal
-            isOpen={isModalOpen}
-            onRequestClose={() => setIsModalOpen(false)}
-            contentLabel="Thank You Modal"
-          >
-            <h2>Thank you.. we'll get in touch soon</h2>
-            <button onClick={() => setIsModalOpen(false)}>Close</button>
-          </Modal>
         </div>
         <div className="w-2/6 h-auto bg-[#f4f4f4] p-4 sticky top-0 overflow-x-hidden border-l-2" id='contactforminfo2' ref={rightDivRef}>
           <div className="flex flex-col items-start">
