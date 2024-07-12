@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { assets } from '../../assets/assets';
 import Globe from '../Globe/Globe'; // Assuming this is the correct import path
 import reviews from './Review';
+import useOnScreen from '../../useOnScreen'; // Adjust the import path accordingly
 import '../../Responsive.css';
 
 const CustomerReviews = () => {
@@ -18,6 +19,9 @@ const CustomerReviews = () => {
     autoplay: true,
     autoplaySpeed: 4000,
   };
+
+  const globeRef = useRef();
+  const isGlobeVisible = useOnScreen(globeRef);
 
   return (
     <div className='h-screen mb-36 -mt-28 relative' id='backgroundReview' style={{ backgroundImage: `url(${assets.reviewBackground})`, backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
@@ -68,9 +72,8 @@ const CustomerReviews = () => {
             <p className='cursor-pointer pt-[3rem] ml-[3.5rem] font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]' id='readmorereviewshome'>Read More</p>
           </Link>
         </div>
-        <div className='w-full md:w-1/2 flex justify-center items-center md:absolute md:top-0 md:left-0 md:h-full mt-8 md:mt-0' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-          <Globe />
-
+        <div className='w-full md:w-1/2 flex justify-center items-center md:absolute md:top-0 md:left-0 md:h-full mt-8 md:mt-0' id='globe' data-aos='fade-left' data-aos-duration="1000" data-aos-delay="500" data-aos-once="true" ref={globeRef}>
+          {isGlobeVisible && <Globe />}
         </div>
       </div>
     </div>

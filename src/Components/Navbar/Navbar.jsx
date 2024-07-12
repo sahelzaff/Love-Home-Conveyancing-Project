@@ -51,15 +51,17 @@ const Navbar = () => {
         <div className="w-full z-50">
             <nav id="navbar" className="bg-white dark:bg-gray-900 w-full z-20 left-0">
                 <div className="max-w-screen-3xl flex flex-wrap items-center justify-between Homepage py-4">
-                    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse" id='nav_logo'>
+                    <Link
+                        to="/" className="flex items-center space-x-3 rtl:space-x-reverse" id='nav_logo' data-aos='zoom-out' data-aos-duration="1500" data-aos-once="true">
                         <img
                             src={isMobile ? assets.logoMobile : assets.logoBlackRed}
-                           className={`h-14 cursor-pointer ${menuOpen ? 'mt-[-14.5rem]' : 'mt-0'}`}
+                            className={`h-14 cursor-pointer ${menuOpen ? 'mt-[-14.5rem]' : 'mt-0'}`}
                             id="logo"
                             alt="Love Home Logo"
+
                         />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-                    </a>
+                    </Link>
                     <div className="flex flex-row items-center gap-4" id='nav_menu'>
                         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse" id="contact_section">
                             <button

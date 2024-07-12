@@ -16,6 +16,7 @@ const Contactform = () => {
     message: ''
   });
   const [error, setError] = useState('');
+  const [progress, setProgress] = useState(100);
 
   const onRecaptchaChange = (value) => {
     if (value) {
@@ -57,6 +58,7 @@ const Contactform = () => {
           message: ''
         });
         setIsVerified(false);
+        setProgress(100); // Reset the progress bar
       } else {
         setError('There was an error submitting the form. Please try again.');
       }
@@ -87,6 +89,23 @@ const Contactform = () => {
       window.removeEventListener('scroll', handleWindowScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      const interval = setInterval(() => {
+        setProgress((prevProgress) => {
+          if (prevProgress <= 0) {
+            clearInterval(interval);
+            setIsModalOpen(false);
+            return 0;
+          }
+          return prevProgress - 2; // Decrease by 2% every 100ms
+        });
+      }, 100);
+
+      return () => clearInterval(interval);
+    }
+  }, [isModalOpen]);
 
   return (
     <div className="h-auto w-full max-w-screen-4xl bg-[#f4f4f4] flex flex-col justify-center items-center py-20 px-2">
@@ -190,8 +209,9 @@ const Contactform = () => {
               isOpen={isModalOpen}
               onRequestClose={() => setIsModalOpen(false)}
               contentLabel="Thank You Modal"
-              className={"w-96 h-40 mx-auto mt-52 bg-[#f0532d] px-10 rounded-xl relative shadow-2xl"} // added 'relative'
+              className={"w-96 h-40 mx-auto mt-52 bg-[#f0532d] rounded-xl relative shadow-2xl"} // added 'relative'
             >
+               <div className="progress-bar" style={{ width: `${progress}%`, height: '5px',  borderRadius: '2.5px', background: 'white' }}></div>
               <h2 className='font-outfit text-2xl font-medium text-center pt-9 text-white'>Thank you.... <br />we'll get in touch soon</h2>
               <div className='absolute bottom-4 right-4'> {/* added absolute positioning */}
                 <button onClick={() => setIsModalOpen(false)} className='font-poppins flex rounded-lg text-sm text-black bg-[#e4dbdb] px-5 py-2'>Close</button>
@@ -200,64 +220,64 @@ const Contactform = () => {
           </div>
 
         </div>
-        <div className="w-2/6 h-auto bg-[#f4f4f4] p-4 sticky top-0 overflow-x-hidden border-l-2" id='contactforminfo2' ref={rightDivRef}>
-          <div className="flex flex-col items-start">
+        <div className="w-2/6 h-auto bg-[#f4f4f4] p-4 sticky top-0 overflow-x-hidden overflow-y-hidden border-l-2" id='contactforminfo2' ref={rightDivRef}>
+          <div className="flex flex-col items-start" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
+              <div >
                 <img src={assets.clock_contact} className="w-12" alt="Clock" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" >Working Hours</h2>
-                <div className="w-80 font-poppins font-medium" id='timingdiv1'>
+                <h2 className="font-inter font-bold text-2xl" >Working Hours</h2>
+                <div className="w-72 font-poppins font-medium" id='timingdiv1'>
                   <div className="flex flex-row items-start justify-between">
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Mon-Fri</p>
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true"> 9:00 AM - 6:00 PM</p>
+                    <p >Mon-Fri</p>
+                    <p > 9:00 AM - 6:00 PM</p>
                   </div>
                   <div className="flex flex-row items-start justify-between">
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Sat - Sun</p>
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Only by Appointment</p>
+                    <p >Sat - Sun</p>
+                    <p >Only by Appointment</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
+              <div >
                 <img src={assets.location} className="w-12" alt="Location" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Address</h2>
+                <h2 className="font-inter font-bold text-2xl" >Address</h2>
                 <div className="w-80 font-poppins font-medium" id='timingdiv1'>
                   <div className="flex flex-row items-start justify-between">
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Suite 17, Minton House,</p>
+                    <p>Suite 17, Minton House,</p>
                   </div>
                   <div className="flex flex-row items-start justify-between">
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">2-14 Bayswater Road, Potts Point 2011</p>
+                    <p >2-14 Bayswater Road, Potts Point 2011</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
+              <div >
                 <img src={assets.telephone} className="w-12" alt="Telephone" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Phone</h2>
+                <h2 className="font-inter font-bold text-2xl" >Phone</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between" id='timingdiv1'>
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">+02 9381 9118</p>
+                    <p >+02 9381 9118</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96">
-              <div data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">
+              <div >
                 <img src={assets.mail} className="w-12" alt="Mail" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Email</h2>
+                <h2 className="font-inter font-bold text-2xl" >Email</h2>
                 <div className="w-80 font-poppins font-medium">
                   <div className="flex flex-row items-start justify-between" id='timingdiv1'>
-                    <p data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">hello@love-homes.com.au</p>
+                    <p >hello@love-homes.com.au</p>
                   </div>
                 </div>
               </div>

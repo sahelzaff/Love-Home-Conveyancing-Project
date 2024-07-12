@@ -11,7 +11,7 @@ const ServiceReview = () => {
     useEffect(() => {
         const fetchGoogleReviews = async () => {
             try {
-                const response = await fetch('https://lovehomeconvyancing-backend.onrender.com/api/google/google-reviews');
+                const response = await fetch('https://lovehomeconvyancingbackend-production.up.railway.app/api/google/google-reviews');
                 if (!response.ok) {
                     throw new Error('Failed to fetch Google reviews');
                 }
