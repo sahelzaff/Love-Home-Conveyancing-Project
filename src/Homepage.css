@@ -289,3 +289,9 @@ margin-left: 8rem;
     list-style-type: disc; /* Ensure list items use disc bullets */
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #button_download{
+    display: none !important;
+  }
+}

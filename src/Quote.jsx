@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { QuoteContext } from './QuoteContext';
 import '@dotlottie/player-component';
 import { assets } from './assets/assets';
+import './Homepage.css';
 import { generatePdf } from './generatePdf'; // Import the generatePdf function
 
 const Quote = () => {
@@ -88,7 +89,7 @@ const Quote = () => {
             </p>
                 <button
                     onClick={handleDownloadClick}
-                    className="ml-4 bg-[#f0532d] text-white px-4 py-1 font-poppins font-medium rounded hover:bg-[#d0451e] transition duration-300"
+                    className="ml-4 bg-[#f0532d] text-white px-4 py-1 font-poppins font-medium rounded hover:bg-[#d0451e] transition duration-300" id='button_download'
                     >
                     Download PDF
                 </button>
