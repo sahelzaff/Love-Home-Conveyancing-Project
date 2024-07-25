@@ -1,11 +1,12 @@
 import React, { useState, useContext, useEffect } from 'react';
+import PhoneInput from 'react-phone-input-2';
 import { QuoteContext } from '../../QuoteContext';
 import { assets } from '../../assets/assets';
 import './CalculatorMain.css';
 import '../../Responsive.css';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-
+import 'react-phone-input-2/lib/style.css';
 
 const CalculatorMain = ({ setShowQuote }) => {
     const [step, setStep] = useState(1);
@@ -36,9 +37,12 @@ const CalculatorMain = ({ setShowQuote }) => {
       }
     }, [location.state]);
   
-  
     const handleChange = input => e => {
       setFormData({ ...formData, [input]: e.target.value });
+    };
+
+    const handlePhoneChange = (value) => {
+      setFormData({ ...formData, phone: value });
     };
 
     const nextStep = () => setStep(step + 1);
@@ -108,7 +112,7 @@ const CalculatorMain = ({ setShowQuote }) => {
             ) {
               quoteData.exchangeToSettlement = 1350.0;
               quoteData.gst = 182.0;
-              quoteData.total = 1672.0;
+              quoteData.total = 1702.0;
             } else if (
               mappedPropertyType === 'Land' &&
               (mappedState === 'New South Wales' ||
@@ -119,7 +123,7 @@ const CalculatorMain = ({ setShowQuote }) => {
             ) {
               quoteData.exchangeToSettlement = 1250.0;
               quoteData.gst = 142.0;
-              quoteData.total = 1562.0;
+              quoteData.total = 1594.0;
             }
           }
 
@@ -147,6 +151,7 @@ const CalculatorMain = ({ setShowQuote }) => {
             console.error('Error submitting form data', error);
         }
     };
+
 
     return (
         <div className="max-w-4xl mx-auto p-4 h-auto flex flex-col justify-center items-center">
@@ -318,39 +323,56 @@ const CalculatorMain = ({ setShowQuote }) => {
                 </div>
             )}
             {step === 4 && (
-                <div>
-                    <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Enter Your Details</h2>
-                    <div className="flex flex-col w-[400px] mx-auto gap-10" id='formcalculatormain'>
-                        <input
-                            type="text"
-                            placeholder="Name"
-                            onChange={handleChange('name')}
-                            className="text-xl font-inter p-2 border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus-outline-none focus:border-[#f0532d] "
-                            required
-                        />
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            onChange={handleChange('email')}
-                            className="p-2 text-xl font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus-outline-none focus:border-[#f0532d]"
-                            required
-                        />
-                        <input
-                            type="text"
-                            placeholder="Phone"
-                            onChange={handleChange('phone')}
-                            className="p-2 text-xl font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus-outline-none focus:border-[#f0532d]"
-                            required
-                        />
-                        <button
-                            onClick={handleSubmit}
-                            className="mx-auto w-[200px] py-3 text-center bg-[#f0532d] text-black font-inter font-bold text-xl rounded-sm hover:bg-[#f3704f] hover:text-white"
-                        >
-                            Get a Free Quote
-                        </button>
-                    </div>
-                </div>
+               <div>
+               <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Enter Your Details</h2>
+               <div className="flex flex-col w-[400px] mx-auto gap-10" id='formcalculatormain'>
+                 <input
+                   type="text"
+                   placeholder="Name"
+                   onChange={handleChange('name')}
+                   className="text-xl font-inter p-2 border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus:outline-none focus:border-[#f0532d]"
+                   required
+                 />
+                 <input
+                   type="email"
+                   placeholder="Email"
+                   onChange={handleChange('email')}
+                   className="p-2 text-xl font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus:outline-none focus:border-[#f0532d]"
+                   required
+                 />
+                 <PhoneInput
+                   country={'au'}
+                   value={formData.phone}
+                   onChange={handlePhoneChange}
+                   inputStyle={{
+                     width: '100%',
+                     padding: '22px',
+                     paddingLeft: '40px',
+                     fontSize: '16px',
+                    //  border: '2px solid #f0532d'
+                   }}
+                   containerStyle={{
+                     marginBottom: '10px',
+                     border: '2px solid #f0532d',
+                     borderRadius: '8px',
 
+
+                   }}
+                   dropdownStyle={{
+                     borderRadius: '8px',
+                     border: '2px solid #f0532d'
+                   }}
+                 />
+                
+                 
+                        
+                            <button
+                             onClick={handleSubmit}
+                             className="w-[250px] bg-white h-[50px] my-3 flex items-center justify-center  rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105  hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#f0532d] before:to-[#f0532d] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#000] font-poppins font-bold text-lg hover:text-white mx-auto" id='bodergetquote' >Get a Free Quote</button>
+                       
+                    
+               </div>
+             </div>
             )}
         </div>
     );

@@ -1,4 +1,4 @@
-.border1{
+.border1 {
     border: none;
     border-bottom: 3px solid #f3704f;
 }
@@ -49,4 +49,87 @@
 .input-container input[type="text"]:focus~.underline,
 .input-container input[type="text"]:valid~.underline {
     transform: scaleX(1);
+}
+
+
+
+.flag-dropdown {
+  
+}
+
+.react-tel-input .flag-dropdown .selected-flag {
+    
+    /* width: 100%; */
+    padding-left: 10px;
+    /* border: 2px solid #f0532d; */
+    /* background-color: #f0532d; */
+    padding-right: 10px;
+}
+
+.react-tel-input .flag-dropdown  {
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 8px 0 0 8px;
+}
+
+
+
+.react-tel-input .selected-flag{
+    background-color: transparent transparent;
+}
+.react-tel-input .flag-dropdown .country-list {
+    background: white;
+    border: none;
+}
+
+.react-tel-input .flag-dropdown .country-list {
+    
+    width: auto;
+    padding: 0;
+    margin: 0;
+    font-family: Outfit;
+    /* border: 2px solid #f0532d; */
+    
+}
+.react-tel-input .flag-dropdown .country-list::-webkit-scrollbar {
+    display: none;
+}
+
+.react-tel-input .country-list .country {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #f0532d;
+}
+
+.react-tel-input .country-list .country:last-child {
+    border-bottom: none;
+}
+
+.react-tel-input .country-list .country .flag {
+    margin-right: 10px;
+}
+
+.react-tel-input .form-control {
+    padding-left: 60px;
+    font-size: 16px;
+    border: 2px solid #f0532d;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.react-tel-input .selected-flag .flag {
+    /* scale: 1.5; */
+}
+
+#bodergetquote{
+    border: 3px solid #f0532d;
+    border-radius: 18px;
+    color: #f0532d;
+}
+#bodergetquote:hover{
+    border: none;
+    color: white;
 }

@@ -1,0 +1,48 @@
+/* Custom styles for the phone input */
+.phone-input-container {
+    position: relative;
+  }
+  
+  .phone-input-container input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #f0532d;
+    background-color: white;
+  }
+  
+  /* Custom dropdown */
+  .react-tel-input .flag-dropdown {
+    border-radius: 8px;
+    border: 2px solid #f0532d;
+    margin-left: 5px;
+  }
+  
+  .react-tel-input .flag-dropdown .selected-flag {
+    padding: 0 10px;
+  }
+  
+  .react-tel-input .country-list {
+    border-radius: 8px;
+    border: 2px solid #f0532d;
+  }
+  
+  .react-tel-input .country {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .react-tel-input .country .flag {
+    margin-right: 10px;
+  }
+  
+  .react-tel-input .country .country-name {
+    margin-right: 10px;
+  }
+  
+  .react-tel-input .country .dial-code {
+    margin-left: auto;
+  }
+  

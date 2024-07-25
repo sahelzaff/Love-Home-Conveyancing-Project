@@ -2,13 +2,13 @@ import React, { useContext, useEffect, useState } from 'react';
 import { QuoteContext } from './QuoteContext';
 import '@dotlottie/player-component';
 import { assets } from './assets/assets';
+import { generatePdf } from './generatePdf'; // Import the generatePdf function
 
 const Quote = () => {
     const { quote } = useContext(QuoteContext);
     const [loading, setLoading] = useState(true);
     const [coupon, setCoupon] = useState('');
     const [couponApplied, setCouponApplied] = useState(false);
-    const [discountValue, setDiscountValue] = useState(100); // Default discount value
     const [error, setError] = useState('');
 
     useEffect(() => {
@@ -19,6 +19,7 @@ const Quote = () => {
 
         const timer = setTimeout(() => {
             setLoading(false);
+            generatePdf(quote); // Generate and download the PDF after loading
         }, 8000); // 8-second loading time
 
         return () => {
@@ -29,10 +30,9 @@ const Quote = () => {
 
     useEffect(() => {
         window.scrollTo({
-          top: 600,
-        //   behavior: 'smooth'
+            top: 600,
         });
-      }, []);
+    }, []);
 
     const applyCoupon = () => {
         if (coupon.toLowerCase() === 'lovehomes') {
@@ -48,6 +48,10 @@ const Quote = () => {
         setCoupon('');
         setCouponApplied(false);
         setError('');
+    };
+
+    const handleDownloadClick = () => {
+        generatePdf(quote);
     };
 
     if (loading) {
@@ -73,9 +77,22 @@ const Quote = () => {
 
     return (
         <div className="max-w-4xl h-auto mx-auto p-4 flex flex-col mt-20">
-            <div className='mx-auto'><img src={assets.logoBlackRed} className='w-[300px] max-w-[400px]' alt="" srcSet="" /></div>
+            <div className='mx-auto'>
+                <img src={assets.logoBlackRed} className='w-[300px] max-w-[400px]' alt="" srcSet="" />
+            </div>
             <h2 className="text-6xl tracking-normal mb-10 font-poppins font-medium text-center pt-5 text-[#f0532d]" id='quotehead'>Your Instant Quote</h2>
-            <p className="text-xl mb-4 font-poppins font-medium">Name : <span className='text-[#f0532d]'>{quote.name}</span> </p>
+            <div className='w-full flex flex-row justify-between'>
+
+            <p className="text-xl mb-4 font-poppins font-medium">
+                Name : <span className='text-[#f0532d]'>{quote.name}</span>
+            </p>
+                <button
+                    onClick={handleDownloadClick}
+                    className="ml-4 bg-[#f0532d] text-white px-4 py-1 font-poppins font-medium rounded hover:bg-[#d0451e] transition duration-300"
+                    >
+                    Download PDF
+                </button>
+                    </div>
             <p className="text-xl mb-4 font-poppins font-medium">Email : <span className='text-[#f0532d]'>{quote.email}</span> </p>
             <div className='flex flex-col justify-center items-end' id='quotecalculationdiv'>
                 <p className="text-2xl mb-4 font-medium font-poppins" id='calculationstext'>Exchange to Settlement: ${quote.exchangeToSettlement}</p>
@@ -113,10 +130,10 @@ const Quote = () => {
                             <div className='flex flex-row items-start justify-between'>
                                 <input
                                     type="text"
-                                    placeholder="Coupon Code"
+                                    placeholder='Coupon Code'
+                                    className='h-10 px-4 rounded-md border border-gray-300 outline-none'
                                     value={coupon}
                                     onChange={(e) => setCoupon(e.target.value)}
-                                    className="p-2 text-sm font-inter border mb-2 bg-transparent focus:outline-none focus:border-[#f0532d] w-5/6"
                                 />
                                 <button onClick={applyCoupon} className="ml-2 p-2 text-sm font-inter border bg-[#f0532d] text-white rounded">Apply</button>
                             </div>
@@ -126,6 +143,9 @@ const Quote = () => {
                                     <p className="text-green-500 font-poppins text-[11px]">Coupon code applied successfully</p>
                                     <p className="text-red-500 font-poppins text-[11px] hover:underline ml-2 cursor-pointer" onClick={removeCoupon}>Remove</p>
                                 </div>
+                            )}
+                            {error && (
+                                <p className='mt-2 text-red-500'>{error}</p>
                             )}
                         </div>
                     </div>

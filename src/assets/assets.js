@@ -127,10 +127,20 @@ import buying1 from './buying1.jpg';
 import buying2 from './buying2.jpg';
 import video from './video.mp4';
 import Bondi from './Bondi.mp4';
+import Purchase_Sadeghian_298073 from './Purchase_Sadeghian_298073.pdf';
+import Quote_pdf_final from './Quote_pdf_final.pdf';
+import Poppins_Regular from './Poppins_Regular.ttf';
+import Poppins_Bold from './Poppins_Bold.ttf';
+import Poppins_SemiBold from './Poppins_SemiBold.ttf';
 
 
 
 export const assets = {
+    Quote_pdf_final,
+    Poppins_Regular,
+    Poppins_SemiBold,
+    Poppins_Bold,
+    Purchase_Sadeghian_298073,
     clock_contact,
     calculatorhead,
     calculatorhead_mobile,
