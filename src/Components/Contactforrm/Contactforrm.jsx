@@ -110,8 +110,8 @@ const Contactform = () => {
   return (
     <div className="h-auto w-full max-w-screen-4xl bg-[#f4f4f4] flex flex-col justify-center items-center py-20 px-2">
       <div className="flex flex-col justify-center items-center mb-10">
-        <h1 className="font-poppins font-medium text-xl"  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Let's Discuss</h1>
-        <h2 className="font-inter font-bold text-5xl" id='contactformheadind1'  data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Whatever Question You Have,</h2>
+        <h1 className="font-poppins font-medium text-xl" data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Let's Discuss</h1>
+        <h2 className="font-inter font-bold text-5xl" id='contactformheadind1' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Whatever Question You Have,</h2>
         <h3 className="font-inter font-bold text-5xl text-[#f0532d]" id='contactformheadind2' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Please Feel Free To Ask.</h3>
       </div>
 
@@ -186,14 +186,14 @@ const Contactform = () => {
                 onChange={handleChange}
               />
             </div>
-        <div className='cursor-pointer'>
+            <div className='cursor-pointer'>
 
-            <ReCAPTCHA
-              sitekey='6LfmmvQpAAAAAPe_6emsWyHkSZ_AYCIv4-HgfSJQ'
-              onChange={onRecaptchaChange}
-              className='mb-5 cursor-pointer'
+              <ReCAPTCHA
+                sitekey='6LfmmvQpAAAAAPe_6emsWyHkSZ_AYCIv4-HgfSJQ'
+                onChange={onRecaptchaChange}
+                className='mb-5 cursor-pointer'
               />
-              </div>
+            </div>
 
             <button
               type="submit"
@@ -211,7 +211,7 @@ const Contactform = () => {
               contentLabel="Thank You Modal"
               className={"w-96 h-40 mx-auto mt-52 bg-[#f0532d] rounded-xl relative shadow-2xl"} // added 'relative'
             >
-               <div className="progress-bar" style={{ width: `${progress}%`, height: '5px',  borderRadius: '2.5px', background: 'white' }}></div>
+              <div className="progress-bar" style={{ width: `${progress}%`, height: '5px', borderRadius: '2.5px', background: 'white' }}></div>
               <h2 className='font-outfit text-2xl font-medium text-center pt-9 text-white'>Thank you.... <br />we'll get in touch soon</h2>
               <div className='absolute bottom-4 right-4'> {/* added absolute positioning */}
                 <button onClick={() => setIsModalOpen(false)} className='font-poppins flex rounded-lg text-sm text-black bg-[#e4dbdb] px-5 py-2'>Close</button>
@@ -257,31 +257,36 @@ const Contactform = () => {
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96 mb-10">
-              <div >
+              <div>
                 <img src={assets.telephone} className="w-12" alt="Telephone" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" >Phone</h2>
+                <h2 className="font-inter font-bold text-2xl">Phone</h2>
                 <div className="w-80 font-poppins font-medium">
-                  <div className="flex flex-row items-start justify-between" id='timingdiv1'>
-                    <p >+02 9381 9118</p>
+                  <div className="flex flex-row items-start justify-between cursor-pointer" id="timingdiv1">
+                    <a href="tel:+0293819118" className="text-inherit no-underline">
+                      <p>+02 9381 9118</p>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-5 w-96">
-              <div >
+              <div>
                 <img src={assets.mail} className="w-12" alt="Mail" />
               </div>
               <div className="flex flex-col gap-1">
-                <h2 className="font-inter font-bold text-2xl" >Email</h2>
+                <h2 className="font-inter font-bold text-2xl">Email</h2>
                 <div className="w-80 font-poppins font-medium">
-                  <div className="flex flex-row items-start justify-between" id='timingdiv1'>
-                    <p >hello@love-homes.com.au</p>
+                  <div className="flex flex-row items-start justify-between cursor-pointer" id="timingdiv1">
+                    <a href="mailto:hello@love-homes.com.au" className="text-inherit no-underline">
+                      <p>hello@love-homes.com.au</p>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

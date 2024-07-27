@@ -52,7 +52,7 @@ const Hero2 = () => {
                     </div>
 
                     <div className="pt-5 sm:pt-10">
-                        <a href="#" className="button cursor-pointer font-inter" id='button1'>Let's Chat</a>
+                        <a href="https://wa.link/97756f" className="button cursor-pointer font-inter" id='button1'>Let's Chat</a>
                     </div>
                 </div>
             </section>

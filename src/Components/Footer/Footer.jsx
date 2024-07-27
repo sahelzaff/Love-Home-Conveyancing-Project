@@ -14,7 +14,7 @@ const Footer = () => {
 
             </div>
             <div className='h-auto bg-[#f0532d] text-[#fff] pt-[70px] pb-[100px]'>
-                <div className='px-28 py-10 Homepage' id='main_footer_main_div'> 
+                <div className='px-28 py-10 Homepage' id='main_footer_main_div'>
                     <div className='grid grid-cols-3 gap-20 justify-center items-center ' id='main_footer'>
                         <div className=''>
                             <div>
@@ -32,25 +32,25 @@ const Footer = () => {
                                         src={assets.facebook}
                                         alt="Facebook"
                                         className="h-8 w-8 cursor-pointer social-icon"
-                                        onClick={() => window.open('https://www.facebook.com', '_blank')}
+                                        onClick={() => window.open('https://www.facebook.com/lovehomesconveyancing/', '_blank')}
                                     />
                                     <img
-                                        src={assets.twitter}
-                                        alt="Twitter"
+                                        src={assets.whatsapp_top}
+                                        alt="Whatsapp"
                                         className="h-8 w-8 cursor-pointer social-icon"
-                                        onClick={() => window.open('https://www.twitter.com', '_blank')}
+                                        onClick={() => window.open('https://wa.link/97756f', '_blank')}
                                     />
                                     <img
                                         src={assets.insta}
                                         alt="Instagram"
                                         className="h-8 w-8 cursor-pointer social-icon"
-                                        onClick={() => window.open('https://www.instagram.com', '_blank')}
+                                        onClick={() => window.open('https://www.instagram.com/lovehomesconveyancing/', '_blank')}
                                     />
                                     <img
                                         src={assets.linkedin}
                                         alt="LinkedIn"
                                         className="h-8 w-8 cursor-pointer social-icon"
-                                        onClick={() => window.open('https://www.linkedin.com', '_blank')}
+                                        onClick={() => window.open('https://www.linkedin.com/company/lovehomesconveyancing/', '_blank')}
                                     />
                                 </div>
                             </div>
@@ -64,18 +64,18 @@ const Footer = () => {
                             <div className='flex flex-col gap-4'>
                                 <div>
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Other Resources</p>
-                                <div className='w-3/4 h-[0.12rem] bg-white mb-6'></div>
+                                    <div className='w-3/4 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
                                 <div className="flex flex-col gap-6 ">
-                                <Link to="/privacy-policy">
-                                    <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Privacy Policy</p>
-                                </Link>
-                                <Link to="/terms-&-conditions">
-                                    <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Terms and Conditions</p>
-                                </Link>
-                                <Link to="/disclaimer">
-                                    <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Disclaimer</p>
-                                </Link>
+                                    <Link to="/privacy-policy">
+                                        <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Privacy Policy</p>
+                                    </Link>
+                                    <Link to="/terms-&-conditions">
+                                        <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Terms and Conditions</p>
+                                    </Link>
+                                    <Link to="/disclaimer">
+                                        <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Disclaimer</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -83,35 +83,36 @@ const Footer = () => {
                             <div className='flex flex-col gap-3'>
                                 <div>
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Contact Us</p>
-                                <div className='w-5/6 h-[0.12rem] bg-white mb-6'></div>
+                                    <div className='w-5/6 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
                                 <div className='flex flex-col gap-8'>
 
-                                <div>
-                                    <p className='font-poppins text-[1rem] font-medium pr-8'>Suite 17, Minton House,2-14 Bayswater Road, Potts Point 2011</p>
-                                </div>
+                                    <div>
+                                        <p className='font-poppins text-[1rem] font-medium pr-8'>Suite 17, Minton House,2-14 Bayswater Road, Potts Point 2011</p>
+                                    </div>
 
 
                                     <div className="flex gap-4">
-                                        <img src={assets.phone_call} className='w-6' alt="" srcset="" />
-                                        <p className='font-poppins text-[1rem] font-medium'>02 9381 9118</p>
+                                        <a href="tel:+0293819118" className="flex items-center gap-4 text-inherit no-underline cursor-pointer">
+                                            <img src={assets.phone_call} className="w-6" alt="Phone Call" />
+                                            <p className="font-poppins text-[1rem] font-medium">02 9381 9118</p>
+                                        </a>
                                     </div>
-                                <div className=''>
-
                                     <div className="flex gap-4">
-                                        <img src={assets.email} className='w-6' alt="" srcset="" />
-                                        <p className='font-poppins text-[1rem] font-medium'>hello@love-homes.com.au</p>
+                                        <a href="mailto:hello@love-homes.com.au" className="flex items-center gap-4 text-inherit no-underline cursor-pointer">
+                                            <img src={assets.email} className="w-6" alt="Email" />
+                                            <p className="font-poppins text-[1rem] font-medium">hello@love-homes.com.au</p>
+                                        </a>
                                     </div>
-                                    
-                                </div>
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                                <div className='text-center mt-14 font-poppins text-[16px]'>
-                                    <p>Copyright 2024 © Love Homes Conveyancing - All Rights Reserved </p>
-                                </div>
+                    <div className='text-center mt-14 font-poppins text-[16px]'>
+                        <p>Copyright 2024 © Love Homes Conveyancing - All Rights Reserved </p>
+                    </div>
                 </div>
             </div>
         </div>

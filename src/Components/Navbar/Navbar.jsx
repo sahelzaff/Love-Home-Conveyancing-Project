@@ -64,14 +64,15 @@ const Navbar = () => {
                     </Link>
                     <div className="flex flex-row items-center gap-4" id='nav_menu'>
                         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse" id="contact_section">
-                            <button
-                                type="button"
-                                className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F] font-montserrat"
+                            <a
+                                href="tel:+0293819118"
+                                className="text-[#0d0d0d] bg-transparent flex justify-center items-center gap-2 pl-2 font-bold rounded-lg text-lg text-center dark:bg-[#F57B1F] dark:hover:bg-[#F57B1F] font-montserrat cursor-pointer"
                                 id="border"
                             >
                                 +02 9381 9118
                                 <span><img src={assets.call_svgrepo_com} className="w-10" alt="call icon" /></span>
-                            </button>
+                            </a>
+
                             <button
                                 onClick={toggleMenu}
                                 type="button"

@@ -108,6 +108,7 @@ import transfercalWhite from './transfercalWhite.png';
 import contractcal from './contractcal.png';
 import contractcalWhite from './contractcalWhite.png';
 import buyinghead from './buyinghead.png';
+import whatsapp_top from './whatsapp_top.png';
 import abouthead from './abouthead.png';
 import abouthead_mobile from './abouthead_mobile.png';
 import aboutwork from './aboutwork.png';
@@ -137,6 +138,7 @@ import Poppins_SemiBold from './Poppins_SemiBold.ttf';
 
 export const assets = {
     Quote_pdf_final,
+    whatsapp_top,
     Poppins_Regular,
     Poppins_SemiBold,
     Poppins_Bold,

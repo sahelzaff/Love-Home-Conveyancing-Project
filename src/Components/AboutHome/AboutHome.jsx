@@ -40,9 +40,9 @@ const AboutHome = () => {
                     <p className='pt-5 font-poppins text-[14px] font-medium' id='namePara1'>My mission is to provide a fresh and client-centric approach to conveyancing that maximises the time and energy of agents and brokers, and enables them to focus on growing their business. I work with dynamic and ambitious professionals who want a legal partner who is highly responsive, deal-focused, available after hours, and digital savvy. I am passionate about providing 7-star service and creating long-term relationships with my clients.</p>
                     
                     <div className='pt-10' id='btn_aboutpagespeak'>
-                        <Link to='/calculator'>
+                    <a href="https://wa.link/97756f" target="_blank" rel="noopener noreferrer">
                             <button className="w-[250px] bg-white h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105  hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#f0532d] before:to-[#f0532d] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#000] font-poppins font-bold text-lg hover:text-white" id='btnaboutspeakmain'>Speak With Robin Carter</button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>
