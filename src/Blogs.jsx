@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import { Helmet } from 'react-helmet';
-import Footer from './Components/Footer/Footer';
-import BlogsInfo from './Components/BlogsInfo/BlogsInfo';
-import BlogPostCard from './Components/BlogGrid/BlogPostCard';
-import { Routes, Route } from 'react-router-dom';
-import './Homepage.css'
+import './Homepage.css';
 import TopBar from './Components/TopBar/TopBar';
+import BlogsInfo from './Components/BlogsInfo/BlogsInfo';
+import { Routes, Route } from 'react-router-dom';
+
+// Lazy load the components
+const Footer = lazy(() => import('./Components/Footer/Footer'));
+const BlogPostCard = lazy(() => import('./Components/BlogGrid/BlogPostCard'));
 
 const Blogs = () => {
-
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
   useEffect(() => {
@@ -26,13 +27,11 @@ const Blogs = () => {
   }, []);
 
   const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    };
-
-
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   useEffect(() => {
     window.scrollTo({
@@ -40,6 +39,7 @@ const Blogs = () => {
       // behavior: 'smooth'
     });
   }, []);
+
   return (
     <div>
       <Helmet>
@@ -51,18 +51,22 @@ const Blogs = () => {
       <Navbar />
       <BlogsInfo />
       <div className='Homepage'>
-        <Routes>
-          <Route path="/" element={<BlogPostCard />} />
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<BlogPostCard />} />
+          </Routes>
+        </Suspense>
       </div>
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
+      </Suspense>
 
       {showScrollTopButton && (
         <button 
           onClick={scrollToTop}
           className='scroll-top-button'
         >
-       <svg fill="#ffffff" height="44px" width="44px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-204.6 -204.6 739.20 739.20" xmlSpace="preserve" stroke="#ffffff" strokeWidth="7.26">
+          <svg fill="#ffffff" height="44px" width="44px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-204.6 -204.6 739.20 739.20" xmlSpace="preserve" stroke="#ffffff" strokeWidth="7.26">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
             <g id="SVGRepo_iconCarrier"> 

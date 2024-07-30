@@ -1,275 +1,135 @@
-import logo from './logo.webp';
-import logoWhite from './logoWhite.webp';
-import logo_2 from './logo_2.webp';
-import logoMobile from './logoMobile.png';
-import logo_white from './logo_white.webp';
-import banner from './banner.webp';
-import logoBlackRed from './logoBlackRed.webp';
-import faq from './faq.png';
-import phone_call from './phone_call.svg';
-import email from './email.svg';
-import magnifier from './magnifier.png';
-import background from './background.jpg';
-import insta from './insta.png';
-import facebook from './facebook.png';
-import twitter from './twitter.png';
-import linkedin from './linkedin.png';
-import wave from './wave.svg';
-import Bars from './Bars.svg';
-import RCProfile from './RCProfile.png';
-import Benefit1 from './Benefit1.png';
-import Benefit2 from './Benefit2.png';
-import Benefit3 from './Benefit3.png';
-import Benefit1White from './Benefit1White.png';
-import Benefit2White from './Benefit2White.png';
-import Benefit3White from './Benefit3White.png';
-import Background_all from './Background_all.png';
-import call_svgrepo_com from './call_svgrepo_com.svg';
-import blob_rc from './blob_rc.png';
-import profile_1 from './profile_1.svg'
-import star from './star.svg'
-import rc_w_text from './rc_w_text.png';
-import reviewBackground from './reviewBackground.png';
-import Engagement from './Engagement.png';
-import Documentation from './Documentation.png';
-import Financial from './Financial.png';
-import PropertyCheck from './PropertyCheck.png';
-import Settlement from './Settlement.png';
-import house_Work1 from './house_Work1.png';
-import why from './why.png';
-import services from './services.png';
-import buying from './buying.png';
-import selling from './selling.png';
-import transfer from './transfer.png';
-import investor from './investor.png';
-import clock_contact from './clock_contact.svg';
-import mail from './mail.svg';
-import telephone from './telephone.svg';
-import location from './location.svg';
-import contact from './contact.png';
-import contact_w_600 from './contact_w_600.png';
-import banner_rc from './banner_rc.png';
-import banner_rc_mobile from './banner_rc_mobile.png';
-import banner_rc_mobile_overlay from './banner_rc_mobile_overlay.png';
-import whatsapp from './whatsapp.png';
-import we from './we.png';
-import skype from './skype.png';
-import zoom from './zoom.png';
-import teams from './teams.png';
-import Background_new from './Background_new.png';
-import Background_new2 from './Background_new2.png';
-import Background_new_mobile from './Background_new_mobile.png';
-import Background_new2_mobile from './Background_new2_mobile.png';
-import sydney from './sydney.png';
-import sydney_mobile from './sydney_mobile.png';
-import process from './process.png';
-import review1 from './review1.png';
-import review2 from './review2.png';
-import review3 from './review3.png';
-import review4 from './review4.png';
-import review5 from './review5.png';
-import review6 from './review6.png';
-import review7 from './review7.png';
-import processbg from './processbg.png';
-import google from './google.png';
-import serviceshead from './serviceshead.png';
-import serviceshead_mobile from './serviceshead_mobile.png';
-import bloghead from './bloghead.png';
-import bloghead_mobile from './bloghead_mobile.png';
-import pagedivider from './pagedivider.png';
-import calculatorhead from './calculatorhead.png';
-import calculatorhead_mobile from './calculatorhead_mobile.png';
-import buycal from './buycal.png';
-import sellcal from './sellcal.png';
-import buycalWhite from './buycalWhite.png';
-import sellcalWhite from './sellcalWhite.png';
-import house from './house.png';
-import houseWhite from './houseWhite.png';
-import apartment from './apartment.png';
-import apartmentWhite from './apartmentWhite.png';
-import land from './land.png';
-import landWhite from './landWhite.png';
-import otpWhite from './otpWhite.png';
-import otp from './otp.png';
-import nsw from './nsw.png';
-import nswWhite from './nswWhite.png';
-import qld from './qld.png';
-import qldWhite from './qldWhite.png';
-import vic from './vic.png';
-import vicWhite from './vicWhite.png';
-import sa from './sa.png';
-import saWhite from './saWhite.png';
-import wa from './wa.png';
-import waWhite from './waWhite.png';
-import act from './act.png';
-import actWhite from './actWhite.png';
-import transfercal from './transfercal.png';
-import transfercalWhite from './transfercalWhite.png';
-import contractcal from './contractcal.png';
-import contractcalWhite from './contractcalWhite.png';
-import buyinghead from './buyinghead.png';
-import whatsapp_top from './whatsapp_top.png';
-import abouthead from './abouthead.png';
-import abouthead_mobile from './abouthead_mobile.png';
-import aboutwork from './aboutwork.png';
-import abouthelp from './abouthelp.png';
-import bullet from './bullet.png'; 
-import commitment from './commitment.png'; 
-import bulletBlack from './bulletBlack.png';
-import bulletWhite from './bulletWhite.png';
-import Blog1 from './Blog1.png';
-import Blogs2 from './Blogs2.webp';
-import Blogs3 from './Blogs3.png';
-import Blogs4 from './Blogs4.jpg';
-import Blogs5 from './Blogs5.jpg';
-import Blogs6 from './Blogs6.jpg';
-import Blogs7 from './Blogs7.jpg';
-import buying1 from './buying1.jpg';
-import buying2 from './buying2.jpg';
-import video from './video.mp4';
-import Bondi from './Bondi.mp4';
-import Purchase_Sadeghian_298073 from './Purchase_Sadeghian_298073.pdf';
-import Quote_pdf_final from './Quote_pdf_final.pdf';
-import Poppins_Regular from './Poppins_Regular.ttf';
-import Poppins_Bold from './Poppins_Bold.ttf';
-import Poppins_SemiBold from './Poppins_SemiBold.ttf';
 
-
+//         Cache-Control   :     public:'', max-age=31536000
 
 export const assets = {
-    Quote_pdf_final,
-    whatsapp_top,
-    Poppins_Regular,
-    Poppins_SemiBold,
-    Poppins_Bold,
-    Purchase_Sadeghian_298073,
-    clock_contact,
-    calculatorhead,
-    calculatorhead_mobile,
-    commitment,
-    abouthead,
-    abouthead_mobile,
-    aboutwork,
-    abouthelp,
-    Bondi,
-    Background_new_mobile,
-    Background_new2_mobile,
-    bullet,
-    bulletBlack,
-    bulletWhite,
-    buyinghead,
-    buying1,
-    buying2,
-    nsw,
-    nswWhite,
-    qld,
-    qldWhite,
-    transfercal,
-    transfercalWhite,
-    contractcal,
-    contractcalWhite,
-    vic,
-    vicWhite,
-    sa,
-    saWhite,
-    wa,
-    waWhite,
-    act,
-    actWhite,
-    otpWhite,
-    otp,
-    land,
-    landWhite,
-    apartment,
-    apartmentWhite,
-    banner_rc_mobile_overlay,
-    house,
-    houseWhite,
-    sellcal,
-    sellcalWhite,
-    buycalWhite,
-    buycal,
-    pagedivider,
-    processbg,
-    bloghead,
-    google,
-    review1,
-    review2,
-    review3,
-    review4,
-    review5,
-    review6,
-    review7,
-    Blog1,
-    Blogs2,
-    Blogs3,
-    Blogs4,
-    Blogs5,
-    Blogs6,
-    Blogs7,
-    Background_new2,
-    Background_new,
-    serviceshead,
-    serviceshead_mobile,
-    bloghead_mobile,
-    process,
-    sydney, 
-    sydney_mobile,
-    video,
-    whatsapp,
-    we,
-    skype,
-    teams,
-    zoom,
-    banner_rc,
-    banner_rc_mobile,
-    contact,
-    contact_w_600,
-    mail,
-    telephone,
-    location,
-    logo,
-    logoMobile,
-    logo_white,
-    phone_call,
-    email,
-    logo_2,
-    logoWhite,
-    magnifier,
-    background,
-    insta,
-    facebook,
-    twitter,
-    linkedin,
-    wave,
-    logoBlackRed,
-    RCProfile,
-    Bars,
-    banner,
-    Benefit1,
-    Benefit2,
-    Benefit3,
-    Benefit1White,
-    Benefit2White,
-    Benefit3White,
-    Background_all,
-    call_svgrepo_com,
-    blob_rc,
-    rc_w_text,
-    profile_1,
-    star,
-    reviewBackground,
-    house_Work1,
-    Engagement,
-    Documentation,
-    Financial,
-    PropertyCheck,
-    Settlement,
-    why,
-    services,
-    buying,
-    selling,
-    investor,
-    transfer,
-    faq,
+    Quote_pdf_final:'https://storage.googleapis.com/lhc-assets/2e9d7b6d2c8e4b9a/Quote_pdf_final.pdf',
+    download_head:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/download_head.webp',
+    download_head_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/download_head_mobile.webp',
+    download_main:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/download_main.jpg',
+    playstore:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/playstore.png',
+    appstore:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/appstore.png',
+    Lovehome_ad_modal:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Lovehome_ad_modal.webp',
+    whatsapp_top:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/whatsapp_top.png',
+    Poppins_Regular:'https://storage.googleapis.com/lhc-assets/3e8f7c9d1a8e4b7d/Poppins_Regular.ttf',
+    Poppins_SemiBold:'https://storage.googleapis.com/lhc-assets/3e8f7c9d1a8e4b7d/Poppins_SemiBold.ttf',
+    Poppins_Bold:'https://storage.googleapis.com/lhc-assets/3e8f7c9d1a8e4b7d/Poppins_Bold.ttf',
+    clock_contact:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/clock_contact.svg',
+    calculatorhead:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/calculatorhead.webp',
+    calculatorhead_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/calculatorhead_mobile.webp',
+    commitment:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/commitment.png',
+    abouthead:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/abouthead.webp',
+    abouthead_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/abouthead_mobile.webp',
+    aboutwork:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/aboutwork.png',
+    abouthelp:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/abouthelp.png',
+    Bondi:'https://storage.googleapis.com/lhc-assets/6c8e1b7a-89d0-4c68-b7c3-49c86a36e4b0/Bondi.mp4',
+    Background_new_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Background_new_mobile.webp',
+    Background_new2_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Background_new2_mobile.webp',
+    bullet:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/bullet.png',
+    bulletBlack:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/bulletBlack.png',
+    bulletWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/bulletWhite.png',
+    buyinghead:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/buyinghead.webp',
+    buying1:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/buying1.jpg',
+    buying2:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/buying2.jpg',
+    nsw:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/nsw.png',
+    nswWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/nswWhite.png',
+    qld:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/qld.png',
+    qldWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/qldWhite.png',
+    transfercal:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/transfercal.png',
+    transfercalWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/transfercal.png',
+    contractcal:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/contractcal.png',
+    contractcalWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/contractcalWhite.png',
+    vic:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/vic.png',
+    vicWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/vicWhite.png',
+    sa:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/sa.png',
+    saWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/saWhite.png',
+    wa:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/wa.png',
+    waWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/waWhite.png',
+    act:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/act.png',
+    actWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/actWhite.png',
+    otpWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/otpWhite.png',
+    otp:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/otp.png',
+    land:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/land.png',
+    landWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/landWhite.png',
+    apartment:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/apartment.png',
+    apartmentWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/apartmentWhite.png',
+    banner_rc_mobile_overlay:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/banner_rc_mobile_overlay.png',
+    house:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/house.png',
+    houseWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/houseWhite.png',
+    sellcal:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/sellcal.png',
+    sellcalWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/sellcalWhite.png',
+    buycalWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/buycalWhite.png',
+    buycal:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/buycal.png',
+    pagedivider:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/pagedivider.png',
+    bloghead:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/bloghead.webp',
+    google:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/google.png',
+    review1:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review1.png',
+    review2:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review2.png',
+    review3:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review3.png',
+    review4:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review4.png',
+    review5:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review5.png',
+    review6:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review6.png',
+    review7:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/review7.png',
+    Blog1:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blog1.png',
+    Blogs2:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blogs2.webp',
+    Blogs3:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blogs3.png',
+    Blogs4:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blogs4.jpg',
+    Blogs5:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blogs5.jpg',
+    Blogs6:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blogs6.jpg',
+    Blogs7:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Blogs7.jpg',
+    Background_new2:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Background_new2.webp',
+    Background_new:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Background_new.webp',
+    serviceshead:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/serviceshead.webp',
+    serviceshead_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/serviceshead_mobile.png',
+    bloghead_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/bloghead_mobile.png',
+    process:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/process.webp',
+    sydney:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/sydney.webp', 
+    sydney_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/sydney_mobile.png',
+    video:'https://storage.googleapis.com/lhc-assets/6c8e1b7a-89d0-4c68-b7c3-49c86a36e4b0/video.mp4',
+    whatsapp:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/whatsapp.png',
+    we:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/we.png',
+    skype:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/skype.png',
+    teams:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/teams.png',
+    zoom:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/zoom.png',
+    banner_rc:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/banner_rc.webp',
+    banner_rc_mobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/banner_rc_mobile.webp',
+    contact:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/contact.png',
+    contact_w_600:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/contact_w_600.png',
+    mail:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/mail.svg',
+    telephone:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/telephone.svg',
+    location:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/location.svg',
+    logo:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/logo.webp',
+    logoMobile:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/logoMobile.png',
+    logo_white:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/logo_white.webp',
+    phone_call:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/phone_call.svg',
+    email:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/email.svg',
+    logo_2:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/logo_2.webp',
+    logoWhite:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/logoWhite.webp',
+    insta:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/insta.png',
+    facebook:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/facebook.png',
+    twitter:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/twitter.png',
+    linkedin:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/linkedin.png',
+    logoBlackRed:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/logoBlackRed.webp',
+    Benefit1:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Benefit1.png',
+    Benefit2:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Benefit2.png',
+    Benefit3:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Benefit3.png',
+    Benefit1White:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Benefit1White.png',
+    Benefit2White:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Benefit2White.png',
+    Benefit3White:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/Benefit3White.png',
+    call_svgrepo_com:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/call_svgrepo_com.svg',
+    star:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/star.svg',
+    reviewBackground:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/reviewBackground.webp',
+    house_Work1:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/house_Work1.png',
+    services:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/services.png',
+    buying:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/buying.png',
+    selling:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/selling.png',
+    investor:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/investor.png',
+    transfer:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/transfer.png',
+    faq:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/faq.png',
+    america:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/america.png',
+    india:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/india.png',
+    australia:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/australia.png',
+    calendly:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/calendly.png',
+    callphoto:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/callphoto.png',
+    emailphoto:'https://storage.googleapis.com/lhc-assets/1e8f4b5b1b8d4a4c/emailphoto.png',
+    
 };

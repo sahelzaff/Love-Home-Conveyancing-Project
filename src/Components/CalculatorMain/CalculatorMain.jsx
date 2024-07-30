@@ -7,42 +7,75 @@ import '../../Responsive.css';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import 'react-phone-input-2/lib/style.css';
+import InputMask from 'react-input-mask';
+
 
 const CalculatorMain = ({ setShowQuote }) => {
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
-      transactionType: '',
-      propertyType: '',
-      area: '',
-      name: '',
-      email: '',
-      phone: ''
+        transactionType: '',
+        propertyType: '',
+        area: '',
+        name: '',
+        email: '',
+        phone: ''
     });
-  
+
     const { setQuote } = useContext(QuoteContext);
     const navigate = useNavigate();
     const location = useLocation();
-  
+
     useEffect(() => {
-      const state = location.state;
-      if (state) {
-        const { transactionType, propertyType, area } = state;
-        setFormData({
-          ...formData,
-          transactionType,
-          propertyType,
-          area
-        });
-        setStep(4); // Assuming step 4 is where the quote is displayed or processed
-      }
+        const state = location.state;
+        if (state) {
+            const { transactionType, propertyType, area } = state;
+            setFormData({
+                ...formData,
+                transactionType,
+                propertyType,
+                area
+            });
+            setStep(4);
+        }
     }, [location.state]);
-  
+
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const [countryCode, setCountryCode] = useState('+61');
+
     const handleChange = input => e => {
-      setFormData({ ...formData, [input]: e.target.value });
+        setFormData({ ...formData, [input]: e.target.value });
     };
 
     const handlePhoneChange = (value) => {
-      setFormData({ ...formData, phone: value });
+        const formattedNumber = formatPhoneNumber(value, countryCode);
+        setFormData({ ...formData, phone: formattedNumber });
+    };
+
+    const handleCountrySelect = (code) => {
+        setCountryCode(code);
+        setDropdownOpen(false);
+    };
+
+    const formatPhoneNumber = (number, code) => {
+        const cleanedNumber = number.replace(/\D/g, '');
+
+        switch (code) {
+            case '+61': // Australia
+                return cleanedNumber.length > 8
+                    ? `+61 ${cleanedNumber.slice(0, 3)} ${cleanedNumber.slice(3, 6)} ${cleanedNumber.slice(6,9)}`
+                    : cleanedNumber;
+            case '+91': // India
+                return cleanedNumber.length > 9
+                    ? `+91 ${cleanedNumber.slice(0, 5)} ${cleanedNumber.slice(5,10)}`
+                    : cleanedNumber;
+            case '+1': // US
+                return cleanedNumber.length > 9
+                    ? `+1 ${cleanedNumber.slice(0, 3)} ${cleanedNumber.slice(3, 6)} ${cleanedNumber.slice(6,10)}`
+                    : cleanedNumber;
+            default:
+                return cleanedNumber;
+        }
     };
 
     const nextStep = () => setStep(step + 1);
@@ -71,61 +104,60 @@ const CalculatorMain = ({ setShowQuote }) => {
             'sell': 'Selling',
             'transfer': 'Transferring',
             'contract': 'Contract Advice'
-          };
-      
-          const propertyTypeMap = {
+        };
+
+        const propertyTypeMap = {
             'house': 'House',
             'apartment': 'Apartment',
             'land': 'Land',
             'otp': 'Otp'
-          };
-      
-          const stateMap = {
+        };
+
+        const stateMap = {
             'nsw': 'New South Wales',
             'qld': 'QueensLand',
             'sa': 'South Australia',
             'vic': 'Victoria',
             'act': 'Australian Capital Territory',
             'wa': 'Western Australia'
-          };
-      
-          // Mapping formData values to expected values for calculation
-          const mappedTransactionType = transactionTypeMap[transactionType];
-          const mappedPropertyType = propertyTypeMap[propertyType];
-          const mappedState = stateMap[area];
-      
-          if (mappedTransactionType && mappedPropertyType && mappedState) {
+        };
+
+        const mappedTransactionType = transactionTypeMap[transactionType];
+        const mappedPropertyType = propertyTypeMap[propertyType];
+        const mappedState = stateMap[area];
+
+        if (mappedTransactionType && mappedPropertyType && mappedState) {
             if (
-              (mappedTransactionType === 'Buying' ||
-                mappedTransactionType === 'Selling' ||
-                mappedTransactionType === 'Transferring' ||
-                mappedTransactionType === 'Contract Advice') &&
-              ((mappedPropertyType === 'House' ||
-                mappedPropertyType === 'Apartment' ||
-                mappedPropertyType === 'Otp') &&
-                (mappedState === 'New South Wales' ||
-                  mappedState === 'Victoria' ||
-                  mappedState === 'South Australia' ||
-                  mappedState === 'Western Australia' ||
-                  mappedState === 'Australian Capital Territory' ||
-                  mappedState === 'QueensLand'))
+                (mappedTransactionType === 'Buying' ||
+                    mappedTransactionType === 'Selling' ||
+                    mappedTransactionType === 'Transferring' ||
+                    mappedTransactionType === 'Contract Advice') &&
+                ((mappedPropertyType === 'House' ||
+                    mappedPropertyType === 'Apartment' ||
+                    mappedPropertyType === 'Otp') &&
+                    (mappedState === 'New South Wales' ||
+                        mappedState === 'Victoria' ||
+                        mappedState === 'South Australia' ||
+                        mappedState === 'Western Australia' ||
+                        mappedState === 'Australian Capital Territory' ||
+                        mappedState === 'QueensLand'))
             ) {
-              quoteData.exchangeToSettlement = 1350.0;
-              quoteData.gst = 182.0;
-              quoteData.total = 1702.0;
+                quoteData.exchangeToSettlement = 1350.0;
+                quoteData.gst = 182.0;
+                quoteData.total = 1702.0;
             } else if (
-              mappedPropertyType === 'Land' &&
-              (mappedState === 'New South Wales' ||
-                mappedState === 'South Australia' ||
-                mappedState === 'Western Australia' ||
-                mappedState === 'Australian Capital Territory' ||
-                mappedState === 'QueensLand')
+                mappedPropertyType === 'Land' &&
+                (mappedState === 'New South Wales' ||
+                    mappedState === 'South Australia' ||
+                    mappedState === 'Western Australia' ||
+                    mappedState === 'Australian Capital Territory' ||
+                    mappedState === 'QueensLand')
             ) {
-              quoteData.exchangeToSettlement = 1250.0;
-              quoteData.gst = 142.0;
-              quoteData.total = 1594.0;
+                quoteData.exchangeToSettlement = 1250.0;
+                quoteData.gst = 142.0;
+                quoteData.total = 1594.0;
             }
-          }
+        }
 
         try {
             const response = await fetch('https://lovehomeconvyancingbackend-production.up.railway.app/api/lead-cal', {
@@ -138,12 +170,24 @@ const CalculatorMain = ({ setShowQuote }) => {
 
             if (response.ok) {
                 setQuote(quoteData);
-                setShowQuote(true)
-                
+                setShowQuote(true);
 
+                // Sending data to Privyr webhook
+                try {
+                    const privyrResponse = await fetch('https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/IUfFmRTn', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    });
 
-                // Call backend to generate PDF and send email
-               
+                    if (!privyrResponse.ok) {
+                        console.error('Failed to send data to Privyr webhook');
+                    }
+                } catch (privyrError) {
+                    console.error('Error sending data to Privyr webhook', privyrError);
+                }
             } else {
                 console.error('Failed to submit form data');
             }
@@ -151,7 +195,6 @@ const CalculatorMain = ({ setShowQuote }) => {
             console.error('Error submitting form data', error);
         }
     };
-
 
     return (
         <div className="max-w-4xl mx-auto p-4 h-auto flex flex-col justify-center items-center">
@@ -323,56 +366,97 @@ const CalculatorMain = ({ setShowQuote }) => {
                 </div>
             )}
             {step === 4 && (
-               <div>
-               <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Enter Your Details</h2>
-               <div className="flex flex-col w-[400px] mx-auto gap-10" id='formcalculatormain'>
-                 <input
-                   type="text"
-                   placeholder="Name"
-                   onChange={handleChange('name')}
-                   className="text-xl font-inter p-2 border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus:outline-none focus:border-[#f0532d]"
-                   required
-                 />
-                 <input
-                   type="email"
-                   placeholder="Email"
-                   onChange={handleChange('email')}
-                   className="p-2 text-xl font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus:outline-none focus:border-[#f0532d]"
-                   required
-                 />
-                 <PhoneInput
-                   country={'au'}
-                   value={formData.phone}
-                   onChange={handlePhoneChange}
-                   inputStyle={{
-                     width: '100%',
-                     padding: '22px',
-                     paddingLeft: '40px',
-                     fontSize: '16px',
-                    //  border: '2px solid #f0532d'
-                   }}
-                   containerStyle={{
-                     marginBottom: '10px',
-                     border: '2px solid #f0532d',
-                     borderRadius: '8px',
+                <div>
+                    <h2 className="text-2xl mb-4 font-poppins font-medium text-center">Enter Your Details</h2>
+                    <div className="flex flex-col w-[400px] mx-auto gap-10" id='formcalculatormain'>
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            onChange={handleChange('name')}
+                            className=" font-inter p-2 border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus:outline-none focus:border-[#f0532d]"
+                            required
+                        />
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            onChange={handleChange('email')}
+                            className="p-2  font-inter border-2 border-[#f0532d] rounded-lg mb-2 bg-white focus:outline-none focus:border-[#f0532d]"
+                            required
+                        />
 
-
-                   }}
-                   dropdownStyle={{
-                     borderRadius: '8px',
-                     border: '2px solid #f0532d'
-                   }}
-                 />
-                
-                 
-                        
+                        <div className="relative flex items-center">
                             <button
-                             onClick={handleSubmit}
-                             className="w-[250px] bg-white h-[50px] my-3 flex items-center justify-center  rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105  hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#f0532d] before:to-[#f0532d] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#000] font-poppins font-bold text-lg hover:text-white mx-auto" id='bodergetquote' >Get a Free Quote</button>
-                       
-                    
-               </div>
-             </div>
+                                id="dropdown-phone-button"
+                                onClick={() => setDropdownOpen(!dropdownOpen)}
+                                className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600 cursor-pointer"
+                                type="button"
+                            >
+                                <img
+                                    src={countryCode === '+61' ? assets.australia : countryCode === '+91' ? assets.india : assets.america}
+                                    alt="Country Flag"
+                                    className="w-6 h-6"
+                                />
+                                <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" /></svg>
+                            </button>
+                            {dropdownOpen && (
+                                <div id="dropdown-phone" className="absolute right-0 mt-2 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-52 dark:bg-gray-700">
+                                    <ul className="py-2 text-sm rounded-lg text-gray-700 dark:text-gray-200 absolute bg-white top-[1.5rem] left-[-12rem]" aria-labelledby="dropdown-phone-button">
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                                                role="menuitem"
+                                                onClick={() => handleCountrySelect('+1')}
+                                            >
+                                                <img src={assets.america} alt="US Flag" className="w-6 h-6 mr-2" />
+                                                United States
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                                                role="menuitem"
+                                                onClick={() => handleCountrySelect('+61')}
+                                            >
+                                                <img src={assets.australia} alt="Australia Flag" className="w-6 h-6 mr-2" />
+                                                Australia
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                                                role="menuitem"
+                                                onClick={() => handleCountrySelect('+91')}
+                                            >
+                                                <img src={assets.india} alt="India Flag" className="w-6 h-6 mr-2" />
+                                                India
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            )}
+                            <input
+                                type="text"
+                                value={formData.phone}
+                                onChange={e => handlePhoneChange(e.target.value)}
+                                placeholder="Enter your phone number"
+                                className="ml-2 flex-1 py-2.5 px-4 border-2 border-[#f0532d] rounded-lg font-inter "
+                            />
+                        </div>
+
+
+
+
+
+                        <button
+                            onClick={handleSubmit}
+                            className="w-[250px] bg-white h-[50px] my-3 flex items-center justify-center  rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105  hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#f0532d] before:to-[#f0532d] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#000] font-poppins font-bold text-lg hover:text-white mx-auto" id='bodergetquote' >Get a Free Quote</button>
+
+
+                    </div>
+                </div>
             )}
         </div>
     );

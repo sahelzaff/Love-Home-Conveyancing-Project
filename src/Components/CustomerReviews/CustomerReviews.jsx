@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { assets } from '../../assets/assets';
+import { assets } from '../../assets/assets.js';
 import Globe from '../Globe/Globe'; // Assuming this is the correct import path
 import reviews from './Review';
 import useOnScreen from '../../useOnScreen'; // Adjust the import path accordingly

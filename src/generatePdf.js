@@ -1,6 +1,6 @@
 import { PDFDocument, rgb } from 'pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
-import { assets } from './assets/assets';
+import { assets } from './assets/assets.js';
 
 export async function generatePdf(quote) {
     const existingPdfBytes = await fetch(assets.Quote_pdf_final).then(res => res.arrayBuffer());

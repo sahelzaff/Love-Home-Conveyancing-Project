@@ -1,14 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import ServiceInfo from './Components/ServiceInfo/ServiceInfo';
 import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Footer';
-import ServiceHome from './Components/ServiceHome/ServiceHome';
 import './Homepage.css';
-import WorkSection from './Components/WorkSection/WorkSection';
-import ServiceReview from './Components/ServiceReview/ServiceReview';
 import { assets } from './assets/assets';
 import TopBar from './Components/TopBar/TopBar';
+
+const ServiceHome = lazy(() => import('./Components/ServiceHome/ServiceHome'));
+const WorkSection = lazy(() => import('./Components/WorkSection/WorkSection'));
+const ServiceReview = lazy(() => import('./Components/ServiceReview/ServiceReview'));
+const Footer = lazy(() => import('./Components/Footer/Footer'));
 
 const Service = () => {
   const reviewRef = useRef(null);
@@ -58,21 +59,29 @@ const Service = () => {
       <TopBar />
       <Navbar />
       <ServiceInfo />
-      <ServiceHome />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ServiceHome />
+      </Suspense>
       <div className='content' ref={workRef}>
-        <WorkSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <WorkSection />
+        </Suspense>
       </div>
       <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat' id='pagedivider' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
       <div className='content' ref={reviewRef}>
-        <ServiceReview />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ServiceReview />
+        </Suspense>
       </div>
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
+      </Suspense>
       {showScrollTopButton && (
         <button 
           onClick={scrollToTop}
           className='scroll-top-button'
         >
-       <svg fill="#ffffff" height="44px" width="44px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-204.6 -204.6 739.20 739.20" xmlSpace="preserve" stroke="#ffffff" strokeWidth="7.26">
+          <svg fill="#ffffff" height="44px" width="44px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-204.6 -204.6 739.20 739.20" xmlSpace="preserve" stroke="#ffffff" strokeWidth="7.26">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
             <g id="SVGRepo_iconCarrier"> 
@@ -84,6 +93,5 @@ const Service = () => {
     </div>
   );
 };
-
 
 export default Service;

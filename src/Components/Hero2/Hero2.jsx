@@ -26,9 +26,9 @@ const Hero2 = () => {
     }, []);
     return (
         <div className='relative h-auto mb-44'>
-            <section 
-                className="relative h-[100vh] bg-center bg-cover bg-no-repeat brightness-110" 
-                id='mainrc' 
+            <section
+                className="relative h-[100vh] bg-center bg-cover bg-no-repeat brightness-110"
+                id='mainrc'
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
                 <img src={assets.banner_rc_mobile_overlay} className='absolute bottom-0' id='mobile_banner_rc_overlay' alt="" />
@@ -42,8 +42,8 @@ const Hero2 = () => {
                     </p>
 
                     <p className='font-poppins font-normal w-full text-white' id='text5'><span className='text-[#f0532d] font-inter ' id='text7' >Mr Robin Carter</span><br />Principal Solicitor at Love Homes Conveyancing
-                      <br />
-                      <span className=''>25 years of combined experience in accounting, law, and business</span>
+                        <br />
+                        <span className=''>25 years of combined experience in accounting, law, and business</span>
 
                     </p>
 
@@ -52,7 +52,8 @@ const Hero2 = () => {
                     </div>
 
                     <div className="pt-5 sm:pt-10">
-                        <a href="https://wa.link/97756f" className="button cursor-pointer font-inter" id='button1'>Let's Chat</a>
+                        <a href="https://api.whatsapp.com/send?phone=61434303537&text=Hi%20Robin%20Carter%2C%20I%27m%20interested%20in%20your%20property%20conveyancing%20services.%20Can%20you%20please%20provide%20more%20information%3F%20Thank%20you!%0A"  target="_blank"
+                            rel="noopener noreferrer" className="button cursor-pointer font-inter" id='button1'>Let's Chat</a>
                     </div>
                 </div>
             </section>
@@ -60,11 +61,41 @@ const Hero2 = () => {
                 <div className="flex flex-col justify-center items-center gap-2 sm:gap-1 md:gap-0">
                     <h2 className="font-inter mt-2 font-medium text-base sm:text-lg md:text-xl lg:text-lg xl:text-2xl" id='online_text'>Online & In-person Consultations Available</h2>
                     <div className="flex flex-row justify-center items-center -mt-3 sm:-mt-4 md:-mt-5 gap-4 sm:gap-6 md:gap-7" id='boxPhoto'>
-                        <img src={assets.whatsapp} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' />
-                        <img src={assets.zoom} className="w-16 sm:w-24 md:w-32 xl:w-40" alt="" id='box_image' loading="lazy" />
-                        <img src={assets.we} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' loading="lazy" />
-                        <img src={assets.skype} className="w-16 sm:w-24 md:w-32 2xl:w-40" alt="" id='box_image' loading="lazy" />
-                        <img src={assets.teams} className="w-14 sm:w-20 md:w-28 2xl:w-40" alt="" id='box_image' loading="lazy" />
+                        <a href="https://api.whatsapp.com/send?phone=61434303537&text=Hi%20Robin%20Carter%2C%20I%27m%20interested%20in%20your%20property%20conveyancing%20services.%20Can%20you%20please%20provide%20more%20information%3F%20Thank%20you!%0A"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.whatsapp} className="w-16 sm:w-24 md:w-32 2xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="WhatsApp" id='box_image' />
+                        </a>
+
+                        <a href="https://lovehomesconveyancing-schedule.as.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.zoom} className="w-16 sm:w-24 md:w-32 xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="" id='box_image' loading="lazy" />
+                        </a>
+                        <a href="https://lovehomesconveyancing-schedule.as.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.skype} className="w-16 sm:w-24 md:w-32 2xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="" id='box_image' loading="lazy" />
+                        </a>
+                        <a href="mailto:hello@love-homes.com.au"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.emailphoto} className="w-16 sm:w-24 md:w-32 2xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="" id='box_image' loading="lazy" />
+                        </a>
+                        <a href="https://calendly.com/sahelzaffarwork/property-conveyancing-consultation"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.calendly} className="w-16 sm:w-24 md:w-32 2xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="" id='box_image' loading="lazy" />
+                        </a>
+
+
+
+
 
                     </div>
                 </div>

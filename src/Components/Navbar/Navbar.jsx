@@ -52,7 +52,7 @@ const Navbar = () => {
             <nav id="navbar" className="bg-white dark:bg-gray-900 w-full z-20 left-0">
                 <div className="max-w-screen-3xl flex flex-wrap items-center justify-between Homepage py-4">
                     <Link
-                        to="/" className="flex items-center space-x-3 rtl:space-x-reverse" id='nav_logo' data-aos='zoom-out' data-aos-duration="1500" data-aos-once="true">
+                        to="/" className="flex items-center space-x-3 rtl:space-x-reverse" id='nav_logo' >
                         <img
                             src={isMobile ? assets.logoMobile : assets.logoBlackRed}
                             className={`h-14 cursor-pointer ${menuOpen ? 'mt-[-14.5rem]' : 'mt-0'}`}

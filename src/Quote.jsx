@@ -118,7 +118,7 @@ const Quote = () => {
                 <div>
                     <h2 className='font-poppins font-bold text-3xl mb-10'>Deposit</h2>
                     <div className='flex flex-row justify-between items-start gap-14' id='divdepositmobile'>
-                        <div className='flex flex-row justify-between items-center w-4/6 bg-[#f0532d] hover:bg-orange-600 cursor-pointer py-6 px-12 rounded-lg' id='deposit400mobile' >
+                        <div className='flex flex-row justify-between items-center w-4/6 bg-[#f0532d] py-6 px-12 rounded-lg' id='deposit400mobile' >
                             <h2 className='font-poppins font-semibold text-xl text-white'>Deposit</h2>
                             <h2 className='font-poppins font-semibold text-xl text-white'>
                                 {couponApplied ? <><s>$400.00</s> $300.00</> : '$400.00'}
@@ -164,10 +164,9 @@ const Quote = () => {
                                 width="50px"
                                 version="1.1"
                                 id="Capa_1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                              
                                 viewBox="-72.67 -72.67 372.44 372.44"
-                                xml:space="preserve"
+                               
                                 fill="#ffffff"
                                 stroke="#ffffff"
                                 strokeWidth="15.442528000000001"

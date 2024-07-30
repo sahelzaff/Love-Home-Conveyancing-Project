@@ -38,7 +38,7 @@ const Footer = () => {
                                         src={assets.whatsapp_top}
                                         alt="Whatsapp"
                                         className="h-8 w-8 cursor-pointer social-icon"
-                                        onClick={() => window.open('https://wa.link/97756f', '_blank')}
+                                        onClick={() => window.open('https://api.whatsapp.com/send?phone=61434303537&text=Hi%20Robin%20Carter%2C%20I%27m%20interested%20in%20your%20property%20conveyancing%20services.%20Can%20you%20please%20provide%20more%20information%3F%20Thank%20you!%0A', '_blank')}
                                     />
                                     <img
                                         src={assets.insta}
@@ -66,7 +66,7 @@ const Footer = () => {
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Other Resources</p>
                                     <div className='w-3/4 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
-                                <div className="flex flex-col gap-6 ">
+                                <div className="flex flex-col gap-0 ">
                                     <Link to="/privacy-policy">
                                         <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Privacy Policy</p>
                                     </Link>
@@ -75,6 +75,9 @@ const Footer = () => {
                                     </Link>
                                     <Link to="/disclaimer">
                                         <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Disclaimer</p>
+                                    </Link>
+                                    <Link to="/download-lovehomes-conveyancing-app">
+                                        <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Downloads</p>
                                     </Link>
                                 </div>
                             </div>

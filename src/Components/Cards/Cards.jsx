@@ -36,7 +36,7 @@ const CustomSelect = ({ options, placeholder, selectedOption, setSelectedOption,
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+
           >
             <path d="M6 9l6 6 6-6" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -163,7 +163,7 @@ const Cards = () => {
               onClick={handleGetQuote}
             >
               <span>GET A QUOTE</span>
-              <svg className="transform transition-transform duration-300 group-hover:translate-x-2" fill="#ffffff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-33 -33 396.00 396.00" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-33" y="-33" width="396.00" height="396.00" rx="0" fill="#f0532d" stroke-width="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+              <svg className="transform transition-transform duration-300 group-hover:translate-x-2" fill="#ffffff" height="40px" width="40px" version="1.1" id="Layer_1"  viewBox="-33 -33 396.00 396.00"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-33" y="-33" width="396.00" height="396.00" rx="0" fill="#f0532d" stroke-width="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
             </button>
           </div>
         </div>

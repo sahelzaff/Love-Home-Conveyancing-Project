@@ -38,15 +38,17 @@ const LoadingPage = () => {
                         <img src={assets.logoBlackRed} className='w-2/5 ' alt="Logo" id='logo_loading' />
                     </div>
 
-                    <div role="status" className='s'>
-                        <dotlottie-player
+                    <div role="status" className=''>
+                    <dotlottie-player
                             src="https://lottie.host/62bafd8f-2603-4d18-ae48-b1a23b8946d7/O8zXoE7F10.lottie"
                             background="transparent"
                             speed="1"
                             style={{ width: '300px', height: '180px' }}
+                            id="loaderQuote"
                             loop
                             autoplay
                         ></dotlottie-player>
+
                     </div>
                 </div>
 
@@ -59,3 +61,6 @@ const LoadingPage = () => {
 }
 
 export default LoadingPage;
+
+
+

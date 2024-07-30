@@ -12,7 +12,7 @@ const TopBar = () => {
           <div className="flex items-center space-x-2 cursor-pointer">
             <a href="tel:+61468908807" className="flex items-center space-x-2 ">
               <img src={assets.phone_call} alt="Phone Call" className="h-4 w-4 sm:h-6 sm:w-6" />
-              <span className="text-xs sm:text-[1rem] font-normal font-inter">+61 468 908 807</span>
+              <span className="text-xs sm:text-[1rem] font-normal font-inter">+61 434 303 537</span>
             </a>
           </div>
           <div className="flex items-center space-x-2 cursor-pointer">
@@ -33,7 +33,7 @@ const TopBar = () => {
             src={assets.whatsapp_top}
             alt="Whatsapp"
             className="h-6 w-6 cursor-pointer social-icon"
-            onClick={() => window.open('https://wa.link/97756f', '_blank')}
+            onClick={() => window.open('https://api.whatsapp.com/send?phone=61434303537&text=Hi%20Robin%20Carter%2C%20I%27m%20interested%20in%20your%20property%20conveyancing%20services.%20Can%20you%20please%20provide%20more%20information%3F%20Thank%20you!%0A', '_blank')}
           />
           <img
             src={assets.insta}
