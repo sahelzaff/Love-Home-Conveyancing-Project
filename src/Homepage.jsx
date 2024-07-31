@@ -137,7 +137,11 @@ const Homepage = () => {
       )}
 
       {showModal && (
+<<<<<<< Updated upstream
         <div className="modal h-auto">
+=======
+        <div className="modal">
+>>>>>>> Stashed changes
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
             <img src={assets.Lovehome_ad_modal} className='cursor-pointer' alt="Love Home Ad" onClick={handleModalClick} />
