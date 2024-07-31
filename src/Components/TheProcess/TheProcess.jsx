@@ -58,7 +58,7 @@ const TheProcess = () => {
           </div>
           <div className='mt-2  mb-14 sm:pt-5'>
             <Link to="/service#work">
-              <p className='cursor-pointer ml-20 font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]' id='readmoreprocess' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true">Read More</p>
+              <p className='cursor-pointer ml-20 font-inter font-bold text-[#f0532d] hover:text-black text-[1.125rem]' id='readmoreprocess' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" title="Full Explanation of the Process">Read More</p>
             </Link>
           </div>
 

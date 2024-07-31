@@ -33,6 +33,9 @@ const VideoBackground = () => {
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
+        playsinline
+        webkit-playsinline
+        preload="auto"
         loop
         muted
       />

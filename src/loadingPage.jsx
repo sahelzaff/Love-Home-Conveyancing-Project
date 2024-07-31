@@ -41,7 +41,7 @@ const LoadingPage = () => {
                     <div role="status" className=''>
                     <dotlottie-player
                             src="https://lottie.host/62bafd8f-2603-4d18-ae48-b1a23b8946d7/O8zXoE7F10.lottie"
-                            background="transparent"
+                            
                             speed="1"
                             style={{ width: '300px', height: '180px' }}
                             id="loaderQuote"
