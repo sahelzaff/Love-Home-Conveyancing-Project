@@ -45,7 +45,16 @@ const BlogDetails = ({ onLoad }) => {
   };
 
   if (!post) {
-    return <div>Loading...</div>; // Placeholder for loading state
+    return  <div className="flex items-center justify-center h-screen">
+    <dotlottie-player
+      src="https://lottie.host/798dae93-fbd3-4d46-aba8-00c7d07a6c6b/Y4qF1GQzdi.json"
+      background="transparent"
+      speed="1"
+      style={{ width: '300px', height: '300px' }}
+      loop
+      autoplay
+    />
+  </div>; // Placeholder for loading state
   }
 
   const formatDate = (dateString) => {

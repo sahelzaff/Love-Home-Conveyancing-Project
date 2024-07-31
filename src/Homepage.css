@@ -248,7 +248,13 @@ margin-left: 8rem;
     margin: auto 2.2rem;
     width: 100%;
   }
-  
+  #tailored{
+    background-color: transparent;
+  }
+  #consultBox{
+    height: fit-content;
+  }
+
 }
 
 

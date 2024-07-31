@@ -29,18 +29,18 @@ const BlogDetailsPage = () => {
     };
 
 
-  const handleLoad = useCallback(() => {
-    window.scrollTo({
-      top: 0,
-      // behavior: 'smooth'
-    });
-  }, []);
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        // behavior: 'smooth'
+      });
+    }, []);
 
   return (
     <div>
       <TopBar />
       <Navbar />
-      <BlogDetails onLoad={handleLoad} />
+      <BlogDetails />
       <Footer />
 
       {showScrollTopButton && (

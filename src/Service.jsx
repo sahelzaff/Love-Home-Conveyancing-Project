@@ -5,11 +5,15 @@ import Navbar from './Components/Navbar/Navbar';
 import './Homepage.css';
 import { assets } from './assets/assets';
 import TopBar from './Components/TopBar/TopBar';
+import ServiceHome from './Components/ServiceHome/ServiceHome';
+import WorkSection from './Components/WorkSection/WorkSection';
+import ServiceReview from './Components/ServiceReview/ServiceReview';
+import Footer from './Components/Footer/Footer';
 
-const ServiceHome = lazy(() => import('./Components/ServiceHome/ServiceHome'));
-const WorkSection = lazy(() => import('./Components/WorkSection/WorkSection'));
-const ServiceReview = lazy(() => import('./Components/ServiceReview/ServiceReview'));
-const Footer = lazy(() => import('./Components/Footer/Footer'));
+// const ServiceHome = lazy(() => import('./Components/ServiceHome/ServiceHome'));
+// const WorkSection = lazy(() => import('./Components/WorkSection/WorkSection'));
+// const ServiceReview = lazy(() => import('./Components/ServiceReview/ServiceReview'));
+// const Footer = lazy(() => import('./Components/Footer/Footer'));
 
 const Service = () => {
   const reviewRef = useRef(null);
@@ -59,23 +63,23 @@ const Service = () => {
       <TopBar />
       <Navbar />
       <ServiceInfo />
-      <Suspense fallback={<div>Loading...</div>}>
+   
         <ServiceHome />
-      </Suspense>
+      
       <div className='content' ref={workRef}>
-        <Suspense fallback={<div>Loading...</div>}>
+         
           <WorkSection />
-        </Suspense>
+       
       </div>
       <div className='relative h-[35vh] my-10 bg-center bg-cover bg-no-repeat' id='pagedivider' style={{ backgroundImage: `url(${assets.pagedivider})` }}></div>
       <div className='content' ref={reviewRef}>
-        <Suspense fallback={<div>Loading...</div>}>
+         
           <ServiceReview />
-        </Suspense>
+       
       </div>
-      <Suspense fallback={<div>Loading...</div>}>
+       
         <Footer />
-      </Suspense>
+     
       {showScrollTopButton && (
         <button 
           onClick={scrollToTop}
