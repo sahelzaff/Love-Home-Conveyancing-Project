@@ -9,11 +9,7 @@
   left: 0;
   top: 0;
   width: 100%;
-<<<<<<< Updated upstream
-  height: auto;
-=======
   height: 100vh;
->>>>>>> Stashed changes
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   
