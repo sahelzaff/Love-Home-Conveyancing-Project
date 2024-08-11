@@ -96,13 +96,13 @@ const Hero2 = () => {
                                 <img src={assets.whatsapp} className="w-16 sm:w-24 md:w-32 2xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="WhatsApp" id='box_image' />
                             </a>
 
-                            <a href="https://lovehomesconveyancing-schedule.as.me/"
+                            <a href="https://calendly.com/ceo-lovehomes/video-consultation-with-robin-carter"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img src={assets.zoom} className="w-16 sm:w-24 md:w-32 xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="Schedule a Zoom Consultation" id='box_image' loading="lazy" />
                             </a>
-                            <a href="https://lovehomesconveyancing-schedule.as.me/"
+                            <a href="https://calendly.com/ceo-lovehomes/video-consultation-with-robin-carter"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -114,7 +114,7 @@ const Hero2 = () => {
                             >
                                 <img src={assets.emailphoto} className="w-16 sm:w-24 md:w-32 2xl:w-40 cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" alt="Schedule a Email Consultation" id='box_image' loading="lazy" />
                             </a>
-                            <a href="https://calendly.com/sahelzaffarwork/property-conveyancing-consultation"
+                            <a href="https://calendly.com/ceo-lovehomes/consultation-with-robin-carter-lovehomes-conveyancing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

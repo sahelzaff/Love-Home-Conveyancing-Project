@@ -73,13 +73,40 @@ export async function generatePdf(quote) {
     drawTextOnPage(page2, `$${quote.gst}`, 500.9, 429.81, 7, poppinsSemiBold, rgb(1, 1, 1));
     drawTextOnPage(page2, `$${quote.exchangeToSettlement + quote.gst + quote.verificationOfIdentity + quote.searchesEstimatedPrice}`, 552.5, 429.81, 7, poppinsSemiBold, rgb(1, 1, 1));
 
-    const pdfBytes = await pdfDoc.save();
-    const blob = new Blob([pdfBytes], { type: 'application/pdf' });
-
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `${quote.name} Quote LoveHomes Conveyancing.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
+   
+        // Save the PDF document
+        const pdfBytes = await pdfDoc.save();
+    
+        // Create a Blob from the PDF bytes
+        const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+    
+        // Create a download link for the PDF
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = `${quote.name} Quote LoveHomes Conveyancing.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    
+        // Create a FormData object to send the PDF and user details
+        const formData = new FormData();
+        formData.append('pdf', blob, 'Quotation.pdf'); // Append the PDF file
+        formData.append('name', quote.name);
+        formData.append('email', quote.email);
+    
+        // Send the FormData to the backend
+        try {
+            const response = await fetch('https://lovehomeconvyancingbackend-production.up.railway.app/api/email/send-email', {
+                method: 'POST',
+                body: formData,
+            });
+    
+            if (response.ok) {
+                console.log('Email sent successfully');
+            } else {
+                console.error('Failed to send email');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }

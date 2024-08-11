@@ -16,19 +16,26 @@ html {
  
 /* scrollbar */
 
+/* Base scrollbar style */
 ::-webkit-scrollbar {
-  width:8px;
+  width: 5px; /* Initial width of the scrollbar */
+  transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
 }
 
+/* Scrollbar track (background) */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f1; /* Light grey background */
 }
 
+/* Scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: #f0532d;
-  border-radius: 10px;
+  background: #f0532d; /* Initial color of the thumb */
+  border-radius: 8px; /* Rounded corners for the thumb */
 }
 
+/* Scrollbar thumb width on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ef6543;
+  width: 10px; /* Width of the thumb when hovered */
+  position: absolute;
+  background: #ef6543; /* Optional: Change thumb color on hover */
 }

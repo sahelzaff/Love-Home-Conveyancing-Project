@@ -89,7 +89,7 @@ const Quote = () => {
             </p>
                 <button
                     onClick={handleDownloadClick}
-                    className="ml-4 bg-[#f0532d] text-white px-4 py-1 font-poppins font-medium rounded hover:bg-[#d0451e] transition duration-300" id='button_download'
+                    className="ml-4 bg-[#f0532d] text-white px-4 py-1 font-poppins font-medium rounded hover:bg-[#d0451e] transition duration-300 cursor-pointer" id='button_download'
                     >
                     Download PDF
                 </button>
@@ -136,7 +136,7 @@ const Quote = () => {
                                     value={coupon}
                                     onChange={(e) => setCoupon(e.target.value)}
                                 />
-                                <button onClick={applyCoupon} className="ml-2 p-2 text-sm font-inter border bg-[#f0532d] text-white rounded">Apply</button>
+                                <button onClick={applyCoupon} className="ml-2 p-2 text-sm font-inter border bg-[#f0532d] text-white rounded cursor-pointer">Apply</button>
                             </div>
                             {error && <p className="text-red-500 font-poppins text-[11px]">{error}</p>}
                             {couponApplied && !error && (
@@ -154,7 +154,7 @@ const Quote = () => {
                 <div className="pt-20 pb-4 w-full flex justify-end" id='buttondiv'>
                     <button
                         type="button"
-                        className="bg-white text-center w-[320px] max-w-md rounded-2xl h-14 relative font-poppins text-black text-lg font-semibold group"
+                        className="bg-white text-center w-[320px] max-w-md rounded-2xl h-14 relative font-poppins text-black text-lg font-semibold group cursor-pointer"
                     >
                         <div
                             className="bg-[#f0532d] rounded-xl h-12 w-[50px] flex items-center justify-center absolute left-1 top-[4px] group-hover:w-full z-10 duration-500"

@@ -122,7 +122,7 @@ const Cards = () => {
               </div>
             </div>
             <div>
-              <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem] font-poppins font-bold' id='tailored'>Get a Tailored Conveyancing Quote in Minutes!</p>
+              <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem] font-poppins font-bold bg-transparent' id='tailored'>Get a Tailored Conveyancing Quote in Minutes!</p>
             </div>
           </div>
           <div className='flex flex-col items-start justify-center w-full'>

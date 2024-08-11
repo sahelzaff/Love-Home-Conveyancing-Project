@@ -63,15 +63,15 @@ const CalculatorMain = ({ setShowQuote }) => {
         switch (code) {
             case '+61': // Australia
                 return cleanedNumber.length > 8
-                    ? `+61 ${cleanedNumber.slice(0, 3)} ${cleanedNumber.slice(3, 6)} ${cleanedNumber.slice(6,9)}`
+                    ? `+61 ${cleanedNumber.slice(0, 3)} ${cleanedNumber.slice(3, 6)} ${cleanedNumber.slice(6, 9)}`
                     : cleanedNumber;
             case '+91': // India
                 return cleanedNumber.length > 9
-                    ? `+91 ${cleanedNumber.slice(0, 5)} ${cleanedNumber.slice(5,10)}`
+                    ? `+91 ${cleanedNumber.slice(0, 5)} ${cleanedNumber.slice(5, 10)}`
                     : cleanedNumber;
             case '+1': // US
                 return cleanedNumber.length > 9
-                    ? `+1 ${cleanedNumber.slice(0, 3)} ${cleanedNumber.slice(3, 6)} ${cleanedNumber.slice(6,10)}`
+                    ? `+1 ${cleanedNumber.slice(0, 3)} ${cleanedNumber.slice(3, 6)} ${cleanedNumber.slice(6, 10)}`
                     : cleanedNumber;
             default:
                 return cleanedNumber;
@@ -174,7 +174,7 @@ const CalculatorMain = ({ setShowQuote }) => {
 
                 // Sending data to Privyr webhook
                 try {
-                    const privyrResponse = await fetch('https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/IUfFmRTn', {
+                    const privyrResponse = await fetch('https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/clVK1sHb#generic-webhook', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

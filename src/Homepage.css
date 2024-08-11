@@ -371,3 +371,7 @@ margin-left: 8rem;
     display: none !important;
   }
 }
+
+#GoogleReviewsWidget{
+  height: 50vh;
+}

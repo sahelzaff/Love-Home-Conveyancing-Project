@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://staging.lovehomesconveyancing.com.au/*"
-  to = "https://lovehomeconveyancingproject.netlify.app/:splat"
-  status = 301
-  force = true

@@ -4,6 +4,9 @@ import { assets } from '../../assets/assets';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './ServiceReview.css'; // Assuming you have a CSS file for custom styles
+import GoogleReviewsWidget from '../GoogleReviewsWidget';
+
+
 
 const ServiceReview = () => {
     const [googleReviews, setGoogleReviews] = useState([]);
@@ -103,21 +106,15 @@ const ServiceReview = () => {
                             <img src={assets.star} className='w-6' alt="" srcSet="" />
                         </div>
                         <h2 className="text-4xl font-bold font-inter" id='ratingtext'>Rating</h2>
-                        <h2 className='mt-2 text-[#f0532d] font-inter font-medium'>107 Reviews</h2>
+                        <h2 className='mt-2 text-[#f0532d] font-inter font-medium'>109 Reviews</h2>
                     </div>
                 </div>
-                <div className="w-full mt-10" data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
-                    {googleReviews.length > 0 ? (
-                        <Slider {...settings}>
-                            {googleReviews.map((review, index) => (
-                                <ReviewItem key={index} review={review} />
-                            ))}
-                        </Slider>
-                    ) : (
-                        <p className='text-center'>Loading Google reviews...</p>
-                    )}
+                <div className='pt-10' >
+          <GoogleReviewsWidget/>
                 </div>
             </div>
+
+
         </div>
     );
 };

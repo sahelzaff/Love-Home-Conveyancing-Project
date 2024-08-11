@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Skip rewriting for requests that are explicitly for index.html
+  RewriteRule ^src/index\.html$ - [L]
+
+  # If the requested file or directory does not exist, rewrite to src/index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /src/index.html [L]
+</IfModule>
