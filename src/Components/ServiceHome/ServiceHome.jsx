@@ -107,7 +107,7 @@ const ServiceHome = () => {
                     <div className='custom-card' data-aos='fade-in' data-aos-duration="1000" data-aos-once="true">
                         <img src={assets.investor} alt="Contract Advice"  loading='lazy'/>
                         <div className='custom-card-hover-content'>
-                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Contract Advice</h2>
+                            <h2 className='custom-card-heading text-black font-bold font-outfit'>Contract Review</h2>
                             <p className='custom-card-paragraph font-poppins text-[16px] font-[400]'>
                                 Maximize your returns with our strategic investment advice.
                             </p>

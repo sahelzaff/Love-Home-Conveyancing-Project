@@ -13,9 +13,9 @@ const Footer = () => {
                 <p className='font-poppins font-medium text-[1.125rem] Homepage' id='footerfinancialpara'  >Financial Disclaimer: Please remember that past performance may not be indicative of future results. Different types of investments involve varying degrees of risk. Due to various factors, including changing market conditions, the content may no longer be reflective of current opinions or positions. Moreover, you should not assume that any discussion or information contained in this website serves as the receipt of, or as a substitute for, personalized investment advice from Borrower First. Please consult our financial experts for more information.</p>
 
             </div>
-            <div className='h-auto bg-[#f0532d] text-[#fff] pt-[70px] pb-[100px]'>
+            <div className='h-auto bg-[#f0532d] text-[#fff] pt-[70px] pb-[20px]'>
                 <div className='px-28 py-10 Homepage' id='main_footer_main_div'>
-                    <div className='grid grid-cols-3 gap-20 justify-center items-center ' id='main_footer'>
+                    <div className='grid grid-cols-3 gap-20 items-start' id='main_footer'>
                         <div className=''>
                             <div>
                                 <img src={assets.logoWhite} className='min-w-32 max-w-80' alt="" srcset="" />
@@ -60,13 +60,13 @@ const Footer = () => {
 
 
                         </div>
-                        <div>
+                        <div className='mt-1'>
                             <div className='flex flex-col gap-4'>
                                 <div>
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Other Resources</p>
                                     <div className='w-3/4 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
-                                <div className="flex flex-col gap-0 ">
+                                <div className="flex flex-col gap-0">
                                     <Link to="/privacy-policy">
                                         <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Privacy Policy</p>
                                     </Link>
@@ -76,25 +76,19 @@ const Footer = () => {
                                     <Link to="/disclaimer">
                                         <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Disclaimer</p>
                                     </Link>
-                                    <Link to="/download-lovehomes-conveyancing-app">
-                                        <p className='text-white text-[1rem] hover:text-[#1B1817] font-poppins font-medium pl-3 mb-3 cursor-pointer'>Downloads</p>
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='mt-1'>
                             <div className='flex flex-col gap-3'>
                                 <div>
                                     <p className='font-inter text-3xl font-bold flex flex-row items-start tracking-widest'>Contact Us</p>
                                     <div className='w-5/6 h-[0.12rem] bg-white mb-6'></div>
                                 </div>
                                 <div className='flex flex-col gap-8'>
-
                                     <div>
                                         <p className='font-poppins text-[1rem] font-medium pr-8'>Suite 17, Minton House,2-14 Bayswater Road, Potts Point 2011</p>
                                     </div>
-
-
                                     <div className="flex gap-4">
                                         <a href="tel:+0293819118" className="flex items-center gap-4 text-inherit no-underline cursor-pointer">
                                             <img src={assets.phone_call} className="w-6" alt="Phone Call" />
@@ -107,9 +101,7 @@ const Footer = () => {
                                             <p className="font-poppins text-[1rem] font-medium">hello@love-homes.com.au</p>
                                         </a>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>

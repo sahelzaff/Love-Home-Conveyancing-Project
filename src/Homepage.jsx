@@ -27,16 +27,7 @@ const Download_Home = lazy(() => import('./Components/Download/Download_Home'));
 
 const Homepage = () => {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-  const [showModal, setShowModal] = useState(true);
   const navigate = useNavigate();
-
-  const handleModalClick = () => {
-    navigate('/download-lovehomes-conveyancing-app');
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   useEffect(() => {
     window.scrollTo({
@@ -134,15 +125,6 @@ const Homepage = () => {
             </g>
           </svg>
         </button>
-      )}
-
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>&times;</span>
-            <img src={assets.Lovehome_ad_modal} className='cursor-pointer' alt="Love Home Ad" onClick={handleModalClick} />
-          </div>
-        </div>
       )}
     </div>
   );

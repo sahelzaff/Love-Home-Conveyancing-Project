@@ -357,6 +357,15 @@ const Faq = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Add this new button section after the accordion grid */}
+                <div className="flex justify-center w-full mt-10">
+                    <a href="mailto:hello@love-homes.com.au">
+                        <button className="bg-[#f0532d] hover:bg-orange-600 cursor-pointer font-inter font-bold text-[1rem] text-white py-3 px-6 rounded-lg text-lg md:text-xl lg:text-2xl">
+                            Write Your Question
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     );
