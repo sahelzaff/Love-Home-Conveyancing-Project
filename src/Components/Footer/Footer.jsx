@@ -9,12 +9,12 @@ import '../../Responsive.css';
 const Footer = () => {
     return (
         <div className='pt-10 h-auto w-full '>
-            <div className='bg-[#19345e] text-[#fff] p-14 px-28' id='footer_financial' >
+            {/* <div className='bg-[#19345e] text-[#fff] p-14 px-28' id='footer_financial' >
                 <p className='font-poppins font-medium text-[1.125rem] Homepage' id='footerfinancialpara'  >Financial Disclaimer: Please remember that past performance may not be indicative of future results. Different types of investments involve varying degrees of risk. Due to various factors, including changing market conditions, the content may no longer be reflective of current opinions or positions. Moreover, you should not assume that any discussion or information contained in this website serves as the receipt of, or as a substitute for, personalized investment advice from Borrower First. Please consult our financial experts for more information.</p>
 
-            </div>
+            </div> */}
             <div className='h-auto bg-[#f0532d] text-[#fff] pt-[70px] pb-[20px]'>
-                <div className='px-28 py-10 Homepage' id='main_footer_main_div'>
+                <div className=' py-10 Homepage' id='main_footer_main_div'>
                     <div className='grid grid-cols-3 gap-20 items-start' id='main_footer'>
                         <div className=''>
                             <div>
@@ -25,37 +25,37 @@ const Footer = () => {
                             </div>
 
                             <div className='flex flex-row gap-3  pt-8 items-center mb-2'>
-                                <p className='font-poppins text-[1.125rem] font-semibold flex flex-row items-start'>Follow Us:</p>
+                                <p className='font-poppins text-[1.125rem] font-semibold flex flex-row items-start'>Contact Us:</p>
 
                                 <div className="sm:flex sm:items-center sm:space-x-1 " id='icons_footer'>
-                                    <img
+                                    {/* <img
                                         src={assets.facebook}
                                         alt="Facebook"
                                         className="h-8 w-8 cursor-pointer social-icon"
                                         onClick={() => window.open('https://www.facebook.com/lovehomesconveyancing/', '_blank')}
-                                    />
+                                    /> */}
                                     <img
                                         src={assets.whatsapp_top}
                                         alt="Whatsapp"
                                         className="h-8 w-8 cursor-pointer social-icon"
                                         onClick={() => window.open('https://api.whatsapp.com/send?phone=61434303537&text=Hi%20Robin%20Carter%2C%20I%27m%20interested%20in%20your%20property%20conveyancing%20services.%20Can%20you%20please%20provide%20more%20information%3F%20Thank%20you!%0A', '_blank')}
                                     />
-                                    <img
+                                    {/* <img
                                         src={assets.insta}
                                         alt="Instagram"
                                         className="h-8 w-8 cursor-pointer social-icon"
                                         onClick={() => window.open('https://www.instagram.com/lovehomesconveyancing/', '_blank')}
-                                    />
-                                    <img
+                                    /> */}
+                                    {/* <img
                                         src={assets.linkedin}
                                         alt="LinkedIn"
                                         className="h-8 w-8 cursor-pointer social-icon"
                                         onClick={() => window.open('https://www.linkedin.com/company/lovehomesconveyancing/', '_blank')}
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                             <div className='w-full h-[0.1rem] bg-white mb-2'></div>
-                            <div className='font-poppins text-[1rem] font-medium pb-6'><p>ABN: 84 991 312 097</p></div>
+                            <div className='font-poppins text-[1rem] font-medium pb-6'><p>ABN: 73 636 440 152</p></div>
                             {/* <div className='font-poppins text-[1rem] font-medium'><p>Australian Credit License: </p></div> */}
 
 
@@ -87,7 +87,7 @@ const Footer = () => {
                                 </div>
                                 <div className='flex flex-col gap-8'>
                                     <div>
-                                        <p className='font-poppins text-[1rem] font-medium pr-8'>Suite 17, Minton House,2-14 Bayswater Road, Potts Point 2011</p>
+                                        <p className='font-poppins text-[1rem] font-medium pr-8'>Suite 305, Level 3, 3 Hosking Place, Sydney 2000</p>
                                     </div>
                                     <div className="flex gap-4">
                                         <a href="tel:+0293819118" className="flex items-center gap-4 text-inherit no-underline cursor-pointer">

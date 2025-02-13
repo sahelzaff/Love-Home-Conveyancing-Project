@@ -180,7 +180,7 @@ const Faq = () => {
                                     aria-expanded={openItemLeft === 4}
                                     aria-controls="accordion-flush-body-left-4"
                                 >
-                                    <span>How long should a conveyancer in sydney take to complete the entire process?</span>
+                                    <span>How long should a conveyancer in Sydney take to complete the entire process?</span>
                                     <div className="flex-shrink-0 w-3 h-3">
                                     <svg
                                         data-accordion-icon

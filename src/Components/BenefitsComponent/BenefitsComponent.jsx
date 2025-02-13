@@ -29,10 +29,10 @@ const BenefitsComponent = () => {
       <div className="max-w-screen-4xl mx-auto text-black flex flex-col justify-center items-start" id="benefitDiv">
         <h1 className="text-start text-2xl font-inter font-bold mb-3 leading-none" id="benefitTitle">
           Experience The Benefits<br />
-          <span className="text-[#f0532d]" id="benefitTitleSpan">Simplified With Our Service.</span>
+          <span className="text-[#f0532d]" id="benefitTitleSpan">With Our Simplified Service.</span>
         </h1>
         <p className="text-[#1B1817] text-center mb-24 text-xl font-poppins" id="benefitText">
-          At love home, we redefine conveyancing by prioritizing simplicity and convenience.
+          At Love Homes, we redefine conveyancing by prioritizing simplicity and convenience.
         </p>
       </div>
 
@@ -64,7 +64,7 @@ const BenefitsComponent = () => {
             < h3 className="card-title" id="card_title">Stress Free Communication</ h3>
             <div className='w-24 rounded-lg sm:w-32 md:w-40 lg:w-44 h-[0.3rem] bg-[#f0532d] mb-3 sm:my-4 md:mb-5 rounded-e-md'></div>
             <p className="card-text" id="card_text">
-              Say goodbye to stress with our streamlined communication process. All correspondence is securely delivered to you, your agent, and your broker in one online space hosted by your dedicated solicitor. This means you can communicate directly with your qualified property lawyer, ensuring clarity and efficiency throughout the transaction.
+            All relevant correspondence is shared with you, your agent and your broker where necessary.  With our centralised online system, your queries are always dealt with promptly and efficiently throughout the transaction, usually the same day or within 24 hours.
             </p>
           </div>
         </div>

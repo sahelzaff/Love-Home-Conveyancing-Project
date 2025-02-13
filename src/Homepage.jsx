@@ -78,9 +78,9 @@ const Homepage = () => {
         <div className="Homepage1">
           <Hero />
         </div>
-        <div className="relative z-10">
+        {/* <div className="relative z-10">
           <Video />
-        </div>
+        </div> */}
         <div className="Homepage1">
           <CustomerReviews />
         </div>

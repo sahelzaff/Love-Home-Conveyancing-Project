@@ -231,7 +231,7 @@ const Contactform = () => {
                 <div className="w-72 font-poppins font-medium" id='timingdiv1'>
                   <div className="flex flex-row items-start justify-between">
                     <p >Mon-Fri</p>
-                    <p > 9:00 AM - 6:00 PM</p>
+                    <p > 9:00 AM - 5:00 PM</p>
                   </div>
                   <div className="flex flex-row items-start justify-between">
                     <p >Sat - Sun</p>
@@ -248,10 +248,10 @@ const Contactform = () => {
                 <h2 className="font-inter font-bold text-2xl" >Address</h2>
                 <div className="w-80 font-poppins font-medium" id='timingdiv1'>
                   <div className="flex flex-row items-start justify-between">
-                    <p>Suite 17, Minton House,</p>
+                    <p>Suite 305, Level 3,</p>
                   </div>
                   <div className="flex flex-row items-start justify-between">
-                    <p >2-14 Bayswater Road, Potts Point 2011</p>
+                    <p >3 Hosking Place, Sydney 2000</p>
                   </div>
                 </div>
               </div>

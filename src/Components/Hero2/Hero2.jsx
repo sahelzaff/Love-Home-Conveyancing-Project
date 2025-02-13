@@ -65,14 +65,14 @@ const Hero2 = () => {
                     <div className="absolute inset-0 w-[43%] bg-white bg-opacity-0 flex flex-col items-start justify-center" id='banner_rc' data-aos='fade-right' data-aos-duration="1000">
                         <h1 className="text-[#f0532d] font-inter text-2xl sm:text-3xl font-[700] leading-tight" id='text1'>Legal Pitfalls to Avoid When</h1>
 
-                        <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[900] font-inter py-2 text-[#fff]' id='text2'>Purchasing Property.</h2>
+                        <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[900] font-inter py-2 text-[#fff]' id='text2'>Buying or Selling.</h2>
                         <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-inter font-medium leading-tight text-[#f0532d]' id='text3'>Expert Advice for Peace of Mind</p>
                         <div className='w-24 sm:w-32 md:w-40 lg:w-44 h-[0.3rem] bg-[#f0532d] my-3 sm:my-4 md:my-5 rounded-e-md'></div>
-                        <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full  text-white' id='text4'>Leave the hassle to me, and focus on what really matters to you. So you can chat directly with the qualified property lawyer.</p>
+                        <p className='font-poppins font-normal text-sm sm:text-base md:text-lg lg:text-xl w-full  text-white' id='text4'>Leave the hassle on us, Stop Endlessly Searching - Chat directly with us to get your questions answered.</p>
 
                         <p className='font-poppins font-normal w-full text-white' id='text5'><span className='text-[#f0532d] font-inter ' id='text7' >Mr Robin Carter</span><br />Principal Solicitor at Love Homes Conveyancing
                             <br />
-                            <span className=''>25 years of combined experience in accounting, law, and business</span>
+                            <span className=''>Stop Endlessly Searching - Chat directly with us to get your questions answered.</span>
                         </p>
 
                         <div className='pt-3 sm:pt-5'>
@@ -81,11 +81,11 @@ const Hero2 = () => {
 
                         <div className="pt-5 sm:pt-10">
                             <a href="https://api.whatsapp.com/send?phone=61434303537&text=Hi%20Robin%20Carter%2C%20I%27m%20interested%20in%20your%20property%20conveyancing%20services.%20Can%20you%20please%20provide%20more%20information%3F%20Thank%20you!%0A" target="_blank"
-                                rel="noopener noreferrer" className="button cursor-pointer font-inter" id='button1'>Let's Chat</a>
+                                rel="noopener noreferrer" className="button cursor-pointer font-inter" id='button1'>Get a Quote</a>
                         </div>
                     </div>
                 </section>
-                <div className="absolute h-[30vh] top-[96%]  left-1/2 transform -translate-x-1/2 w-[75%] bg-[#f4f4f4] py-2 rounded-2xl box-shadow" id='consultBox'>
+                {/* <div className="absolute h-[30vh] top-[96%]  left-1/2 transform -translate-x-1/2 w-[75%] bg-[#f4f4f4] py-2 rounded-2xl box-shadow" id='consultBox'>
                     <div className="flex flex-col justify-center items-center gap-2 sm:gap-1 md:gap-0">
                         <h2 className="font-inter mt-2 font-medium text-base sm:text-lg md:text-xl lg:text-lg xl:text-2xl" id='online_text'>Online Consultations Available</h2>
                         <div className="flex flex-row justify-center items-center -mt-3 sm:-mt-4 md:-mt-5 gap-4 sm:gap-6 md:gap-7" id='boxPhoto'>
@@ -122,7 +122,7 @@ const Hero2 = () => {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     );
