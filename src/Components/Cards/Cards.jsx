@@ -124,7 +124,11 @@ const Cards = () => {
             <div>
               <p className='text-xs text-[#1B1817] text md:text-2xl xl:text-2xl 2xl:text-4xl tracking-[0.28rem] font-poppins font-bold bg-transparent' id='tailored'>Get a Tailored Conveyancing Quote in Minutes!</p>
             </div>
+            <div>
+              <p className='text-[12px] text-[#1B1817] w-3/5 font-poppins font-normal' >Whether you are a first home buyer, an owner occupier, or an investor, we&apos;ve got you covered with our national conveyancing service covering NSW, QLD, VIC, SA, and WA.</p>
+            </div>
           </div>
+          
           <div className='flex flex-col items-start justify-center w-full'>
             <div>
               <p className="text-xl text-[#0d0d0d] 2xl:text-4xl md:text-2xl m font-poppins w-full  font-semibold md:text-[#0d0d0d]" id='property_hero'>Property <span className='text-[#f0532d]'>Conveyancing</span> </p>
