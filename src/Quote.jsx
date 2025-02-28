@@ -138,15 +138,12 @@ const Quote = () => {
                                 />
                                 <button onClick={applyCoupon} className="ml-2 p-2 text-sm font-inter border bg-[#f0532d] text-white rounded cursor-pointer">Apply</button>
                             </div>
-                            {error && <p className="text-red-500 font-poppins text-[11px]">{error}</p>}
+                            {error && <p className="text-red-500 font-poppins text-sm mt-1">{error}</p>}
                             {couponApplied && !error && (
                                 <div className="flex items-center justify-between">
                                     <p className="text-green-500 font-poppins text-[11px]">Coupon code applied successfully</p>
                                     <p className="text-red-500 font-poppins text-[11px] hover:underline ml-2 cursor-pointer" onClick={removeCoupon}>Remove</p>
                                 </div>
-                            )}
-                            {error && (
-                                <p className='mt-2 text-red-500'>{error}</p>
                             )}
                         </div>
                     </div>

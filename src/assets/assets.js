@@ -121,9 +121,9 @@ import selling from './selling.png';
 import investor from './investor.png';
 import transfer from './transfer.png';
 import faq from './faq.png';
-// import america from './america.png';
-// import india from './india.png';
-// import australia from './australia.png';
+import america from './america.png';
+import india from './india.png';
+import australia from './australia.png';
 import calendly from './calendly.png';
 // import callphoto from './callphoto.png';
 import emailphoto from './emailphoto.png';
@@ -252,9 +252,9 @@ export const assets = {
     investor,
     transfer,
     faq,
-    // america,
-    // india,
-    // australia,
+    america,
+    india,
+    australia,
     calendly,
     // callphoto,
     emailphoto

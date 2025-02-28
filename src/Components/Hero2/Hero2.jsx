@@ -76,7 +76,7 @@ const Hero2 = () => {
                         </p>
 
                         <div className='pt-3 sm:pt-5'>
-                            <a href="" className='text-sm sm:text-base md:text-lg font-poppins text-[#f0532d] font-medium hover:text-[#fff] cursor-pointer' id='text6'>My Stories</a>
+                            <a href="" className='text-sm sm:text-base md:text-lg font-poppins text-[#f0532d] font-medium hover:text-[#fff] cursor-pointer' id='text6'></a>
                         </div>
 
                         <div className="pt-5 sm:pt-10">
